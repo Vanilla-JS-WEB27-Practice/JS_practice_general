@@ -21,6 +21,42 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 28 - April - 2020
+// Source: https://edabit.com/challenge/EzbfiquDoAc2Zc9FL
+// Title: Is the String Empty?
+
+// Instructions:
+// Create a function that returns true if a string is empty and false otherwise.
+
+// Examples:
+// isEmpty("") ➞ true
+// isEmpty(" ") ➞ false
+// isEmpty("a") ➞ false
+
+// Notes:
+// A string containing only whitespaces " " does not count as empty.
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work: 
+// function isEmpty(s){
+//     if(s === '' || "") {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(isEmpty(''));
+// console.log(isEmpty(""));
+// console.log(isEmpty(' '));
+// console.log(isEmpty(" "));
+// console.log(isEmpty('a'));
+// console.log(isEmpty("a"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 28 - April - 2020
 // Source: https://edabit.com/challenge/8q54MKnRrm89pSLmW
 // Title: Convert Minutes into Seconds
 
