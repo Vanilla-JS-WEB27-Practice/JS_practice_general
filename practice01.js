@@ -18,6 +18,32 @@
 
 // Work: 
 
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 28 - April - 2020
+// Source: https://edabit.com/challenge/3CaszbdZYGN4otQD8
+// Title: Area of a triangle
+
+// Instructions:
+// Write a function that takes the base and height of a triangle and return its area.
+
+// Examples:
+// triArea(3, 2) ➞ 3
+// triArea(7, 4) ➞ 14
+// triArea(10, 10) ➞ 50
+
+// Notes:
+// The area of a triangle is: (base * height) / 2
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work: 
+// function triArea(base, height){
+//    return (base * height) / 2;
+// }
+
+// ------------------------------------------------------------------------------------------------------------------
 
 // Date: 27 - April - 2020
 // Source: https://edabit.com/challenge/4gzDuDkompAqujpRi
@@ -41,13 +67,12 @@
 // 4 - return the sum
 
 // Work: 
-function addUp(num){
+// function addUp(num){
+//    return num * (num + 1) / 2
+// }
 
-   return num * (num + 1) / 2
-}
-
-console.log(addUp(4));
-console.log(addUp(13));
-console.log(addUp(600));
+// console.log(addUp(4));
+// console.log(addUp(13));
+// console.log(addUp(600));
 
 // Resources: https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/
