@@ -21,6 +21,35 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 28 - April - 2020
+// Source: https://edabit.com/challenge/8q54MKnRrm89pSLmW
+// Title: Convert Minutes into Seconds
+
+// Instructions:
+// Write a function that takes an integer minutes and converts it to seconds.
+
+// Examples:
+// convert(5) ➞ 300
+// convert(3) ➞ 180
+// convert(2) ➞ 120
+
+// Notes:
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work: 
+// function convert(minutes){
+//     return minutes * 60;
+// }
+
+// console.log(convert(5));
+// console.log(convert(3));
+// console.log(convert(2));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 28 - April - 2020
 // Source: https://edabit.com/challenge/3CaszbdZYGN4otQD8
 // Title: Area of a triangle
 
