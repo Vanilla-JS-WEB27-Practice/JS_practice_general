@@ -20,6 +20,51 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 29 - April - 2020
+// Source: https://edabit.com/challenge/tYHkTdFrEmWfxpPKF
+// Title: Matchstick Houses
+
+// Instructions:
+// This challenge will help you interpret mathematical relationships both algebraically and geometrically.
+// Matchstick Houses, Steps 1, 2 and 3
+// Create a function that takes a number (step) as an argument and returns the amount of matchsticks in that step. See step 1, 2 and 3 in the image above.
+
+// Examples:
+// matchHouses(1) ➞ 6
+// matchHouses(4) ➞ 21
+// matchHouses(87) ➞ 436
+
+// Notes:
+// Step 0 returns 0 matchsticks.
+// The input (step) will always be a non-negative integer.
+
+// Sudo code:
+// 1 - write a function
+// 2 - pass an argument (step)
+// 3 - write out if/else statements for the 0 and non-negative requirements
+// 4 - write out an algebra expression for 1 === n
+// 5 - write out an algebra expression for 1 < n
+
+// Work: 
+
+// function matchHouses(step) {
+//     if(step < 0) {
+//         return 'Try again, the argument needs to be greater than 0'
+//     } else if (step === 0) {
+//         return 0
+//     } else if (step === 1) {
+//         return 6
+//     } else {
+//         return ((step -1) * 5) + 6
+//     }
+// }
+
+// console.log(matchHouses(1))
+// console.log(matchHouses(4))
+// console.log(matchHouses(87))
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 28 - April - 2020
 // Source: https://edabit.com/challenge/EzbfiquDoAc2Zc9FL
 // Title: Is the String Empty?
