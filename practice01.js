@@ -1,6 +1,6 @@
 
 // Template
-// Date: 
+// Date: - May - 2020
 // Source: 
 // Title: 
 
@@ -17,6 +17,44 @@
 // 1 - 
 
 // Work: 
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: - May - 2020
+// Source: https://edabit.com/challenge/JfB9mWmbwYHbupxCB
+// Title: Divides Evenly
+
+// Instructions:
+// Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+
+// Examples:
+// dividesEvenly(98, 7) ➞ true
+// # 98/7 = 14
+// dividesEvenly(85, 4) ➞ false
+// # 85/4 = 21.25
+// console.log(dividesEvenly(98,7))
+// console.log(dividesEvenly(85,4))
+
+// Notes:
+// a will always be greater than or equal to b.
+
+// Sudo code:
+// 1 - write a function
+// 2 - pass 2 arguments (a, b)
+// 3 - setup validation if/else to check that a is greater than b
+// 4 - check using Number.isInteger(a/b)
+
+
+// Work: 
+// function dividesEvenly(a, b) {
+//     if(b > a) {
+//         return 'try again, the first argument must be greater than the second argument'
+//     } else if (Number.isInteger(a/b)){
+//         return 1
+//     } else {
+//         return 0
+//     }
+// }
 
 // ------------------------------------------------------------------------------------------------------------------
 
