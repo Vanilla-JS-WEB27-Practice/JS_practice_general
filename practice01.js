@@ -20,6 +20,35 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - May - 2020
+// Source: 
+// Title: Concatenating two integer arrays
+
+// Instructions:
+// Create a function to concatenate two integer arrays.
+
+// Examples:
+// concat([1, 3, 5], [2, 6, 8]) --> [1, 3, 5, 2, 6, 8]
+// concat([7, 8], [10, 9, 1, 1, 2]) --> [7, 8, 10, 9, 1, 1, 2]
+// concat([4, 5, 1], [3, 3, 3, 3, 3]) --> [4, 5, 1, 3, 3, 3, 3, 3]
+
+// Work: 
+// function concat(arr1, arr2) {
+//     // option 1 "new way"
+//     // return [...arr1, ...arr2]
+
+//     // option 2 "old way"
+//     var result = arr1.concat(arr2);
+//     return result
+// }
+
+// console.log(concat([1, 3, 5], [2, 6, 8])) 
+// console.log(concat([7, 8], [10, 9, 1, 1, 2])) 
+// console.log(concat([4, 5, 1], [3, 3, 3, 3, 3])) 
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 30 - April - 2020
 // Source: 
 // Title: Are the Numbers Equal?
@@ -32,24 +61,21 @@
 // isSameNum(2, 2) ➞  true
 // isSameNum(2, "2") ➞ false
 
-// Sudo code:
-// 1 - 
-
 // Work: 
 
-function isSameNum(num1, num2) {
-    // if(num1 === num2 ){
-    //     return true
-    // } else {
-    //     return false
-    // }
+// function isSameNum(num1, num2) {
+//     // if(num1 === num2 ){
+//     //     return true
+//     // } else {
+//     //     return false
+//     // }
 
-    return num1 === num2 ? true : false;
-}
+//     return num1 === num2 ? true : false;
+// }
 
-console.log(isSameNum(4, 8));
-console.log(isSameNum(2, 2));
-console.log(isSameNum(2, '2'));
+// console.log(isSameNum(4, 8));
+// console.log(isSameNum(2, 2));
+// console.log(isSameNum(2, '2'));
 
 
 // ------------------------------------------------------------------------------------------------------------------
