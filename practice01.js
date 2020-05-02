@@ -37,21 +37,21 @@
 
 // Work: 
 
-function search(arr, item){
-    // return arr.indexOf(item);
+// function search(arr, item){
+//     // return arr.indexOf(item);
   
-    if (arr.includes(item)) {
-        const result = arr.indexOf(item)
+//     if (arr.includes(item)) {
+//         const result = arr.indexOf(item)
         
-        return result;
-    } else {
-        return -1
-    }
-}
+//         return result;
+//     } else {
+//         return -1
+//     }
+// }
 
-console.log(search([1, 5, 3], 5));
-console.log(search([9, 8, 3], 3));
-console.log(search([1, 2, 3], 4));
+// console.log(search([1, 5, 3], 5));
+// console.log(search([9, 8, 3], 3));
+// console.log(search([1, 2, 3], 4));
 
 // ------------------------------------------------------------------------------------------------------------------
 
