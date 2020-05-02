@@ -20,6 +20,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - May - 2020
+// Source: https://edabit.com/challenge/pEzxi4MqHGrAi7ZdA
+// Title: Find the Index (Part 1)
+
+// Instructions:
+// Create a function that finds the index of a given item.
+
+// Examples:
+// search([1, 5, 3], 5) ➞ 1
+// search([9, 8, 3], 3) ➞ 2
+// search([1, 2, 3], 4) ➞ -1
+
+// Notes:
+// If the item is not present, return -1.
+
+// Work: 
+
+function search(arr, item){
+    // return arr.indexOf(item);
+  
+    if (arr.includes(item)) {
+        const result = arr.indexOf(item)
+        
+        return result;
+    } else {
+        return -1
+    }
+}
+
+console.log(search([1, 5, 3], 5));
+console.log(search([9, 8, 3], 3));
+console.log(search([1, 2, 3], 4));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 01 - May - 2020
 // Source: https://edabit.com/challenge/4MSbtYFBiRtxHEkY8
 // Title: Recursion: Length of a String
@@ -36,26 +71,19 @@
 // Notes:
 // Check the Resources tab for info on recursion.
 
-// Sudo code: (first attempt)
-// 1 - write a function
-// 2 - pass an argument ()
-// 3 - use split to separate the string and set to a var
-// 4 - use .length() to find the length of the string
-// 5 - return the value
-
 // Work: 
 
-function length(str) {
+// function length(str) {
 
-    const newArr = str.split('').length;
+//     const newArr = str.split('').length;
 
-    return newArr;
-}
+//     return newArr;
+// }
 
-console.log(length('apple'));
-console.log(length('make'));
-console.log(length('a'));
-console.log(length(''));
+// console.log(length('apple'));
+// console.log(length('make'));
+// console.log(length('a'));
+// console.log(length(''));
 
 // ------------------------------------------------------------------------------------------------------------------
 
