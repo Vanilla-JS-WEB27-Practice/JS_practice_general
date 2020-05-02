@@ -20,7 +20,81 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - May - 2020
+// Date: 01 - May - 2020
+// Source: https://edabit.com/challenge/niTEsddTdE4gs4YGX
+// Title: Transform Upvotes
+
+// Instructions:
+// Create a function that transforms a string of upvote counts into an array of numbers. Each k represents a thousand.
+
+// Examples:
+// transformUpvotes("6.8k 13.5k") ➞ [6800, 13500]
+// transformUpvotes("5.5k 8.9k 32") ➞ [5500, 8900, 32]
+// transformUpvotes("20.3k 3.8k 7.7k 992") ➞ [20300, 3800, 7700, 992]
+
+// Notes:
+// Return the upvotes as an array.
+
+// Sudo code: (first attempt)
+// 1 - write a function
+// 2 - pass an argument ()
+// 3 - use split to separate the string and set to a var
+// 4 - map over the new array to check for .endsWith(k)
+// 5 - then multiple by 1000
+
+// Sudo code: (sudo code working through it)
+// 1 - write a function
+// 2 - pass an argument ()
+// 3 - use split to separate the string and set to a const newArr
+// 4 - set s second const secondArr and .map through
+// 5 - check if num.endsWith('k)
+// 6 - if it's false, return the argument num turned into an integer and multiplied by 1000
+// 7 - if true, set a const newNumber and .split() at 'k
+// 8 - then return the const newNumber turned into a number and multiplied by 1000
+
+// Work: 
+// function transformUpvotes(str) {
+//     const newArr = str.split(' ');
+
+    // return newArr;
+
+    // const secondArr = newArr.map((num) => {
+        // return num.endsWith('k') ? Number(num) * 1000 : Number(num); // --> returns the number by itself 
+
+        // if (num.endsWith('k')){
+        //     const newNumber = num.split('k');
+                
+        //         return Number.parseFloat(newNumber) * 1000;
+                // if(newNumber === ' '){
+                //     return null
+                // } else {
+                //     return  Number(newNumber) * 1000;
+                // }
+    //     } else {
+    //         return Number(num);
+    //     }
+    // })
+
+
+    // newArr.map((num) => {
+    //     if(num.endsWith('k') ){
+    //         return true
+    //     } else {
+    //         return null
+    //     }
+    // })
+
+    return secondArr;
+}
+
+console.log(transformUpvotes("6.8k 13.5k"));
+console.log(transformUpvotes("5.5k 8.9k 32"));
+console.log(transformUpvotes("20.3k 3.8k 7.7k 992"));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 30 - April - 2020
 // Source: 
 // Title: Concatenating two integer arrays
 
@@ -105,7 +179,7 @@
 // Work: 
 
 // const helloName = (name) => {
-    return `Hello ${name}!`
+//      return `Hello ${name}!`
 // }
 
 // console.log(helloName('Sean'));
