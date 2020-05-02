@@ -21,6 +21,45 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 01 - May - 2020
+// Source: https://edabit.com/challenge/4MSbtYFBiRtxHEkY8
+// Title: Recursion: Length of a String
+
+// Instructions:
+// Write a function that returns the length of a string. Make your function recursive.
+
+// Examples:
+// length("apple") ➞ 5
+// length("make") ➞ 4
+// length("a") ➞ 1
+// length("") ➞ 0
+
+// Notes:
+// Check the Resources tab for info on recursion.
+
+// Sudo code: (first attempt)
+// 1 - write a function
+// 2 - pass an argument ()
+// 3 - use split to separate the string and set to a var
+// 4 - use .length() to find the length of the string
+// 5 - return the value
+
+// Work: 
+
+function length(str) {
+
+    const newArr = str.split('').length;
+
+    return newArr;
+}
+
+console.log(length('apple'));
+console.log(length('make'));
+console.log(length('a'));
+console.log(length(''));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 01 - May - 2020
 // Source: https://edabit.com/challenge/niTEsddTdE4gs4YGX
 // Title: Transform Upvotes
 
@@ -84,12 +123,12 @@
     //     }
     // })
 
-    return secondArr;
-}
+//     return secondArr;
+// }
 
-console.log(transformUpvotes("6.8k 13.5k"));
-console.log(transformUpvotes("5.5k 8.9k 32"));
-console.log(transformUpvotes("20.3k 3.8k 7.7k 992"));
+// console.log(transformUpvotes("6.8k 13.5k"));
+// console.log(transformUpvotes("5.5k 8.9k 32"));
+// console.log(transformUpvotes("20.3k 3.8k 7.7k 992"));
 
 
 // ------------------------------------------------------------------------------------------------------------------
