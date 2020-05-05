@@ -21,6 +21,36 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 05 - May - 2020
+// Source: https://edabit.com/challenge/7JBTN4TbaxJQMdX9W
+// Title: Return the Last Element in an Array
+
+// Instructions:
+// Create a function that accepts an array and returns the last item in the array.
+
+// Examples:
+// getLastItem([1, 2, 3]) ➞ 3
+// getLastItem(["cat", "dog", "duck"]) ➞ "duck"
+// getLastItem([true, false, true]) ➞ true
+
+// Notes:
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+
+// Work: 
+
+function getLastItem(arr) {
+    return arr.pop();
+}
+
+console.log(getLastItem([1, 2, 3]));
+console.log(getLastItem(['cat', 'dog', 'duck']));
+console.log(getLastItem([true, false, true]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 05 - May - 2020
 // Source: Check if an Array Contains a Given Number
 // Title: https://edabit.com/challenge/SwyjHvkqwwQ2iJsoS
 
@@ -41,18 +71,18 @@
 
 // Work: 
 
-function check(arr, el){
-    if(arr.includes(el)){
-        return true;
-    } else {
-        return false;
-    }
-}
+// function check(arr, el){
+//     if(arr.includes(el)){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
-console.log(check([1, 2, 3, 4, 5], 3));
-console.log(check([1, 1, 2, 1, 1], 3));
-console.log(check([5, 5, 5, 6], 5));
-console.log(check([], 5));
+// console.log(check([1, 2, 3, 4, 5], 3));
+// console.log(check([1, 1, 2, 1, 1], 3));
+// console.log(check([5, 5, 5, 6], 5));
+// console.log(check([], 5));
 
 // ------------------------------------------------------------------------------------------------------------------
 
