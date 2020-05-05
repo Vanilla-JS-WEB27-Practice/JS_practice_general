@@ -21,6 +21,50 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 05 - May - 2020
+// Source: https://edabit.com/challenge/QifJBFwg32GNdiWQa
+// Title: Stack the Boxes
+
+// Instructions:
+// Here's an image of four models. Some of the cubes are hidden behind other cubes. Model one consists of one cube. Model two consists of four cubes, and so on...
+// Write a function that takes a number n and returns the number of stacked boxes in a model n levels high, visible and invisible.
+
+// Examples:
+// stackBoxes(1) ➞ 1
+// stackBoxes(2) ➞ 4
+// stackBoxes(0) ➞ 0
+
+// Notes:
+// Step n is a positive integer.
+
+// Work: 
+
+function stackBoxes(n) {
+    // option 1
+    // if(n > 0){
+    //     return Math.pow(n, 2);
+    // } else {
+    //     return 0;
+    // }
+    
+    // option 2
+    // if(n > 0){
+    //     return n*n;
+    // } else {
+    //     return 0;
+    // }
+}
+
+console.log(stackBoxes(0));
+console.log(stackBoxes(1));
+console.log(stackBoxes(2));
+console.log(stackBoxes(3));
+console.log(stackBoxes(4));
+console.log(stackBoxes(5));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 05 - May - 2020
 // Source: https://edabit.com/challenge/7JBTN4TbaxJQMdX9W
 // Title: Return the Last Element in an Array
 
@@ -39,14 +83,13 @@
 
 
 // Work: 
+// function getLastItem(arr) {
+//     return arr.pop();
+// }
 
-function getLastItem(arr) {
-    return arr.pop();
-}
-
-console.log(getLastItem([1, 2, 3]));
-console.log(getLastItem(['cat', 'dog', 'duck']));
-console.log(getLastItem([true, false, true]));
+// console.log(getLastItem([1, 2, 3]));
+// console.log(getLastItem(['cat', 'dog', 'duck']));
+// console.log(getLastItem([true, false, true]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
