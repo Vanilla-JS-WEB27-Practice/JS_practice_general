@@ -20,7 +20,62 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - May - 2020
+// Date: 04 - May - 2020
+// Source: https://edabit.com/challenge/o7TwicAHWuMkjbDqQ
+// Title: Which Function Returns the Larger Number?
+
+// Instructions:
+// Your function will be passed two functions, f and g, that don't take any parameters. Your function has to call them, and return a string which indicates which function returned the larger number.
+// If f returns the larger number, return the string f.
+// If g returns the larger number, return the string g.
+// If the functions return the same number, return the string neither.
+
+// Examples:
+// whichIsLarger(() => 5, () => 10) ➞ "g"
+// whichIsLarger(() => 25,  () => 25) ➞ "neither"
+// whichIsLarger(() => 505050, () => 5050) ➞ "f"
+
+// Notes:
+// This exercise is designed as an introduction to higher order functions (functions which use other functions to do their work).
+
+// Work: 
+
+// function whichIsLarger(f, g) {
+//     
+    // Option 2:
+    // if(f() > g()){
+	// 	return "f";
+	// } else if(f() === g()){
+	// 	return "neither"
+	// } else if(f() < g()){
+	// 	return "g"
+	// } else {
+	// 	return null
+	// }
+
+//  Option 1:
+//      const newF = f();
+//      const newG = g();
+    
+//     if(newF > newG) {
+//         return "f";
+//     } else if(newF === newG) {
+//         return "neither";
+//     } else if(newF < newG) {
+//         return "g";
+//     } else {
+//         return null;
+//     }
+// }
+
+// console.log(whichIsLarger(() => 5, () => 10));
+// console.log(whichIsLarger(() => 10, () => 5));
+// console.log(whichIsLarger(() => 25, () => 25));
+// console.log(whichIsLarger(() => 220, () => 25));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 03 - May - 2020
 // Source: https://edabit.com/challenge/Q3n42rEWanZSTmsJm
 // Title: Find the Smallest and Biggest Numbers
 
@@ -35,20 +90,15 @@
 // Notes:
 // All test arrays will have at least one element and are valid.
 
-// Sudo code:
-// 1 - 
-
 // Work: 
 
-function minMax(arr) {
-    return [Math.min(...arr), Math.max(...arr)];
-}
+// function minMax(arr) {
+//     return [Math.min(...arr), Math.max(...arr)];
+// }
 
-console.log(minMax([1, 2, 3, 4, 5]));
-console.log(minMax([2334454, 5]));
-console.log(minMax([1]));
-
-
+// console.log(minMax([1, 2, 3, 4, 5]));
+// console.log(minMax([2334454, 5]));
+// console.log(minMax([1]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
