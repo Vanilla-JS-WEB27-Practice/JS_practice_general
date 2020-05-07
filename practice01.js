@@ -20,6 +20,40 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 07 - May - 2020
+// Source: https://edabit.com/challenge/hPWnaSckJke5FXNEH
+// Title: Is it Time for Milk and Cookies?
+
+// Instructions:
+// Christmas Eve is almost upon us, so naturally we need to prepare some milk and cookies for Santa! Create a function that accepts a Date object and returns true if it's Christmas Eve (December 24th) and false otherwise. Keep in mind JavaScript's Date month is 0 based, meaning December is the 11th month while January is 0.
+
+// Examples:
+// timeForMilkAndCookies(new Date(2013, 11, 24)) ➞ true
+// timeForMilkAndCookies(new Date(2013, 0, 23)) ➞ false
+// timeForMilkAndCookies(new Date(3000, 11, 24)) ➞ true
+
+// Notes:
+// Dates are zero zero based (see resources).
+// All test cases contain valid dates.
+
+// Work: 
+// function timeForMilkAndCookies(date) {
+    
+//     const month = date.getMonth();
+//     const varDate = date.getDate();
+  
+//     // console.log(month, day);
+//     if(month === 11 && varDate === 24){
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(timeForMilkAndCookies(new Date(3000, 11, 24)));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 05 - May - 2020
 // Source: https://edabit.com/challenge/QifJBFwg32GNdiWQa
 // Title: Stack the Boxes
@@ -38,7 +72,7 @@
 
 // Work: 
 
-function stackBoxes(n) {
+// function stackBoxes(n) {
     // option 1
     // if(n > 0){
     //     return Math.pow(n, 2);
@@ -52,14 +86,14 @@ function stackBoxes(n) {
     // } else {
     //     return 0;
     // }
-}
+// }
 
-console.log(stackBoxes(0));
-console.log(stackBoxes(1));
-console.log(stackBoxes(2));
-console.log(stackBoxes(3));
-console.log(stackBoxes(4));
-console.log(stackBoxes(5));
+// console.log(stackBoxes(0));
+// console.log(stackBoxes(1));
+// console.log(stackBoxes(2));
+// console.log(stackBoxes(3));
+// console.log(stackBoxes(4));
+// console.log(stackBoxes(5));
 
 
 // ------------------------------------------------------------------------------------------------------------------
