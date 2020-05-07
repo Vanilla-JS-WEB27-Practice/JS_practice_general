@@ -21,6 +21,38 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 07 - May - 2020
+// Source: https://edabit.com/challenge/cePrimGCGmaRrFHWv
+// Title: Burrrrrrrp
+
+// Instructions:
+// Create a function that returns the string "Burp" with the amount of "r's" determined by the input parameters of the function.
+
+// Examples:
+// longBurp(3) ➞ "Burrrp"
+// longBurp(5) ➞ "Burrrrrp"
+// longBurp(9) ➞ "Burrrrrrrrrp"
+
+// Notes:
+// Expect num to always be >= 1.
+// Remember to use a capital "B".
+// Don't forget to return the result.
+
+// Work: 
+
+// function longBurp(num) {
+//     const r = "r"; 
+//     const burp = `Bu${r.repeat(num)}p`;
+//     return burp;
+// }
+
+// console.log(longBurp(3));
+// console.log(longBurp(5));
+// console.log(longBurp(7));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+
+// Date: 07 - May - 2020
 // Source: https://edabit.com/challenge/hPWnaSckJke5FXNEH
 // Title: Is it Time for Milk and Cookies?
 
