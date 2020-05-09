@@ -20,6 +20,45 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 08 - May - 2020
+// Source: https://edabit.com/challenge/hD3euqPHM82Cbr7R8
+// Title: Largest Swap
+
+// Instructions:
+// Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+
+// Examples:
+// largestSwap(27) ➞ false
+// largestSwap(43) ➞ true
+// largestSwap(14) ➞ false
+// largestSwap(53) ➞ true
+// largestSwap(99) ➞ true
+
+// Notes:
+// Numbers with two identical digits (third example) should yield true (you can't do better). 
+
+// Work: 
+// function largestSwap(num){
+//     const sep = num.toString();
+//     const sep2 = sep.split('');
+//     const reverse = sep2.reverse();
+//     const join = reverse.join('');
+    
+//     if (num > Number(join)){
+//         return true;
+//     } else if (num === Number(join)){
+//         return true
+//     } else {
+//         return false
+//     }
+
+    // return join;
+// }
+
+// console.log(largestSwap(99));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 07 - May - 2020
 // Source: https://edabit.com/challenge/cePrimGCGmaRrFHWv
 // Title: Burrrrrrrp
