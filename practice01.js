@@ -20,6 +20,33 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - May - 2020
+// Source: https://edabit.com/challenge/d9suvbchE2bnHNQuK
+// Title: Frames Per Second
+
+// Instructions:
+// Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+// Examples:
+// frames(1, 1) ➞ 60
+// frames(10, 1) ➞ 600
+// frames(10, 25) ➞ 15000
+
+// Notes:
+// FPS stands for "frames per second" and it's the number of frames a computer screen shows every second.
+// Assume the screen produces 60 frames every second.
+
+// Work: 
+// function frames(minutes, fps){
+//     return (minutes * 60) * fps;
+// }
+
+// console.log(frames(1, 1));
+// console.log(frames(10, 1));
+// console.log(frames(10, 25));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 08 - May - 2020
 // Source: https://edabit.com/challenge/hD3euqPHM82Cbr7R8
 // Title: Largest Swap
