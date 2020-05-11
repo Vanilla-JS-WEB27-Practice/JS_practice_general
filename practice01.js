@@ -21,8 +21,38 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 10 - May - 2020
+// Source: https://edabit.com/challenge/ms3q5GYSpFpwxeFWX
+// Title: Volume of a Box
+
+// Instructions:
+// Create a function that takes an object argument sizes (contains width, length, height keys) and returns the volume of the box.
+
+// Examples:
+// volumeOfBox({ width: 2, length: 5, height: 1 }) ➞ 10
+// volumeOfBox({ width: 4, length: 2, height: 2 }) ➞ 16
+// volumeOfBox({ width: 2, length: 3, height: 5 }) ➞ 30
+
+// Notes:
+// Don't forget to return the result.
+// Remember that the values are in an object.
+// Volume is length * width * height.
+
+// Work: 
+
+// function volumeOfBox(sizes){
+//     const nums = Object.values(sizes);
+//     return nums[0] * nums[1] * nums[2];
+// }
+
+// console.log(volumeOfBox({ width: 2, length: 5, height: 1 }));
+// console.log(volumeOfBox({ width: 4, length: 2, height: 2 }));
+// console.log(volumeOfBox({ width: 2, length: 3, height: 5 }));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 10 - May - 2020
 // Source: https://edabit.com/challenge/z6Pxiw289JtaE2ndL
-// Title: FInd the Index (Part 2)
+// Title: Find the Index (Part 2)
 
 // Instructions:
 // Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
