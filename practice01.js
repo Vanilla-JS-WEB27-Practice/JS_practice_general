@@ -20,7 +20,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - May - 2020
+// Date: 10 - May - 2020
+// Source: https://edabit.com/challenge/H25aG5aAdmFcMpBsg
+// Title: To the Power of _____
+
+// Instructions:
+// Create a function that takes a base number and an exponent number and returns the calculation.
+
+// Examples:
+// calculateExponent(5, 5) ➞ 3125
+// calculateExponent(10, 10) ➞ 10000000000
+// calculateExponent(3, 3) ➞ 27
+
+// Notes:
+// All test inputs will be positive integers.
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work: 
+// function calculateExponent(num, exp) {
+//     return Math.pow(num, exp);
+// }
+
+// console.log(calculateExponent(5, 5));
+// console.log(calculateExponent(10, 10));
+// console.log(calculateExponent(3, 3));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 09 - May - 2020
 // Source: https://edabit.com/challenge/d9suvbchE2bnHNQuK
 // Title: Frames Per Second
 
