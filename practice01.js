@@ -20,7 +20,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - May - 2020
+// Date: 12 - May - 2020
+// Source: https://edabit.com/challenge/kbFhwaDyrd79JrgeB
+// Title: Count Instances of a Character in a String
+
+// Instructions:
+// Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
+
+// Examples:
+// charCount("a", "edabit") ➞ 1
+// charCount("c", "Chamber of secrets") ➞ 1
+// charCount("b", "big fat bubble") ➞ 4
+
+// Notes:
+// Your output must be case-sensitive (see second example).
+
+// Work: 
+// function charCount(myChar, str) {
+//     const arr = str.split('');
+//     const newArr = arr.filter(char => {
+//         if(char === myChar){
+//             return char
+//         } else {
+//             return null
+//         }
+//     })
+//     return newArr.length;
+// }
+
+// console.log(charCount('a', 'edabit'));
+// console.log(charCount('c', 'Chamber of secrets'));
+// console.log(charCount('b', 'big fat bubble'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 11 - May - 2020
 // Source: https://edabit.com/challenge/3kcrnpHk7krNZdnKK
 // Title: Convert a Number to Base 2
 
