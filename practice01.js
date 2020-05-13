@@ -21,6 +21,41 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 13 - May - 2020
+// Source: https://edabit.com/challenge/kuzB5CMXiKDEYKXAP
+// Title: Is the Number Even or Odd?
+
+// Instructions:
+// Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+
+// Examples:
+// isEvenOrOdd(3) ➞ "odd"
+// isEvenOrOdd(146) ➞ "even"
+// isEvenOrOdd(19) ➞ "odd"
+
+// Notes:
+// Dont forget to return the result.
+// Input will always be a valid integer.
+// Expect negative integers (whole numbers).
+// Tests are case sensitive (return "even" or "odd" in lowercase).
+
+// Work: 
+// function isEvenOrOdd(num) {
+    // option 2
+    // return num % 2 ? 'odd' : 'even';
+    
+    
+    // option 1
+    // const check = num % 2;
+    // return check ? "odd" : "even";
+// };
+
+// console.log(isEvenOrOdd(3));
+// console.log(isEvenOrOdd(146));
+// console.log(isEvenOrOdd(19));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 13 - May - 2020
 // Source: https://edabit.com/challenge/HT2dHkbzmLDZgsS7G
 // Title: Promises IV: The Reject Callback
 
