@@ -20,6 +20,52 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 14 - May - 2020
+// Source: https://edabit.com/challenge/Gpy2qSFnfhGJnWMMj
+// Title: Check if One Array can be Nested in Another
+
+// Instructions:
+// Create a function that returns true if the first array can be nested inside the second.
+// arr1 can be nested inside arr2 if:
+// arr1's min is greater than arr2's min.
+// arr1's max is less than arr2's max.
+
+// Examples:
+// canNest([1, 2, 3, 4], [0, 6]) ➞ true
+// canNest([3, 1], [4, 0]) ➞ true
+// canNest([9, 9, 8], [8, 9]) ➞ false
+// canNest([1, 2, 3, 4], [2, 3]) ➞ false
+
+// Notes:
+// Note the strict inequality (see example #3).
+
+// Work: 
+// function canNest(arr1, arr2) {
+//     const arr1Min = Math.min(...arr1);
+//     const arr1Max = Math.max(...arr1);
+//     const arr2Min = Math.min(...arr2);
+//     const arr2Max = Math.max(...arr2);
+    
+//     if(arr1Min > arr2Min ){
+//         return true
+//     } else if(arr1Min === arr2Min){
+//         return false
+//     } else if (arr1Max < arr2Max){
+//         return true
+//     } else if (arr1Max === arr2Max){
+//         return false
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(canNest([1, 2, 3, 4], [0, 6]));
+// console.log(canNest([3, 1], [4, 0]));
+// console.log(canNest([9, 9, 8], [8, 9]));
+// console.log(canNest([1, 2, 3, 4], [2, 3]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 13 - May - 2020
 // Source: https://edabit.com/challenge/kuzB5CMXiKDEYKXAP
 // Title: Is the Number Even or Odd?
