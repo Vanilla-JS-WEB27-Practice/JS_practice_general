@@ -20,7 +20,38 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - May - 2020
+// Date: 16 - May - 2020
+// Source: Factorial of a Positive Integer
+// Title: https://edabit.com/challenge/Ju7AK9rAGjz86hjxo
+
+// Instructions:
+// Write a function that takes a positive integer and return its factorial.
+
+// Examples:
+// factorial(4) ➞ 24
+// factorial(0) ➞ 1
+// factorial(9) ➞ 362880
+
+// Notes:
+// The factorial of 0 is 1.
+// The factorial of any positive integer Z is Z * (Z - 1) * (Z - 2) * . . . . . . * 1 (e.g. factorial of 3 is 3 * 2 * 1 = 6).
+
+// Work: 
+
+// function factorial(z){
+//     if(z < 0) return `Please provide a positive integer`;
+//     if(z === 0) return 1;
+//     return z * factorial(z-1);
+// }
+
+// console.log(factorial(4));
+// console.log(factorial(0));
+// console.log(factorial(9));
+// console.log(factorial(-1));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 15 - May - 2020
 // Source: https://edabit.com/challenge/b2NdDSdkjqFnCTfS8
 // Title: Filter out Strings from an Array
 
@@ -36,20 +67,20 @@
 // Zero is a non-negative integer.
 
 // Work: 
-function filterArray(arr){
-    const newArr = arr.filter(str => {
-        if (str >= 0){
-            return Number.isInteger(str);
-        } 
-        return null;
-    })
+// function filterArray(arr){
+//     const newArr = arr.filter(str => {
+//         if (str >= 0){
+//             return Number.isInteger(str);
+//         } 
+//         return null;
+//     })
 
-    return newArr;
-}
+//     return newArr;
+// }
 
-console.log(filterArray([1, 2, "a", "b"]));
-console.log(filterArray([1, "a", "b", 0, 15]));
-console.log(filterArray([1, 2, "aasf", "1", "123", 123]));
+// console.log(filterArray([1, 2, "a", "b"]));
+// console.log(filterArray([1, "a", "b", 0, 15]));
+// console.log(filterArray([1, 2, "aasf", "1", "123", 123]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
