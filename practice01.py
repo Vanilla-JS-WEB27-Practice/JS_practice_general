@@ -21,6 +21,31 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 16 - May - 2020
+# Source: https://edabit.com/challenge/xWSjvoH7mEkSnqS7H
+# Title: To the Power of _____
+# Resource: https://docs.python.org/3/reference/expressions.html#the-power-operator
+
+# Instructions:
+# Create a function that takes a base number and an exponent number and returns the calculation.
+
+# Examples:
+# calculate_exponent(5, 5) ➞ 3125
+# calculate_exponent(10, 10) ➞ 10000000000
+# calculate_exponent(3, 3) ➞ 27
+
+# Notes:
+# All test inputs will be positive integers.
+# Don't forget to return the result.
+# If you get stuck on a challenge, find help in the Resources tab.
+# If you're really stuck, unlock solutions in the Solutions tab.
+
+# Work: 
+# def calculate_exponent(num, exp):
+#     return num ** exp
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 16 - May - 2020
 # Source: https://edabit.com/challenge/KjCS7occ9hfu5snpb
 # Title: Return the Next Number from the Integer Passed
 
