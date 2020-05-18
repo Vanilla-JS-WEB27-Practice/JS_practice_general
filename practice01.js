@@ -20,9 +20,38 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 17 - May - 2020
+// Source: https://edabit.com/challenge/9ApjPggCLGiPt573m
+// Title: Find the Index
+
+// Instructions:
+// Create a function that takes an array and a string as arguments and return the index of the string.
+
+// Examples:
+// findIndex(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2
+// findIndex(["Red", "blue", "Blue", "Green"], "blue") ➞ 1
+// findIndex(["a", "g", "y", "d"], "d") ➞ 3
+// findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple") ➞ 0
+
+// Notes:
+// Don't forget to return the result.
+// If you are stuck, find help in the Resources tab.
+
+// Work: 
+// function findIndex(arr, str) {
+//     return arr.indexOf(str);
+// }
+
+// console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh"));
+// console.log(findIndex(["Red", "blue", "Blue", "Green"], "blue"));
+// console.log(findIndex(["a", "g", "y", "d"], "d"));
+// console.log(findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 16 - May - 2020
-// Source: Factorial of a Positive Integer
-// Title: https://edabit.com/challenge/Ju7AK9rAGjz86hjxo
+// Source: https://edabit.com/challenge/Ju7AK9rAGjz86hjxo
+// Title: Factorial of a Positive Integer
 
 // Instructions:
 // Write a function that takes a positive integer and return its factorial.
