@@ -20,6 +20,33 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 19 - May - 2020
+// Source: https://edabit.com/challenge/n2bFd2enCnHJkTwsK
+// Title: Evaluate an Equation
+
+// Instructions:
+// Create a function that evaluates an equation.
+
+// Examples:
+// eq("1+2") ➞ 3
+// eq("6/(9-7)") ➞ 3
+// eq("3+2-4") ➞ 1
+
+// Notes:
+// Don't print, return a value.
+// Return the value, not the equation.
+
+// Work: 
+// function eq(evaluate){
+//     return eval(evaluate);
+// }
+
+// console.log(eq('1+2'));
+// console.log(eq('6/(9-7)'));
+// console.log(eq('3+2-4'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 18 - May - 2020
 // Source: https://edabit.com/challenge/zQm9YZTTFPhNtYjDr
 // Title: Secret Society
