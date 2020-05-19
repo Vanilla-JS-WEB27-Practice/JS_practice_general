@@ -20,6 +20,49 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 18 - May - 2020
+// Source: https://edabit.com/challenge/zQm9YZTTFPhNtYjDr
+// Title: Secret Society
+
+// Instructions:
+// A group of friends have decided to start a secret society. The name will be the first letter of each of their names, sorted in alphabetical order.
+// Create a function that takes in an array of names and returns the name of the secret society.
+
+// Examples:
+// societyName(["Adam", "Sarah", "Malcolm"]) ➞ "AMS"
+// societyName(["Harry", "Newt", "Luna", "Cho"]) ➞ "CHLN"
+// societyName(["Phoebe", "Chandler", "Rachel", "Ross", "Monica", "Joey"]) ➞ "CJMPRR"
+
+// Notes:
+// The secret society's name should be entirely uppercased.
+
+// Sudo code:
+// 1 - write and function and pass it the array
+// 2 - map through the array 
+// 3 - use charAt(0) 
+// 4 - return and set to a variable
+// 5 - sort the variable
+// 6 - write a new variable to join the array because it returns a string
+// 7 - use .toUpperCase as a precaution 
+
+// Work: 
+// function societyNames(friends){
+//     const newFriends = friends.map(friend => {
+//         return friend.charAt(0);
+//     });
+
+//     const sortFriends = newFriends.sort();
+//     const joinFriends = sortFriends.join('');
+
+//     return joinFriends.toUpperCase();
+// }
+
+// console.log(societyNames(['Adam', 'Sarah', 'Malcolm']));
+// console.log(societyNames(['Harry', 'Newt', 'Luna', 'Cho']));
+// console.log(societyNames(['Phoebe', 'Chandler', 'Rachel', 'Ross', 'Monica', 'Joey']));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 17 - May - 2020
 // Source: https://edabit.com/challenge/9ApjPggCLGiPt573m
 // Title: Find the Index
