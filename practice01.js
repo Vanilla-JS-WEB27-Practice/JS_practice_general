@@ -20,6 +20,40 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - May - 2020
+// Source: https://edabit.com/challenge/Mc6Xi4PRw7fDzeMDB
+// Title: Repeating Letters
+
+// Instructions:
+// Create a function that takes a string and returns a string in which each character is repeated once.
+
+// Examples:
+// doubleChar("String") ➞ "SSttrriinngg"
+// doubleChar("Hello World!") ➞ "HHeelllloo  WWoorrlldd!!"
+// doubleChar("1234!_ ") ➞ "11223344!!__  "
+
+// Notes:
+// All test cases contain valid strings. Don't worry about spaces, special characters or numbers. They're all considered valid characters.
+
+// Work: 
+// function doubleChar(str){
+    // const split = str.split('');
+    // const doub = Array.from(split).map(double => {
+    //     return double.repeat(2);
+    // })
+    // const joinTwo = doub.join('');
+    // console.log(typeof joinTwo)
+
+    // return joinTwo;
+// }
+
+// console.log(doubleChar('hi'));
+// console.log(doubleChar('Hello World!'));
+// console.log(doubleChar('String'));
+// console.log(doubleChar('1234!_'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 19 - May - 2020
 // Source: https://edabit.com/challenge/n2bFd2enCnHJkTwsK
 // Title: Evaluate an Equation
