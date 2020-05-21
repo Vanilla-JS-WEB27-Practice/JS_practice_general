@@ -21,6 +21,47 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 20 - May - 2020
+// Source: https://edabit.com/challenge/GLbuMfTtDWwDv2F73
+// Title: How Much is True?
+
+// Instructions:
+// Create a function which returns the number of true values there are in an array.
+
+// Examples:
+// countTrue([true, false, false, true, false]) ➞ 2
+// countTrue([false, false, false, false]) ➞ 0
+// countTrue([]) ➞ 0
+
+// Notes:
+// Return 0 if given an empty array.
+// All array items are of the type bool (true or false).
+// No need for anything fancy, true === 1, false === 0
+
+// Work: 
+// function countTrue(arr){
+    
+    // option 2
+    // const filterArr = arr.filter(item => {
+    //     return item === true;
+    // })
+
+    // return filterArr.length;
+
+    // option 1
+    // const truCount = arr.reduce((acc, curr) => {
+    //     return acc + curr
+    // }, 0)
+    
+    // return truCount;
+// }
+
+// console.log(countTrue([true, false, false, true, false]));
+// console.log(countTrue([false, false, false, false, false]));
+// console.log(countTrue([]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 20 - May - 2020
 // Source: https://edabit.com/challenge/kJQYTCCWSnzhXG9dn
 // Title: Reverse an Array
 
