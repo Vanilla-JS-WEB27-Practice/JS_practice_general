@@ -20,6 +20,45 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 22 - May - 2020
+// Source: https://edabit.com/challenge/TzxoYExuxuQw2ahWR
+// Title: Multiplying Numbers in a String
+
+// Instructions:
+// Given a string of numbers separated by a comma and space, return the product of the numbers.
+
+// Examples:
+// multiplyNums("2, 3") ➞ 6
+// multiplyNums("1, 2, 3, 4") ➞ 24
+// multiplyNums("54, 75, 453, 0") ➞ 0
+// multiplyNums("10, -2") ➞ -20
+
+// Notes:
+// Bonus: Try to complete this challenge in one line!
+
+// Work: 
+// function multiplyNums(nums) {
+    
+    // option 2
+    // return Number(nums.split(',').reduce((a, b) => a*b))
+    
+    // option 1
+    // const divi = nums.split(',');
+    
+    // function multiply(a,b){
+    //     return a*b;
+    // }
+    
+    // return Number(divi.reduce(multiply));
+// }
+
+// console.log(multiplyNums('2,3'));
+// console.log(multiplyNums('1,2,3,4'));
+// console.log(multiplyNums('54,75,453,0'));
+// console.log(multiplyNums('10,-2'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 21 - May - 2020
 // Source: https://edabit.com/challenge/RMZiERz2cbjmbXruY
 // Title: Triangular Number Sequence
