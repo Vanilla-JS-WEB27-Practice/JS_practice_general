@@ -21,6 +21,35 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 22 - May - 2020
+// Source: https://edabit.com/challenge/dhRtmeFcjGcD7yvHA
+// Title: Impossible Date
+
+// Instructions:
+// Given the parameters day, month and year, return whether that date is a valid date.
+
+// Examples:
+// isValidDate(35, 2, 2020) ➞ false
+// February doesn't have 35 days.
+// isValidDate(8, 3, 2020) ➞ true
+// 8th March 2020 is a real date.
+// isValidDate(31, 6, 1980) ➞ false
+// June only has 30 days.
+
+// Notes:
+// 
+
+// Work: 
+// function isValidDate(d, m, y){
+//     const newDate = new Date(y, --m, d);
+//     return m === newDate.getMonth();
+// }
+
+// console.log(isValidDate(35, 2, 2020));
+// console.log(isValidDate(8, 3, 2020));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 22 - May - 2020
 // Source: https://edabit.com/challenge/RAoedjZwcGFhvRTru
 // Title: Check String for Spaces
 
@@ -42,13 +71,24 @@
 // If you're really stuck, unlock solutions in the Solutions tab.
 
 // Work: 
-function hasSpaces(str) {
-    if(str.includes(" ")){
-        return true;
-    } else {
-        return false
-    }
-}
+// function hasSpaces(str) {
+    
+    //option 2
+    // return str.includes(' ') ? true : false;
+
+    // option 1
+    // if(str.includes(" ")){
+    //     return true;
+    // } else {
+    //     return false
+    // }
+// }
+
+// console.log(hasSpaces('hello'));
+// console.log(hasSpaces('hello, world'));
+// console.log(hasSpaces(' '));
+// console.log(hasSpaces(''));
+// console.log(hasSpaces(',./@#$'));
 
 // ------------------------------------------------------------------------------------------------------------------
 
