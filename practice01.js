@@ -20,9 +20,40 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 23 - May - 2020
+// Source: https://edabit.com/challenge/DdAkLaw4eyuWgCMmF
+// Title: Default Mood
+
+// Instructions:
+// Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". However, if no argument is passed, return "Today, I am feeling neutral".
+
+// Examples:
+// moodToday("happy") ➞ "Today, I am feeling happy"
+// moodToday("sad") ➞ "Today, I am feeling sad"
+// moodToday() ➞ "Today, I am feeling neutral"
+
+// Notes:
+// Check the Resources tab for some helpful information.
+
+// Work: 
+// function moodToday(mood){
+//     if(!mood){
+//         return `Today, I am feeling neutral`
+//     } else if(mood) {
+//         return `Today, I am feeling ${mood}`
+//     }
+// }
+
+// console.log(moodToday("happy"));
+// console.log(moodToday("sad"));
+// console.log(moodToday());
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 22 - May - 2020
 // Source: https://edabit.com/challenge/dhRtmeFcjGcD7yvHA
 // Title: Impossible Date
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime,https://stackoverflow.com/questions/5812220/how-to-validate-a-date
 
 // Instructions:
 // Given the parameters day, month and year, return whether that date is a valid date.
