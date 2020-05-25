@@ -20,6 +20,56 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - May - 2020
+// Source: 
+// Title: 
+
+// Instructions:
+// 
+
+// Examples:
+// 
+
+// Notes:
+// 
+
+// Sudo code:
+// 1 - 
+
+// Work: 
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 24 - May - 2020
+// Source: https://edabit.com/challenge/6R6gReGTGwzpwuffD
+// Title: Seven Boom!
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+
+// Instructions:
+// Create a function that takes an array of numbers and return "Boom!" if the number 7 appears in the array. Otherwise, return "there is no 7 in the array".
+
+// Examples:
+// sevenBoom([1, 2, 3, 4, 5, 6, 7]) ➞ "Boom!"
+// sevenBoom([8, 6, 33, 100]) ➞ "there is no 7 in the array"
+// sevenBoom([2, 55, 60, 97, 86]) ➞ "Boom!"
+
+// Work: 
+// function sevenBoom(arr){
+
+    // option 2
+    // return arr.join().includes(7) ? "Boom!" : "there is no 7 in the array";
+
+    // option 1 - easier to read
+    // const newArr = arr.join();
+    // return newArr.includes(7) ? "Boom!" : "there is no 7 in the array";
+// }
+
+// console.log(sevenBoom([1, 2, 3, 4, 5, 6, 7]));
+// console.log(sevenBoom([8, 6, 33, 100]));
+// console.log(sevenBoom([2, 55, 60, 97, 86]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 24 - May - 2020
 // Source: https://edabit.com/challenge/FzDAgSR84zeyRa278
 // Title: Extract City Facts
@@ -142,7 +192,7 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 24 - May - 2020
-// Source: uXf7RQ5am84tup7mQ
+// Source: https://edabit.com/challenge/uXf7RQ5am84tup7mQ
 // Title: Rock, Paper, Scissors
 
 // Instructions:
