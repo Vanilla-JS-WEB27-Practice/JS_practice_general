@@ -20,23 +20,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - May - 2020
-// Source: 
-// Title: 
+// Date: 24 - May - 2020
+// Source: https://edabit.com/challenge/r6TSNwkLZ2DgsoKiH
+// Title: Oddish vs Evenish
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
 // Instructions:
-// 
+// Create a function that determines whether a number is Oddish or Evenish. A number is Oddish if the sum of all of its digits is odd, and a number is Evenish if the sum of all of its digits is even. If a number is Oddish, return "Oddish". Otherwise, return "Evenish".
+// For example, oddishOrEvenish(121) should return "Evenish", since 1 + 2 + 1 = 4. oddishOrEvenish(41) should return "Oddish", since 4 + 1 = 5.
 
 // Examples:
-// 
-
-// Notes:
-// 
-
-// Sudo code:
-// 1 - 
+// oddishOrEvenish(43) ➞ "Oddish"
+// oddishOrEvenish(373) ➞ "Oddish"
+// oddishOrEvenish(4433) ➞ "Evenish"
 
 // Work: 
+// function oddishOrEvenish(num){
+
+    // option 2 - concise 
+    // return [...String(num)].map(Number).reduce((a,v) => a+v) % 2 ? 'Oddish' : 'Evenish'
+
+    // option 1 - easier to read, step by step
+    // const str = num.toString();
+    // const arr = [...str].map((item) => {
+    //     return Number(item);
+    // });
+    // const sum = (a, b) => a + b;
+    // const evenOrOdd = arr.reduce((sum), 0);
+    // const remainder = evenOrOdd % 2;
+
+    // return remainder === 0 ? 'Evenish' : 'Oddish';
+// }
+
+// console.log(oddishOrEvenish(43));
+// console.log(oddishOrEvenish(373));
+// console.log(oddishOrEvenish(4433));
 
 // ------------------------------------------------------------------------------------------------------------------
 
