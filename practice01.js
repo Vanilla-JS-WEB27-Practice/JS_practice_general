@@ -21,22 +21,39 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 24 - May - 2020
-// Source: 
-// Title: 
+// Source: https://edabit.com/challenge/GwvwXHWCThHZrR7xu
+// Title: Football Points
 
 // Instructions:
-// 
+// Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far. A win receives 3 points, a draw 1 point and a loss 0 points.
 
 // Examples:
-// 
+// footballPoints(3, 4, 2) ➞ 13
+// footballPoints(5, 0, 2) ➞ 15
+// footballPoints(0, 0, 1) ➞ 0
 
 // Notes:
-// 
-
-// Sudo code:
-// 1 - 
+// Inputs will be numbers greater than or equal to 0.
 
 // Work: 
+function footballPoints(wins, draws, losses){
+    
+    // option 3 - easiest and shortest
+    return wins*3+draws;
+
+    // option 2 - broken down, easier to read
+    // const newWins = (wins >= 0 ? wins * 3 : wins * 0);
+    // const newDraws = (draws >= 0 ? draws * 1 : draws * 0);
+    // const newLosses = (losses * 0);
+    // return newWins + newDraws + newLosses;
+    
+    // option 1 - concise
+    // return (wins >= 0 ? wins * 3 : wins * 0) + (draws >= 0 ? draws * 1 : draws * 0) + (losses * 0);
+}
+
+console.log(footballPoints(3, 4, 2));
+console.log(footballPoints(5, 0, 2));
+console.log(footballPoints(0, 0, 1));
 
 // ------------------------------------------------------------------------------------------------------------------
 
