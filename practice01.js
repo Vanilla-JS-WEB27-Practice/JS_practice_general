@@ -20,7 +20,37 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: 24 - May - 2020
+// Date: 25 - May - 2020
+// Source: https://edabit.com/challenge/R3AYf3eTdATXTQTdZ
+// Title: Return the First and Last Elements in an Array
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+
+// Instructions:
+// Create a function that takes an array of numbers and return the first and last elements as a new array.
+
+// Examples:
+// firstLast([5, 10, 15, 20, 25]) ➞ [5, 25]
+// firstLast(["edabit", 13, null, false, true]) ➞ ["edabit", true]
+// firstLast([undefined, 4, "6", "hello", null]) ➞ [undefined, null]
+
+// Notes:
+// Test input will always contain a minimum of two elements within the array.
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work: 
+// function firstLast(arr){
+//     return [arr.shift(), arr.pop()];
+// }
+
+// console.log(firstLast([5, 10, 15, 20, 25]));
+// console.log(firstLast(["edabit", 13, null, false, true]));
+// console.log(firstLast([undefined, 4, "6", 'hello', null]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 25 - May - 2020
 // Source: https://edabit.com/challenge/r6TSNwkLZ2DgsoKiH
 // Title: Oddish vs Evenish
 // Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
