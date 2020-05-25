@@ -21,6 +21,66 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 24 - May - 2020
+// Source: 
+// Title: 
+
+// Instructions:
+// 
+
+// Examples:
+// 
+
+// Notes:
+// 
+
+// Sudo code:
+// 1 - 
+
+// Work: 
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 24 - May - 2020
+// Source: https://edabit.com/challenge/r7YJgZgGXJjSyuFxX
+// Title: Does a Number Exist?
+// Resource: https://mkyong.com/javascript/check-if-variable-is-a-number-in-javascript/,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+
+// Instructions:
+// Create a function which validates whether a given number exists, and could represent a real life quantity. Inputs will be given as a string.
+
+// Examples:
+// validStrNumber("3.2") ➞ true
+// validStrNumber("324") ➞ true
+// validStrNumber("54..4") ➞ false
+// validStrNumber("number") ➞ false
+
+// Notes:
+// Accept numbers such as .5 and 0003.
+
+// Work: 
+// function validStrNumber(n){
+
+    // option 2
+    // return isNaN(n) ? false : true;
+
+    // option 1 -- I had the values flipped isNaN() --> true === not a number, isNaN() --> false === is a number
+    // if(isNaN(n)){
+    //     return false
+    // } else {
+    //     return true
+    // }
+// }
+
+// console.log(validStrNumber("3.2"));
+// console.log(validStrNumber("324"));
+// console.log(validStrNumber("54..4"));
+// console.log(validStrNumber("number"));
+// console.log(validStrNumber("abc"));
+// console.log(validStrNumber("1846.980"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 24 - May - 2020
 // Source: uXf7RQ5am84tup7mQ
 // Title: Rock, Paper, Scissors
 
