@@ -21,6 +21,50 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 24 - May - 2020
+// Source: https://edabit.com/challenge/FzDAgSR84zeyRa278
+// Title: Extract City Facts
+
+// Instructions:
+// Create a function that takes an object as an argument and returns a string with facts about the city. The city facts will need to be extracted from the object's three properties:
+
+// name
+// population
+// continent
+// The string should have the following format: X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).
+
+// Examples:
+// cityFacts({
+//   name: "Paris",
+//   population: "2,140,526",
+//   continent: "Europe"
+// }) ➞ "Paris has a population of 2,140,526 and is situated in Europe"
+
+// cityFacts({
+//   name: "Tokyo",
+//   population: "13,929,286",
+//   continent: "Asia"
+// }) ➞ "Tokyo has a population of 13,929,286 and is situated in Asia"
+
+// Work: 
+// function cityFacts(city){
+//     return `${city.name} has a population of ${city.population} and is situated in ${city.continent}`;
+// }
+
+// console.log(cityFacts({
+//         name: "Tokyo",
+//         population: "13,929,286",
+//         continent: "Asia"
+// }));
+
+// console.log(cityFacts({
+//     name: "Paris",
+//     population: "2,140,526",
+//     continent: "Europe"
+// }));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 24 - May - 2020
 // Source: https://edabit.com/challenge/GwvwXHWCThHZrR7xu
 // Title: Football Points
 
@@ -36,10 +80,10 @@
 // Inputs will be numbers greater than or equal to 0.
 
 // Work: 
-function footballPoints(wins, draws, losses){
+// function footballPoints(wins, draws, losses){
     
     // option 3 - easiest and shortest
-    return wins*3+draws;
+    // return wins*3+draws;
 
     // option 2 - broken down, easier to read
     // const newWins = (wins >= 0 ? wins * 3 : wins * 0);
@@ -49,11 +93,11 @@ function footballPoints(wins, draws, losses){
     
     // option 1 - concise
     // return (wins >= 0 ? wins * 3 : wins * 0) + (draws >= 0 ? draws * 1 : draws * 0) + (losses * 0);
-}
+// }
 
-console.log(footballPoints(3, 4, 2));
-console.log(footballPoints(5, 0, 2));
-console.log(footballPoints(0, 0, 1));
+// console.log(footballPoints(3, 4, 2));
+// console.log(footballPoints(5, 0, 2));
+// console.log(footballPoints(0, 0, 1));
 
 // ------------------------------------------------------------------------------------------------------------------
 
