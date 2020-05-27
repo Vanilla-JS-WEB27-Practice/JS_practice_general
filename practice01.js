@@ -21,6 +21,26 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 27 - May - 2020
+// Source: 
+// Title: 
+
+// Instructions:
+// 
+
+// Examples:
+// 
+
+// Notes:
+// 
+
+// Sudo code:
+// 1 - 
+
+// Work: 
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 27 - May - 2020
 // Source: https://edabit.com/challenge/LMhRTq3hccz2D9Lax
 // Title: Multiply by Length
 // Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length

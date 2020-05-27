@@ -20,6 +20,28 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 27 - May - 2020
+# Source: https://edabit.com/challenge/GPmoRCZKkyNtoJMcN
+# Title: Return a String as an Integer
+# Resources: https://www.programiz.com/python-programming/methods/built-in/int
+
+# Instructions:
+# Create a function that takes a string and returns it as an integer.
+
+# Examples:
+# string_int("6") ➞ 6
+# string_int("1000") ➞ 1000
+# string_int("12") ➞ 12
+
+# Notes:
+# All numbers will be whole numbers.
+
+# Work: 
+# def string_int(text):
+#     return int(txt);
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 16 - May - 2020
 # Source: https://edabit.com/challenge/xWSjvoH7mEkSnqS7H
 # Title: To the Power of _____
