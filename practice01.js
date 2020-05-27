@@ -21,8 +21,41 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 27 - May - 2020
+// Source: https://edabit.com/challenge/LMhRTq3hccz2D9Lax
+// Title: Multiply by Length
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
+
+// Instructions:
+// Create a function to multiply all of the values in an array by the amount of values in the given array.
+
+// Examples:
+// multiplyByLength([2, 3, 1, 0]) ➞ [8, 12, 4, 0]
+// multiplyByLength([4, 1, 1]) ➞ ([12, 3, 3])
+// multiplyByLength([1, 0, 3, 3, 7, 2, 1]) ➞  [7, 0, 21, 21, 49, 14, 7]
+// multiplyByLength([0]) ➞ ([0])
+
+// Notes:
+// All of the values given are numbers.
+// All arrays will have at least one element.
+// Don't forget to return the result.
+
+// Work: 
+// function multiplyByLength(arr){
+//     return arr.map(item => item * arr.length);
+// }
+
+// console.log(multiplyByLength([2, 3, 1, 0]));
+// console.log(multiplyByLength([4, 1, 1]));
+// console.log(multiplyByLength([1, 0, 3, 3, 7, 2, 1]));
+// console.log(multiplyByLength([0]));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 27 - May - 2020
 // Source: https://edabit.com/challenge/HTbRYCmPwfZGnBcxW
 // Title: Find the Largest Number in an Array
+// Resource:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
 
 // Instructions:
 // Create a function that takes an array of numbers. Return the largest number in the array.
@@ -39,7 +72,11 @@
 
 // Work: 
 // function findLargestNum(arr){
-//     return arr.sort((a,b) => a - b).pop()
+        // option 2
+        // return Math.max(...arr);
+
+        // option 1
+        // return arr.sort((a,b) => a - b).pop()
 // }
 
 // console.log(findLargestNum([4, 5, 1, 3]));
@@ -51,6 +88,7 @@
 // Date: 26 - May - 2020
 // Source: https://edabit.com/challenge/Wg3pBiH8HQggcfaTg
 // Title: Maximum Possible Total
+// Resouces: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/slice,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 
 // Instructions:
 // Given an array of 10 numbers, return the maximum possible total made by summing just 5 of the 10 numbers.
