@@ -20,6 +20,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 26 - May - 2020
+// Source: https://edabit.com/challenge/Wg3pBiH8HQggcfaTg
+// Title: Maximum Possible Total
+
+// Instructions:
+// Given an array of 10 numbers, return the maximum possible total made by summing just 5 of the 10 numbers.
+
+// Examples:
+// maxTotal([1, 1, 0, 1, 3, 10, 10, 10, 10, 1]) ➞ 43
+// maxTotal([0, 0, 0, 0, 0, 0, 0, 0, 0, 100]) ➞ 100
+// maxTotal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) ➞ 40
+
+// Work: 
+// function maxTotal(nums){
+    // option 2
+    // const sorted = nums.sort((a,b) => a - b).slice(5).reduce((a,b) => a+b);
+    // return sorted;
+    
+    // option 1
+    // const sorted = nums.sort((a,b) => a - b);
+    // const cut = sorted.slice(5).reduce((a,b) => a+b)
+    // return cut;
+// }
+
+// console.log(maxTotal([1, 1, 0, 1, 3, 10, 10, 10, 10, 1]));
+// console.log(maxTotal([0, 0, 0, 0, 0, 0, 0, 0, 0, 100]));
+// console.log(maxTotal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 25 - May - 2020
 // Source: https://edabit.com/challenge/R3AYf3eTdATXTQTdZ
 // Title: Return the First and Last Elements in an Array
