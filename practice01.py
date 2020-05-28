@@ -3,6 +3,7 @@
 # Date: - May - 2020
 # Source: 
 # Title: 
+# Resources: 
 
 # Instructions:
 # 
@@ -49,7 +50,7 @@
 # If your solution is longer than one line of code, please review the Resources tab.
 
 # Work: 
-first, *middle, last = [1, 2, 3, 4, 5]
+# first, *middle, last = [1, 2, 3, 4, 5]
 
 # ------------------------------------------------------------------------------------------------------------------
 

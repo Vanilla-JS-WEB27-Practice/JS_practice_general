@@ -20,23 +20,47 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: 27 - May - 2020
-// Source: 
-// Title: 
+// Date: 28 - May - 2020
+// Source: https://edabit.com/challenge/ygF4FR7ah2Bn9CNoz
+// Title: Missing Third Angle
 
 // Instructions:
-// 
+// You are given 2 out of 3 angles in a triangle, in degrees.
+// Write a function that classifies the missing angle as either "acute", "right", or "obtuse" based on its degrees.
+// An acute angle is less than 90 degrees.
+// A right angle is exactly 90 degrees.
+// An obtuse angle is greater than 90 degrees (but less than 180 degrees).
+// For example: missingAngle(11, 20) should return "obtuse", since the missing angle would be 149 degrees, which makes it obtuse.
 
 // Examples:
-// 
+// missingAngle(27, 59) ➞ "obtuse"
+// missingAngle(135, 11) ➞ "acute"
+// missingAngle(45, 45) ➞ "right"
 
 // Notes:
-// 
-
-// Sudo code:
-// 1 - 
+// The sum of angles of any triangle is always 180 degrees.
 
 // Work: 
+// function missingAngle(angle1, angle2) {
+    // option 2
+    // const sum = 180 - (angle1 + angle2);
+    // return (sum) < 90 ? "acute" : sum === 90 ? "right" : "obtuse"
+
+
+    // option 1
+    // const sum = 180 - (angle1 + angle2);
+	// if(sum < 90){
+    //     return `acute`
+    // } else if (sum === 90){
+    //     return `right`
+    // } else {
+    //     return `obtuse`
+    // }
+// }
+
+// console.log(missingAngle(27, 59));
+// console.log(missingAngle(135, 11));
+// console.log(missingAngle(45, 45));
 
 // ------------------------------------------------------------------------------------------------------------------
 
