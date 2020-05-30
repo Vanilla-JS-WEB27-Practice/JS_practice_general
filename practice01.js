@@ -297,6 +297,34 @@ const artists = [
 // console.log(removeArtist(artists, 0))
 // console.log(removeArtist(artists, 1))
 
+/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+
+For example, you could add the following information: 
+id: 21
+name: Your Name Here, 
+years: Your Birth Year - current day,
+genre: Web Design, 
+nationality: Your Nationality Here
+bio: Add 1-2 sentences (or use lorem ipsum) 
+
+At the end, this function should console.log() the new array with information added"*/
+
+// const lastArtist = [{
+//     "id": 21,
+//     "name": "Jean-Michel Basquiat", 
+//     "years": "1960-1988",
+//     "genre": "Painter", 
+//     "nationality": "American",
+//     "bio": "An American artist of Haitian and Puerto Rican descent. Basquiat first achieved fame as part of SAMO, an informal graffiti duo who wrote enigmatic epigrams in the cultural hotbed of the Lower East Side of Manhattan during the late 1970s, where rap, punk, and street art coalesced into early hip-hop music culture. By the 1980s, his neo-expressionist paintings were being exhibited in galleries and museums internationally. The Whitney Museum of American Art held a retrospective of his art in 1992."
+//   }]
+  
+//   function addArtist(arr){
+//     arr.push(lastArtist[0]);
+//     return arr;
+//   }
+  
+//   console.log(addArtist(artists));
+
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 28 - May - 2020
