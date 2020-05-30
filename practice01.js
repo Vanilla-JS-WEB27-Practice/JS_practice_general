@@ -279,6 +279,24 @@ const artists = [
   
 //   console.log(get20s(1900,2000))
 
+/* Task 5: Create a function called `removeArtist` that takes two arguments:
+ *     (1) artists array
+ *     (2) a number which is the desired index in the array.
+ * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
+ * 
+ * For example, if removeArtist is invoked with the data and the number 0,
+ * it will remove Amedeo Modigliani from our dataset and log the number 19. 
+ * 
+ * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+*/
+// function removeArtist(arr, id) {
+//     arr.splice(id,1);
+//     return arr.length;
+// }
+  
+// console.log(removeArtist(artists, 0))
+// console.log(removeArtist(artists, 1))
+
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 28 - May - 2020
