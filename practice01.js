@@ -1,6 +1,6 @@
 
 // Template
-// Date: - May - 2020
+// Date: - June - 2020
 // Source: 
 // Title: 
 
@@ -20,6 +20,39 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 02 - June - 2020
+// Source: https://edabit.com/challenge/ebcd4Xu8TLizaj6dm
+// Title: Array of Multiples
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+
+// Instructions:
+// Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num up to length.
+
+// Examples:
+// arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+// arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+// arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+
+// Notes:
+// Notice that num is also included in the returned array.
+
+// Work: 
+// function arrayOfMultiples(num, length) {
+//     const multiples = [];
+
+//     for(let i = 1; i <= length; i++){
+//         multiples.push(num * i);
+//     };
+
+//     return multiples;
+// }
+
+// console.log(arrayOfMultiples(7, 5));
+// console.log(arrayOfMultiples(12, 10));
+// console.log(arrayOfMultiples(17, 6));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: - May - 2020
 // Source: https://edabit.com/challenge/rGsgEswWuW339yNxY
 // Title: Return a String as an Integer
@@ -33,9 +66,9 @@
 // stringInt("12") ➞ 12
 
 // Work: 
-function stringInt(str) {
-	return Number(str)
-}
+// function stringInt(str) {
+// 	return Number(str)
+// }
 
 // ------------------------------------------------------------------------------------------------------------------
 
