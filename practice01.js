@@ -20,6 +20,31 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - June - 2020
+// Source: https://edabit.com/challenge/pPNAs5PvB3WvnDwDM
+// Title: Converting Objects to Arrays
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+
+// Instructions:
+// Write a function that converts an object into an array, where each element represents a key-value pair.
+
+// Examples:
+// toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
+// toArray({ shrimp: 15, tots: 12 }) ➞ [["shrimp", 15], ["tots", 12]]
+// toArray({}) ➞ []
+
+// Notes:
+// Return an empty array if the object is empty.
+
+// Work: 
+// function toArray(obj) {
+//     return Object.entries(obj);
+// }
+
+// console.log({ a: 1, b: 2});
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 02 - June - 2020
 // Source: https://edabit.com/challenge/ebcd4Xu8TLizaj6dm
 // Title: Array of Multiples
