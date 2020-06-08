@@ -21,6 +21,92 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 07 - June - 2020
+// Source: https://edabit.com/challenge/NKknKNfeaJxLDfJuZ
+// Title: Convert Number to Corresponding Month Name
+
+// Instructions:
+// Create a function that takes a number (from 1 to 12) and returns its corresponding month name as a string. For example, if you're given 3 as input, your function should return "March", because March is the 3rd month.
+
+// Examples:
+// 
+// Number	Month Name
+// 1	January
+// 2	February
+// 3	March
+// 4	April
+// 5	May
+// 6	June
+// 7	July
+// 8	August
+// 9	September
+// 10	October
+// 11	November
+// 12	December
+// monthName(3) ➞ "March"
+// monthName(12) ➞ "December"
+// monthName(6) ➞ "June"
+
+// Notes:
+// You can expect only integers ranging from 1 to 12 as test input.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work: 
+// function monthName(num){
+    
+    // option 2
+    // const months = {
+    //     1: 'January',
+    //     2: 'February',
+    //     3: 'March',
+    //     4: 'April',
+    //     5: 'May',
+    //     6: 'June',
+    //     7: 'July',
+    //     8: 'August',
+    //     9: 'September',
+    //     10: 'October',
+    //     11: 'November',
+    //     12: 'December',
+    // }
+
+    // return months[num];
+
+    // option 1
+    // if (num === 1){
+    //     return 'January'
+    // } else if (num === 2){
+    //     return 'February'
+    // } else if (num === 3){
+    //     return 'March'
+    // } else if (num === 4){
+    //     return 'April'
+    // } else if (num === 5){
+    //     return 'May'
+    // } else if (num === 6){
+    //     return 'June'
+    // } else if (num === 7){
+    //     return 'July'
+    // } else if (num === 8){
+    //     return 'August'
+    // } else if (num === 9){
+    //     return 'September'
+    // } else if (num === 10){
+    //     return 'October'
+    // } else if (num === 11){
+    //     return 'November'
+    // } else if (num === 12){
+    //     return 'December'
+    // }
+// }
+
+// console.log(monthName(3));
+// console.log(monthName(12));
+// console.log(monthName(6));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 07 - June - 2020
 // Source: https://edabit.com/challenge/RPBqWjEa7iyo9p54F
 // Title: Count Syllables
 
