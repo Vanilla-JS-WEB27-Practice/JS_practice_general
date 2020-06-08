@@ -20,7 +20,43 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - June - 2020
+// Date: 07- June - 2020
+// Source: https://edabit.com/challenge/hzxN9bAebBPNqdQto
+// Title: A Redundant Function
+
+// Instructions:
+// Write a function redundant that takes in a string str and returns a function that returns str.
+
+// Examples:
+// const f1 = redundant("apple")
+// f1() ➞ "apple"
+
+// const f2 = redundant("pear")
+// f2() ➞ "pear"
+
+// const f3 = redundant("")
+// f3() ➞ ""
+
+// Notes:
+// Your function should return a function, not a string.
+
+// Work: 
+// function redundant(str){
+//     const variable = str
+    
+//     function newFunc(){
+//         return variable
+//     }
+
+//     // edabit test checks for newFunc uninvoked
+//     return newFunc()
+// }
+
+// console.log(redundant("apple"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 03 - June - 2020
 // Source: https://edabit.com/challenge/pPNAs5PvB3WvnDwDM
 // Title: Converting Objects to Arrays
 // Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
