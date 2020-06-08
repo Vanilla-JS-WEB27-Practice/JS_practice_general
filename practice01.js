@@ -20,6 +20,33 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 07 - June - 2020
+// Source: https://edabit.com/challenge/RPBqWjEa7iyo9p54F
+// Title: Count Syllables
+
+// Instructions:
+// Create a function that counts the number of syllables a word has. Each syllable is separated with a dash -.
+
+// Examples:
+// numberSyllables("buf-fet") ➞ 2
+// numberSyllables("beau-ti-ful") ➞ 3
+// numberSyllables("mon-u-men-tal") ➞ 4
+// numberSyllables("on-o-mat-o-poe-ia") ➞ 6
+
+// Work: 
+// function numberSyllables(word){
+//     const newWord = word.split('-');
+
+//     return newWord.length;
+// }
+
+// console.log(numberSyllables('buf-fet'));
+// console.log(numberSyllables('beau-ti-ful'));
+// console.log(numberSyllables('mon-u-men-tal'));
+// console.log(numberSyllables('on-o-mat-o-poe-ia'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 07- June - 2020
 // Source: https://edabit.com/challenge/hzxN9bAebBPNqdQto
 // Title: A Redundant Function
