@@ -20,6 +20,43 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 09 - June - 2020
+// Source: https://edabit.com/challenge/YT2kXSMEtACPPk35R
+// Title: Integer in Range?
+
+// Instructions:
+// Create a function which validates whether a number n is exclusively within the bounds of lower and upper. Return false if n is not an integer.
+
+// Examples:
+// intWithinBounds(3, 1, 9) ➞ true
+// intWithinBounds(6, 1, 6) ➞ false
+// intWithinBounds(4.5, 3, 8) ➞ false
+
+// Notes:
+// Exclusively means that a number is considered not within the bounds if it is equal to the upper bound (see example #2).
+// Bounds will be always given as integers.
+
+// Work: 
+// function intWithinBounds(n, lower, upper){
+//     if (Number.isInteger(n) === true){
+//         if (n >= lower && n < upper){
+//             return true
+//         } else {
+//             return false
+//         }
+//     } else if (Number.isInteger(n) === false){
+//         return false
+//     }
+// }
+
+// console.log(intWithinBounds(3, 1, 9));
+// console.log(intWithinBounds(6, 1, 6));
+// console.log(intWithinBounds(4.5, 3, 8));
+// console.log(Number.isInteger(4.5));
+// console.log(Number.isNaN(4.5));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 08 - June - 2020
 // Source: https://edabit.com/challenge/g66EJsbdnSDayyEcK
 // Title: Find the Smallest Number in an Array
