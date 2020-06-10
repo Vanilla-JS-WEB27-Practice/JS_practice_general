@@ -20,6 +20,31 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 10 - June - 2020
+// Source: https://edabit.com/challenge/FydPqxRiosP7EBiQh
+// Title: Get Word Count
+
+// Instructions:
+// Create a function that takes a string and returns the word count. The string will be a sentence.
+
+// Examples:
+// countWords("Just an example here move along") ➞ 6
+// countWords("This is a test") ➞ 4
+// countWords("What an easy task, right") ➞ 5
+
+// Work: 
+// function countWords(str){
+//     const newStr = str.split(' ');
+
+//     return newStr.length;
+// }
+
+// console.log(countWords("Just an example here move along"));
+// console.log(countWords("This is a test"));
+// console.log(countWords("What an easy task, right"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 09 - June - 2020
 // Source: https://edabit.com/challenge/uGKSYufSxtBErTrhd
 // Title: Even or Odd Number of Factors
