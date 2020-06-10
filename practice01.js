@@ -21,6 +21,42 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 09 - June - 2020
+// Source: https://edabit.com/challenge/uGKSYufSxtBErTrhd
+// Title: Even or Odd Number of Factors
+
+// Instructions:
+// Create a function that returns "even" if a number has an even number of factors and "odd" if a number has an odd number of factors.
+
+// Examples:
+// factorGroup(33) ➞ "even"
+// factorGroup(36) ➞ "odd"
+// factorGroup(7) ➞ "even"
+
+// Notes:
+// You don't need to actually calculate the factors to solve this problem.
+// Think about why a number would have an odd number of factors.
+
+// // Work: 
+// function factorGroup(num){
+//     const newNum = Math.sqrt(num);
+
+//     if(Number.isInteger(newNum)){
+//         return "odd"
+//     } else {
+//         return "even"
+//     }
+// }
+
+// console.log(factorGroup(33));
+// console.log(factorGroup(36));
+// console.log(factorGroup(7));
+// console.log(factorGroup(25));
+// console.log(factorGroup(1176));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 09 - June - 2020
 // Source: https://edabit.com/challenge/YT2kXSMEtACPPk35R
 // Title: Integer in Range?
 
