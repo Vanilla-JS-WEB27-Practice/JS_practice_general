@@ -21,6 +21,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 10 - June - 2020
+// Source: https://edabit.com/challenge/RGQXN4TG2CQoBAReQ
+// Title: Number of Squares in a n * n Grid
+
+// Instructions:
+// Create a function that calculates the number of different squares in an n * n square grid. Check the Resources tab.
+
+// Examples:
+// numberSquares(2) ➞ 5
+// numberSquares(4) ➞ 30
+// numberSquares(5) ➞ 55
+
+// Notes:
+// Input is a positive integer.
+// Square pyramidal number.
+
+// Work: 
+// function numberSquares(n){
+//     return (((n+1)*(2*n +1)) *n) / 6
+// }
+
+// console.log(numberSquares(2));
+// console.log(numberSquares(4));
+// console.log(numberSquares(5));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 10 - June - 2020
 // Source: https://edabit.com/challenge/FydPqxRiosP7EBiQh
 // Title: Get Word Count
 
