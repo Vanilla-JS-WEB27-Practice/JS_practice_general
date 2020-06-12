@@ -20,6 +20,31 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 12 - June - 2020
+// Source: https://edabit.com/challenge/Hs4TpDHX57Rqegmgg
+// Title: Concatenate Variable Number of Input Arrays
+
+// Instructions:
+// Create a function that concatenates n input arrays, where n is variable.
+
+// Examples:
+// concat([1, 2, 3], [4, 5], [6, 7]) ➞ [1, 2, 3, 4, 5, 6, 7]
+// concat([1], [2], [3], [4], [5], [6], [7]) ➞ [1, 2, 3, 4, 5, 6, 7]
+// concat([1, 2], [3, 4]) ➞ [1, 2, 3, 4]
+// concat([4, 4, 4, 4, 4]) ➞ [4, 4, 4, 4, 4]
+
+// Notes:
+// Arrays should be concatenated in order of the arguments.
+
+// Work: 
+// function concat(...args){
+//     return args.flat();
+// }
+
+// console.log(concat([1, 2, 3], [4, 5], [6, 7]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 10 - June - 2020
 // Source: https://edabit.com/challenge/RGQXN4TG2CQoBAReQ
 // Title: Number of Squares in a n * n Grid
