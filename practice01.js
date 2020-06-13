@@ -21,6 +21,40 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 13 - June - 2020
+// Source: https://edabit.com/challenge/4aaBNPnFMc3bzR7JR
+// Title: Convert Key, Values in an Object to Array
+
+// Instructions:
+// Write a function that converts an object into an array of keys and values.
+
+// Examples:
+// objectToArray({
+//   D: 1,
+//   B: 2,
+//   C: 3
+// }) ➞ [["D", 1], ["B", 2], ["C", 3]]
+
+// objectToArray({
+//   likes: 2,
+//   dislikes: 3,
+//   followers: 10
+// }) ➞ [["likes", 2], ["dislikes", 3], ["followers", 10]]
+
+// Work: 
+// function objectToArray(obj){
+//     const entries = Object.entries(obj);
+//     return entries;
+// }
+
+// console.log(objectToArray({
+//     D: 1,
+//     B: 2,
+//     C: 3
+// }));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 13 - June - 2020
 // Source: https://edabit.com/challenge/uJ9K3HtbjHoDGXKhg
 // Title: Eliminate Odd Numbers within an Array
 
