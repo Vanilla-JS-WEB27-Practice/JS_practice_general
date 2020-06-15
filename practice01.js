@@ -20,6 +20,33 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 14 - June - 2020
+// Source: https://edabit.com/challenge/AP4hnF97anRc2mAZ6
+// Title: Return the Objects Keys and Values
+
+// Instructions:
+// Create a function that takes an object and returns the keys and values as separate arrays.
+
+// Examples:
+// keysAndValues({ a: 1, b: 2, c: 3 })
+// ➞ [["a", "b", "c"], [1, 2, 3]]
+// keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
+// ➞ [["a", "b", "c"], ["Apple", "Microsoft", "Google"]]
+// keysAndValues({ key1: true, key2: false, key3: undefined })
+// ➞ [["key1", "key2", "key3"], [true, false, undefined]]
+
+// Notes:
+// Remember to sort the keys.
+
+// Work: 
+// function keysAndValues(obj){
+//     return [Object.keys(obj).sort(), Object.values(obj)];
+// }
+
+// console.log(keysAndValues({ a: 1, b: 2, c: 3}));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 13 - June - 2020
 // Source: https://edabit.com/challenge/4aaBNPnFMc3bzR7JR
 // Title: Convert Key, Values in an Object to Array
