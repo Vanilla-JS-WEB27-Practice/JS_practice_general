@@ -20,6 +20,37 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 15 - June - 2020
+// Source: https://edabit.com/challenge/Tnjbf6pdFsCjmaF8p
+// Title: Square Every Digit
+
+// Instructions:
+// Create a function that squares every digit of a number.
+
+// Examples:
+// squareDigits(9119) ➞ 811181
+// squareDigits(2483) ➞ 416649
+// squareDigits(3212) ➞ 9414
+
+// Notes:
+// The function receives an integer and must return an integer.
+
+// Work: 
+// function squareDigits(n){
+//     const splitNum = String(n).split('');
+//     const square = splitNum.map(item => {
+//         return Number(item * item)
+//     })
+
+//     return Number(square.join(''));
+// }
+
+// console.log(squareDigits(9119));
+// console.log(squareDigits(2483));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+
 // Date: 14 - June - 2020
 // Source: https://edabit.com/challenge/AP4hnF97anRc2mAZ6
 // Title: Return the Objects Keys and Values
