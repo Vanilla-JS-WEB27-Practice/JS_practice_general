@@ -21,6 +21,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 15 - June - 2020
+// Source: https://edabit.com/challenge/AtoWYYC9THAH5HbS2
+// Title: Basic Calculator
+
+// Instructions:
+// Create a function that takes two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers.
+
+// Examples:
+// calculator(2, "+", 2) ➞ 4
+// calculator(2, "*", 2) ➞ 4
+// calculator(4, "/", 2) ➞ 2
+
+// Notes:
+// If the input tries to divide by 0, return: "Can't divide by 0!"
+
+// Work: 
+// function calculator(num1, operator, num2){
+//     return operator === '/' && num2 === 0 ? "Can't divide by 0!" : eval(`${num1} ${operator} ${num2}`);
+// }
+
+// console.log(calculator(2, '+', 2));
+// console.log(calculator(2, '*', 2));
+// console.log(calculator(4, '/', 2));
+// console.log(calculator(4, '/', 0));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 15 - June - 2020
 // Source: https://edabit.com/challenge/Tnjbf6pdFsCjmaF8p
 // Title: Square Every Digit
 
