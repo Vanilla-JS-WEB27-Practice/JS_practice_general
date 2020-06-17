@@ -20,6 +20,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 17 - June - 2020
+// Source: https://edabit.com/challenge/27Toh4rACcmRvRLrb
+// Title: Sum of the Items in an Array
+
+// Instructions:
+// Create a function that takes an array and returns the sum of all items in the array.
+
+// Examples:
+// sumArray([1, 2, 3]) ➞ 6
+// 1 + 2 + 3 = 6
+// sumArray([1, [2, [1]], 3]) ➞ 7
+// // 1 + 2 + 1 + 3 = 7
+
+// Notes:
+// The item in an array can be another array.
+
+// Work: 
+// function sumArray(arr){
+//     const flatArr = arr.flat();
+//     const newFlat = flatArr.flat();
+//     const sum = newFlat.reduce((a, b) => a+b);
+
+//     return sum;
+// }
+
+// console.log(sumArray([1, 2, 3]));
+// console.log(sumArray([1, [2, [1]], 3]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 16 - June - 2020
 // Source: https://edabit.com/challenge/xDNkweBBNXBMyQRdG
 // Title: Create a Phone Number
