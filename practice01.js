@@ -21,6 +21,41 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 17 - June - 2020
+// Source: https://edabit.com/challenge/j3EoCMaD3LrEYtx78
+// Title: Fix the Error: Mutating Arrays
+
+// Instructions:
+// Suppose I want to define a function that removes the last element of an array each time I call it, but does not mutate the original array. Fix the code so that the results are no longer mutating the array.
+
+// Examples:
+// x = [1, 2, 3, 4, 5]
+// minusOne(x) ➞ [1, 2, 3, 4]  // 1st time function is called.
+// minusOne(x) ➞ [1, 2, 3]  // 2nd time function is called.
+// minusOne(x) ➞ [1, 2]  // 3rd time function is called.
+// minusOne(x) ➞ [1]  // 4th time function is called.
+
+// // What I want instead:
+// minusOne(x) ➞ [1, 2, 3, 4]  // 1st time function is called.
+// minusOne(x) ➞ [1, 2, 3, 4]  // 2nd time function is called.
+// minusOne(x) ➞ [1, 2, 3, 4]  // 3rd time function is called.
+// minusOne(x) ➞ [1, 2, 3, 4]  // 4th time function is called.
+
+// Work: 
+// x = [1, 2, 3, 4, 5]
+
+// function minusOne(arr){
+//     return arr.filter(a => a !== arr.length);
+// }
+
+// console.log(minusOne(x));
+// console.log(minusOne(x));
+// console.log(minusOne(x));
+// console.log(minusOne(x));
+// console.log(minusOne(x));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 17 - June - 2020
 // Source: https://edabit.com/challenge/27Toh4rACcmRvRLrb
 // Title: Sum of the Items in an Array
 
