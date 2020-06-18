@@ -21,6 +21,27 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 18 - June - 2020
+// Source: https://edabit.com/challenge/Qbi3GuXjwW5fsoKRn
+// Title: Additive Inverse
+
+// Instructions:
+// A number added with its additive inverse equals zero. Create a function that returns an array of additive inverses.
+
+// Examples:
+// additiveInverse([5, -7, 8, 3]) ➞ [-5, 7, -8, -3]
+// additiveInverse([1, 1, 1, 1, 1]) ➞ [-1, -1, -1, -1, -1]
+// additiveInverse([-5, -25, 35]) ➞ [5, 25, -35]
+
+// Work: 
+// function additiveInverse(arr){
+//     return arr.map(num => +-num);
+// }
+
+// console.log(additiveInverse([5, -7, 8, 3]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 18 - June - 2020
 // Source: https://edabit.com/challenge/xtDkfWxEh2hbmAHvn
 // Title: Ageing the Population...
 // Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
