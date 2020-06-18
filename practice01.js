@@ -20,6 +20,37 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 18 - June - 2020
+// Source: https://edabit.com/challenge/fxvceQdv7RHQzrx2J
+// Title: Filter Repeating Character Strings
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+
+// Instructions:
+// Create a function that keeps only strings with repeating identical characters (in other words, it has a set size of 1).
+
+// Examples:
+// identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"]) 
+// ➞ ["aaaaaa", "d", "eeee"]
+// identicalFilter(["88", "999", "22", "545", "133"]) 
+// ➞ ["88", "999", "22"]
+// identicalFilter(["xxxxo", "oxo", "xox", "ooxxoo", "oxo"]) 
+// ➞ []
+
+// Notes:
+// A string with a single character is trivially counted as a string with repeating identical characters.
+// If there are no strings with repeating identical characters, return an empty array (see example #3).
+
+// Work: 
+// function identicalFilter(arr){
+//     return arr.filter(str => new Set(str).size === 1)
+// }
+
+// console.log(identicalFilter(['aaaaaa', 'bc', 'd', 'eeeeee', 'xyz']));
+// console.log(identicalFilter(['88', '999', '22', '545', '133']));
+// console.log(identicalFilter(['xxxxo', 'oxo', 'ooxxoo', '545', '133']));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 17 - June - 2020
 // Source: https://edabit.com/challenge/j3EoCMaD3LrEYtx78
 // Title: Fix the Error: Mutating Arrays
