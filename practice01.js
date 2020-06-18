@@ -21,6 +21,75 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 18 - June - 2020
+// Source: https://edabit.com/challenge/xtDkfWxEh2hbmAHvn
+// Title: Ageing the Population...
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in,https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+
+// Instructions:
+// Given an object of people and their ages, return how old the people would be after n years have passed. Use the absolute value of n.
+
+// Examples:
+// afterNYears({
+//   "Joel" : 32,
+//   "Fred" : 44,
+//   "Reginald" : 65,
+//   "Susan" : 33,
+//   "Julian" : 13
+// }, 1) ➞ {
+//   "Joel" : 33,
+//   "Fred" : 45,
+//   "Reginald" : 66,
+//   "Susan" : 34,
+//   "Julian" : 14
+// }
+
+// afterNYears({
+//   "Baby" : 2,
+//   "Child" : 8,
+//   "Teenager" : 15,
+//   "Adult" : 25,
+//   "Elderly" : 71
+// }, 19) ➞ {
+//   "Baby" : 21,
+//   "Child" : 27,
+//   "Teenager" : 34,
+//   "Adult" : 44,
+//   "Elderly" : 90
+// }
+
+// afterNYears({
+//   "Genie" : 1000,
+//   "Joe" : 40
+// }, 5) ➞ {
+//   "Genie" : 1005,
+//   "Joe" : 45
+// }
+
+// Notes:
+// Assume that everyone is immortal (it would be a bit grim if I told you to remove names once they reached 75).
+// n should be a positive number because last time I checked, people don't tend to age backwards. Therefore, use the absolute value of n.
+
+// Sudo code:
+// 1 - write function
+// 2 - pass args ({an object of names: ages}, years)
+// 3 - use a for...in loop to iterate over an object
+// 4 - define the args 
+// 5 - define what I want back 
+
+// Work: 
+function afterNYears(names, n){
+    
+    for(const prop in names){
+		names[prop] += Math.abs(n);
+	}
+	return names;
+}
+
+console.log(afterNYears({"Baby" : 2, "Child" : 8, "Teenager" : 15, "Adult" : 25, "Elderly" : 71}, 5))
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 18 - June - 2020
 // Source: https://edabit.com/challenge/fxvceQdv7RHQzrx2J
 // Title: Filter Repeating Character Strings
 // Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
