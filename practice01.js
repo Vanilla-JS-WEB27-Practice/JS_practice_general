@@ -20,9 +20,48 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 19 - June - 2020
+// Source: https://edabit.com/challenge/KffCqRz23XL5ewbgH
+// Title: Reverse Words Starting With a Particular Letter
+
+// Instructions:
+// Write a function that reverses all the words in a sentence that start with a particular letter.
+
+// Examples:
+// specialReverse("word searches are super fun", "s")
+// ➞ "word sehcraes are repus fun"
+// specialReverse("first man to walk on the moon", "m")
+// ➞ "first nam to walk on the noom"
+// specialReverse("peter piper picked pickled peppers", "p")
+// ➞ "retep repip dekcip delkcip sreppep"
+
+// Notes:
+// Reverse the words themselves, not the entire sentence.
+// All characters in the sentence will be in lower case.
+
+// Work: 
+// function specialReverse(s, c) {
+//     const sent = s.split(' ');
+//     const reverse = sent.map(word => {
+//         const wordCheck = word.split('');
+        
+//         if (word[0] === c){
+//             return wordCheck.reverse().join('')
+//         } else {
+//             return wordCheck.join('');
+//         }
+        
+//     })
+//     return reverse.join(' ');
+// }
+
+// console.log(specialReverse('word searches are super fun', 's'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 18 - June - 2020
 // Source: https://edabit.com/challenge/KgNMGbXXst7ZdWchR
-// Title: Fix teh Error: Vowel Edition
+// Title: Fix the Error: Vowel Edition
 
 // Instructions:
 // Your friend is trying to write a function that removes all vowels from a string. They write:
