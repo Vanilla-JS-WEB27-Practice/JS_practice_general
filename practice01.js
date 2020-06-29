@@ -20,7 +20,64 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: - June - 2020
+// Date: 29 - June - 2020
+// Source: https://edabit.com/challenge/xuRjEej9F9ZG3vg7M
+// Title: Replace Vowel with Another Character
+
+// Instructions:
+// Create a function that takes a string and replaces the vowels with another character.
+// a = 1
+// e = 2
+// i = 3
+// o = 4
+// u = 5
+
+// Examples:
+// replaceVowel("karachi") ➞ "k1r1ch3"
+// replaceVowel("chembur") ➞ "ch2mb5r"
+// replaceVowel("khandbari") ➞ "kh1ndb1ri"
+
+// Notes:
+// The input will always be in lowercase.
+
+// Work: 
+// function replaceVowel(string){
+    // from ediabit soultions
+    // match the vowel and change the index by adding one
+    // return string.replace(/[aeiou]/g,v=> "aeiou".indexOf(v)+1)
+    
+  
+    // another way to solve the problem
+    // var s = string.split('');
+    // const newMap = s.map((letter, i) => {
+    //     if (s[i] === 'a'){
+    //         return 1
+    //     } else if (s[i] === 'e'){
+    //         return 2
+    //     } else if(s[i] === 'i'){
+    //         return 3
+    //     } else if(s[i] === 'o'){
+    //         return 4
+    //     } else if(s[i] === 'u'){
+    //         return 5
+    //     } else {
+    //         return letter
+    //     }
+    // })
+
+    // return newMap.join('');
+    
+    // below works, but isn't the most efficient
+    // return string.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 5).replace(/u/gi, 5)
+// }
+
+// console.log(replaceVowel('karachi'));
+// console.log(replaceVowel('chembur'));
+// console.log(replaceVowel('khandbari'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 28 - June - 2020
 // Source: https://edabit.com/challenge/fkzJMioMcnP4p4BFG
 // Title: Return the Time Saved by Speeding
 
