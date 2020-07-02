@@ -20,6 +20,29 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - June - 2020
+// Source: https://edabit.com/challenge/YJuhHKSmNCaKNHcD3
+// Title: Highest Digit
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+
+// Instructions:
+// Create a function that takes a number as an argument and returns the highest digit in that number.
+
+// Examples:
+// highestDigit(379) ➞ 9
+// highestDigit(2) ➞ 2
+// highestDigit(377401) ➞ 7
+
+// Work: 
+function highestDigit(str){
+    const arr = str.toString().split('');
+    return Math.max(...arr);
+}
+
+console.log(highestDigit(379));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 29 - June - 2020
 // Source: https://edabit.com/challenge/xuRjEej9F9ZG3vg7M
 // Title: Replace Vowel with Another Character
