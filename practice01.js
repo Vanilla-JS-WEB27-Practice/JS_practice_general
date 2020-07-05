@@ -20,6 +20,44 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 04 - July - 2020
+// Source: https://edabit.com/challenge/3EQGHyiYTNc9LPmhF
+// Title: How Many Vowels?
+
+// Instructions:
+// Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+// Examples:
+// countVowels("Celebration") ➞ 5
+// countVowels("Palm") ➞ 1
+// countVowels("Prediction") ➞ 4
+
+// Notes: 
+// a, e, i, o, u are considered vowels (not y).
+// All test cases are one word and only contain letters.
+
+// Work: 
+function countVowels(str){
+    const lower = str.toLowerCase();
+    const splitStr = lower.split('');
+    const vowels = []
+    const stringLength = splitStr.map(letter => {
+        if(letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u'){
+            return vowels.push(letter);
+        }
+    });
+
+    return vowels.length;
+}
+
+console.log(countVowels('less'));
+console.log(countVowels('Celebration'));
+console.log(countVowels('Palm'));
+console.log(countVowels('Prediction'));
+console.log(countVowels('Ant'));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 03 - July - 2020
 // Source: https://edabit.com/challenge/3jzycf6fcgwZbvpcf
 // Title: Remove Trailing and Leading Zeros
@@ -41,13 +79,13 @@
 // If the number is 0, 0.0, 000, 00.00, etc... return "0".
 
 // Work: 
-function removeLeadingTrailing(n){
-    return Math.abs(Number(n)).toString();
-}
+// function removeLeadingTrailing(n){
+//     return Math.abs(Number(n)).toString();
+// }
 
-console.log(removeLeadingTrailing('230.000'));
-console.log(removeLeadingTrailing('00402'));
-console.log(removeLeadingTrailing("03.1400"));
+// console.log(removeLeadingTrailing('230.000'));
+// console.log(removeLeadingTrailing('00402'));
+// console.log(removeLeadingTrailing("03.1400"));
 
 
 
