@@ -37,24 +37,24 @@
 // All test cases are one word and only contain letters.
 
 // Work: 
-function countVowels(str){
-    const lower = str.toLowerCase();
-    const splitStr = lower.split('');
-    const vowels = []
-    const stringLength = splitStr.map(letter => {
-        if(letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u'){
-            return vowels.push(letter);
-        }
-    });
+// function countVowels(str){
+//     const lower = str.toLowerCase();
+//     const splitStr = lower.split('');
+//     const vowels = []
+//     const stringLength = splitStr.map(letter => {
+//         if(letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u'){
+//             return vowels.push(letter);
+//         }
+//     });
 
-    return vowels.length;
-}
+//     return vowels.length;
+// }
 
-console.log(countVowels('less'));
-console.log(countVowels('Celebration'));
-console.log(countVowels('Palm'));
-console.log(countVowels('Prediction'));
-console.log(countVowels('Ant'));
+// console.log(countVowels('less'));
+// console.log(countVowels('Celebration'));
+// console.log(countVowels('Palm'));
+// console.log(countVowels('Prediction'));
+// console.log(countVowels('Ant'));
 
 // ------------------------------------------------------------------------------------------------------------------
 

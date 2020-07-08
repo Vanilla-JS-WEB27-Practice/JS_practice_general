@@ -1,6 +1,6 @@
 
 # Template
-# Date: - May - 2020
+# Date: - July - 2020
 # Source: 
 # Title: 
 # Resources: 
@@ -18,6 +18,51 @@
 # 1 - 
 
 # Work: 
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 07 - July - 2020
+# Source: https://edabit.com/challenge/S9KCN5kqoDbhNdKh5
+# Title: Characters in Shapes
+# Resources: 
+
+# Instructions:
+# Create a function that counts how many characters make up a rectangular shape. You will be given a list of strings.
+
+# Examples:
+# count_characters([
+#   "###",
+#   "###",
+#   "###"
+# ]) ➞ 9
+
+# count_characters([
+#   "22222222",
+#   "22222222",
+# ]) ➞ 16
+
+# count_characters([
+#   "------------------"
+# ]) ➞ 18
+
+# count_characters([]) ➞ 0
+
+# count_characters([ "", ""]) ➞ 0
+
+# Notes:
+# Return 0 if given an empty list.
+
+
+# Work: 
+# def count_characters(charList):
+#     count = 0
+
+#     for words in charList:
+#         count = count + len(words)
+    
+#     return count
+
+# count_characters([ "###", "###", "###"])
 
 # ------------------------------------------------------------------------------------------------------------------
 
