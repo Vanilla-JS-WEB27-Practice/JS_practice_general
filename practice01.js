@@ -20,6 +20,57 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 05 - August - 2020
+// Source: https://edabit.com/challenge/vCtepsfrE7Nts2a9j
+// Title: Hamming Distance
+
+// Instructions:
+// Hamming distance is the number of characters that differ between two strings.
+
+// To illustrate:
+
+// String1: "abcbba"
+// String2: "abcbda"
+
+// Hamming Distance: 1 - "b" vs. "d" is the only difference.
+// Create a function that computes the hamming distance between two strings.
+
+// Examples:
+// Examples
+// hammingDistance("abcde", "bcdef") ➞ 5
+// hammingDistance("abcde", "abcde") ➞ 0
+// hammingDistance("strong", "strung") ➞ 1
+
+// Notes:
+// Both strings will have the same length.
+
+// Sudo code:
+// 1 - split both strings into arrays 
+// 2 - iterate through them 
+// 3 - compare elements
+// 4 - if they are the same, move on to the next one
+// 5 - else, increase the count
+// 6 - return the count 
+
+// Work: 
+// function hammingDistance(str1, str2) {
+//     arr1 = str1.split('');
+//     arr2 = str2.split('');
+//     count = 0;
+//     for (let i = 0; i < arr1.length; i++){
+//         if (arr1[i] !== arr2[i]){
+//             count+=1
+//         } 
+//     }
+//     return count
+// }
+
+// console.log(hammingDistance("strong", "strung"))
+// console.log(hammingDistance("abcde", "abcde"))
+// console.log(hammingDistance("abcde", "bcdef"))
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 04 - August - 2020
 // Source: https://edabit.com/challenge/HzxTqSHLmRC3zEfXb
 // Title: Neutralisation
