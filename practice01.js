@@ -1,6 +1,6 @@
 
 // Template
-// Date: - July - 2020
+// Date: - August - 2020
 // Source: 
 // Title: 
 
@@ -17,6 +17,59 @@
 // 1 - 
 
 // Work: 
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 04 - August - 2020
+// Source: https://edabit.com/challenge/HzxTqSHLmRC3zEfXb
+// Title: Neutralisation
+
+// Instructions:
+// Given two strings comprised of + and -, return a new string which shows how the two strings interact in the following way:
+
+// When positives and positives interact, they remain positive.
+// When negatives and negatives interact, they remain negative.
+// But when negatives and positives interact, they become neutral, and are shown as the number 0.
+
+// Examples:
+// neutralise("+-+", "+--") ➞ "+-0"
+// # Compare the first characters of each string, then the next in turn.
+// # "+" against a "+" returns another "+".
+// # "-" against a "-" returns another "-".
+// # "+" against a "-" returns "0".
+// # Return the string of characters.
+
+// neutralise("--++--", "++--++") ➞ "000000"
+// neutralise("-+-+-+", "-+-+-+") ➞ "-+-+-+"
+// neutralise("-++-", "-+-+") ➞ "-+00"
+
+// Notes:
+// The two strings will be the same length.
+
+// Sudo code:
+// 1 - split the strings into an array of substrings
+// 2 - shift the zeroeth element form each and place into a new array
+// 3 - run through if else conditional checks
+// 4 - return a result 
+// 5 - push into a new array and join, return new array
+
+// Work: 
+
+// function neutralise(s1, s2) {
+//     s1Split = s1.split('')
+//     s2Split = s2.split('')
+//     newArr = []
+//     for(let i = 0; i < s1Split.length; i++){
+//         if (s1Split[i] === s2Split[i]){
+//             newArr.push(s1Split[i])
+//         } else {
+//             newArr.push('0')
+//         }
+//     }
+//     return newArr.join('')
+// }
+
+// neutralise("-++-", "-+-+")
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -353,15 +406,15 @@
 // 5 - define what I want back 
 
 // Work: 
-function afterNYears(names, n){
+// function afterNYears(names, n){
     
-    for(const prop in names){
-		names[prop] += Math.abs(n);
-	}
-	return names;
-}
+//     for(const prop in names){
+// 		names[prop] += Math.abs(n);
+// 	}
+// 	return names;
+// }
 
-console.log(afterNYears({"Baby" : 2, "Child" : 8, "Teenager" : 15, "Adult" : 25, "Elderly" : 71}, 5))
+// console.log(afterNYears({"Baby" : 2, "Child" : 8, "Teenager" : 15, "Adult" : 25, "Elderly" : 71}, 5))
 
 // ------------------------------------------------------------------------------------------------------------------
 
