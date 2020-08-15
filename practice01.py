@@ -1,6 +1,6 @@
 
 # Template
-# Date: - July - 2020
+# Date: - August - 2020
 # Source: 
 # Title: 
 # Resources: 
@@ -18,6 +18,40 @@
 # 1 - 
 
 # Work: 
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 15 - August - 2020
+# Source: https://edabit.com/challenge/gt9LLufDCMHKMioh2
+# Title: Stuttering Function
+# Resources: 
+
+# Instructions:
+# Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.
+
+# Examples:
+# stutter("incredible") ➞ "in... in... incredible?"
+# stutter("enthusiastic") ➞ "en... en... enthusiastic?"
+# stutter("outstanding") ➞ "ou... ou... outstanding?"
+
+# Notes:
+# Assume all input is in lower case and at least two characters long.
+
+# Sudo code:
+# 1 - split after the second character and store as a value
+# 2 - return the pieces in a string
+
+# Work: 
+def stutter(word):
+    # option 2
+    return (word[0:2]+'... ')*2 +word+'?'
+
+    # option 1
+    # new_word = word[0:2]
+	# return (new_word+'... ')*2 +word+'?'
+
+print(stutter("incredible"))
+
 
 # ------------------------------------------------------------------------------------------------------------------
 
