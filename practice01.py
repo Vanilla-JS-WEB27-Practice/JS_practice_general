@@ -21,6 +21,44 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 16 - August - 2020
+# Source: https://edabit.com/challenge/8pDH2SRutPoaQghgc
+# Title: Luke, I Am Your ...
+# Resources:
+
+# Instructions:
+#  Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.
+
+# Person	    Relation
+# Darth Vader	father
+# Leia	        sister
+# Han	        brother in law
+# R2D2	        droid
+
+# Examples:
+# relation_to_luke("Darth Vader") ➞ "Luke, I am your father."
+# relation_to_luke("Leia") ➞ "Luke, I am your sister."
+# relation_to_luke("Han") ➞ "Luke, I am your brother in law."
+
+# Sudo code:
+# 1 - 
+
+# Work: 
+# def relation_to_luke(name):
+#     relation = {
+#         'Darth Vader': 'father',
+#         'Leia': 'sister',
+#         'Han': 'brother in law',
+#         'R2D2': 'droid'
+#     }
+
+#     return f'Luke, I am your {relation[name]}.'
+
+# print(relation_to_luke('Darth Vader'))
+# print(relation_to_luke('Leia'))
+# print(relation_to_luke('Han'))
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 15 - August - 2020
 # Source: https://edabit.com/challenge/gt9LLufDCMHKMioh2
 # Title: Stuttering Function
@@ -42,15 +80,15 @@
 # 2 - return the pieces in a string
 
 # Work: 
-def stutter(word):
+# def stutter(word):
     # option 2
-    return (word[0:2]+'... ')*2 +word+'?'
+    # return (word[0:2]+'... ')*2 +word+'?'
 
     # option 1
     # new_word = word[0:2]
 	# return (new_word+'... ')*2 +word+'?'
 
-print(stutter("incredible"))
+# print(stutter("incredible"))
 
 
 # ------------------------------------------------------------------------------------------------------------------
