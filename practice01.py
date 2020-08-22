@@ -22,6 +22,46 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 22 - August - 2020
+# Source: https://edabit.com/challenge/TiqTew3PcofZgdbR4
+# Title: Bitwise Operations
+# Resources: 
+
+# Instructions:
+# A decimal number can be represented as a sequence of bits. To illustrate:
+
+# 6 = 00000110
+# 23 = 00010111
+
+# From the bitwise representation of numbers, we can calculate the bitwise AND, bitwise OR and bitwise XOR. Using the example above:
+
+# bitwise_and(6, 23) ➞ 00000110
+# bitwise_or(6, 23) ➞ 00010111
+# bitwise_xor(6, 23) ➞ 00010001
+
+# Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
+
+# Examples:
+# bitwise_and(7, 12) ➞ 4
+# bitwise_or(7, 12) ➞ 15
+# bitwise_xor(7, 12) ➞ 11
+
+# Work: 
+# def bitwise_and(n1, n2):
+#     return n1 & n2
+
+# def bitwise_or(n1, n2):
+# 	return n1 | n2
+
+# def bitwise_xor(n1, n2):
+#     return n1 ^ n2
+
+# print(bitwise_and(7,12))
+# print(bitwise_or(7,12))
+# print(bitwise_xor(7,12))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 22 - August - 2020
 # Source: https://edabit.com/challenge/iP4ixkQffELyHvHi5
 # Title: How Heavy Is It?
 
