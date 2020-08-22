@@ -20,6 +20,47 @@
 # Work: 
 
 # ------------------------------------------------------------------------------------------------------------------
+
+# Date: 22 - August - 2020
+# Source: https://edabit.com/challenge/iP4ixkQffELyHvHi5
+# Title: How Heavy Is It?
+
+# Resources: 
+
+# Instructions:
+# Calculate the mass of a cylinder when it's filled with water and the cylinder itself doesn't weigh anything.
+# How to solve:
+    # Calculate the volume of the cylinder.
+    # Convert cm³ into dm³.
+    # 1dm³ = 1L, 1L is 1Kg.
+
+# Examples:
+# weight(4, 10) ➞ 0.5
+# weight(30, 60) ➞ 169.65
+# weight(15, 10) ➞ 7.07
+
+# Notes:
+# I recommend importing math.
+# If you get stuck on a challenge, find help in Resources.
+
+# Sudo code:
+# 1 - 
+
+# Work: 
+# import math
+# def weight(r, h):
+#     pi = math.pi
+#     volume = pi*(r*r)*h
+#     final = round(volume/1000, 2) 
+#     return final
+
+# print(weight(4,10))
+# print(weight(30,60))
+# print(weight(15,10))
+
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 17 - August - 2020
 # Source: Connor TL practice 
 # Given the following array of values, print out all the elements in reverse order, with each element on a new line.
