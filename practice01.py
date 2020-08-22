@@ -22,6 +22,31 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 22 - August - 2020
+# Source: https://edabit.com/challenge/TcJXTPJBsfJ2Wgkk4
+# Title: Travelling Salesman Problem
+# Resources: https://www.geeksforgeeks.org/python-math-factorial-function/
+
+# Instructions:
+# Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?
+# Return the total number of possible paths a salesman can travel, given n paths.
+
+# Examples:
+# paths(4) ➞ 24
+# paths(1) ➞ 1
+# paths(9) ➞ 362880
+
+# Work: 
+# import math
+# def paths(n):
+#     return math.factorial(n)
+
+# print(paths(4))
+# print(paths(1))
+# print(paths(9))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 22 - August - 2020
 # Source: https://edabit.com/challenge/TiqTew3PcofZgdbR4
 # Title: Bitwise Operations
 # Resources: 
