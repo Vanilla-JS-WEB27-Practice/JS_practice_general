@@ -21,6 +21,49 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: - August - 2020
+# Source: https://edabit.com/challenge/pfn6QRn6eiTHEPpSs
+# Title: Drunken Python
+# Resources: 
+
+# Instructions:
+# Python got drunk and the built-in functions str() and int() are acting odd:
+
+# str(4) ➞ 4
+# str("4") ➞ 4
+# int("4") ➞ "4"
+# int(4) ➞ "4"
+
+# You need to create two functions to substitute str() and int(). A function called int_to_str() that converts integers into strings and a function called str_to_int() that converts strings into integers.
+
+# Examples:
+# int_to_str(4) ➞ "4"
+# str_to_int("4") ➞ 4
+# int_to_str(29348) ➞ "29348"
+
+# Notes:
+# This is meant to illustrate the dangers of using already-existing function names.
+# Extra points if you can de-drunk Python.
+
+# Sudo code:
+# 1 - 
+
+# Work: 
+str, int = int, str
+
+def int_to_str(num):
+    return str(num)
+    # return "'{}'".format(num)
+
+def str_to_int(num):
+    return int(num)
+    # return ("%d" % int(num))
+    # return ("{:d}".format(int(num)))
+
+print(int_to_str(100))
+print(str_to_int('7'))
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 22 - August - 2020
 # Source: https://edabit.com/challenge/TcJXTPJBsfJ2Wgkk4
 # Title: Travelling Salesman Problem
