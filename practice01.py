@@ -21,7 +21,50 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
-# Date: - August - 2020
+# Date: 24 - August - 2020
+# Source: https://leetcode.com/problems/jewels-and-stones/
+# Title: Jewels and Stones
+
+# Resources: 
+
+# Instructions:
+# You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  
+# Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
+# The letters in J are guaranteed distinct, and all characters in J and S are letters. 
+# Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+# Examples:
+
+# Example 1:
+# Input: J = "aA", S = "aAAbbbb"
+# Output: 3
+
+# Example 2:
+# Input: J = "z", S = "ZZ"
+# Output: 0
+
+# Notes:
+# S and J will consist of letters and have length at most 50.
+# The characters in J are distinct.
+
+# Work: 
+def numJewelsInStones(jewels, stones):
+    newJs = [char for char in jewels]
+    newSs = [char for char in stones]
+    countNum = 0
+    for char in newJs:
+        newNums = newSs.count(char)
+        countNum += newNums
+    # return f"{newJs}, {newSs}"
+    return countNum
+
+jewels = "z"
+stones = "ZZ"
+print(numJewelsInStones(jewels, stones))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 24 - August - 2020
 # Source: https://leetcode.com/problems/defanging-an-ip-address/
 # Title: Defanging an IP Address
 # Resources: 
