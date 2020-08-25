@@ -21,6 +21,44 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: - August - 2020
+# Source: https://leetcode.com/problems/defanging-an-ip-address/
+# Title: Defanging an IP Address
+# Resources: 
+
+# Instructions:
+# Given a valid (IPv4) IP address, return a defanged version of that IP address.
+# A defanged IP address replaces every period "." with "[.]".
+
+# Examples:
+
+# Example 1:
+# Input: address = "1.1.1.1"
+# Output: "1[.]1[.]1[.]1"
+
+# Example 2:
+# Input: address = "255.100.50.0"
+# Output: "255[.]100[.]50[.]0"
+
+# Notes:
+# The given address is a valid IPv4 address.
+
+# Work: 
+# def defangingIPaddr(address):
+#     newAddr = address.split('.')
+#     ip = list()
+#     for i, num in enumerate(newAddr):
+#         if i < len(newAddr)-1:
+#             ip.append(num+'[.]')
+#         else:
+#             ip.append(num)
+#     return "".join(ip)
+
+# a = "1.1.1.1"
+# print(defangingIPaddr(a))
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 24 - August - 2020
 # Source: https://leetcode.com/problems/number-of-good-pairs/
 # Title: Number of Good Pairs
@@ -52,16 +90,16 @@
 # 1 <= nums[i] <= 100
 
 # Work: 
-def numIdenticalPairs(nums):
-    count = 0
-    for i, val in enumerate(nums):
-        for j, val in enumerate(nums):
-            if nums[i] == nums[j] and i < j:
-                count+=1
-    return count
+# def numIdenticalPairs(nums):
+#     count = 0
+#     for i, val in enumerate(nums):
+#         for j, val in enumerate(nums):
+#             if nums[i] == nums[j] and i < j:
+#                 count+=1
+#     return count
 
-nums = [1,2,3]
-print(numIdenticalPairs(nums))
+# nums = [1,2,3]
+# print(numIdenticalPairs(nums))
 
 
 # ------------------------------------------------------------------------------------------------------------------
