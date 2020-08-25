@@ -22,6 +22,73 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 24 - August - 2020
+# Source: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+# Title: Number of Steps to Reduce a Number to Zero
+# Resources: 
+
+# Instructions:
+# Given a non-negative integer num, return the number of steps to reduce it to zero. 
+# If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
+
+# Examples:
+
+# Example 1:
+# Input: num = 14
+# Output: 6
+# Explanation: 
+# Step 1) 14 is even; divide by 2 and obtain 7. 
+# Step 2) 7 is odd; subtract 1 and obtain 6.
+# Step 3) 6 is even; divide by 2 and obtain 3. 
+# Step 4) 3 is odd; subtract 1 and obtain 2. 
+# Step 5) 2 is even; divide by 2 and obtain 1. 
+# Step 6) 1 is odd; subtract 1 and obtain 0.
+
+# Example 2:
+# Input: num = 8
+# Output: 4
+# Explanation: 
+# Step 1) 8 is even; divide by 2 and obtain 4. 
+# Step 2) 4 is even; divide by 2 and obtain 2. 
+# Step 3) 2 is even; divide by 2 and obtain 1. 
+# Step 4) 1 is odd; subtract 1 and obtain 0.
+
+# Example 3:
+# Input: num = 123
+# Output: 12
+
+# Notes:
+# 0 <= num <= 10^6
+
+# Work: 
+# def numberOfSteps(num):
+    # option 2 based on the cookie monster/fibonacci problem
+    # d = dict()
+    # if num in d:
+    #     return d[num]
+    # if num <= 0:
+    #     return 0
+    # if num % 2 == 0:
+    #     result = 1 + numberOfSteps(num/2)
+    # else:
+    #     result = 1 + numberOfSteps(num-1)
+    # d[num] = result
+    # return result
+
+    # option 1
+    # if num <= 0:
+    #     return 0
+    # if num % 2 == 0:
+    #     return 1+numberOfSteps(num/2)
+    # else:
+    #     return 1+numberOfSteps(num-1)
+
+# num = 123
+# print(numberOfSteps(num))
+
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 24 - August - 2020
 # Source: https://leetcode.com/problems/jewels-and-stones/
 # Title: Jewels and Stones
 
@@ -48,19 +115,19 @@
 # The characters in J are distinct.
 
 # Work: 
-def numJewelsInStones(jewels, stones):
-    newJs = [char for char in jewels]
-    newSs = [char for char in stones]
-    countNum = 0
-    for char in newJs:
-        newNums = newSs.count(char)
-        countNum += newNums
-    # return f"{newJs}, {newSs}"
-    return countNum
+# def numJewelsInStones(jewels, stones):
+#     newJs = [char for char in jewels]
+#     newSs = [char for char in stones]
+#     countNum = 0
+#     for char in newJs:
+#         newNums = newSs.count(char)
+#         countNum += newNums
+#     # return f"{newJs}, {newSs}"
+#     return countNum
 
-jewels = "z"
-stones = "ZZ"
-print(numJewelsInStones(jewels, stones))
+# jewels = "z"
+# stones = "ZZ"
+# print(numJewelsInStones(jewels, stones))
 
 # ------------------------------------------------------------------------------------------------------------------
 
