@@ -21,6 +21,52 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 27 - August - 2020
+# Source: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/ 
+# Title: Find Numbers with Even Number of Digits
+# Resources: 
+
+# Instructions:
+# Given an array nums of integers, return how many of them contain an even number of digits.
+
+# Examples:
+
+# Example 1:
+# Input: nums = [12,345,2,6,7896]
+# Output: 2
+# Explanation: 
+# 12 contains 2 digits (even number of digits). 
+# 345 contains 3 digits (odd number of digits). 
+# 2 contains 1 digit (odd number of digits). 
+# 6 contains 1 digit (odd number of digits). 
+# 7896 contains 4 digits (even number of digits). 
+# Therefore only 12 and 7896 contain an even number of digits.
+
+# Example 2:
+# Input: nums = [555,901,482,1771]
+# Output: 1 
+# Explanation: 
+# Only 1771 contains an even number of digits.
+
+# Notes:
+# 1 <= nums.length <= 500
+# 1 <= nums[i] <= 10^5
+
+# Work: 
+# def findNumbers(nums):
+#     count = 0
+#     for n in nums:
+#         # print(len(str(n)))
+#         if len(str(n)) % 2 == 0:
+#             count+=1
+#     return count
+
+# nums = [12,345,2,6,7896]
+# nums = [555,901,482,1771]
+# print(findNumbers(nums))
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 26 - August - 2020
 # Source: https://leetcode.com/problems/split-a-string-in-balanced-strings/
 # Title: Split a String in Balanced Strings
@@ -57,34 +103,21 @@
 # s[i] = 'L' or 'R'
 
 # Work: 
-def balancedStringSplit(s):
-    i=l=r=count=0
-    while i < len(s):
-        if s[i] == "L":
-            l+=1
-        else:
-            r+=1
-        if l==r:
-            count+=1
-            r=l=0
-        i+=1
-    return count
-    
-    # newS = {i:char for i, char in enumerate(s)}
-    # result = list()
-    
-    # for k, v in newS.items():
-        # print(f"{newS[k]}, {newS[k+1]}")
-        # count = 0
-        # if newS[k] != newS[k+1]:
-        #     print(f"YES")
-    
-    # for char in newS:
-    #     print(f'{char}{newS[1]}')
-    # return newS
+# def balancedStringSplit(s):
+#     i=l=r=count=0
+#     while i < len(s):
+#         if s[i] == "L":
+#             l+=1
+#         else:
+#             r+=1
+#         if l==r:
+#             count+=1
+#             r=l=0
+#         i+=1
+#     return count
 
-s = "RLLLLRRRLR"
-print(balancedStringSplit(s))
+# s = "RLLLLRRRLR"
+# print(balancedStringSplit(s))
 
 # ------------------------------------------------------------------------------------------------------------------
 
