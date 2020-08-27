@@ -21,7 +21,60 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
-# Date: - August - 2020
+# Date: 25 - August - 2020
+# Source: https://leetcode.com/problems/xor-operation-in-an-array/
+# Title: XOR Operation in an Array
+# Resources: 
+
+# Instructions:
+# Given an integer n and an integer start.
+# Define an array nums where nums[i] = start + 2*i (0-indexed) and n == nums.length.
+# Return the bitwise XOR of all elements of nums.
+
+# Examples:
+
+# Example 1:
+# Input: n = 5, start = 0
+# Output: 8
+# Explanation: Array nums is equal to [0, 2, 4, 6, 8] where (0 ^ 2 ^ 4 ^ 6 ^ 8) = 8.
+# Where "^" corresponds to bitwise XOR operator.
+
+# Example 2:
+# Input: n = 4, start = 3
+# Output: 8
+# Explanation: Array nums is equal to [3, 5, 7, 9] where (3 ^ 5 ^ 7 ^ 9) = 8.
+
+# Example 3:
+# Input: n = 1, start = 7
+# Output: 7
+
+# Example 4:
+# Input: n = 10, start = 5
+# Output: 2
+
+# Notes:
+# 1 <= n <= 1000
+# 0 <= start <= 1000
+# n == nums.length
+
+# Work: 
+def xorOperation(n, start):
+    first = start
+    new = [start+n*2 for n in range(n)]
+    result = 0
+    for i,n in enumerate(new):
+        print(f"{new[i]}")
+        result^=new[i]
+
+    return result
+
+n = 4
+start = 3
+print(xorOperation(n,start))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 25 - August - 2020
 # Source: https://leetcode.com/problems/decompress-run-length-encoded-list/
 # Title: Decompress Run-Length Encoded List
 # Resources: 
