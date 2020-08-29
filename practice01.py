@@ -21,6 +21,36 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 28 - August - 2020
+# Source: https://leetcode.com/problems/to-lower-case/
+# Title: To Lower Case
+# Resources: 
+
+# Instructions:
+# Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
+
+# Examples:
+# Example 1:
+# Input: "Hello"
+# Output: "hello"
+
+# Example 2:
+# Input: "here"
+# Output: "here"
+
+# Example 3:
+# Input: "LOVELY"
+# Output: "lovely"
+
+# Work: 
+# def toLowerCase(s):
+#     return s.lower()
+
+# s = 'HELLO'
+# print(toLowerCase(s))
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 27 - August - 2020
 # Source: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/ 
 # Title: Find Numbers with Even Number of Digits
