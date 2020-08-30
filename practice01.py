@@ -21,9 +21,48 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 30 - August - 2020
+# Source: https://edabit.com/challenge/HYjQKDXFfeppcWmLX
+# Title: Curzon Numbers
+
+# Instructions:
+# In this challenge, establish if a given integer num is a Curzon number. 
+# If 1 plus 2 elevated to num is exactly divisible by 1 plus 2 multiplied by num, then num is a Curzon number.
+# Given a non-negative integer num, implement a function that returns True if num is a Curzon number, or False otherwise.
+
+# Examples:
+# is_curzon(5) ➞ True
+# 2 ** 5 + 1 = 33
+# 2 * 5 + 1 = 11
+# 33 is a multiple of 11
+
+# is_curzon(10) ➞ False
+# 2 ** 10 + 1 = 1025
+# 2 * 10 + 1 = 21
+# 1025 is not a multiple of 21
+
+# is_curzon(14) ➞ True
+# 2 ** 14 + 1 = 16385
+# 2 * 14 + 1 = 29
+# 16385 is a multiple of 29
+
+# Work: 
+# def is_curzon(num):
+#     num1 = 2 ** num + 1
+#     num2 = 2 * num + 1
+#     if num1 % num2 == 0:
+#         return True
+#     else:
+#         return False
+
+# num = 14
+# print(is_curzon(num))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/8rEEHcmq8rRaTksd7
 # Title: Check If Lines Are Parallel
-# Resources: 
+# Resources: https://www.codespeedy.com/python-program-to-check-if-two-lines-are-parallel-or-not/
 
 # Instructions:
 # Given two lines, determine whether or not they are parallel.
