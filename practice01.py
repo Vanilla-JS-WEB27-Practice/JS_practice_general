@@ -21,6 +21,83 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 30 - August - 2020
+# Source: https://edabit.com/challenge/EWgdCtSDmRqJPrzoz
+# Title: Peeling off the Outer Layers
+# Resources: 
+
+# Instructions:
+# Given a list of lists, return a new list of lists containing every element, except for the outer elements.
+
+# Examples:
+# example #1
+# peel_layer_off([
+    # ["a", "b", "c", "d"],
+    # ["e", "f", "g", "h"],
+    # ["i", "j", "k", "l"],
+    # ["m", "n", "o", "p"]
+# ]) ➞ [
+    # ["f", "g"],
+    # ["j", "k"]
+# ]
+
+# example #2
+# peel_layer_off([
+#     [1, 2, 3, 4, 5],
+#     [6, 7, 8, 9, 10],
+#     [11, 12, 13, 14, 15],
+#     [16, 17, 18, 19, 20],
+#     [21, 22, 23, 24, 25],
+#     [26, 27, 28, 29, 30],
+#     [31, 32, 33, 34, 35]
+# ]) ➞ [
+    # [7, 8, 9],
+    # [12, 13, 14],
+    # [17, 18, 19],
+    # [22, 23, 24],
+    # [27, 28, 29]
+# ]
+
+# Notes:
+# The 2D grid is always a rectangular/square shape.
+# Always return some form of nested list, unless there are no elements. In that case, return an empty list.
+
+# Work: 
+# def peel_layer_off(lst):
+#     result = list()
+#     if len(lst) > 2:
+#         for arr in lst[1:-1]:
+#             result.append(arr[1:-1])
+#     return result
+
+# lst = [
+#     ["a", "b", "c", "d"],
+#     ["e", "f", "g", "h"],
+#     ["i", "j", "k", "l"],
+#     ["m", "n", "o", "p"]
+# ]
+# lst = [
+#     [1, 2, 3, 4, 5],
+#     [6, 7, 8, 9, 10],
+#     [11, 12, 13, 14, 15],
+#     [16, 17, 18, 19, 20],
+#     [21, 22, 23, 24, 25],
+#     [26, 27, 28, 29, 30],
+#     [31, 32, 33, 34, 35]
+# ]
+# lst = [
+#     [True, False, True],
+#     [False, False, True],
+#     [True, True, True]
+# ]
+# lst = [
+#     ["hello", "world"],
+#     ["hello", "world"]
+# ]
+# print(peel_layer_off(lst))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/bNp4kd4rFfysPepkp
 # Title: Radian to Degree
 # Resources: https://www.w3schools.com/python/ref_math_degrees.asp
