@@ -21,6 +21,38 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/zgu7m6W7i3z5SYwa6
+# Title: Are the Sum of Digits in the Numbers Equal?
+
+# Instructions:
+# Write function that takes a list with two numbers in it and determines if the sum of the digits of the two numbers are equal to each other.
+
+# Examples:
+# is_equal([105, 42]) ➞ True
+# 1 + 0 + 5 = 6
+# 4 + 2 = 6
+# is_equal([21, 35]) ➞ False
+# is_equal([0, 0]) ➞ True
+
+# Work: 
+def is_equal(lst):
+    num1 = [int(char) for char in str(lst[0])]
+    num2 = [int(char) for char in str(lst[1])]
+    if sum(num1) == sum(num2):
+        return True
+    else:
+        return False
+    
+
+
+# lst = [105, 42]
+# lst = [21, 35]
+lst = [0, 0]
+print(is_equal(lst))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/NNhkGocuPMcryW7GP
 # Title: A Circle and Two Squares
 # Resources: https://www.geeksforgeeks.org/area-square-circumscribed-circle/
@@ -141,7 +173,6 @@
 # Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/T7DpLzEkAkcxKijzR
 # Title: Four Passengers and a Driver
-# Resources: 
 
 # Instructions:
 # A typical car can hold four passengers and one driver, allowing five people to travel around. Given n number of people, return how many cars are needed to seat everyone comfortably.
@@ -171,7 +202,6 @@
 # Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/YfoKQWNeYETb9PYpw
 # Title: Calculate the Profit
-# Resources: 
 
 # Instructions:
 # You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product. 
@@ -221,7 +251,6 @@
 # Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/BuwHwPvt92yw574zB
 # Title: List of Multiples
-# Resources: 
 
 # Instructions:
 # Create a function that takes two numbers as arguments (num, length) and returns a list of multiples of num up to length.
