@@ -21,9 +21,54 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 30 - August - 2020
+# Source: https://edabit.com/challenge/8rEEHcmq8rRaTksd7
+# Title: Check If Lines Are Parallel
+# Resources: 
+
+# Instructions:
+# Given two lines, determine whether or not they are parallel.
+# Lines are represented by a list [a, b, c], which corresponds to the line ax+by=c.
+
+# Examples:
+# Example #1
+# lines_are_parallel([1, 2, 3], [1, 2, 4]) ➞ True
+# x+2y=3 and x+2y=4 are parallel.
+
+# Example #2
+# lines_are_parallel([2, 4, 1], [4, 2, 1]) ➞ False
+# 2x+4y=1 and 4x+2y=1 are not parallel.
+
+# Example #3
+# lines_are_parallel([0, 1, 5], [0, 1, 5]) ➞ True
+# Lines are parallel to themselves.
+
+# Notes:
+# Two lines are parallels if they have the same slope and the y-intercepts are different. If the slopes are different, the lines are not parallel.
+# All test cases use valid input (no lists of the wrong size, for example).
+# All coefficients will be integers (whole numbers).
+
+# Work: 
+# def lines_are_parallel(l1, l2):
+#     if l1[1] != 0 and l2[1] != 0:
+#         if l1[0]/l1[1] == l2[0]/l2[1]:
+#             return True
+#         else:
+#             return False
+#     else: 
+#         if l1[0] == l2[0] and l1[1] == l2[1]:
+#             return True
+#         else:
+#             return False
+
+# l1 = [1,2,3]
+# l2 = [1,2,4]
+# print(lines_are_parallel(l1, l2))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/EWgdCtSDmRqJPrzoz
 # Title: Peeling off the Outer Layers
-# Resources: 
 
 # Instructions:
 # Given a list of lists, return a new list of lists containing every element, except for the outer elements.
