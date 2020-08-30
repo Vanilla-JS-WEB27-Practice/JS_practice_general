@@ -20,6 +20,33 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 30 - August - 2020
+# Source: https://edabit.com/challenge/bNp4kd4rFfysPepkp
+# Title: Radian to Degree
+# Resources: https://www.w3schools.com/python/ref_math_degrees.asp
+
+# Instructions:
+# Create a function that takes an angle in radians and converts it into degrees.
+
+# Examples:
+# to_degree(math.pi) ➞ 180
+# to_degree(math.pi/2) ➞ 90
+# to_degree(math.pi/4) ➞ 45
+
+# Notes:
+# The input angles are in radians.
+# Check out the resource tab.
+
+# Work: 
+# import math
+# def to_degree(radian):
+#     return math.degrees(radian)
+
+# radian = math.pi/4
+# print(to_degree(radian))
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/Kh7Bm9X7Q4rYB8uT7
 # Title: Vowel Sandwich
