@@ -22,6 +22,33 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/FF6kYPHdAcJnoosr5
+# Title: Return the Factorial
+# Resources: 
+
+# Instructions:
+# Create a function that takes an integer and returns the factorial of that integer. That is, the integer multiplied by all positive lower integers.
+
+# Examples:
+# factorial(3) ➞ 6
+# factorial(5) ➞ 120
+# factorial(13) ➞ 6227020800
+
+# Notes:
+# Assume all inputs are greater than or equal to 0.
+
+# Work: 
+# import math
+# def factorial(num):
+#     return math.factorial(num)
+
+# print(factorial(3))
+# print(factorial(5))
+# print(factorial(13))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/WXqH9qvvGkmx4dMvp
 # Title: FizzBuzz Interview Question
 # Resources: 
@@ -46,20 +73,20 @@
 # If you're really stuck, unlock solutions in the Solutions tab.
 
 # Work: 
-def fizz_buzz(num):
-    if num % 3 == 0 and num % 5 == 0:
-        return "FizzBuzz"
-    elif num % 3 == 0:
-        return "Fizz"
-    elif num % 5 == 0:
-        return "Buzz"
-    else:
-        return str(num)
+# def fizz_buzz(num):
+#     if num % 3 == 0 and num % 5 == 0:
+#         return "FizzBuzz"
+#     elif num % 3 == 0:
+#         return "Fizz"
+#     elif num % 5 == 0:
+#         return "Buzz"
+#     else:
+#         return str(num)
 
-print(fizz_buzz(3))
-print(fizz_buzz(5))
-print(fizz_buzz(15))
-print(fizz_buzz(4))
+# print(fizz_buzz(3))
+# print(fizz_buzz(5))
+# print(fizz_buzz(15))
+# print(fizz_buzz(4))
 
 # ------------------------------------------------------------------------------------------------------------------
 
