@@ -21,6 +21,38 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/p88k8yHRPTMPt4bBo
+# Title: How Many Vowels?
+
+# Instructions:
+# Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+# Examples:
+# count_vowels("Celebration") ➞ 5
+# count_vowels("Palm") ➞ 1
+# count_vowels("Prediction") ➞ 4
+
+# Notes:
+# a, e, i, o, u are considered vowels (not y).
+# All test cases are one word and only contain letters.
+
+# Work: 
+# def count_vowels(txt):
+#     vowels = ['a','e','i','o','u']
+#     count = 0
+#     for char in txt.lower():
+#         if char in vowels:
+#             count+=1
+#     return count
+
+# txt = 'Celebration'
+# txt = 'Palm'
+# txt = 'Predcition'
+# print(count_vowels(txt))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/zgu7m6W7i3z5SYwa6
 # Title: Are the Sum of Digits in the Numbers Equal?
 
@@ -35,20 +67,18 @@
 # is_equal([0, 0]) ➞ True
 
 # Work: 
-def is_equal(lst):
-    num1 = [int(char) for char in str(lst[0])]
-    num2 = [int(char) for char in str(lst[1])]
-    if sum(num1) == sum(num2):
-        return True
-    else:
-        return False
-    
-
+# def is_equal(lst):
+#     num1 = [int(char) for char in str(lst[0])]
+#     num2 = [int(char) for char in str(lst[1])]
+#     if sum(num1) == sum(num2):
+#         return True
+#     else:
+#         return False
 
 # lst = [105, 42]
 # lst = [21, 35]
-lst = [0, 0]
-print(is_equal(lst))
+# lst = [0, 0]
+# print(is_equal(lst))
 
 # ------------------------------------------------------------------------------------------------------------------
 
