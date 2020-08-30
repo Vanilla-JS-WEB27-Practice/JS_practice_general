@@ -21,6 +21,34 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/co4nwXSvnCjGEu8vp
+# Title: Date Format
+
+# Instructions:
+# Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+
+# Examples:
+# format_date("11/12/2019") ➞ "20191211"
+# format_date("12/31/2019") ➞ "20193112"
+# format_date("01/15/2019") ➞ "20191501"
+
+# Notes:
+# Return value should be a string.
+
+# Work: 
+# def format_date(date):
+#     new_date = date.split('/')
+#     new_date.reverse()
+#     return ''.join(new_date)
+
+# date = '11/12/2019'
+# date = '12/31/2019'
+# date = '01/15/2019'
+# print(format_date(date))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/fDkAuAwR4PMWZwBKs
 # Title: Where is Bob!?!
 
