@@ -21,6 +21,60 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/Kh7Bm9X7Q4rYB8uT7
+# Title: Vowel Sandwich
+
+# Instructions:
+# Create a function which validates whether a 3 character string is a vowel sandwich. 
+# In order to have a valid sandwich, the string must satisfy the following rules:
+# The first and last characters must be a consonant.
+# The character in the middle must be a vowel.
+
+# Examples:
+# is_vowel_sandwich("cat") ➞ True
+# is_vowel_sandwich("ear") ➞ False
+# is_vowel_sandwich("bake") ➞ False
+# is_vowel_sandwich("try") ➞ False
+
+# Notes:
+# Return False if the word is not 3 characters in length.
+# All words will be given in lowercase.
+# y is not considered a vowel.
+
+# Work: 
+# def is_vowel_sandwich(s):
+    # Solution that passes
+    # if len(s) != 3:
+	# 	return (False)
+
+	# vowel = ['a', 'e', 'i', 'o', 'u']
+
+	# for i in s:
+	# 	if s[0] not in vowel and s[1] in vowel and s[2] not in vowel:
+	# 		return (True)
+	# return (False)
+
+    # Didn't pass 
+    # vowels = ['a','e','i','o','u']
+    # word = [char for char in s]
+    # if len(word) > 3:
+    #     return False
+    # elif word[0] in vowels or word[2] in vowels:
+    #     return False
+    # elif word[1] not in vowels:
+    #     return False
+    # else:
+    #     return True
+
+# s = 'cat'
+# s = 'ear'
+# s = 'bake'
+# s = 'try'
+# print(is_vowel_sandwich(s))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/eA94BuKYjwMoNQSE2
 # Title: Correct Inequality Signs
 # Resources: https://www.programiz.com/python-programming/methods/built-in/eval
