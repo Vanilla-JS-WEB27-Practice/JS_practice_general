@@ -22,9 +22,38 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/BuwHwPvt92yw574zB
+# Title: List of Multiples
+# Resources: 
+
+# Instructions:
+# Create a function that takes two numbers as arguments (num, length) and returns a list of multiples of num up to length.
+
+# Examples:
+# list_of_multiples(7, 5) ➞ [7, 14, 21, 28, 35]
+# list_of_multiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+# list_of_multiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+
+# Notes:
+# Notice that num is also included in the returned list.
+
+# Work: 
+# def list_of_multiples(num, length):
+#     result = list()
+#     for n in range(length+1):
+#         if n != 0:
+#             result.append(n*num)
+#     return result
+
+# print(list_of_multiples(7,5))
+# print(list_of_multiples(12,10))
+# print(list_of_multiples(17,6))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/pHp9qkjY53JNTGCG4
 # Title: Convert Year to Century
-# Resources: 
 
 # Instructions:
 # Write a function that takes a year and returns its corresponding century.
@@ -52,7 +81,6 @@
 # Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/FF6kYPHdAcJnoosr5
 # Title: Return the Factorial
-# Resources: 
 
 # Instructions:
 # Create a function that takes an integer and returns the factorial of that integer. That is, the integer multiplied by all positive lower integers.
@@ -79,7 +107,6 @@
 # Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/WXqH9qvvGkmx4dMvp
 # Title: FizzBuzz Interview Question
-# Resources: 
 
 # Instructions:
 # Create a function that takes a number as an argument and returns "Fizz", "Buzz" or "FizzBuzz".
@@ -121,7 +148,6 @@
 # Date: 28 - August - 2020
 # Source: https://leetcode.com/problems/to-lower-case/
 # Title: To Lower Case
-# Resources: 
 
 # Instructions:
 # Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
@@ -151,7 +177,6 @@
 # Date: 27 - August - 2020
 # Source: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/ 
 # Title: Find Numbers with Even Number of Digits
-# Resources: 
 
 # Instructions:
 # Given an array nums of integers, return how many of them contain an even number of digits.
@@ -197,7 +222,6 @@
 # Date: 26 - August - 2020
 # Source: https://leetcode.com/problems/split-a-string-in-balanced-strings/
 # Title: Split a String in Balanced Strings
-# Resources: 
 
 # Instructions:
 # Balanced strings are those who have equal quantity of 'L' and 'R' characters.
@@ -251,7 +275,6 @@
 # Date: 26 - August - 2020
 # Source: https://leetcode.com/problems/create-target-array-in-the-given-order/
 # Title: Create Target Array in the Given Order
-# Resources: 
 
 # Instructions:
 # Given two arrays of integers nums and index. Your task is to create target array under the following rules:
@@ -317,7 +340,6 @@
 # Date: 25 - August - 2020
 # Source: https://leetcode.com/problems/xor-operation-in-an-array/
 # Title: XOR Operation in an Array
-# Resources: 
 
 # Instructions:
 # Given an integer n and an integer start.
@@ -370,7 +392,6 @@
 # Date: 25 - August - 2020
 # Source: https://leetcode.com/problems/decompress-run-length-encoded-list/
 # Title: Decompress Run-Length Encoded List
-# Resources: 
 
 # Instructions:
 # We are given a list nums of integers representing a list compressed with run-length encoding.
@@ -423,7 +444,6 @@
 # Date: 25 - August - 2020
 # Source: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 # Title: Subtract the Product and Sum of Digits of an Integer
-# Resources: 
 
 # Instructions:
 # Given an integer number n, return the difference between the product of its digits and the sum of its digits.
@@ -485,7 +505,6 @@
 # Date: 25 - August - 2020
 # Source: https://leetcode.com/problems/shuffle-string/
 # Title: Shuffle String
-# Resources: 
 
 # Instructions:
 # Given a string s and an integer array indices of the same length.
@@ -549,7 +568,6 @@
 # Date: 25 - August - 2020
 # Source: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 # Title: How Many Numbers Are Smaller Than the Current Number
-# Resources: 
 
 # Instructions:
 # Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. 
@@ -602,7 +620,6 @@
 # Date: 24 - August - 2020
 # Source: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 # Title: Number of Steps to Reduce a Number to Zero
-# Resources: 
 
 # Instructions:
 # Given a non-negative integer num, return the number of steps to reduce it to zero. 
@@ -712,7 +729,6 @@
 # Date: 24 - August - 2020
 # Source: https://leetcode.com/problems/defanging-an-ip-address/
 # Title: Defanging an IP Address
-# Resources: 
 
 # Instructions:
 # Given a valid (IPv4) IP address, return a defanged version of that IP address.
@@ -750,7 +766,6 @@
 # Date: 24 - August - 2020
 # Source: https://leetcode.com/problems/number-of-good-pairs/
 # Title: Number of Good Pairs
-# Resources: 
 
 # Instructions:
 # Given an array of integers nums.
@@ -795,7 +810,6 @@
 # Date: 24 - August - 2020
 # Source: https://leetcode.com/problems/shuffle-the-array/
 # Title: Shuffle the Array
-# Resources: 
 
 # Instructions:
 # Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
@@ -911,7 +925,6 @@
 # Date: 22 - August - 2020
 # Source: https://edabit.com/challenge/TiqTew3PcofZgdbR4
 # Title: Bitwise Operations
-# Resources: 
 
 # Instructions:
 # A decimal number can be represented as a sequence of bits. To illustrate:
@@ -951,8 +964,6 @@
 # Date: 22 - August - 2020
 # Source: https://edabit.com/challenge/iP4ixkQffELyHvHi5
 # Title: How Heavy Is It?
-
-# Resources: 
 
 # Instructions:
 # Calculate the mass of a cylinder when it's filled with water and the cylinder itself doesn't weigh anything.
@@ -1019,7 +1030,6 @@
 # Date: 16 - August - 2020
 # Source: https://edabit.com/challenge/8pDH2SRutPoaQghgc
 # Title: Luke, I Am Your ...
-# Resources:
 
 # Instructions:
 #  Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.
@@ -1057,7 +1067,6 @@
 # Date: 15 - August - 2020
 # Source: https://edabit.com/challenge/gt9LLufDCMHKMioh2
 # Title: Stuttering Function
-# Resources: 
 
 # Instructions:
 # Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.
@@ -1091,7 +1100,6 @@
 # Date: 07 - July - 2020
 # Source: https://edabit.com/challenge/S9KCN5kqoDbhNdKh5
 # Title: Characters in Shapes
-# Resources: 
 
 # Instructions:
 # Create a function that counts how many characters make up a rectangular shape. You will be given a list of strings.
