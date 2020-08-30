@@ -21,6 +21,29 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/eA94BuKYjwMoNQSE2
+# Title: Correct Inequality Signs
+# Resources: https://www.programiz.com/python-programming/methods/built-in/eval
+
+# Instructions:
+# Create a function that returns true if a given inequality expression is correct and false otherwise.
+
+# Examples:
+# correct_signs("3 < 7 < 11") ➞ True
+# correct_signs("13 > 44 > 33 > 1") ➞ False
+# correct_signs("1 < 2 < 6 < 9 > 3") ➞ True
+
+# Work: 
+# def correct_signs(txt):
+#     return eval(txt)
+
+# txt = '3 < 7 < 11'
+# txt = '13 > 44 > 33 > 1'
+# print(correct_signs(txt))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/p88k8yHRPTMPt4bBo
 # Title: How Many Vowels?
 
