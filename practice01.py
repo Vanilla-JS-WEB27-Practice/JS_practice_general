@@ -22,6 +22,36 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/T7DpLzEkAkcxKijzR
+# Title: Four Passengers and a Driver
+# Resources: 
+
+# Instructions:
+# A typical car can hold four passengers and one driver, allowing five people to travel around. Given n number of people, return how many cars are needed to seat everyone comfortably.
+
+# Examples:
+# cars_needed(5) ➞ 1
+# cars_needed(11) ➞ 3
+# cars_needed(0) ➞ 0
+
+# Notes:
+# It's likely there will be a few people left over and some cars won't be filled to max capacity.
+
+# Work: 
+# def cars_needed(num):
+#     nums = str(num/5).split('.')
+#     if int(nums[1]) > 0:
+#         return int(nums[0])+1
+#     else:
+#         return int(nums[0])
+
+# print(cars_needed(5))
+# print(cars_needed(11))
+# print(cars_needed(0))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/YfoKQWNeYETb9PYpw
 # Title: Calculate the Profit
 # Resources: 
