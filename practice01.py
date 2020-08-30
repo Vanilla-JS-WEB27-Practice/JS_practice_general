@@ -22,6 +22,34 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 29 - August - 2020
+# Source: https://edabit.com/challenge/pHp9qkjY53JNTGCG4
+# Title: Convert Year to Century
+# Resources: 
+
+# Instructions:
+# Write a function that takes a year and returns its corresponding century.
+
+# Examples:
+# century_from_year(2005) ➞ 21
+# century_from_year(1950) ➞ 20
+# century_from_year(1900) ➞ 19
+
+# Work: 
+# def century_from_year(year):
+#     century = str(year/100).split('.')
+#     if int(century[1]) < 1:
+#         return int(century[0])
+#     else:
+#         return int(century[0])+1
+#     return 
+
+# print(century_from_year(2005))
+# print(century_from_year(1950))
+# print(century_from_year(1900))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 29 - August - 2020
 # Source: https://edabit.com/challenge/FF6kYPHdAcJnoosr5
 # Title: Return the Factorial
 # Resources: 
