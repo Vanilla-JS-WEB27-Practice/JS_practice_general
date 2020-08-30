@@ -21,9 +21,45 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 30 - August - 2020
+# Source: https://edabit.com/challenge/Axim3Ld5zu9RFLZKr
+# Title: Invert Keys and Values
+# Resources: 
+
+# Instructions:
+# Write a function that inverts the keys and values of a dictionary.
+
+# Examples:
+# example #1
+# invert({ "z": "q", "w": "f" })
+# ➞ { "q": "z", "f": "w" }
+
+# example #2
+# invert({ "a": 1, "b": 2, "c": 3 })
+# ➞ { 1: "a", 2: "b", 3: "c" }
+
+# example #3
+# invert({ "zebra": "koala", "horse": "camel" })
+# ➞ { "koala": "zebra", "camel": "horse" }
+
+# Work: 
+# def invert(d):
+    # option 1
+    # result = dict()
+    # for key, value in d.items():
+    #     result[value] = key
+    # return result
+
+# d = {'z':'q', 'w':'f'}
+# d = { "a": 1, "b": 2, "c": 3 }
+# d = { "zebra": "koala", "horse": "camel" }
+# print(invert(d))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/gB7nt6WzZy8TymCah
 # Title: Fullname and Email
-# Resources: 
+# Resources: https://www.w3schools.com/python/python_strings.asp
 
 # Instructions:
 # Create the instance attributes fullname and email in the Employee class. Given a person's first and last names:
