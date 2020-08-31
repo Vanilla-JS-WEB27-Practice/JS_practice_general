@@ -21,9 +21,37 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 30 - August - 2020
+# Source: https://edabit.com/challenge/yL5WmWTCNwwb4GnR7
+# Title: Two Distinct Elements
+
+# Instructions:
+# In each input list, every number repeats at least once, except for two. Write a function that returns the two unique numbers.
+
+# Examples:
+# return_unique([1, 9, 8, 8, 7, 6, 1, 6]) ➞ [9, 7]
+# return_unique([5, 5, 2, 4, 4, 4, 9, 9, 9, 1]) ➞ [2, 1]
+# return_unique([9, 5, 6, 8, 7, 7, 1, 1, 1, 1, 1, 9, 8]) ➞ [5, 6]
+
+# Notes:
+# Keep the same ordering in the output.
+
+# Work: 
+# def return_unique(lst):
+#     result = list()
+#     for num in lst:
+#         if lst.count(num) == 1:
+#             result.append(num)
+#     return result
+
+# lst = [1, 9, 8, 8, 7, 6, 1, 6]
+# print(return_unique(lst))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/Axim3Ld5zu9RFLZKr
 # Title: Invert Keys and Values
-# Resources: 
+
 
 # Instructions:
 # Write a function that inverts the keys and values of a dictionary.
