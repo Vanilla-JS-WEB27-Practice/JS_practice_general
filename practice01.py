@@ -20,6 +20,110 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 31 - August - 2020
+# Source: https://edabit.com/challenge/LdXYzf5d3xJgYZur8
+# Title: A Long Long Time
+# Resources: 
+
+# Instructions:
+# Create a function that takes three values:
+# h hours
+# m minutes
+# s seconds
+# Return the value that's the longest duration.
+
+# Examples:
+# longest_time(1, 59, 3598) ➞ 1
+# longest_time(2, 300, 15000) ➞ 300
+# longest_time(15, 955, 59400) ➞ 59400
+
+# Notes:
+# No two durations will be the same.
+
+# Work: 
+# def longest_time(h,m,s):
+#     original = [h,m,s]
+#     sec_h = h*60*60
+#     sec_m = m*60
+#     sec_lst = [sec_h, sec_m, s]
+#     idx = sec_lst.index(max(sec_lst))
+
+#     return original[idx]
+
+# h = 15
+# m = 955
+# s = 59400
+# print(longest_time(h,m,s))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 30 - August - 2020
+# Source: https://edabit.com/challenge/PGXeFPN6buQDXXwPm
+# Title: Trace That Matrix
+# Resources: 
+
+# Instructions:
+# Given a square matrix (i.e. same number of rows as columns), its trace is the sum of the entries in the main diagonal (i.e. the diagonal line from the top left to the bottom right).
+# As an example, for:
+# [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+# ... the trace is 1 + 5 + 9 = 15.
+# Write a function that takes a square matrix and computes its trace.
+
+# Examples:
+# example #1
+# trace([
+#     [1, 4],
+#     [4, 1]
+# ]) ➞ 2
+# 1 + 1 = 2
+
+# example #2
+# trace([
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]) ➞ 15
+# 1 + 5 + 9 = 15
+
+# example #3
+# trace([
+    # [1, 0, 1, 0],
+    # [0, 2, 0, 2],
+    # [3, 0, 3, 0],
+    # [0, 4, 0, 4]
+# ]) ➞ 10
+# 1 + 2 + 3 + 4 = 10
+
+# Notes:
+# As in the examples, the size of the matrices will vary (but they will always be square).
+
+# Work: 
+# def trace(lst):
+#     result = list()
+#     idx = 0
+#     for arr in lst:
+#         result.append(arr[idx])
+#         idx+=1
+#     return sum(result)
+
+# lst = [
+#     [1,4],
+#     [4,1]
+# ]
+
+# lst = [
+#     [1, 0, 1, 0],
+#     [0, 2, 0, 2],
+#     [3, 0, 3, 0],
+#     [0, 4, 0, 4]
+# ]
+# print(trace(lst))
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/yL5WmWTCNwwb4GnR7
 # Title: Two Distinct Elements
