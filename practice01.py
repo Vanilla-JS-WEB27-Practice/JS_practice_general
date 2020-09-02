@@ -21,9 +21,55 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 02 - September - 2020
+# Source: https://edabit.com/challenge/DQy6FL26FeNDecqNr
+# Title: Typing Game
+
+# Instructions:
+# You're in the midst of creating a typing game.
+# Create a function that takes in two lists: the list of user-typed words, and the list of correctly-typed words 
+# and outputs a list containing 1s (correctly-typed words) and -1s (incorrectly-typed words).
+
+# Inputs:
+# User-typed: ["cat", "blue", "skt", "umbrells", "paddy"]
+# Correct: ["cat", "blue", "sky", "umbrella", "paddy"]
+
+# Output: [1, 1, -1, -1, 1]
+
+# Examples:
+# correct_stream(
+#   ["it", "is", "find"],
+#   ["it", "is", "fine"]
+# ) ➞ [1, 1, -1]
+
+# correct_stream(
+#   ["april", "showrs", "bring", "may", "flowers"],
+#   ["april", "showers", "bring", "may", "flowers"]
+# ) ➞ [1, -1, 1, 1, 1]
+
+# Notes:
+# The input list lengths will always be the same.
+
+# Work: 
+# def correct_stream(user, correct):
+#     result = list()
+#     for idx, value in enumerate(user):
+#         if value == correct[idx]:
+#             result.append(1)
+#         else:
+#             result.append(-1)
+#     return result
+
+# user = ["cat", "blue", "skt", "umbrells", "paddy"]
+# correct = ["cat", "blue", "sky", "umbrella", "paddy"]
+# user = ["it", "is", "find"]
+# correct = ["it", "is", "fine"]
+# print(correct_stream(user, correct))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 02 - September - 2020
 # Source: https://edabit.com/challenge/8pDH2SRutPoaQghgc
 # Title: Luke, I Am Your ...
-# Resources: 
 
 # Instructions:
 # Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.
