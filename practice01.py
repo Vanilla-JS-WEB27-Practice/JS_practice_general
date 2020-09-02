@@ -20,6 +20,41 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 02 - September - 2020
+# Source: https://edabit.com/challenge/R5F99DeuhqYxbGyMM
+# Title: New Word Builder
+# Resources: 
+
+# Instructions:
+# Create a function that builds a word from the scrambled letters contained in the first list. 
+# Use the second list to establish each position of the letters in the first list. 
+# Return a string from the unscrambled letters (that made-up the word).
+
+# Examples:
+# word_builder(["g", "e", "o"], [1, 0, 2]) ➞ "ego"
+# word_builder(["e", "t", "s", "t"], [3, 0, 2, 1]) ➞ "test"
+# word_builder(["b", "e", "t", "i", "d", "a"], [1, 4, 5, 0, 3, 2]) ➞ "edabit"
+
+# Notes:
+# The elements in the second list are indexes of the elements in the first list.
+
+# Work: 
+# def word_builder(ltr, pos):
+#     result = list()
+#     for idx, num in enumerate(pos):
+#         result.append(ltr[num])
+#     return "".join(result)
+
+# ltr = ['g','e','o']
+# pos = [1,0,2]
+# ltr = ["e", "t", "s", "t"]
+# pos = [3, 0, 2, 1]
+# ltr = ["b", "e", "t", "i", "d", "a"]
+# pos = [1, 4, 5, 0, 3, 2]
+# print(word_builder(ltr, pos))
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 31 - August - 2020
 # Source: https://edabit.com/challenge/LdXYzf5d3xJgYZur8
 # Title: A Long Long Time
