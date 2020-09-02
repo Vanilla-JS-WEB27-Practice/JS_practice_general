@@ -20,7 +20,44 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
-# Date: - September - 2020
+# Date: 02 - September - 2020
+# Source: https://edabit.com/challenge/QgSMSMpfcEebAyCye
+# Title: Return the Time Saved by Speeding
+
+# Instructions:
+# One cause for speeding is the desire to shorten the time spent traveling. 
+# While in long distance trips speeding does save an appreciable amount of time, the same cannot be said about short distance trips.
+# Create a function that calculates the amount of time saved (in minutes) 
+# were you traveling with an average speed that is above the speed-limit as compared to traveling with an average speed exactly at the speed-limit.
+
+# Examples:
+# # The parameter's format is as follows:
+# (speed limit, avg speed, distance traveled at avg speed)
+# time_saved(80, 90, 40) ➞ 3.3
+# time_saved(80, 90, 4000) ➞ 333.3
+# time_saved(80, 100, 40 ) ➞ 6.0
+# time_saved(80, 100, 10) ➞ 1.5
+
+# Notes:
+# Speed = distance/time
+# The time returned should be in minutes, not hours.
+# The unit of speed is assumed to be miles per hour (mph).
+
+# Work: 
+# def time_saved(s_lim, s_avg, d):
+#     speed1 = (d/s_lim)* 60
+#     speed2 = (d/s_avg)* 60
+#     result = round(speed1-speed2, 1)
+#     return result
+
+# s_lim = 80
+# s_avg = 100
+# d = 10
+# print(time_saved(s_lim, s_avg, d))
+
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 02 - September - 2020
 # Source: https://edabit.com/challenge/uKPc5faEzQkMwLYPP
 # Title: Go Corona!
 
@@ -87,7 +124,6 @@
 # Date: 31 - August - 2020
 # Source: https://edabit.com/challenge/LdXYzf5d3xJgYZur8
 # Title: A Long Long Time
-# Resources: 
 
 # Instructions:
 # Create a function that takes three values:
@@ -124,7 +160,6 @@
 # Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/PGXeFPN6buQDXXwPm
 # Title: Trace That Matrix
-# Resources: 
 
 # Instructions:
 # Given a square matrix (i.e. same number of rows as columns), its trace is the sum of the entries in the main diagonal (i.e. the diagonal line from the top left to the bottom right).
@@ -219,7 +254,6 @@
 # Date: 30 - August - 2020
 # Source: https://edabit.com/challenge/Axim3Ld5zu9RFLZKr
 # Title: Invert Keys and Values
-
 
 # Instructions:
 # Write a function that inverts the keys and values of a dictionary.
