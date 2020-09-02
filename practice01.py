@@ -1,5 +1,5 @@
 # Template
-# Date: - August - 2020
+# Date: - September - 2020
 # Source: 
 # Title: 
 # Resources: 
@@ -20,10 +20,39 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: - September - 2020
+# Source: https://edabit.com/challenge/uKPc5faEzQkMwLYPP
+# Title: Go Corona!
+
+# Instructions:
+# Create a function that takes the number of daily average recovered cases recovers, 
+# daily average new_cases, current active_cases, 
+# and returns the number of days it will take to reach zero cases.
+
+# Examples:
+# end_corona(4000, 2000, 77000) ➞ 39
+# end_corona(3000, 2000, 50699) ➞ 51
+# end_corona(30000, 25000, 390205) ➞ 79
+
+# Notes:
+# Daily recovered cases are always greater than daily new_cases
+
+# Work: 
+# import math
+# def end_corona(recovers, new_cases, active_cases):
+#     daily = recovers - new_cases
+#     divided = active_cases / daily
+#     return math.ceil(divided)
+
+# print(end_corona(4000, 2000, 77000))
+# print(end_corona(3000, 2000, 50699))
+# print(end_corona(30000, 25000, 390205))
+
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 02 - September - 2020
 # Source: https://edabit.com/challenge/R5F99DeuhqYxbGyMM
 # Title: New Word Builder
-# Resources: 
 
 # Instructions:
 # Create a function that builds a word from the scrambled letters contained in the first list. 
