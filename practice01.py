@@ -21,9 +21,42 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 04 - September - 2020
+# Source: https://edabit.com/challenge/jwzgYjymYK7Gmro93
+# Title: All Occurrences of an Element in a List
+
+# Instructions:
+# Create a function that returns the indices of all occurrences of an item in the list.
+
+# Examples:
+# get_indices(["a", "a", "b", "a", "b", "a"], "a") ➞ [0, 1, 3, 5]
+# get_indices([1, 5, 5, 2, 7], 7) ➞ [4]
+# get_indices([1, 5, 5, 2, 7], 5) ➞ [1, 2]
+# get_indices([1, 5, 5, 2, 7], 8) ➞ []
+
+# Notes:
+# If an element does not exist in a list, return [].
+# Lists are zero-indexed.
+# Values in the list will be value-types (don't need to worry about nested lists).
+
+# Work: 
+# def get_indices(lst, el):
+#     result = dict()
+#     for k, v in enumerate(lst):
+#         if v == el:
+#             result[k] = k
+    
+#     return list(result)
+
+# lst = ["a","a","b","a","b","a"]
+# lst = [1, 5, 5, 2, 7]
+# el = "a"
+# el = 7
+# print(get_indices(lst, el))
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 04 - September - 2020
 # Source: https://edabit.com/challenge/vAS4Hp4wzSEnQs3tZ
 # Title: International Greetings
-# Resources: 
 
 # Instructions:
 # Suppose you have a guest list of students and the country they are from, stored as key-value pairs in a dictionary.
@@ -45,25 +78,26 @@
 # greeting("Monti") ➞ "Hi! I'm a guest."
 
 # Work: 
-GUEST_LIST = {
-	"Randy": "Germany", 
-	"Karla": "France", 
-	"Wendy": "Japan", 
-	"Norman": "England", 
-	"Sam": "Argentina"
-}
+# GUEST_LIST = {
+# 	"Randy": "Germany", 
+# 	"Karla": "France", 
+# 	"Wendy": "Japan", 
+# 	"Norman": "England", 
+# 	"Sam": "Argentina"
+# }
 
-def greeting(name):
-    if name not in GUEST_LIST:
-        return "Hi! I'm a guest."
+# def greeting(name):
+#     if name not in GUEST_LIST:
+#         return "Hi! I'm a guest."
         # return f"Hi! I'm a guest."
-    else:
-        return "Hi! I'm "+name+", and I'm from"+GUEST_LIST[name]+"."
+    # else:
+    #     return "Hi! I'm "+name+", and I'm from"+GUEST_LIST[name]+"."
         # return f"Hi! I'm {name}, and I'm from {GUEST_LIST[name]}"
 
-print(greeting('Randy'))
-print(greeting('Sam'))
-print(greeting('Monti'))
+# print(greeting('Randy'))
+# print(greeting('Sam'))
+# print(greeting('Monti'))
+
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 02 - September - 2020
