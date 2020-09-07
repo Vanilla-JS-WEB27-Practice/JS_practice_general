@@ -20,6 +20,51 @@
 
 # ------------------------------------------------------------------------------------------------------------------
 
+# Date: 07 - September - 2020
+# Source: https://edabit.com/challenge/6NoaFGKJgRW6oXhLC
+# Title: Sum of v0w3ls
+# Resources: 
+
+# Instructions:
+# Create a function that takes a string and returns the sum of vowels, where some vowels are considered numbers.
+
+# Vowel	Number
+# A	4
+# E	3
+# I	1
+# O	0
+# U	0
+
+# Examples:
+# sum_of_vowels("Let\'s test this function.") ➞ 8
+# sum_of_vowels("Do I get the correct output?") ➞ 10
+# sum_of_vowels("I love edabit!") ➞ 12
+
+# Notes:
+# Vowels are case-insensitive (e.g. A = 4 and a = 4).
+
+# Work: 
+# def sum_of_vowels(sentence):
+#     vowel_number = {
+#         "a": 4,
+#         "e": 3,
+#         "i": 1,
+#         "o": 0,
+#         "u": 0
+#     }
+
+#     count = 0
+#     result = list()
+#     for char in sentence:
+#         lower_char = char.lower()
+#         if lower_char in vowel_number:
+#             # print(str("Yes"))
+#             count+=vowel_number[lower_char]
+#     return count
+
+# print(sum_of_vowels("Do I get the correct output?"))
+# ------------------------------------------------------------------------------------------------------------------
+
 # Date: 04 - September - 2020
 # Source: https://edabit.com/challenge/jwzgYjymYK7Gmro93
 # Title: All Occurrences of an Element in a List
