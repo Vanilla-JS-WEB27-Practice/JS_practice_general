@@ -1,29 +1,68 @@
 # Template
 # Date: - September - 2020
-# Source: 
-# Title: 
-# Resources: 
+# Source:
+# Title:
+# Resources:
 
 # Instructions:
-# 
+#
 
 # Examples:
-# 
+#
 
 # Notes:
-# 
+#
 
 # Sudo code:
-# 1 - 
+# 1 -
 
-# Work: 
+# Work:
 
+# ------------------------------------------------------------------------------------------------------------------
+
+# Date: 10 - September - 2020
+# Source: https://edabit.com/challenge/646cCaFig6AP89YRo
+# Title: The Fizz Buzz Test - 2
+# Resources: https://www.w3schools.com/python/python_for_loops.asp
+
+# Instructions:
+# he Fizz Buzz test is a popular interview question used to help filter out the 99.5% of programming job candidates
+# who can't seem to program their way out of a wet paper bag.
+
+# Write a program that returns a list of all the numbers from 1 to an integer argument.
+# But for multiples of three use “Fizz” instead of the number and for the multiples of five use “Buzz”.
+# For numbers which are multiples of both three and five use “FizzBuzz”.
+
+# Examples:
+# fizz_buzz(10) ➞ [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]
+# fizz_buzz(15) ➞ [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+
+# Notes:
+# Make sure to return a list.
+
+# Work:
+# def fizz_buzz(maximum):
+#     result = list()
+
+#     for n in range(1, maximum+1):
+#         if n % 3 == 0 and n % 5 == 0:
+#             result.append('FizzBuzz')
+#         elif n % 3 == 0:
+#             result.append('Fizz')
+#         elif n % 5 == 0:
+#             result.append('Buzz')
+#         else:
+#             result.append(n)
+#     return result
+
+
+# print(fizz_buzz(15))
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 07 - September - 2020
 # Source: https://edabit.com/challenge/6NoaFGKJgRW6oXhLC
 # Title: Sum of v0w3ls
-# Resources: 
+# Resources:
 
 # Instructions:
 # Create a function that takes a string and returns the sum of vowels, where some vowels are considered numbers.
@@ -43,7 +82,7 @@
 # Notes:
 # Vowels are case-insensitive (e.g. A = 4 and a = 4).
 
-# Work: 
+# Work:
 # def sum_of_vowels(sentence):
 #     vowel_number = {
 #         "a": 4,
@@ -83,13 +122,13 @@
 # Lists are zero-indexed.
 # Values in the list will be value-types (don't need to worry about nested lists).
 
-# Work: 
+# Work:
 # def get_indices(lst, el):
 #     result = dict()
 #     for k, v in enumerate(lst):
 #         if v == el:
 #             result[k] = k
-    
+
 #     return list(result)
 
 # lst = ["a","a","b","a","b","a"]
@@ -122,22 +161,22 @@
 # greeting("Sam") ➞ "Hi! I'm Sam, and I'm from Argentina."
 # greeting("Monti") ➞ "Hi! I'm a guest."
 
-# Work: 
+# Work:
 # GUEST_LIST = {
-# 	"Randy": "Germany", 
-# 	"Karla": "France", 
-# 	"Wendy": "Japan", 
-# 	"Norman": "England", 
+# 	"Randy": "Germany",
+# 	"Karla": "France",
+# 	"Wendy": "Japan",
+# 	"Norman": "England",
 # 	"Sam": "Argentina"
 # }
 
 # def greeting(name):
 #     if name not in GUEST_LIST:
 #         return "Hi! I'm a guest."
-        # return f"Hi! I'm a guest."
-    # else:
-    #     return "Hi! I'm "+name+", and I'm from"+GUEST_LIST[name]+"."
-        # return f"Hi! I'm {name}, and I'm from {GUEST_LIST[name]}"
+# return f"Hi! I'm a guest."
+# else:
+#     return "Hi! I'm "+name+", and I'm from"+GUEST_LIST[name]+"."
+# return f"Hi! I'm {name}, and I'm from {GUEST_LIST[name]}"
 
 # print(greeting('Randy'))
 # print(greeting('Sam'))
@@ -151,15 +190,15 @@
 # Resources: https://www.thecalculatorsite.com/articles/finance/compound-interest-formula.php
 
 # Instructions:
-# Suppose that you invest $10,000 for 10 years at an interest rate of 6% compounded monthly. 
+# Suppose that you invest $10,000 for 10 years at an interest rate of 6% compounded monthly.
 # What will be the value of your investment at the end of the 10 year period?
-# Create a function that accepts the principal p, the term in years t, the interest rate r, and the number of compounding periods per year n. 
+# Create a function that accepts the principal p, the term in years t, the interest rate r, and the number of compounding periods per year n.
 # The function returns the value at the end of term rounded to the nearest cent.
 
 # For the example above:
 
 # compound_interest(10000, 10, 0.06, 12) ➞ 18193.97
-# Note that the interest rate is given as a decimal and n=12 because with monthly compounding there are 12 periods per year. 
+# Note that the interest rate is given as a decimal and n=12 because with monthly compounding there are 12 periods per year.
 # Compounding can also be done annually, quarterly, weekly, or daily.
 
 # Examples:
@@ -167,7 +206,7 @@
 # compound_interest(3500, 15, 0.1, 4) ➞ 15399.26
 # compound_interest(100000, 20, 0.15, 365) ➞ 2007316.26
 
-# Work: 
+# Work:
 # def compound_interest(p,t,r,n):
 #     amount = p*(1+(r/n))**(n*t)
 #     return round(amount,2)
@@ -184,7 +223,7 @@
 
 # Instructions:
 # You're in the midst of creating a typing game.
-# Create a function that takes in two lists: the list of user-typed words, and the list of correctly-typed words 
+# Create a function that takes in two lists: the list of user-typed words, and the list of correctly-typed words
 # and outputs a list containing 1s (correctly-typed words) and -1s (incorrectly-typed words).
 
 # Inputs:
@@ -207,7 +246,7 @@
 # Notes:
 # The input list lengths will always be the same.
 
-# Work: 
+# Work:
 # def correct_stream(user, correct):
 #     result = list()
 #     for idx, value in enumerate(user):
@@ -243,7 +282,7 @@
 # relation_to_luke("Leia") ➞ "Luke, I am your sister."
 # relation_to_luke("Han") ➞ "Luke, I am your brother in law."
 
-# Work: 
+# Work:
 # def relation_to_luke(name):
 #     d = {
 #         "Darth Vader": "father",
@@ -252,7 +291,7 @@
 #         "R2D2": "droid"
 #     }
 #     return "Luke, I am your "+d[name]+"."
-    # return f"Luke, I am your {d[name]}."
+# return f"Luke, I am your {d[name]}."
 
 # print(relation_to_luke("Leia"))
 
@@ -263,7 +302,7 @@
 # Title: Stupid Addition
 
 # Instructions:
-# Create a function that takes two parameters and, if both parameters are strings, 
+# Create a function that takes two parameters and, if both parameters are strings,
 # add them as if they were integers or if the two parameters are integers, concatenate them.
 
 # Examples:
@@ -275,7 +314,7 @@
 # If the two parameters are different data types, return None.
 # All parameters will either be strings or integers.
 
-# Work: 
+# Work:
 # def stupid_addition(a,b):
 #     if type(a) == type(b):
 #         if type(a) == str:
@@ -296,9 +335,9 @@
 # Title: Return the Time Saved by Speeding
 
 # Instructions:
-# One cause for speeding is the desire to shorten the time spent traveling. 
+# One cause for speeding is the desire to shorten the time spent traveling.
 # While in long distance trips speeding does save an appreciable amount of time, the same cannot be said about short distance trips.
-# Create a function that calculates the amount of time saved (in minutes) 
+# Create a function that calculates the amount of time saved (in minutes)
 # were you traveling with an average speed that is above the speed-limit as compared to traveling with an average speed exactly at the speed-limit.
 
 # Examples:
@@ -314,7 +353,7 @@
 # The time returned should be in minutes, not hours.
 # The unit of speed is assumed to be miles per hour (mph).
 
-# Work: 
+# Work:
 # def time_saved(s_lim, s_avg, d):
 #     speed1 = (d/s_lim)* 60
 #     speed2 = (d/s_avg)* 60
@@ -333,8 +372,8 @@
 # Title: Go Corona!
 
 # Instructions:
-# Create a function that takes the number of daily average recovered cases recovers, 
-# daily average new_cases, current active_cases, 
+# Create a function that takes the number of daily average recovered cases recovers,
+# daily average new_cases, current active_cases,
 # and returns the number of days it will take to reach zero cases.
 
 # Examples:
@@ -345,7 +384,7 @@
 # Notes:
 # Daily recovered cases are always greater than daily new_cases
 
-# Work: 
+# Work:
 # import math
 # def end_corona(recovers, new_cases, active_cases):
 #     daily = recovers - new_cases
@@ -363,8 +402,8 @@
 # Title: New Word Builder
 
 # Instructions:
-# Create a function that builds a word from the scrambled letters contained in the first list. 
-# Use the second list to establish each position of the letters in the first list. 
+# Create a function that builds a word from the scrambled letters contained in the first list.
+# Use the second list to establish each position of the letters in the first list.
 # Return a string from the unscrambled letters (that made-up the word).
 
 # Examples:
@@ -375,7 +414,7 @@
 # Notes:
 # The elements in the second list are indexes of the elements in the first list.
 
-# Work: 
+# Work:
 # def word_builder(ltr, pos):
 #     result = list()
 #     for idx, num in enumerate(pos):
@@ -411,7 +450,7 @@
 # Notes:
 # No two durations will be the same.
 
-# Work: 
+# Work:
 # def longest_time(h,m,s):
 #     original = [h,m,s]
 #     sec_h = h*60*60
@@ -461,17 +500,17 @@
 
 # example #3
 # trace([
-    # [1, 0, 1, 0],
-    # [0, 2, 0, 2],
-    # [3, 0, 3, 0],
-    # [0, 4, 0, 4]
+# [1, 0, 1, 0],
+# [0, 2, 0, 2],
+# [3, 0, 3, 0],
+# [0, 4, 0, 4]
 # ]) ➞ 10
 # 1 + 2 + 3 + 4 = 10
 
 # Notes:
 # As in the examples, the size of the matrices will vary (but they will always be square).
 
-# Work: 
+# Work:
 # def trace(lst):
 #     result = list()
 #     idx = 0
@@ -509,7 +548,7 @@
 # Notes:
 # Keep the same ordering in the output.
 
-# Work: 
+# Work:
 # def return_unique(lst):
 #     result = list()
 #     for num in lst:
@@ -542,13 +581,13 @@
 # invert({ "zebra": "koala", "horse": "camel" })
 # ➞ { "koala": "zebra", "camel": "horse" }
 
-# Work: 
+# Work:
 # def invert(d):
-    # option 1
-    # result = dict()
-    # for key, value in d.items():
-    #     result[value] = key
-    # return result
+# option 1
+# result = dict()
+# for key, value in d.items():
+#     result[value] = key
+# return result
 
 # d = {'z':'q', 'w':'f'}
 # d = { "a": 1, "b": 2, "c": 3 }
@@ -565,7 +604,7 @@
 # Instructions:
 # Create the instance attributes fullname and email in the Employee class. Given a person's first and last names:
 # Form the fullname by simply joining the first and last name together, separated by a space.
-# Form the email by joining the first and last name together with a . in between, and follow it with @company.com at the end. 
+# Form the email by joining the first and last name together with a . in between, and follow it with @company.com at the end.
 # Make sure the entire email is in lowercase.
 
 # Examples:
@@ -581,7 +620,7 @@
 # The attributes firstname and lastname are already made for you.
 # See the Resources tab for some helpful tutorials on Python classes!
 
-# Work: 
+# Work:
 # class Employee:
 #     def __init__(self, firstname, lastname):
 #         self.firstname = firstname
@@ -604,7 +643,7 @@
 # Title: Curzon Numbers
 
 # Instructions:
-# In this challenge, establish if a given integer num is a Curzon number. 
+# In this challenge, establish if a given integer num is a Curzon number.
 # If 1 plus 2 elevated to num is exactly divisible by 1 plus 2 multiplied by num, then num is a Curzon number.
 # Given a non-negative integer num, implement a function that returns True if num is a Curzon number, or False otherwise.
 
@@ -624,7 +663,7 @@
 # 2 * 14 + 1 = 29
 # 16385 is a multiple of 29
 
-# Work: 
+# Work:
 # def is_curzon(num):
 #     num1 = 2 ** num + 1
 #     num2 = 2 * num + 1
@@ -665,14 +704,14 @@
 # All test cases use valid input (no lists of the wrong size, for example).
 # All coefficients will be integers (whole numbers).
 
-# Work: 
+# Work:
 # def lines_are_parallel(l1, l2):
 #     if l1[1] != 0 and l2[1] != 0:
 #         if l1[0]/l1[1] == l2[0]/l2[1]:
 #             return True
 #         else:
 #             return False
-#     else: 
+#     else:
 #         if l1[0] == l2[0] and l1[1] == l2[1]:
 #             return True
 #         else:
@@ -694,13 +733,13 @@
 # Examples:
 # example #1
 # peel_layer_off([
-    # ["a", "b", "c", "d"],
-    # ["e", "f", "g", "h"],
-    # ["i", "j", "k", "l"],
-    # ["m", "n", "o", "p"]
+# ["a", "b", "c", "d"],
+# ["e", "f", "g", "h"],
+# ["i", "j", "k", "l"],
+# ["m", "n", "o", "p"]
 # ]) ➞ [
-    # ["f", "g"],
-    # ["j", "k"]
+# ["f", "g"],
+# ["j", "k"]
 # ]
 
 # example #2
@@ -713,18 +752,18 @@
 #     [26, 27, 28, 29, 30],
 #     [31, 32, 33, 34, 35]
 # ]) ➞ [
-    # [7, 8, 9],
-    # [12, 13, 14],
-    # [17, 18, 19],
-    # [22, 23, 24],
-    # [27, 28, 29]
+# [7, 8, 9],
+# [12, 13, 14],
+# [17, 18, 19],
+# [22, 23, 24],
+# [27, 28, 29]
 # ]
 
 # Notes:
 # The 2D grid is always a rectangular/square shape.
 # Always return some form of nested list, unless there are no elements. In that case, return an empty list.
 
-# Work: 
+# Work:
 # def peel_layer_off(lst):
 #     result = list()
 #     if len(lst) > 2:
@@ -777,7 +816,7 @@
 # The input angles are in radians.
 # Check out the resource tab.
 
-# Work: 
+# Work:
 # import math
 # def to_degree(radian):
 #     return math.degrees(radian)
@@ -792,7 +831,7 @@
 # Title: Vowel Sandwich
 
 # Instructions:
-# Create a function which validates whether a 3 character string is a vowel sandwich. 
+# Create a function which validates whether a 3 character string is a vowel sandwich.
 # In order to have a valid sandwich, the string must satisfy the following rules:
 # The first and last characters must be a consonant.
 # The character in the middle must be a vowel.
@@ -808,30 +847,30 @@
 # All words will be given in lowercase.
 # y is not considered a vowel.
 
-# Work: 
+# Work:
 # def is_vowel_sandwich(s):
-    # Solution that passes
-    # if len(s) != 3:
-	# 	return (False)
+# Solution that passes
+# if len(s) != 3:
+# 	return (False)
 
-	# vowel = ['a', 'e', 'i', 'o', 'u']
+# vowel = ['a', 'e', 'i', 'o', 'u']
 
-	# for i in s:
-	# 	if s[0] not in vowel and s[1] in vowel and s[2] not in vowel:
-	# 		return (True)
-	# return (False)
+# for i in s:
+# 	if s[0] not in vowel and s[1] in vowel and s[2] not in vowel:
+# 		return (True)
+# return (False)
 
-    # Didn't pass 
-    # vowels = ['a','e','i','o','u']
-    # word = [char for char in s]
-    # if len(word) > 3:
-    #     return False
-    # elif word[0] in vowels or word[2] in vowels:
-    #     return False
-    # elif word[1] not in vowels:
-    #     return False
-    # else:
-    #     return True
+# Didn't pass
+# vowels = ['a','e','i','o','u']
+# word = [char for char in s]
+# if len(word) > 3:
+#     return False
+# elif word[0] in vowels or word[2] in vowels:
+#     return False
+# elif word[1] not in vowels:
+#     return False
+# else:
+#     return True
 
 # s = 'cat'
 # s = 'ear'
@@ -854,7 +893,7 @@
 # correct_signs("13 > 44 > 33 > 1") ➞ False
 # correct_signs("1 < 2 < 6 < 9 > 3") ➞ True
 
-# Work: 
+# Work:
 # def correct_signs(txt):
 #     return eval(txt)
 
@@ -880,7 +919,7 @@
 # a, e, i, o, u are considered vowels (not y).
 # All test cases are one word and only contain letters.
 
-# Work: 
+# Work:
 # def count_vowels(txt):
 #     vowels = ['a','e','i','o','u']
 #     count = 0
@@ -910,7 +949,7 @@
 # is_equal([21, 35]) ➞ False
 # is_equal([0, 0]) ➞ True
 
-# Work: 
+# Work:
 # def is_equal(lst):
 #     num1 = [int(char) for char in str(lst[0])]
 #     num2 = [int(char) for char in str(lst[1])]
@@ -943,12 +982,12 @@
 # Notes:
 # Use only positive integer parameters.
 
-# Work: 
+# Work:
 # def square_areas_difference(r):
 #     return 2*r*r
 
 # print(square_areas_difference(5))
-# print(square_areas_difference(6))    
+# print(square_areas_difference(6))
 # print(square_areas_difference(7))
 
 # ------------------------------------------------------------------------------------------------------------------
@@ -968,7 +1007,7 @@
 # Notes:
 # Return value should be a string.
 
-# Work: 
+# Work:
 # def format_date(date):
 #     new_date = date.split('/')
 #     new_date.reverse()
@@ -996,7 +1035,7 @@
 # Notes:
 # Assume all names start with a capital letter and are lowercase thereafter (i.e. don't worry about finding "BOB" or "bob").
 
-# Work: 
+# Work:
 # def find_bob(names):
 #     if "Bob" not in names:
 #         return -1
@@ -1029,7 +1068,7 @@
 # Maintain all capitalization.
 # Feel free to declutter and refactor code if it helps!
 
-# Work: 
+# Work:
 # def grade_percentage(user_score, pass_score):
 #     if int(user_score[:-1]) < int(pass_score[:-1]):
 #         return 'You FAILED the Exam'
@@ -1059,7 +1098,7 @@
 # Notes:
 # It's likely there will be a few people left over and some cars won't be filled to max capacity.
 
-# Work: 
+# Work:
 # def cars_needed(num):
 #     nums = str(num/5).split('.')
 #     if int(nums[1]) > 0:
@@ -1078,8 +1117,8 @@
 # Title: Calculate the Profit
 
 # Instructions:
-# You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product. 
-# You are given a dictionary containing the cost price per unit (in dollars), sell price per unit (in dollars), and the starting inventory. 
+# You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product.
+# You are given a dictionary containing the cost price per unit (in dollars), sell price per unit (in dollars), and the starting inventory.
 # Return the total profit made, rounded to the nearest dollar.
 
 # Examples:
@@ -1105,7 +1144,7 @@
 # Assume all inventory has been sold.
 # Profit = Total Sales - Total Cost
 
-# Work: 
+# Work:
 # def profit(info):
 #     cost = info["cost_price"]*info["inventory"]
 #     sell = info["sell_price"]*info["inventory"]s
@@ -1137,7 +1176,7 @@
 # Notes:
 # Notice that num is also included in the returned list.
 
-# Work: 
+# Work:
 # def list_of_multiples(num, length):
 #     result = list()
 #     for n in range(length+1):
@@ -1163,14 +1202,14 @@
 # century_from_year(1950) ➞ 20
 # century_from_year(1900) ➞ 19
 
-# Work: 
+# Work:
 # def century_from_year(year):
 #     century = str(year/100).split('.')
 #     if int(century[1]) < 1:
 #         return int(century[0])
 #     else:
 #         return int(century[0])+1
-#     return 
+#     return
 
 # print(century_from_year(2005))
 # print(century_from_year(1950))
@@ -1193,7 +1232,7 @@
 # Notes:
 # Assume all inputs are greater than or equal to 0.
 
-# Work: 
+# Work:
 # import math
 # def factorial(num):
 #     return math.factorial(num)
@@ -1227,7 +1266,7 @@
 # If you get stuck on a challenge, find help in the Resources tab.
 # If you're really stuck, unlock solutions in the Solutions tab.
 
-# Work: 
+# Work:
 # def fizz_buzz(num):
 #     if num % 3 == 0 and num % 5 == 0:
 #         return "FizzBuzz"
@@ -1265,7 +1304,7 @@
 # Input: "LOVELY"
 # Output: "lovely"
 
-# Work: 
+# Work:
 # def toLowerCase(s):
 #     return s.lower()
 
@@ -1275,7 +1314,7 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 27 - August - 2020
-# Source: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/ 
+# Source: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 # Title: Find Numbers with Even Number of Digits
 
 # Instructions:
@@ -1286,25 +1325,25 @@
 # Example 1:
 # Input: nums = [12,345,2,6,7896]
 # Output: 2
-# Explanation: 
-# 12 contains 2 digits (even number of digits). 
-# 345 contains 3 digits (odd number of digits). 
-# 2 contains 1 digit (odd number of digits). 
-# 6 contains 1 digit (odd number of digits). 
-# 7896 contains 4 digits (even number of digits). 
+# Explanation:
+# 12 contains 2 digits (even number of digits).
+# 345 contains 3 digits (odd number of digits).
+# 2 contains 1 digit (odd number of digits).
+# 6 contains 1 digit (odd number of digits).
+# 7896 contains 4 digits (even number of digits).
 # Therefore only 12 and 7896 contain an even number of digits.
 
 # Example 2:
 # Input: nums = [555,901,482,1771]
-# Output: 1 
-# Explanation: 
+# Output: 1
+# Explanation:
 # Only 1771 contains an even number of digits.
 
 # Notes:
 # 1 <= nums.length <= 500
 # 1 <= nums[i] <= 10^5
 
-# Work: 
+# Work:
 # def findNumbers(nums):
 #     count = 0
 #     for n in nums:
@@ -1353,7 +1392,7 @@
 # 1 <= s.length <= 1000
 # s[i] = 'L' or 'R'
 
-# Work: 
+# Work:
 # def balancedStringSplit(s):
 #     i=l=r=count=0
 #     while i < len(s):
@@ -1418,7 +1457,7 @@
 # 0 <= nums[i] <= 100
 # 0 <= index[i] <= i
 
-# Work: 
+# Work:
 # def createTargetArray(nums, idx):
 #     target = list()
 #     for i, n in enumerate(idx):
@@ -1472,7 +1511,7 @@
 # 0 <= start <= 1000
 # n == nums.length
 
-# Work: 
+# Work:
 # def xorOperation(n, start):
 #     first = start
 #     new = [start+n*2 for n in range(n)]
@@ -1495,8 +1534,8 @@
 
 # Instructions:
 # We are given a list nums of integers representing a list compressed with run-length encoding.
-# Consider each adjacent pair of elements [freq, val] = [nums[2*i], nums[2*i+1]] (with i >= 0).  
-# For each such pair, there are freq elements with value val concatenated in a sublist. 
+# Consider each adjacent pair of elements [freq, val] = [nums[2*i], nums[2*i+1]] (with i >= 0).
+# For each such pair, there are freq elements with value val concatenated in a sublist.
 # Concatenate all the sublists from left to right to generate the decompressed list.
 # Return the decompressed list.
 
@@ -1518,7 +1557,7 @@
 # nums.length % 2 == 0
 # 1 <= nums[i] <= 100
 
-# Work: 
+# Work:
 # def decompressRLEList(nums):
 #     l = list()
 #     start = 0
@@ -1552,50 +1591,50 @@
 
 # Example 1:
 # Input: n = 234
-# Output: 15 
-# Explanation: 
-# Product of digits = 2 * 3 * 4 = 24 
-# Sum of digits = 2 + 3 + 4 = 9 
+# Output: 15
+# Explanation:
+# Product of digits = 2 * 3 * 4 = 24
+# Sum of digits = 2 + 3 + 4 = 9
 # Result = 24 - 9 = 15
 
 # Example 2:
 # Input: n = 4421
 # Output: 21
-# Explanation: 
-# Product of digits = 4 * 4 * 2 * 1 = 32 
-# Sum of digits = 4 + 4 + 2 + 1 = 11 
+# Explanation:
+# Product of digits = 4 * 4 * 2 * 1 = 32
+# Sum of digits = 4 + 4 + 2 + 1 = 11
 # Result = 32 - 11 = 21
 
 # Notes:
 # 1 <= n <= 10^5
 
-# Work: 
+# Work:
 # import math
 # def subtractProductAndSum(n):
-    # FINAL PASS --> better
-    # newN = [int(char) for char in str(n)]
+# FINAL PASS --> better
+# newN = [int(char) for char in str(n)]
 
-    # return math.prod(newN) - sum(newN)
-    
-    # SECOND PASS --> not very fast
-    # newN = [int(char) for char in str(n)]
-    #     productN = 1
-    #     for num in newN:
-    #         productN*=int(num)
+# return math.prod(newN) - sum(newN)
 
-    #     return productN - sum(newN)
-    
-    # FIRST PASS
-    # newN = [char for char in str(n)]
-    # productN = 1
-    # for num in newN:
-    #     productN *= int(num)
+# SECOND PASS --> not very fast
+# newN = [int(char) for char in str(n)]
+#     productN = 1
+#     for num in newN:
+#         productN*=int(num)
 
-    # sumN = 0
-    # for num in newN:
-    #     sumN+=int(num)
+#     return productN - sum(newN)
 
-    # return productN - sumN
+# FIRST PASS
+# newN = [char for char in str(n)]
+# productN = 1
+# for num in newN:
+#     productN *= int(num)
+
+# sumN = 0
+# for num in newN:
+#     sumN+=int(num)
+
+# return productN - sumN
 
 # n = 222
 # print(subtractProductAndSum(n))
@@ -1642,7 +1681,7 @@
 # 0 <= indices[i] < n
 # All values of indices are unique (i.e. indices is a permutation of the integers from 0 to n - 1).
 
-# Work: 
+# Work:
 # def restoreString(s, indices):
 #     newS = [char for char in s]
 #     d = dict()
@@ -1655,7 +1694,7 @@
 #     result = ' '
 #     for i in sorted_word:
 #         result+=i[1]
-    
+
 #     return result
 
 
@@ -1670,7 +1709,7 @@
 # Title: How Many Numbers Are Smaller Than the Current Number
 
 # Instructions:
-# Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. 
+# Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.
 # That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 # Return the answer in an array.
 
@@ -1679,11 +1718,11 @@
 # Example 1:
 # Input: nums = [8,1,2,2,3]
 # Output: [4,0,1,1,3]
-# Explanation: 
-# For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3). 
+# Explanation:
+# For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
 # For nums[1]=1 does not exist any smaller number than it.
-# For nums[2]=2 there exist one smaller number than it (1). 
-# For nums[3]=2 there exist one smaller number than it (1). 
+# For nums[2]=2 there exist one smaller number than it (1).
+# For nums[3]=2 there exist one smaller number than it (1).
 # For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 
 # Example 2:
@@ -1698,7 +1737,7 @@
 # 2 <= nums.length <= 500
 # 0 <= nums[i] <= 100
 
-# Work: 
+# Work:
 # def smallerNumbersThanCurrent(nums):
 #     counter_d = {num:nums.count(num) for num in set(nums)}
 
@@ -1722,7 +1761,7 @@
 # Title: Number of Steps to Reduce a Number to Zero
 
 # Instructions:
-# Given a non-negative integer num, return the number of steps to reduce it to zero. 
+# Given a non-negative integer num, return the number of steps to reduce it to zero.
 # If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
 
 # Examples:
@@ -1730,21 +1769,21 @@
 # Example 1:
 # Input: num = 14
 # Output: 6
-# Explanation: 
-# Step 1) 14 is even; divide by 2 and obtain 7. 
+# Explanation:
+# Step 1) 14 is even; divide by 2 and obtain 7.
 # Step 2) 7 is odd; subtract 1 and obtain 6.
-# Step 3) 6 is even; divide by 2 and obtain 3. 
-# Step 4) 3 is odd; subtract 1 and obtain 2. 
-# Step 5) 2 is even; divide by 2 and obtain 1. 
+# Step 3) 6 is even; divide by 2 and obtain 3.
+# Step 4) 3 is odd; subtract 1 and obtain 2.
+# Step 5) 2 is even; divide by 2 and obtain 1.
 # Step 6) 1 is odd; subtract 1 and obtain 0.
 
 # Example 2:
 # Input: num = 8
 # Output: 4
-# Explanation: 
-# Step 1) 8 is even; divide by 2 and obtain 4. 
-# Step 2) 4 is even; divide by 2 and obtain 2. 
-# Step 3) 2 is even; divide by 2 and obtain 1. 
+# Explanation:
+# Step 1) 8 is even; divide by 2 and obtain 4.
+# Step 2) 4 is even; divide by 2 and obtain 2.
+# Step 3) 2 is even; divide by 2 and obtain 1.
 # Step 4) 1 is odd; subtract 1 and obtain 0.
 
 # Example 3:
@@ -1754,28 +1793,28 @@
 # Notes:
 # 0 <= num <= 10^6
 
-# Work: 
+# Work:
 # def numberOfSteps(num):
-    # option 2 based on the cookie monster/fibonacci problem
-    # d = dict()
-    # if num in d:
-    #     return d[num]
-    # if num <= 0:
-    #     return 0
-    # if num % 2 == 0:
-    #     result = 1 + numberOfSteps(num/2)
-    # else:
-    #     result = 1 + numberOfSteps(num-1)
-    # d[num] = result
-    # return result
+# option 2 based on the cookie monster/fibonacci problem
+# d = dict()
+# if num in d:
+#     return d[num]
+# if num <= 0:
+#     return 0
+# if num % 2 == 0:
+#     result = 1 + numberOfSteps(num/2)
+# else:
+#     result = 1 + numberOfSteps(num-1)
+# d[num] = result
+# return result
 
-    # option 1
-    # if num <= 0:
-    #     return 0
-    # if num % 2 == 0:
-    #     return 1+numberOfSteps(num/2)
-    # else:
-    #     return 1+numberOfSteps(num-1)
+# option 1
+# if num <= 0:
+#     return 0
+# if num % 2 == 0:
+#     return 1+numberOfSteps(num/2)
+# else:
+#     return 1+numberOfSteps(num-1)
 
 # num = 123
 # print(numberOfSteps(num))
@@ -1787,12 +1826,12 @@
 # Source: https://leetcode.com/problems/jewels-and-stones/
 # Title: Jewels and Stones
 
-# Resources: 
+# Resources:
 
 # Instructions:
-# You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  
+# You're given strings J representing the types of stones that are jewels, and S representing the stones you have.
 # Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
-# The letters in J are guaranteed distinct, and all characters in J and S are letters. 
+# The letters in J are guaranteed distinct, and all characters in J and S are letters.
 # Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
 # Examples:
@@ -1809,7 +1848,7 @@
 # S and J will consist of letters and have length at most 50.
 # The characters in J are distinct.
 
-# Work: 
+# Work:
 # def numJewelsInStones(jewels, stones):
 #     newJs = [char for char in jewels]
 #     newSs = [char for char in stones]
@@ -1847,7 +1886,7 @@
 # Notes:
 # The given address is a valid IPv4 address.
 
-# Work: 
+# Work:
 # def defangingIPaddr(address):
 #     newAddr = address.split('.')
 #     ip = list()
@@ -1892,7 +1931,7 @@
 # 1 <= nums.length <= 100
 # 1 <= nums[i] <= 100
 
-# Work: 
+# Work:
 # def numIdenticalPairs(nums):
 #     count = 0
 #     for i, val in enumerate(nums):
@@ -1919,7 +1958,7 @@
 
 # Example 1:
 # Input: nums = [2,5,1,3,4,7], n = 3
-# Output: [2,3,5,4,1,7] 
+# Output: [2,3,5,4,1,7]
 # Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
 
 # Example 2:
@@ -1935,7 +1974,7 @@
 # nums.length == 2n
 # 1 <= nums[i] <= 10^3
 
-# Work: 
+# Work:
 # def shuffle(nums, n):
 #     shuffled = list()
 #     for i, val in enumerate(nums):
@@ -1979,19 +2018,19 @@
 # Extra points if you can de-drunk Python.
 
 # Sudo code:
-# 1 - 
+# 1 -
 
-# Work: 
+# Work:
 # str, int = int, str
 
 # def int_to_str(num):
 #     return str(num)
-    # return "'{}'".format(num)
+# return "'{}'".format(num)
 
 # def str_to_int(num):
 #     return int(num)
-    # return ("%d" % int(num))
-    # return ("{:d}".format(int(num)))
+# return ("%d" % int(num))
+# return ("{:d}".format(int(num)))
 
 # print(int_to_str(100))
 # print(str_to_int('7'))
@@ -2011,7 +2050,7 @@
 # paths(1) ➞ 1
 # paths(9) ➞ 362880
 
-# Work: 
+# Work:
 # import math
 # def paths(n):
 #     return math.factorial(n)
@@ -2045,7 +2084,7 @@
 # bitwise_or(7, 12) ➞ 15
 # bitwise_xor(7, 12) ➞ 11
 
-# Work: 
+# Work:
 # def bitwise_and(n1, n2):
 #     return n1 & n2
 
@@ -2068,9 +2107,9 @@
 # Instructions:
 # Calculate the mass of a cylinder when it's filled with water and the cylinder itself doesn't weigh anything.
 # How to solve:
-    # Calculate the volume of the cylinder.
-    # Convert cm³ into dm³.
-    # 1dm³ = 1L, 1L is 1Kg.
+# Calculate the volume of the cylinder.
+# Convert cm³ into dm³.
+# 1dm³ = 1L, 1L is 1Kg.
 
 # Examples:
 # weight(4, 10) ➞ 0.5
@@ -2082,14 +2121,14 @@
 # If you get stuck on a challenge, find help in Resources.
 
 # Sudo code:
-# 1 - 
+# 1 -
 
-# Work: 
+# Work:
 # import math
 # def weight(r, h):
 #     pi = math.pi
 #     volume = pi*(r*r)*h
-#     final = round(volume/1000, 2) 
+#     final = round(volume/1000, 2)
 #     return final
 
 # print(weight(4,10))
@@ -2100,7 +2139,7 @@
 # ------------------------------------------------------------------------------------------------------------------
 
 # Date: 17 - August - 2020
-# Source: Connor TL practice 
+# Source: Connor TL practice
 # Given the following array of values, print out all the elements in reverse order, with each element on a new line.
 # For example, given the list
 # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
@@ -2146,9 +2185,9 @@
 # relation_to_luke("Han") ➞ "Luke, I am your brother in law."
 
 # Sudo code:
-# 1 - 
+# 1 -
 
-# Work: 
+# Work:
 # def relation_to_luke(name):
 #     relation = {
 #         'Darth Vader': 'father',
@@ -2183,14 +2222,14 @@
 # 1 - split after the second character and store as a value
 # 2 - return the pieces in a string
 
-# Work: 
+# Work:
 # def stutter(word):
-    # option 2
-    # return (word[0:2]+'... ')*2 +word+'?'
+# option 2
+# return (word[0:2]+'... ')*2 +word+'?'
 
-    # option 1
-    # new_word = word[0:2]
-	# return (new_word+'... ')*2 +word+'?'
+# option 1
+# new_word = word[0:2]
+# return (new_word+'... ')*2 +word+'?'
 
 # print(stutter("incredible"))
 
@@ -2228,13 +2267,13 @@
 # Return 0 if given an empty list.
 
 
-# Work: 
+# Work:
 # def count_characters(charList):
 #     count = 0
 
 #     for words in charList:
 #         count = count + len(words)
-    
+
 #     return count
 
 # count_characters([ "###", "###", "###"])
@@ -2269,7 +2308,7 @@
 # Your solution should be just one line of code.
 # If your solution is longer than one line of code, please review the Resources tab.
 
-# Work: 
+# Work:
 # first, *middle, last = [1, 2, 3, 4, 5]
 
 # ------------------------------------------------------------------------------------------------------------------
@@ -2290,7 +2329,7 @@
 # Notes:
 # All numbers will be whole numbers.
 
-# Work: 
+# Work:
 # def string_int(text):
 #     return int(txt);
 
@@ -2315,7 +2354,7 @@
 # If you get stuck on a challenge, find help in the Resources tab.
 # If you're really stuck, unlock solutions in the Solutions tab.
 
-# Work: 
+# Work:
 # def calculate_exponent(num, exp):
 #     return num ** exp
 
@@ -2338,7 +2377,7 @@
 # If you get stuck on a challenge, find help in the Resources tab.
 # If you're really stuck, unlock solutions in the Solutions tab.
 
-# Work: 
+# Work:
 # def addition(num):
 #     return num + 1
 
@@ -2362,13 +2401,13 @@
 # If you get stuck on a challenge, find help in the Resources tab.
 # If you're really stuck, unlock solutions in the Solutions tab.
 
-# Work: 
+# Work:
 # def tri_area(base, height):
 #     return (base * height)/2
 
 # ------------------------------------------------------------------------------------------------------------------
 
-## FIRST PYHTON EXPRESSION!!
+# FIRST PYHTON EXPRESSION!!
 # Date: 16 - May - 2020
 # Source: https://edabit.com/challenge/rZToTkR5eB9Zn4zLh
 # Title: Return the Sum of Two Numbers
@@ -2387,7 +2426,7 @@
 # If you get stuck on a challenge, find help in the Resources tab.
 # If you're really stuck, unlock solutions in the Solutions tab.
 
-# Work: 
+# Work:
 
 # def addition(a, b):
 #     return a + b
