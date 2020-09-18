@@ -1,24 +1,63 @@
-
 // Template
-// Date: - August - 2020
-// Source: 
-// Title: 
+// Date: - September - 2020
+// Source:
+// Title:
 
 // Instructions:
-// 
+//
 
 // Examples:
-// 
+//
 
-// Notes:s
-// 
+// Notes:
+//
 
 // Sudo code:
-// 1 - 
+// 1 -
 
-// Work: 
+// Work:
 
-// ------------------------------------------------------------------------------------------------------------------s
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 17 - September - 2020
+// Source: https://edabit.com/challenge/c23dFfNiKbnguSQtq
+// Title: Finding Nemo
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+
+// Instructions:
+// You're given a string of words. You need to find the word "Nemo", and return a string like this:
+// "I found Nemo at [the order of the word you find nemo]!".
+// If you can't find Nemo, return "I can't find Nemo :(".
+
+// Examples:
+// findNemo("I am finding Nemo !") ➞ "I found Nemo at 4!"
+// findNemo("Nemo is me") ➞ "I found Nemo at 1!"
+// findNemo("I Nemo am") ➞ "I found Nemo at 2!"
+
+// Notes:
+// ! , ? . are always separated from the last word.
+// Nemo will always look like Nemo, and not NeMo or other capital variations.
+// Nemo's, or anything that says Nemo with something behind it, doesn't count as Finding Nemo.
+// If there are multiple Nemo's in the sentence, only return for the first one.
+
+// Sudo code:
+// 1 - split on the spaces
+// 2 - run conditional statement to find Nemo
+
+// Work:
+// function findNemo(sentence) {
+//   const arr = sentence.split(" ");
+//   const result = `I found Nemo at ${arr.indexOf("Nemo") + 1}!`;
+//   const noNemo = `I can't find Nemo :(`;
+//   return arr.indexOf("Nemo") > -1 ? result : noNemo;
+// }
+
+// console.log(findNemo("I am finding Nemo !"));
+// console.log(findNemo("Nemo is me !"));
+// console.log(findNemo("I Nemo am !"));
+// console.log(findNemo("I am Sam !"));
+
+// ------------------------------------------------------------------------------------------------------------------
 
 // Date: 05 - August - 2020
 // Source: https://edabit.com/challenge/vCtepsfrE7Nts2a9j
@@ -45,14 +84,14 @@
 // Both strings will have the same length.
 
 // Sudo code:
-// 1 - split both strings into arrays 
-// 2 - iterate through them 
+// 1 - split both strings into arrays
+// 2 - iterate through them
 // 3 - compare elements
 // 4 - if they are the same, move on to the next one
 // 5 - else, increase the count
-// 6 - return the count 
+// 6 - return the count
 
-// Work: 
+// Work:
 // function hammingDistance(str1, str2) {
 //     arr1 = str1.split('');
 //     arr2 = str2.split('');
@@ -60,7 +99,7 @@
 //     for (let i = 0; i < arr1.length; i++){
 //         if (arr1[i] !== arr2[i]){
 //             count+=1
-//         } 
+//         }
 //     }
 //     return count
 // }
@@ -101,10 +140,10 @@
 // 1 - split the strings into an array of substrings
 // 2 - shift the zeroeth element form each and place into a new array
 // 3 - run through if else conditional checks
-// 4 - return a result 
+// 4 - return a result
 // 5 - push into a new array and join, return new array
 
-// Work: 
+// Work:
 
 // function neutralise(s1, s2) {
 //     s1Split = s1.split('')
@@ -136,11 +175,11 @@
 // countVowels("Palm") ➞ 1
 // countVowels("Prediction") ➞ 4
 
-// Notes: 
+// Notes:
 // a, e, i, o, u are considered vowels (not y).
 // All test cases are one word and only contain letters.
 
-// Work: 
+// Work:
 // function countVowels(str){
 //     const lower = str.toLowerCase();
 //     const splitStr = lower.split('');
@@ -182,7 +221,7 @@
 // If you get a number with .0 on the end, return the integer value (e.g. return "4" rather than "4.0").
 // If the number is 0, 0.0, 000, 00.00, etc... return "0".
 
-// Work: 
+// Work:
 // function removeLeadingTrailing(n){
 //     return Math.abs(Number(n)).toString();
 // }
@@ -190,8 +229,6 @@
 // console.log(removeLeadingTrailing('230.000'));
 // console.log(removeLeadingTrailing('00402'));
 // console.log(removeLeadingTrailing("03.1400"));
-
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -208,7 +245,7 @@
 // highestDigit(2) ➞ 2
 // highestDigit(377401) ➞ 7
 
-// Work: 
+// Work:
 // function highestDigit(str){
 //     const arr = str.toString().split('');
 //     return Math.max(...arr);
@@ -238,35 +275,34 @@
 // Notes:
 // The input will always be in lowercase.
 
-// Work: 
+// Work:
 // function replaceVowel(string){
-    // from ediabit soultions
-    // match the vowel and change the index by adding one
-    // return string.replace(/[aeiou]/g,v=> "aeiou".indexOf(v)+1)
-    
-  
-    // another way to solve the problem
-    // var s = string.split('');
-    // const newMap = s.map((letter, i) => {
-    //     if (s[i] === 'a'){
-    //         return 1
-    //     } else if (s[i] === 'e'){
-    //         return 2
-    //     } else if(s[i] === 'i'){
-    //         return 3
-    //     } else if(s[i] === 'o'){
-    //         return 4
-    //     } else if(s[i] === 'u'){
-    //         return 5
-    //     } else {
-    //         return letter
-    //     }
-    // })
+// from ediabit soultions
+// match the vowel and change the index by adding one
+// return string.replace(/[aeiou]/g,v=> "aeiou".indexOf(v)+1)
 
-    // return newMap.join('');
-    
-    // below works, but isn't the most efficient
-    // return string.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 5).replace(/u/gi, 5)
+// another way to solve the problem
+// var s = string.split('');
+// const newMap = s.map((letter, i) => {
+//     if (s[i] === 'a'){
+//         return 1
+//     } else if (s[i] === 'e'){
+//         return 2
+//     } else if(s[i] === 'i'){
+//         return 3
+//     } else if(s[i] === 'o'){
+//         return 4
+//     } else if(s[i] === 'u'){
+//         return 5
+//     } else {
+//         return letter
+//     }
+// })
+
+// return newMap.join('');
+
+// below works, but isn't the most efficient
+// return string.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 5).replace(/u/gi, 5)
 // }
 
 // console.log(replaceVowel('karachi'));
@@ -290,13 +326,13 @@
 
 // timeSaved(80, 90, 40) ➞ 3.3
 
-// timeSaved(80, 90, 4000) ➞ 333.3 
+// timeSaved(80, 90, 4000) ➞ 333.3
 
 // timeSaved(80, 100, 40 ) ➞ 6.0
 
 // timeSaved(80, 100, 10) ➞ 1.5
 
-// Work: 
+// Work:
 // function timeSaved(limit, avg, distance){
 //     const speedLimit = distance/limit*60;
 //     const fullLimit = speedLimit.split
@@ -330,18 +366,18 @@
 // Reverse the words themselves, not the entire sentence.
 // All characters in the sentence will be in lower case.
 
-// Work: 
+// Work:
 // function specialReverse(s, c) {
 //     const sent = s.split(' ');
 //     const reverse = sent.map(word => {
 //         const wordCheck = word.split('');
-        
+
 //         if (word[0] === c){
 //             return wordCheck.reverse().join('')
 //         } else {
 //             return wordCheck.join('');
 //         }
-        
+
 //     })
 //     return reverse.join(' ');
 // }
@@ -367,7 +403,7 @@
 // The "e" is removed, but the "o" is still there!
 // removeVowels("apple") ➞ "pple"
 
-// Work: 
+// Work:
 // Fix this incorrect code, so that all tests pass!
 // function removeVowels(str) {
 //     return str.replace(/[aeiou]/gi, '')
@@ -391,7 +427,7 @@
 // additiveInverse([1, 1, 1, 1, 1]) ➞ [-1, -1, -1, -1, -1]
 // additiveInverse([-5, -25, 35]) ➞ [5, 25, -35]
 
-// Work: 
+// Work:
 // function additiveInverse(arr){
 //     return arr.map(num => +-num);
 // }
@@ -453,12 +489,12 @@
 // 1 - write function
 // 2 - pass args ({an object of names: ages}, years)
 // 3 - use a for...in loop to iterate over an object
-// 4 - define the args 
-// 5 - define what I want back 
+// 4 - define the args
+// 5 - define what I want back
 
-// Work: 
+// Work:
 // function afterNYears(names, n){
-    
+
 //     for(const prop in names){
 // 		names[prop] += Math.abs(n);
 // 	}
@@ -478,18 +514,18 @@
 // Create a function that keeps only strings with repeating identical characters (in other words, it has a set size of 1).
 
 // Examples:
-// identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"]) 
+// identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"])
 // ➞ ["aaaaaa", "d", "eeee"]
-// identicalFilter(["88", "999", "22", "545", "133"]) 
+// identicalFilter(["88", "999", "22", "545", "133"])
 // ➞ ["88", "999", "22"]
-// identicalFilter(["xxxxo", "oxo", "xox", "ooxxoo", "oxo"]) 
+// identicalFilter(["xxxxo", "oxo", "xox", "ooxxoo", "oxo"])
 // ➞ []
 
 // Notes:
 // A string with a single character is trivially counted as a string with repeating identical characters.
 // If there are no strings with repeating identical characters, return an empty array (see example #3).
 
-// Work: 
+// Work:
 // function identicalFilter(arr){
 //     return arr.filter(str => new Set(str).size === 1)
 // }
@@ -520,7 +556,7 @@
 // minusOne(x) ➞ [1, 2, 3, 4]  // 3rd time function is called.
 // minusOne(x) ➞ [1, 2, 3, 4]  // 4th time function is called.
 
-// Work: 
+// Work:
 // x = [1, 2, 3, 4, 5]
 
 // function minusOne(arr){
@@ -551,7 +587,7 @@
 // Notes:
 // The item in an array can be another array.
 
-// Work: 
+// Work:
 // function sumArray(arr){
 //     const flatArr = arr.flat();
 //     const newFlat = flatArr.flat();
@@ -577,14 +613,14 @@
 // createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) ➞ "(111) 111-1111"
 // createPhoneNumber([8, 7, 4, 1, 2, 5, 6, 5, 8, 2]) ➞ "(874) 125-6582"
 
-// Work: 
+// Work:
 // function createPhoneNumber(numbers){
 //         const three = numbers.slice(0,3).join('');
 //         const threeTwo = numbers.slice(3,6).join('');
 //         const four = numbers.slice(6,10).join('');
 //         return `(${three}) ${threeTwo}-${four}`;
 
-    // return `(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`
+// return `(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`
 // }
 
 // console.log(createPhoneNumber([1,2,3,4,5,6,7,8,9,0]));
@@ -605,7 +641,7 @@
 // diffMaxMin([44, 32, 86, 19]) ➞ 67
 // Smallest number is 19, biggest is 86.
 
-// Work: 
+// Work:
 // function diffMaxMin(arr){
 //     return Math.max(...arr) - Math.min(...arr);
 // }
@@ -617,7 +653,7 @@
 
 // Date: 16 - June - 2020
 // Source: https://edabit.com/challenge/havnWL4BimvoaXNMn
-// Title: Return the Four Letter Strings 
+// Title: Return the Four Letter Strings
 
 // Instructions:
 // Create a function that takes an array of strings and returns the words that are exactly four letters.
@@ -630,7 +666,7 @@
 // Notes:
 // You can expect valid strings for all test cases.
 
-// Work: 
+// Work:
 // function isFourLetters(arr){
 //     return arr.filter(item => item.length === 4);
 // }
@@ -663,7 +699,7 @@
 // retrieveMinor("2.1.0") ➞ "1"
 // retrievePatch("2.1.0") ➞ "0"
 
-// Work: 
+// Work:
 // function retrieveMajor(semver) {
 // 	return String(semver.split('.')[0]);
 // }
@@ -678,7 +714,6 @@
 //     return String(semver.split('.')[2]);
 // }
 // console.log(retrievePatch('6.1.9'));
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -697,7 +732,7 @@
 // Notes:
 // If the input tries to divide by 0, return: "Can't divide by 0!"
 
-// Work: 
+// Work:
 // function calculator(num1, operator, num2){
 //     return operator === '/' && num2 === 0 ? "Can't divide by 0!" : eval(`${num1} ${operator} ${num2}`);
 // }
@@ -724,7 +759,7 @@
 // Notes:
 // The function receives an integer and must return an integer.
 
-// Work: 
+// Work:
 // function squareDigits(n){
 //     const splitNum = String(n).split('');
 //     const square = splitNum.map(item => {
@@ -738,7 +773,6 @@
 // console.log(squareDigits(2483));
 
 // ------------------------------------------------------------------------------------------------------------------
-
 
 // Date: 14 - June - 2020
 // Source: https://edabit.com/challenge/AP4hnF97anRc2mAZ6
@@ -758,7 +792,7 @@
 // Notes:
 // Remember to sort the keys.
 
-// Work: 
+// Work:
 // function keysAndValues(obj){
 //     return [Object.keys(obj).sort(), Object.values(obj)];
 // }
@@ -787,7 +821,7 @@
 //   followers: 10
 // }) ➞ [["likes", 2], ["dislikes", 3], ["followers", 10]]
 
-// Work: 
+// Work:
 // function objectToArray(obj){
 //     const entries = Object.entries(obj);
 //     return entries;
@@ -817,7 +851,7 @@
 // Return all even numbers in the order they were given.
 // All test cases contain valid numbers ranging from 1 to 3000.
 
-// Work: 
+// Work:
 // function noOdds(arr){
 //     const newArr = arr.filter(item => item % 2 === 0)
 
@@ -850,10 +884,10 @@
 //   { name: "Martin",  age: 16, budget: 1600 }
 // ]) ➞ 62600
 
-// Work: 
+// Work:
 // function getBudget(arr){
 //     const budget = []
-    
+
 //     for(let i = 0; i < arr.length; i++){
 //         budget.push(arr[i].budget);
 //     }
@@ -894,7 +928,7 @@
 // Notes:
 // All test cases are valid one word strings.
 
-// Work: 
+// Work:
 // function checkEnding(str1, str2){
 //     if (str1.endsWith(str2)){
 //         return true
@@ -924,7 +958,7 @@
 // Notes:
 // Arrays should be concatenated in order of the arguments.
 
-// Work: 
+// Work:
 // function concat(...args){
 //     return args.flat();
 // }
@@ -949,7 +983,7 @@
 // Input is a positive integer.
 // Square pyramidal number.
 
-// Work: 
+// Work:
 // function numberSquares(n){
 //     return (((n+1)*(2*n +1)) *n) / 6
 // }
@@ -972,7 +1006,7 @@
 // countWords("This is a test") ➞ 4
 // countWords("What an easy task, right") ➞ 5
 
-// Work: 
+// Work:
 // function countWords(str){
 //     const newStr = str.split(' ');
 
@@ -1001,7 +1035,7 @@
 // You don't need to actually calculate the factors to solve this problem.
 // Think about why a number would have an odd number of factors.
 
-// // Work: 
+// // Work:
 // function factorGroup(num){
 //     const newNum = Math.sqrt(num);
 
@@ -1017,7 +1051,6 @@
 // console.log(factorGroup(7));
 // console.log(factorGroup(25));
 // console.log(factorGroup(1176));
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -1037,7 +1070,7 @@
 // Exclusively means that a number is considered not within the bounds if it is equal to the upper bound (see example #2).
 // Bounds will be always given as integers.
 
-// Work: 
+// Work:
 // function intWithinBounds(n, lower, upper){
 //     if (Number.isInteger(n) === true){
 //         if (n >= lower && n < upper){
@@ -1070,14 +1103,14 @@
 // findSmallestNum([34, -345, -1, 100]) ➞ -345
 // findSmallestNum([-76, 1.345, 1, 0]) ➞ -76
 // findSmallestNum([0.4356, 0.8795, 0.5435, -0.9999]) ➞ -0.9999
-// findSmallestNum([7, 7, 7]) ➞ 
+// findSmallestNum([7, 7, 7]) ➞
 
 // Notes:
 // Test cases contain decimals.
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function findSmallestNum(arr){
 //     return Math.min(...arr);
 // }
@@ -1088,9 +1121,7 @@
 // console.log(findSmallestNum([0.4356, 0.8795, 0.5435, -0.9999]));
 // console.log(findSmallestNum([7, 7, 7]));
 
-
 // ------------------------------------------------------------------------------------------------------------------
-
 
 // Date: 07 - June - 2020
 // Source: https://edabit.com/challenge/NKknKNfeaJxLDfJuZ
@@ -1100,7 +1131,7 @@
 // Create a function that takes a number (from 1 to 12) and returns its corresponding month name as a string. For example, if you're given 3 as input, your function should return "March", because March is the 3rd month.
 
 // Examples:
-// 
+//
 // Number	Month Name
 // 1	January
 // 2	February
@@ -1123,53 +1154,53 @@
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function monthName(num){
-    
-    // option 2
-    // const months = {
-    //     1: 'January',
-    //     2: 'February',
-    //     3: 'March',
-    //     4: 'April',
-    //     5: 'May',
-    //     6: 'June',
-    //     7: 'July',
-    //     8: 'August',
-    //     9: 'September',
-    //     10: 'October',
-    //     11: 'November',
-    //     12: 'December',
-    // }
 
-    // return months[num];
+// option 2
+// const months = {
+//     1: 'January',
+//     2: 'February',
+//     3: 'March',
+//     4: 'April',
+//     5: 'May',
+//     6: 'June',
+//     7: 'July',
+//     8: 'August',
+//     9: 'September',
+//     10: 'October',
+//     11: 'November',
+//     12: 'December',
+// }
 
-    // option 1
-    // if (num === 1){
-    //     return 'January'
-    // } else if (num === 2){
-    //     return 'February'
-    // } else if (num === 3){
-    //     return 'March'
-    // } else if (num === 4){
-    //     return 'April'
-    // } else if (num === 5){
-    //     return 'May'
-    // } else if (num === 6){
-    //     return 'June'
-    // } else if (num === 7){
-    //     return 'July'
-    // } else if (num === 8){
-    //     return 'August'
-    // } else if (num === 9){
-    //     return 'September'
-    // } else if (num === 10){
-    //     return 'October'
-    // } else if (num === 11){
-    //     return 'November'
-    // } else if (num === 12){
-    //     return 'December'
-    // }
+// return months[num];
+
+// option 1
+// if (num === 1){
+//     return 'January'
+// } else if (num === 2){
+//     return 'February'
+// } else if (num === 3){
+//     return 'March'
+// } else if (num === 4){
+//     return 'April'
+// } else if (num === 5){
+//     return 'May'
+// } else if (num === 6){
+//     return 'June'
+// } else if (num === 7){
+//     return 'July'
+// } else if (num === 8){
+//     return 'August'
+// } else if (num === 9){
+//     return 'September'
+// } else if (num === 10){
+//     return 'October'
+// } else if (num === 11){
+//     return 'November'
+// } else if (num === 12){
+//     return 'December'
+// }
 // }
 
 // console.log(monthName(3));
@@ -1191,7 +1222,7 @@
 // numberSyllables("mon-u-men-tal") ➞ 4
 // numberSyllables("on-o-mat-o-poe-ia") ➞ 6
 
-// Work: 
+// Work:
 // function numberSyllables(word){
 //     const newWord = word.split('-');
 
@@ -1225,10 +1256,10 @@
 // Notes:
 // Your function should return a function, not a string.
 
-// Work: 
+// Work:
 // function redundant(str){
 //     const variable = str
-    
+
 //     function newFunc(){
 //         return variable
 //     }
@@ -1257,7 +1288,7 @@
 // Notes:
 // Return an empty array if the object is empty.
 
-// Work: 
+// Work:
 // function toArray(obj) {
 //     return Object.entries(obj);
 // }
@@ -1282,7 +1313,7 @@
 // Notes:
 // Notice that num is also included in the returned array.
 
-// Work: 
+// Work:
 // function arrayOfMultiples(num, length) {
 //     const multiples = [];
 
@@ -1311,7 +1342,7 @@
 // stringInt("1000") ➞ 1000
 // stringInt("12") ➞ 12
 
-// Work: 
+// Work:
 // function stringInt(str) {
 // 	return Number(str)
 // }
@@ -1319,7 +1350,7 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 29 - May - 2020
-// Source: 
+// Source:
 // Title: Web Sprint Challenge
 
 // const artists = [
@@ -1525,7 +1556,7 @@
 //     }
 // ]
 
-// Work: 
+// Work:
 /* Task 1: Practice accessing data above by console.log-ing following items:
 
 (1) Name of the first artist (0th index) in the array
@@ -1542,21 +1573,21 @@
 //     const stringName = cutName.join(' ');
 //     return stringName;
 //   }
-  
+
 //   console.log(newName(8));
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
  * getArtistByIndex returns a string in the format `The artist at index {id} is {name}.`
- * 
+ *
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
-*/
+ */
 // function getArtistByIndex(arr, id) {
 //     return `The artist at index ${id} is ${arr[id].name}`
 // }
-  
+
 // console.log(getArtistByIndex(artists, 3));
 // console.log(getArtistByIndex(artists, 4));
 
@@ -1564,7 +1595,7 @@
 
 // function get20s(data1, data2){
 //     const names = [];
-  
+
 //     for(let i = 0; i < artists.length; i++){
 //       const splitYears = (artists[i].years.split(' ')[0])
 //       const newYears = Number(splitYears);
@@ -1574,24 +1605,24 @@
 //     }
 //     return names;
 //   }
-  
+
 //   console.log(get20s(1900,2000))
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
  * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
- * 
+ *
  * For example, if removeArtist is invoked with the data and the number 0,
- * it will remove Amedeo Modigliani from our dataset and log the number 19. 
- * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
-*/
+ * it will remove Amedeo Modigliani from our dataset and log the number 19.
+ *
+ * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
+ */
 // function removeArtist(arr, id) {
 //     arr.splice(id,1);
 //     return arr.length;
 // }
-  
+
 // console.log(removeArtist(artists, 0))
 // console.log(removeArtist(artists, 1))
 
@@ -1609,18 +1640,18 @@ At the end, this function should console.log() the new array with information ad
 
 // const lastArtist = [{
 //     "id": 21,
-//     "name": "Jean-Michel Basquiat", 
+//     "name": "Jean-Michel Basquiat",
 //     "years": "1960-1988",
-//     "genre": "Painter", 
+//     "genre": "Painter",
 //     "nationality": "American",
 //     "bio": "An American artist of Haitian and Puerto Rican descent. Basquiat first achieved fame as part of SAMO, an informal graffiti duo who wrote enigmatic epigrams in the cultural hotbed of the Lower East Side of Manhattan during the late 1970s, where rap, punk, and street art coalesced into early hip-hop music culture. By the 1980s, his neo-expressionist paintings were being exhibited in galleries and museums internationally. The Whitney Museum of American Art held a retrospective of his art in 1992."
 //   }]
-  
+
 //   function addArtist(arr){
 //     arr.push(lastArtist[0]);
 //     return arr;
 //   }
-  
+
 //   console.log(addArtist(artists));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -1637,7 +1668,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // for(let i = 0; i < arr.length; i++){
 //     if(arr[i].paintings > 100){
 //     names.push(arr[i].name);
-//     } 
+//     }
 // }
 // return names;
 // }
@@ -1666,22 +1697,21 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // The sum of angles of any triangle is always 180 degrees.
 
-// Work: 
+// Work:
 // function missingAngle(angle1, angle2) {
-    // option 2
-    // const sum = 180 - (angle1 + angle2);
-    // return (sum) < 90 ? "acute" : sum === 90 ? "right" : "obtuse"
+// option 2
+// const sum = 180 - (angle1 + angle2);
+// return (sum) < 90 ? "acute" : sum === 90 ? "right" : "obtuse"
 
-
-    // option 1
-    // const sum = 180 - (angle1 + angle2);
-	// if(sum < 90){
-    //     return `acute`
-    // } else if (sum === 90){
-    //     return `right`
-    // } else {
-    //     return `obtuse`
-    // }
+// option 1
+// const sum = 180 - (angle1 + angle2);
+// if(sum < 90){
+//     return `acute`
+// } else if (sum === 90){
+//     return `right`
+// } else {
+//     return `obtuse`
+// }
 // }
 
 // console.log(missingAngle(27, 59));
@@ -1709,7 +1739,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // All arrays will have at least one element.
 // Don't forget to return the result.
 
-// Work: 
+// Work:
 // function multiplyByLength(arr){
 //     return arr.map(item => item * arr.length);
 // }
@@ -1718,7 +1748,6 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // console.log(multiplyByLength([4, 1, 1]));
 // console.log(multiplyByLength([1, 0, 3, 3, 7, 2, 1]));
 // console.log(multiplyByLength([0]));
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -1740,13 +1769,13 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function findLargestNum(arr){
-        // option 2
-        // return Math.max(...arr);
+// option 2
+// return Math.max(...arr);
 
-        // option 1
-        // return arr.sort((a,b) => a - b).pop()
+// option 1
+// return arr.sort((a,b) => a - b).pop()
 // }
 
 // console.log(findLargestNum([4, 5, 1, 3]));
@@ -1768,16 +1797,16 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // maxTotal([0, 0, 0, 0, 0, 0, 0, 0, 0, 100]) ➞ 100
 // maxTotal([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) ➞ 40
 
-// Work: 
+// Work:
 // function maxTotal(nums){
-    // option 2
-    // const sorted = nums.sort((a,b) => a - b).slice(5).reduce((a,b) => a+b);
-    // return sorted;
-    
-    // option 1
-    // const sorted = nums.sort((a,b) => a - b);
-    // const cut = sorted.slice(5).reduce((a,b) => a+b)
-    // return cut;
+// option 2
+// const sorted = nums.sort((a,b) => a - b).slice(5).reduce((a,b) => a+b);
+// return sorted;
+
+// option 1
+// const sorted = nums.sort((a,b) => a - b);
+// const cut = sorted.slice(5).reduce((a,b) => a+b)
+// return cut;
 // }
 
 // console.log(maxTotal([1, 1, 0, 1, 3, 10, 10, 10, 10, 1]));
@@ -1805,7 +1834,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function firstLast(arr){
 //     return [arr.shift(), arr.pop()];
 // }
@@ -1830,22 +1859,22 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // oddishOrEvenish(373) ➞ "Oddish"
 // oddishOrEvenish(4433) ➞ "Evenish"
 
-// Work: 
+// Work:
 // function oddishOrEvenish(num){
 
-    // option 2 - concise 
-    // return [...String(num)].map(Number).reduce((a,v) => a+v) % 2 ? 'Oddish' : 'Evenish'
+// option 2 - concise
+// return [...String(num)].map(Number).reduce((a,v) => a+v) % 2 ? 'Oddish' : 'Evenish'
 
-    // option 1 - easier to read, step by step
-    // const str = num.toString();
-    // const arr = [...str].map((item) => {
-    //     return Number(item);
-    // });
-    // const sum = (a, b) => a + b;
-    // const evenOrOdd = arr.reduce((sum), 0);
-    // const remainder = evenOrOdd % 2;
+// option 1 - easier to read, step by step
+// const str = num.toString();
+// const arr = [...str].map((item) => {
+//     return Number(item);
+// });
+// const sum = (a, b) => a + b;
+// const evenOrOdd = arr.reduce((sum), 0);
+// const remainder = evenOrOdd % 2;
 
-    // return remainder === 0 ? 'Evenish' : 'Oddish';
+// return remainder === 0 ? 'Evenish' : 'Oddish';
 // }
 
 // console.log(oddishOrEvenish(43));
@@ -1867,15 +1896,15 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // sevenBoom([8, 6, 33, 100]) ➞ "there is no 7 in the array"
 // sevenBoom([2, 55, 60, 97, 86]) ➞ "Boom!"
 
-// Work: 
+// Work:
 // function sevenBoom(arr){
 
-    // option 2
-    // return arr.join().includes(7) ? "Boom!" : "there is no 7 in the array";
+// option 2
+// return arr.join().includes(7) ? "Boom!" : "there is no 7 in the array";
 
-    // option 1 - easier to read
-    // const newArr = arr.join();
-    // return newArr.includes(7) ? "Boom!" : "there is no 7 in the array";
+// option 1 - easier to read
+// const newArr = arr.join();
+// return newArr.includes(7) ? "Boom!" : "there is no 7 in the array";
 // }
 
 // console.log(sevenBoom([1, 2, 3, 4, 5, 6, 7]));
@@ -1909,7 +1938,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 //   continent: "Asia"
 // }) ➞ "Tokyo has a population of 13,929,286 and is situated in Asia"
 
-// Work: 
+// Work:
 // function cityFacts(city){
 //     return `${city.name} has a population of ${city.population} and is situated in ${city.continent}`;
 // }
@@ -1943,20 +1972,20 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Inputs will be numbers greater than or equal to 0.
 
-// Work: 
+// Work:
 // function footballPoints(wins, draws, losses){
-    
-    // option 3 - easiest and shortest
-    // return wins*3+draws;
 
-    // option 2 - broken down, easier to read
-    // const newWins = (wins >= 0 ? wins * 3 : wins * 0);
-    // const newDraws = (draws >= 0 ? draws * 1 : draws * 0);
-    // const newLosses = (losses * 0);
-    // return newWins + newDraws + newLosses;
-    
-    // option 1 - concise
-    // return (wins >= 0 ? wins * 3 : wins * 0) + (draws >= 0 ? draws * 1 : draws * 0) + (losses * 0);
+// option 3 - easiest and shortest
+// return wins*3+draws;
+
+// option 2 - broken down, easier to read
+// const newWins = (wins >= 0 ? wins * 3 : wins * 0);
+// const newDraws = (draws >= 0 ? draws * 1 : draws * 0);
+// const newLosses = (losses * 0);
+// return newWins + newDraws + newLosses;
+
+// option 1 - concise
+// return (wins >= 0 ? wins * 3 : wins * 0) + (draws >= 0 ? draws * 1 : draws * 0) + (losses * 0);
 // }
 
 // console.log(footballPoints(3, 4, 2));
@@ -1982,18 +2011,18 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Accept numbers such as .5 and 0003.
 
-// Work: 
+// Work:
 // function validStrNumber(n){
 
-    // option 2
-    // return isNaN(n) ? false : true;
+// option 2
+// return isNaN(n) ? false : true;
 
-    // option 1 -- I had the values flipped isNaN() --> true === not a number, isNaN() --> false === is a number
-    // if(isNaN(n)){
-    //     return false
-    // } else {
-    //     return true
-    // }
+// option 1 -- I had the values flipped isNaN() --> true === not a number, isNaN() --> false === is a number
+// if(isNaN(n)){
+//     return false
+// } else {
+//     return true
+// }
 // }
 
 // console.log(validStrNumber("3.2"));
@@ -2025,24 +2054,24 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // All inputs will be valid strings.
 
-// Work: 
+// Work:
 // function rps(p1, p2){
-    // option 1
-    // if(p1 === p2){
-    //     return "It's a draw";
-    // } else if (p1 === "Rock" && p2 === "Paper"){
-    //     return "The winner is p2";
-    // } else if (p1 === "Rock" && p2 === "Scissors"){
-    //     return "The winner is p1";
-    // } else if (p1 === "Paper" && p2 === "Scissors"){
-    //     return "The winner is p2";
-    // } else if (p1 === "Paper" && p2 === "Rock"){
-    //     return "The winner is p1";
-    // } else if (p1 === "Scissors" && p2 === "Paper"){
-    //     return "The winner is p1";
-    // } else if(p1 === "Scissors" && p2 === "Rock"){
-    //     return "The winner is p2";
-    // };
+// option 1
+// if(p1 === p2){
+//     return "It's a draw";
+// } else if (p1 === "Rock" && p2 === "Paper"){
+//     return "The winner is p2";
+// } else if (p1 === "Rock" && p2 === "Scissors"){
+//     return "The winner is p1";
+// } else if (p1 === "Paper" && p2 === "Scissors"){
+//     return "The winner is p2";
+// } else if (p1 === "Paper" && p2 === "Rock"){
+//     return "The winner is p1";
+// } else if (p1 === "Scissors" && p2 === "Paper"){
+//     return "The winner is p1";
+// } else if(p1 === "Scissors" && p2 === "Rock"){
+//     return "The winner is p2";
+// };
 // }
 
 // console.log(rps("Rock", "Paper"));
@@ -2066,7 +2095,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Check the Resources tab for some helpful information.
 
-// Work: 
+// Work:
 // function moodToday(mood){
 //     if(!mood){
 //         return `Today, I am feeling neutral`
@@ -2098,9 +2127,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // June only has 30 days.
 
 // Notes:
-// 
+//
 
-// Work: 
+// Work:
 // function isValidDate(d, m, y){
 //     const newDate = new Date(y, --m, d);
 //     return m === newDate.getMonth();
@@ -2132,18 +2161,18 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function hasSpaces(str) {
-    
-    //option 2
-    // return str.includes(' ') ? true : false;
 
-    // option 1
-    // if(str.includes(" ")){
-    //     return true;
-    // } else {
-    //     return false
-    // }
+//option 2
+// return str.includes(' ') ? true : false;
+
+// option 1
+// if(str.includes(" ")){
+//     return true;
+// } else {
+//     return false
+// }
 // }
 
 // console.log(hasSpaces('hello'));
@@ -2170,20 +2199,20 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Bonus: Try to complete this challenge in one line!
 
-// Work: 
+// Work:
 // function multiplyNums(nums) {
-    
-    // option 2
-    // return Number(nums.split(',').reduce((a, b) => a*b))
-    
-    // option 1
-    // const divi = nums.split(',');
-    
-    // function multiply(a,b){
-    //     return a*b;
-    // }
-    
-    // return Number(divi.reduce(multiply));
+
+// option 2
+// return Number(nums.split(',').reduce((a, b) => a*b))
+
+// option 1
+// const divi = nums.split(',');
+
+// function multiply(a,b){
+//     return a*b;
+// }
+
+// return Number(divi.reduce(multiply));
 // }
 
 // console.log(multiplyNums('2,3'));
@@ -2205,7 +2234,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // triangle(6) ➞ 21
 // triangle(215) ➞ 23220
 
-// Work: 
+// Work:
 // function triangle(n){
 //     return n*(n+1)/2;
 // }
@@ -2233,22 +2262,22 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // All array items are of the type bool (true or false).
 // No need for anything fancy, true === 1, false === 0
 
-// Work: 
+// Work:
 // function countTrue(arr){
-    
-    // option 2
-    // const filterArr = arr.filter(item => {
-    //     return item === true;
-    // })
 
-    // return filterArr.length;
+// option 2
+// const filterArr = arr.filter(item => {
+//     return item === true;
+// })
 
-    // option 1
-    // const truCount = arr.reduce((acc, curr) => {
-    //     return acc + curr
-    // }, 0)
-    
-    // return truCount;
+// return filterArr.length;
+
+// option 1
+// const truCount = arr.reduce((acc, curr) => {
+//     return acc + curr
+// }, 0)
+
+// return truCount;
 // }
 
 // console.log(countTrue([true, false, false, true, false]));
@@ -2274,11 +2303,10 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function reverse(arr){
 //     return arr.reverse();
 // }
-
 
 // console.log(reverse([1,2,3,4]));
 // console.log(reverse([9,9,3,4]));
@@ -2300,16 +2328,16 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // All test cases contain valid strings. Don't worry about spaces, special characters or numbers. They're all considered valid characters.
 
-// Work: 
+// Work:
 // function doubleChar(str){
-    // const split = str.split('');
-    // const doub = Array.from(split).map(double => {
-    //     return double.repeat(2);
-    // })
-    // const joinTwo = doub.join('');
-    // console.log(typeof joinTwo)
+// const split = str.split('');
+// const doub = Array.from(split).map(double => {
+//     return double.repeat(2);
+// })
+// const joinTwo = doub.join('');
+// console.log(typeof joinTwo)
 
-    // return joinTwo;
+// return joinTwo;
 // }
 
 // console.log(doubleChar('hi'));
@@ -2335,7 +2363,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Don't print, return a value.
 // Return the value, not the equation.
 
-// Work: 
+// Work:
 // function eq(evaluate){
 //     return eval(evaluate);
 // }
@@ -2364,14 +2392,14 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 // Sudo code:
 // 1 - write and function and pass it the array
-// 2 - map through the array 
-// 3 - use charAt(0) 
+// 2 - map through the array
+// 3 - use charAt(0)
 // 4 - return and set to a variable
 // 5 - sort the variable
 // 6 - write a new variable to join the array because it returns a string
-// 7 - use .toUpperCase as a precaution 
+// 7 - use .toUpperCase as a precaution
 
-// Work: 
+// Work:
 // function societyNames(friends){
 //     const newFriends = friends.map(friend => {
 //         return friend.charAt(0);
@@ -2406,7 +2434,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Don't forget to return the result.
 // If you are stuck, find help in the Resources tab.
 
-// Work: 
+// Work:
 // function findIndex(arr, str) {
 //     return arr.indexOf(str);
 // }
@@ -2434,7 +2462,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // The factorial of 0 is 1.
 // The factorial of any positive integer Z is Z * (Z - 1) * (Z - 2) * . . . . . . * 1 (e.g. factorial of 3 is 3 * 2 * 1 = 6).
 
-// Work: 
+// Work:
 
 // function factorial(z){
 //     if(z < 0) return `Please provide a positive integer`;
@@ -2464,12 +2492,12 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Zero is a non-negative integer.
 
-// Work: 
+// Work:
 // function filterArray(arr){
 //     const newArr = arr.filter(str => {
 //         if (str >= 0){
 //             return Number.isInteger(str);
-//         } 
+//         }
 //         return null;
 //     })
 
@@ -2501,13 +2529,13 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Note the strict inequality (see example #3).
 
-// Work: 
+// Work:
 // function canNest(arr1, arr2) {
 //     const arr1Min = Math.min(...arr1);
 //     const arr1Max = Math.max(...arr1);
 //     const arr2Min = Math.min(...arr2);
 //     const arr2Max = Math.max(...arr2);
-    
+
 //     if(arr1Min > arr2Min ){
 //         return true
 //     } else if(arr1Min === arr2Min){
@@ -2546,15 +2574,14 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Expect negative integers (whole numbers).
 // Tests are case sensitive (return "even" or "odd" in lowercase).
 
-// Work: 
+// Work:
 // function isEvenOrOdd(num) {
-    // option 2
-    // return num % 2 ? 'odd' : 'even';
-    
-    
-    // option 1
-    // const check = num % 2;
-    // return check ? "odd" : "even";
+// option 2
+// return num % 2 ? 'odd' : 'even';
+
+// option 1
+// const check = num % 2;
+// return check ? "odd" : "even";
 // };
 
 // console.log(isEvenOrOdd(3));
@@ -2583,13 +2610,13 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Reject the promise with the simple string "It's not a dog!".
 // Check the Resources tab for more info on promises.
 
-// Work: 
+// Work:
 // let promise = new Promise( (resolve) => {
 // 	let animal = "cat"
 //   setTimeout(() => {
 // 		if(animal === "dog") {
 // 			resolve("It's a dog!")
-// 		} 
+// 		}
 // 	  if(animal !== "dog") {
 // 			reject( "It's not a dog!")
 // 		}
@@ -2613,7 +2640,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Your output must be case-sensitive (see second example).
 
-// Work: 
+// Work:
 // function charCount(myChar, str) {
 //     const arr = str.split('');
 //     const newArr = arr.filter(char => {
@@ -2655,7 +2682,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 // Additional notes: parseInt() is the function that does this already. Takes two arguments and returns an integer in the specified radix (second argument, basically which base you want between 2 - 36). Binary is base 2, decimal is base 10. octal is base 8, hexadecimal is base 16 (hex codes)
 
-// Work: 
+// Work:
 // function binary(decimal){
 //     return parseInt(decimal, 10).toString(2);
 // }
@@ -2683,7 +2710,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Remember that the values are in an object.
 // Volume is length * width * height.
 
-// Work: 
+// Work:
 
 // function volumeOfBox(sizes){
 //     const nums = Object.values(sizes);
@@ -2712,7 +2739,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If the item is not present, return -1.
 // The given array is ordered.
 
-// Work: 
+// Work:
 // function search(arr, item){
 //     return arr.indexOf(item);
 // }
@@ -2741,7 +2768,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function calculateExponent(num, exp) {
 //     return Math.pow(num, exp);
 // }
@@ -2768,7 +2795,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // FPS stands for "frames per second" and it's the number of frames a computer screen shows every second.
 // Assume the screen produces 60 frames every second.
 
-// Work: 
+// Work:
 // function frames(minutes, fps){
 //     return (minutes * 60) * fps;
 // }
@@ -2794,15 +2821,15 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // largestSwap(99) ➞ true
 
 // Notes:
-// Numbers with two identical digits (third example) should yield true (you can't do better). 
+// Numbers with two identical digits (third example) should yield true (you can't do better).
 
-// Work: 
+// Work:
 // function largestSwap(num){
 //     const sep = num.toString();
 //     const sep2 = sep.split('');
 //     const reverse = sep2.reverse();
 //     const join = reverse.join('');
-    
+
 //     if (num > Number(join)){
 //         return true;
 //     } else if (num === Number(join)){
@@ -2811,7 +2838,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 //         return false
 //     }
 
-    // return join;
+// return join;
 // }
 
 // console.log(largestSwap(99));
@@ -2835,10 +2862,10 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Remember to use a capital "B".
 // Don't forget to return the result.
 
-// Work: 
+// Work:
 
 // function longBurp(num) {
-//     const r = "r"; 
+//     const r = "r";
 //     const burp = `Bu${r.repeat(num)}p`;
 //     return burp;
 // }
@@ -2848,7 +2875,6 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // console.log(longBurp(7));
 
 // ------------------------------------------------------------------------------------------------------------------
-
 
 // Date: 07 - May - 2020
 // Source: https://edabit.com/challenge/hPWnaSckJke5FXNEH
@@ -2866,12 +2892,12 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Dates are zero zero based (see resources).
 // All test cases contain valid dates.
 
-// Work: 
+// Work:
 // function timeForMilkAndCookies(date) {
-    
+
 //     const month = date.getMonth();
 //     const varDate = date.getDate();
-  
+
 //     // console.log(month, day);
 //     if(month === 11 && varDate === 24){
 //         return true
@@ -2900,22 +2926,22 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Step n is a positive integer.
 
-// Work: 
+// Work:
 
 // function stackBoxes(n) {
-    // option 1
-    // if(n > 0){
-    //     return Math.pow(n, 2);
-    // } else {
-    //     return 0;
-    // }
-    
-    // option 2
-    // if(n > 0){
-    //     return n*n;
-    // } else {
-    //     return 0;
-    // }
+// option 1
+// if(n > 0){
+//     return Math.pow(n, 2);
+// } else {
+//     return 0;
+// }
+
+// option 2
+// if(n > 0){
+//     return n*n;
+// } else {
+//     return 0;
+// }
 // }
 
 // console.log(stackBoxes(0));
@@ -2924,7 +2950,6 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // console.log(stackBoxes(3));
 // console.log(stackBoxes(4));
 // console.log(stackBoxes(5));
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -2945,8 +2970,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-
-// Work: 
+// Work:
 // function getLastItem(arr) {
 //     return arr.pop();
 // }
@@ -2975,8 +2999,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-
-// Work: 
+// Work:
 
 // function check(arr, el){
 //     if(arr.includes(el)){
@@ -3010,7 +3033,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // The side lengths of the triangle are positive integers.
 // Don't forget to return the result.
 
-// Work: 
+// Work:
 // function nextEdge( side1, side2) {
 //     return (side1 + side2) - 1;
 // }
@@ -3039,25 +3062,25 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // This exercise is designed as an introduction to higher order functions (functions which use other functions to do their work).
 
-// Work: 
+// Work:
 
 // function whichIsLarger(f, g) {
-//     
-    // Option 2:
-    // if(f() > g()){
-	// 	return "f";
-	// } else if(f() === g()){
-	// 	return "neither"
-	// } else if(f() < g()){
-	// 	return "g"
-	// } else {
-	// 	return null
-	// }
+//
+// Option 2:
+// if(f() > g()){
+// 	return "f";
+// } else if(f() === g()){
+// 	return "neither"
+// } else if(f() < g()){
+// 	return "g"
+// } else {
+// 	return null
+// }
 
 //  Option 1:
 //      const newF = f();
 //      const newG = g();
-    
+
 //     if(newF > newG) {
 //         return "f";
 //     } else if(newF === newG) {
@@ -3091,7 +3114,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // All test arrays will have at least one element and are valid.
 
-// Work: 
+// Work:
 
 // function minMax(arr) {
 //     return [Math.min(...arr), Math.max(...arr)];
@@ -3118,14 +3141,14 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // If the item is not present, return -1.
 
-// Work: 
+// Work:
 
 // function search(arr, item){
 //     // return arr.indexOf(item);
 
 //     if (arr.includes(item)) {
 //         const result = arr.indexOf(item)
-        
+
 //         return result;
 //     } else {
 //         return -1
@@ -3154,7 +3177,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // Notes:
 // Check the Resources tab for info on recursion.
 
-// Work: 
+// Work:
 
 // function length(str) {
 
@@ -3202,37 +3225,36 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // 7 - if true, set a const newNumber and .split() at 'k
 // 8 - then return the const newNumber turned into a number and multiplied by 1000
 
-// Work: 
+// Work:
 // function transformUpvotes(str) {
 //     const newArr = str.split(' ');
 
-    // return newArr;
+// return newArr;
 
-    // const secondArr = newArr.map((num) => {
-        // return num.endsWith('k') ? Number(num) * 1000 : Number(num); // --> returns the number by itself 
+// const secondArr = newArr.map((num) => {
+// return num.endsWith('k') ? Number(num) * 1000 : Number(num); // --> returns the number by itself
 
-        // if (num.endsWith('k')){
-        //     const newNumber = num.split('k');
-                
-        //         return Number.parseFloat(newNumber) * 1000;
-                // if(newNumber === ' '){
-                //     return null
-                // } else {
-                //     return  Number(newNumber) * 1000;
-                // }
-    //     } else {
-    //         return Number(num);
-    //     }
-    // })
+// if (num.endsWith('k')){
+//     const newNumber = num.split('k');
 
+//         return Number.parseFloat(newNumber) * 1000;
+// if(newNumber === ' '){
+//     return null
+// } else {
+//     return  Number(newNumber) * 1000;
+// }
+//     } else {
+//         return Number(num);
+//     }
+// })
 
-    // newArr.map((num) => {
-    //     if(num.endsWith('k') ){
-    //         return true
-    //     } else {
-    //         return null
-    //     }
-    // })
+// newArr.map((num) => {
+//     if(num.endsWith('k') ){
+//         return true
+//     } else {
+//         return null
+//     }
+// })
 
 //     return secondArr;
 // }
@@ -3241,11 +3263,10 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // console.log(transformUpvotes("5.5k 8.9k 32"));
 // console.log(transformUpvotes("20.3k 3.8k 7.7k 992"));
 
-
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 30 - April - 2020
-// Source: 
+// Source:
 // Title: Concatenating two integer arrays
 
 // Instructions:
@@ -3256,7 +3277,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // concat([7, 8], [10, 9, 1, 1, 2]) --> [7, 8, 10, 9, 1, 1, 2]
 // concat([4, 5, 1], [3, 3, 3, 3, 3]) --> [4, 5, 1, 3, 3, 3, 3, 3]
 
-// Work: 
+// Work:
 // function concat(arr1, arr2) {
 //     // option 1 "new way"
 //     // return [...arr1, ...arr2]
@@ -3266,15 +3287,14 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 //     return result
 // }
 
-// console.log(concat([1, 3, 5], [2, 6, 8])) 
-// console.log(concat([7, 8], [10, 9, 1, 1, 2])) 
-// console.log(concat([4, 5, 1], [3, 3, 3, 3, 3])) 
-
+// console.log(concat([1, 3, 5], [2, 6, 8]))
+// console.log(concat([7, 8], [10, 9, 1, 1, 2]))
+// console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]))
 
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 30 - April - 2020
-// Source: 
+// Source:
 // Title: Are the Numbers Equal?
 
 // Instructions:
@@ -3285,7 +3305,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // isSameNum(2, 2) ➞  true
 // isSameNum(2, "2") ➞ false
 
-// Work: 
+// Work:
 
 // function isSameNum(num1, num2) {
 //     // if(num1 === num2 ){
@@ -3300,7 +3320,6 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // console.log(isSameNum(4, 8));
 // console.log(isSameNum(2, 2));
 // console.log(isSameNum(2, '2'));
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -3324,9 +3343,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 // Sudo code:
 // 1 - write an arrow function
-// 2 - pass an argument 
+// 2 - pass an argument
 
-// Work: 
+// Work:
 
 // const helloName = (name) => {
 //      return `Hello ${name}!`
@@ -3361,8 +3380,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // 3 - setup validation if/else to check that a is greater than b
 // 4 - check using Number.isInteger(a/b)
 
-
-// Work: 
+// Work:
 // function dividesEvenly(a, b) {
 //     if(b > a) {
 //         return 'try again, the first argument must be greater than the second argument'
@@ -3400,7 +3418,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // 4 - write out an algebra expression for 1 === n
 // 5 - write out an algebra expression for 1 < n
 
-// Work: 
+// Work:
 
 // function matchHouses(step) {
 //     if(step < 0) {
@@ -3438,7 +3456,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function isEmpty(s){
 //     if(s === '' || "") {
 //         return true
@@ -3473,7 +3491,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function convert(minutes){
 //     return minutes * 60;
 // }
@@ -3481,7 +3499,6 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // console.log(convert(5));
 // console.log(convert(3));
 // console.log(convert(2));
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -3503,7 +3520,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-// Work: 
+// Work:
 // function triArea(base, height){
 //    return (base * height) / 2;
 // }
@@ -3531,7 +3548,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // 3 - write a loop that adds each number from 1 - `num`
 // 4 - return the sum
 
-// Work: 
+// Work:
 // function addUp(num){
 //    return num * (num + 1) / 2
 // }
