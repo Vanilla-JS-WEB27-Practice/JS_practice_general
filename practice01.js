@@ -19,6 +19,70 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Template
+// Date: 17 - September - 2020
+// Source: https://edabit.com/challenge/MwLp6s75F6S5wRrEJ
+// Title: Calculate Determinant of a 2x2 Matrix
+
+// Instructions:
+// Create a function to calculate the determinant of a 2 * 2 matrix.
+// The determinant of the following matrix is: ad - bc:
+// [[a, b], [c, d]]
+
+// Examples:
+// calcDeterminant([
+//   [1, 2],
+//   [3, 4]
+// ]) ➞ -2
+
+// calcDeterminant([
+//   [5, 3],
+//   [3, 1]
+// ]) ➞ -4
+
+// calcDeterminant([
+//   [1, 1],
+//   [1, 1]
+// ]) ➞ 0
+
+// Notes:
+// Matrix will be in 2 * 2 form only.
+
+// Sudo code:
+// 1 - separate the two arrays inside the param array
+// 2 - set values to a, b, c, d
+// 3 - do the arithmetic and return the result
+
+// Work:
+// function calcDeterminant(matrix) {
+//   const arr1 = matrix[0];
+//   const arr2 = matrix[1];
+//   return arr1[0] * arr2[1] - arr1[1] * arr2[0];
+// }
+
+// console.log(
+//   calcDeterminant([
+//     [1, 2],
+//     [3, 4],
+//   ])
+// );
+
+// console.log(
+//   calcDeterminant([
+//     [1, 1],
+//     [1, 1],
+//   ])
+// );
+
+// console.log(
+//   calcDeterminant([
+//     [5, 3],
+//     [3, 1],
+//   ])
+// );
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 17 - September - 2020
 // Source: https://edabit.com/challenge/c23dFfNiKbnguSQtq
 // Title: Finding Nemo
