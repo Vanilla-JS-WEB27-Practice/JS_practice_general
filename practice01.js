@@ -19,6 +19,74 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 23 - September - 2020
+// Source: https://edabit.com/challenge/QQxJqZnfFN6mPcBCr
+// Title: Dashed Vowels
+
+// Instructions:
+// Create a function that takes a string and returns dashes on the left and right side of every vowel (a e i o u).
+
+// Examples:
+// dashed("Edabit") ➞ "-E-d-a-b-i-t"
+// dashed("Carpe Diem") ➞ "C-a-rp-e- D-i--e-m"
+// dashed("Fight for your right to party!") ➞ "F-i-ght f-o-r y-o--u-r r-i-ght t-o- p-a-rty!"
+
+// Notes:
+// A string can contain uppercase and lowercase vowels.
+// Y is not considered a vowel.
+
+// Work:
+// my solution
+// function dashed(str) {
+//   const alpha = str.split("");
+//   const result = [];
+//   for (let i = 0; i < alpha.length; i++) {
+//     switch (alpha[i]) {
+//       case "a":
+//         result.push("-a-");
+//         break;
+//       case "e":
+//         result.push("-e-");
+//         break;
+//       case "i":
+//         result.push("-i-");
+//         break;
+//       case "o":
+//         result.push("-o-");
+//         break;
+//       case "u":
+//         result.push("-u-");
+//         break;
+//       case "A":
+//         result.push("-A-");
+//         break;
+//       case "E":
+//         result.push("-E-");
+//         break;
+//       case "I":
+//         result.push("-I-");
+//         break;
+//       case "O":
+//         result.push("-O-");
+//         break;
+//       case "U":
+//         result.push("-U-");
+//         break;
+//       default:
+//         result.push(alpha[i]);
+//     }
+//   }
+//   return result.join("");
+// }
+
+// using regex solution
+// const dashed = (str) => str.replace(/([aeiou])/gi, "-$1-");
+
+// console.log(dashed("Edabit"));
+// console.log(dashed("Carpe Diem"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Template
 // Date: 17 - September - 2020
 // Source: https://edabit.com/challenge/MwLp6s75F6S5wRrEJ
