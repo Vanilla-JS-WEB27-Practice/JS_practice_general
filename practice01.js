@@ -20,6 +20,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 23 - September - 2020
+// Source: https://edabit.com/challenge/L76DRaqDXkBJJ7tBr
+// Title: Where is Bob!?!
+
+// Instructions:
+// Write a function that searches an array of names (unsorted) for the name "Bob" and returns the location in the array.
+// If Bob is not in the array, return -1.
+
+// Examples:
+// findBob(["Jimmy", "Layla", "Bob"]) ➞ 2
+// findBob(["Bob", "Layla", "Kaitlyn", "Patricia"]) ➞ 0
+// findBob(["Jimmy", "Layla", "James"]) ➞ -1
+
+// Notes:
+// Assume all names start with a capital letter and are lowercase thereafter (i.e. don't worry about finding "BOB" or "bob").
+
+// Work:
+// function findBob(names) {
+//   return names.indexOf("Bob");
+// }
+
+// console.log(findBob(["Jimmy", "Layla", "Bob"]));
+// console.log(findBob(["Bob", "Layla", "Kaitlyn", "Patricia"]));
+// console.log(findBob(["Jimmy", "Layla", "James"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 23 - September - 2020
 // Source: https://edabit.com/challenge/QQxJqZnfFN6mPcBCr
 // Title: Dashed Vowels
 
