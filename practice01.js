@@ -19,6 +19,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 24 - September - 2020
+// Source: https://edabit.com/challenge/y4K6Mi7XfaauvoT3u
+// Title: Burglary Series (08): Remove an Entry
+
+// Instructions:
+// Your spouse tells you that one of the items on the list wasn't stolen, it is in your castle in Transilvania.
+// Given an object of the stolen items and an item name, return a copy without that item on the list.
+
+// Examples:
+// { piano: 300, tv: 100, skate:50 } ➞ { piano: 300, tv: 100 }
+// { mirror: 500, painting: 1 } ➞ { painting: 1 }
+
+// Notes:
+// The object will contain at least two items.
+// Preferably, mutate the copy, not the original.
+
+// Work:
+// function removeEntry(obj, itemName) {
+//   // const step1 = Array.from(Object.keys(obj));
+//   const arr = Array.from(Object.keys(itemName));
+//   const remove = arr[0];
+//   delete obj[remove];
+//   return obj;
+// }
+
+// console.log(removeEntry({ piano: 300, tv: 100, skate: 50 }, { skate: 50 }));
+// console.log(removeEntry({ mirror: 500, painting: 1 }, { mirror: 500 }));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 23 - September - 2020
 // Source: https://edabit.com/challenge/L76DRaqDXkBJJ7tBr
 // Title: Where is Bob!?!
