@@ -20,6 +20,44 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 27 - September - 2020
+// Source: https://edabit.com/challenge/zvFri3sia4iNPTeqC
+// Title: Is the String a Palindrome?
+
+// Instructions:
+// A palindrome is a word that is identical forward and backwards.
+// mom
+// racecar
+// kayak
+// Given a word, create a function that checks whether it is a palindrome.
+
+// Examples:
+// checkPalindrome("mom") ➞ true
+// checkPalindrome("scary") ➞ false
+// checkPalindrome("reviver") ➞ true
+// checkPalindrome("stressed") ➞ false
+
+// Notes:
+// All test input is lower cased.
+
+// Work:
+// function checkPalindrome(str) {
+//   const result = str.split("");
+//   const reversed = result.reverse();
+//   if (str === reversed.join("")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(checkPalindrome("mom"));
+// console.log(checkPalindrome("scary"));
+// console.log(checkPalindrome("reviver"));
+// console.log(checkPalindrome("stressed"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 27 - September - 2020
 // Source: https://edabit.com/challenge/3cBe8af7yG2rzLEA2
 // Title: Convert Number to String of Dashes
 
