@@ -19,6 +19,46 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 27 - September - 2020
+// Source: https://edabit.com/challenge/EMuszDzF66k9J73HG
+// Title: Instant JAZZ
+
+// Instructions:
+// Create a function which concantenates the number 7 to the end of every chord in an array.
+// Ignore all chords which already end with 7.
+
+// Examples:
+// jazzify(["G", "F", "C"]) ➞ ["G7", "F7", "C7"]
+// jazzify(["Dm", "G", "E", "A"]) ➞ ["Dm7", "G7", "E7", "A7"]
+// jazzify(["F7", "E7", "A7", "Ab7", "Gm7", "C7"]) ➞ ["F7", "E7", "A7", "Ab7", "Gm7", "C7"]
+// jazzify([]) ➞ []
+
+// Notes:
+// Return an empty array if the given array is empty.
+// You can expect all the tests to have valid chords.
+
+// Work:
+// function jazzify(arr) {
+//   const result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].endsWith("7")) {
+//       result.push(arr[i]);
+//     } else {
+//       newItem = arr[i].concat("7");
+//       result.push(newItem);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(jazzify(["G", "F", "C"]));
+// console.log(jazzify(["Dm", "G", "E", "A"]));
+// console.log(jazzify(["F7", "E7", "A7", "Ab7", "Gm7", "C7"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// REDO
 // Date: 24 - September - 2020
 // Source: https://edabit.com/challenge/y4K6Mi7XfaauvoT3u
 // Title: Burglary Series (08): Remove an Entry
