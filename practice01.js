@@ -19,6 +19,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - September - 2020
+// Source: https://edabit.com/challenge/PWqkt9HiLcJSr6QEY
+// Title: Sum of Number Elements in an Array
+
+// Instructions:
+// Arrays can be mixed with various types. Your task for this challenge is to sum all the number elements in the given array.
+// Create a function that takes an array and returns the sum of all numbers in the array.
+
+// Examples:
+// numbersSum([1, 2, "13", "4", "645"]) ➞ 3
+// numbersSum([true, false, "123", "75"]) ➞ 0
+// numbersSum([1, 2, 3, 4, 5, true]) ➞ 15
+
+// Work:
+// function numbersSum(arr) {
+//   const result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Number.isInteger(arr[i]) === true) {
+//       result.push(arr[i]);
+//     }
+//   }
+
+//   if (result.length <= 0) {
+//     return 0;
+//   } else {
+//     return result.reduce((a, b) => a + b);
+//   }
+// }
+
+// console.log(numbersSum([1, 2, "13", "4", "645"]));
+// console.log(numbersSum([true, false, "123", "75"]));
+// console.log(numbersSum([1, 2, 3, 4, 5, true]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 27 - September - 2020
 // Source: https://edabit.com/challenge/zvFri3sia4iNPTeqC
 // Title: Is the String a Palindrome?
@@ -3853,5 +3888,4 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // console.log(addUp(4));
 // console.log(addUp(13));
 // console.log(addUp(600));
-
-// Resources: https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/
+//Resources: https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/
