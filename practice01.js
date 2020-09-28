@@ -20,6 +20,36 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 27 - September - 2020
+// Source: https://edabit.com/challenge/3cBe8af7yG2rzLEA2
+// Title: Convert Number to String of Dashes
+
+// Instructions:
+// Create a function that takes a number (from 1 - 60) and returns a corresponding string of hyphens.
+
+// Examples:
+// Go(1) ➞ "-"
+// Go(5) ➞ "-----"
+// Go(3) ➞ "---"
+
+// Notes:
+// You will be provided integers ranging from 1 to 60.
+// Don't forget to return your result as a string.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work:
+// function Go(num) {
+//   const result = "-";
+//   return result.repeat(num);
+// }
+
+// console.log(Go(1));
+// console.log(Go(5));
+// console.log(Go(3));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 27 - September - 2020
 // Source: https://edabit.com/challenge/EMuszDzF66k9J73HG
 // Title: Instant JAZZ
 
