@@ -19,6 +19,40 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 30 - September - 2020
+// Source: https://edabit.com/challenge/Wd7WKqm95jhcAGATG
+// Title: Remove Duplicates from an Array
+
+// Instructions:
+// Create a function that takes an array of items,
+// removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).
+
+// Examples:
+// removeDups([1, 0, 1, 0]) ➞ [1, 0]
+// removeDups(["The", "big", "cat"]) ➞ ["The", "big", "cat"]
+// removeDups(["John", "Taylor", "John"]) ➞ ["John", "Taylor"]
+
+// Notes:
+// Tests contain arrays with both strings and numbers.
+// Tests are case sensitive.
+
+// Work:
+// function removeDups(arr) {
+//   const result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (result.indexOf(arr[i]) === -1) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(removeDups([1, 0, 1, 0]));
+// console.log(removeDups(["The", "big", "cat"]));
+// console.log(removeDups(["John", "Taylor", "John"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 29 - September - 2020
 // Source: https://edabit.com/challenge/MT5SbF9Xg5Dku6bqL
 // Title: Return Last Index
