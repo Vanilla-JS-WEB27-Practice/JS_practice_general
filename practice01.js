@@ -20,6 +20,34 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 01 - October - 2020
+// Source: https://edabit.com/challenge/uRJKbFSkfa6sXeHZi
+// Title: Convert Yen to USD
+
+// Instructions:
+// Create a function that can turn Yen (Japanese dollar) to USD (American dollar).
+
+// Examples:
+// yenToUsd(1) ➞ 0.01
+// yenToUsd(500) ➞ 4.65
+// yenToUsd(649) ➞ 6.04
+
+// Notes:
+// Each Yen to USD conversion is Yen / 107.5
+// Round the result to two decimal places.
+
+// Work:
+// function yenToUsd(yen) {
+//   const conversion = yen / 107.5;
+//   return Number(conversion.toFixed(2));
+// }
+
+// console.log(yenToUsd(1));
+// console.log(yenToUsd(500));
+// console.log(yenToUsd(649));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 01 - October - 2020
 // Source: https://edabit.com/challenge/vsoQiYJXRANcYrX3Z
 // Title: Let's Sort This Array!
 // Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort,
