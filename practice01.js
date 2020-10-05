@@ -20,6 +20,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 04 - October - 2020
+// Source: https://edabit.com/challenge/2Jh8PyLgPeYA2iRNu
+// Title: Cube the Square Root
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
+
+// Instructions:
+// Create a function that takes a number as an argument and returns the square root of that number cubed.
+
+// Examples:
+// cubeSquareRoot(81) ➞ 729
+// cubeSquareRoot(1646089) ➞ 2111932187
+// cubeSquareRoot(695556) ➞ 580093704
+
+// Notes:
+// All numbers will evenly square root, so don't worry about decimal numbers.
+
+// Work:
+// function cubeSquareRoot(num) {
+//   return Math.sqrt(num ** 3);
+// }
+
+// console.log(cubeSquareRoot(81));
+// console.log(cubeSquareRoot(1646089));
+// console.log(cubeSquareRoot(695556));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 04 - October - 2020
 // Source: https://edabit.com/challenge/b7iHQDw72zzkmgCun
 // Title: Number of Boomerangs
 
