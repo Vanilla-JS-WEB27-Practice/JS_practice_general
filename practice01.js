@@ -19,6 +19,31 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 02 - October - 2020
+// Source: https://edabit.com/challenge/oS3wCwLWsDqvs7XKd
+// Title: Reverse the Order of a String
+
+// Instructions:
+// Create a function that takes a string as its argument and returns the string in reversed order.
+
+// Examples:
+// reverse("Hello World") ➞ "dlroW olleH"
+// reverse("The quick brown fox.") ➞ ".xof nworb kciuq ehT"
+// reverse("Edabit is really helpful!") ➞ "!lufpleh yllaer si tibadE"
+
+// Notes:
+// You can expect a valid string for all test cases.
+
+// Work:
+// function reverse(str) {
+//   return str.split('').reverse().join('')
+// }
+
+// console.log(reverse("Hello world!"));
+// console.log(reverse("The quick brown fox."));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 04 - October - 2020
 // Source: https://edabit.com/challenge/BA8Pom669icAdkdgj
 // Title: Negate the Array of Numbers
@@ -37,21 +62,21 @@
 // If you get an empty array, return an empty array: []
 
 // Work:
-function negate(arr) {
-  result = [];
-  if (arr.length === 0) {
-    return result;
-  } else {
-    for (let i = 0; i < arr.length; i++) {
-      result.push(arr[i] * -1);
-    }
-    return result;
-  }
-}
+// function negate(arr) {
+//   result = [];
+//   if (arr.length === 0) {
+//     return result;
+//   } else {
+//     for (let i = 0; i < arr.length; i++) {
+//       result.push(arr[i] * -1);
+//     }
+//     return result;
+//   }
+// }
 
-console.log(negate([1, 2, 3, 4]));
-console.log(negate([-1, 2, -3, 4]));
-console.log(negate([]));
+// console.log(negate([1, 2, 3, 4]));
+// console.log(negate([-1, 2, -3, 4]));
+// console.log(negate([]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
