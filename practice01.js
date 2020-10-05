@@ -20,6 +20,66 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 04 - October - 2020
+// Source: https://edabit.com/challenge/BA8Pom669icAdkdgj
+// Title: Negate the Array of Numbers
+
+// Instructions:
+// Given an array of numbers, negate all elements contained within.
+// Negating a positive value -+n will return -n, because all +'s are removed.
+// Negating a negative value --n will return n, because the first - turns the second minus into a +.
+
+// Examples:
+// negate([1, 2, 3, 4]) ➞ [-1, -2, -3, -4]
+// negate([-1, 2, -3, 4]) ➞ [1, -2, 3, -4]
+// negate([]) ➞ []
+
+// Notes:
+// If you get an empty array, return an empty array: []
+
+// Work:
+function negate(arr) {
+  result = [];
+  if (arr.length === 0) {
+    return result;
+  } else {
+    for (let i = 0; i < arr.length; i++) {
+      result.push(arr[i] * -1);
+    }
+    return result;
+  }
+}
+
+console.log(negate([1, 2, 3, 4]));
+console.log(negate([-1, 2, -3, 4]));
+console.log(negate([]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 04 - October - 2020
+// Source: https://edabit.com/challenge/BA8Pom669icAdkdgj
+// Title: Negate the Array of Numbers
+
+// Instructions:
+// Given an array of numbers, negate all elements contained within.
+// Negating a positive value -+n will return -n, because all +'s are removed.
+// Negating a negative value --n will return n, because the first - turns the second minus into a +.
+
+// Examples:
+// negate([1, 2, 3, 4]) ➞ [-1, -2, -3, -4]
+// negate([-1, 2, -3, 4]) ➞ [1, -2, 3, -4]
+// negate([]) ➞ []
+
+// Notes:
+//
+
+// Sudo code:
+// 1 -
+
+// Work:
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 04 - October - 2020
 // Source: https://edabit.com/challenge/2Jh8PyLgPeYA2iRNu
 // Title: Cube the Square Root
 // Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
