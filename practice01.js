@@ -19,6 +19,48 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 07 - October - 2020
+// Source: https://edabit.com/challenge/LEPFNs6sgeAnJ7qqo
+// Title: Sum of Evenly Divisible Numbers from a Range
+// Resource: https://stackoverflow.com/questions/3895478/does-javascript-have-a-method-like-range-to-generate-a-range-within-the-supp
+
+// Instructions:
+// Create a function that takes three arguments a, b, c and returns the sum of the numbers that are evenly divided by c from the range a, b inclusive.
+
+// Examples:
+// evenlyDivisible(1, 10, 20) ➞ 0
+// No number between 1 and 10 can be evenly divided by 20.
+// evenlyDivisible(1, 10, 2) ➞ 30
+// 2 + 4 + 6 + 8 + 10 = 30
+// evenlyDivisible(1, 10, 3) ➞ 18
+// 3 + 6 + 9 = 18
+
+// Notes:
+// Return 0 if there is no number between a and b that can be evenly divided by c.
+
+// Work:
+// function evenlyDivisible(a, b, c) {
+//   let arr = [a];
+//   let count = a;
+//   while (count < b) {
+//     arr.push((count += 1));
+//   }
+//   const result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % c === 0) {
+//       result.push(arr[i]);
+//     }
+//   }
+
+//   return result.reduce((a, b) => a + b, 0);
+// }
+
+// console.log(evenlyDivisible(1, 10, 20));
+// console.log(evenlyDivisible(1, 10, 2));
+// console.log(evenlyDivisible(1, 10, 3));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 02 - October - 2020
 // Source: https://edabit.com/challenge/oS3wCwLWsDqvs7XKd
 // Title: Reverse the Order of a String
