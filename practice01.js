@@ -20,6 +20,48 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 07 - October - 2020
+// Source: https://edabit.com/challenge/RXNybvGHLuvFiWKvq
+// Title: Filter by Digit Length
+
+// Instructions:
+// Create a function that filters out an array to include numbers who only have a certain number of digits.
+
+// Examples
+// filterDigitLength([88, 232, 4, 9721, 555], 3) ➞ [232, 555]
+// Include only numbers with 3 digits.
+
+// filterDigitLength([2, 7, 8, 9, 1012], 1) ➞ [2, 7, 8, 9]
+// Include only numbers with 1 digit.
+
+// filterDigitLength([32, 88, 74, 91, 300, 4050], 1) ➞ []
+// No numbers with only 1 digit exist => return empty array.
+
+// filterDigitLength([5, 6, 8, 9], 1) ➞ [5, 6, 8, 9]
+// All numbers in the array have 1 digit only => return original array.
+
+// Notes:
+// If no numbers of the specified digit length exist, return an empty array.
+// If all numbers in the array have the specified digit length, return original array.
+// The sub-array returned should have the same relative order as the original array.
+
+// Work:
+// function filterDigitLength(arr, num) {
+//   const result = [];
+//   arr.filter((x) => {
+//     if (JSON.stringify(x).length === num) {
+//       result.push(x);
+//     }
+//   });
+//   return result;
+// }
+
+// console.log(filterDigitLength([2, 7, 8, 9, 1012], 1));
+// console.log(filterDigitLength([32, 88, 74, 91, 300, 4050], 1));
+// console.log(filterDigitLength([5, 6, 8, 9], 1));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 07 - October - 2020
 // Source: https://edabit.com/challenge/LEPFNs6sgeAnJ7qqo
 // Title: Sum of Evenly Divisible Numbers from a Range
 // Resource: https://stackoverflow.com/questions/3895478/does-javascript-have-a-method-like-range-to-generate-a-range-within-the-supp
