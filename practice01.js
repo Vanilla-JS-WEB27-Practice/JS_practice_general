@@ -20,6 +20,47 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 08 - October - 2020
+// Source: https://edabit.com/challenge/H7cs3TS87sFX72mjF
+// Title: Capture the Rook
+
+// Instructions:
+// Write a function that returns true if two rooks can attack each other, and false otherwise.
+
+// Examples:
+// canCapture(["A8", "E8"]) ➞ true
+// canCapture(["A1", "B2"]) ➞ false
+// canCapture(["H4", "H3"]) ➞ true
+// canCapture(["F5", "C8"]) ➞ false
+
+// Notes:
+// Assume no blocking pieces.
+// Two rooks can attack each other if they share the same row (letter) or column (number).
+
+// Sudo code:
+// 1 - split arr[0] and arr[1] into rook1 and rook2
+// 2 - compare letters and numbers
+// 3 - return based on if they match
+
+// Work:
+// function canCapture([yourRook, opponentsRook]) {
+//   const rook1 = yourRook.split("");
+//   const rook2 = opponentsRook.split("");
+//   // if (rook1[0] === rook2[0] || rook1[1] === rook2[1]) {
+//   //   return true;
+//   // } else {
+//   //   return false;
+//   // }
+//   return rook1[0] === rook2[0] || rook1[1] === rook2[1] ? true : false;
+// }
+
+// console.log(canCapture(["A8", "E8"]));
+// console.log(canCapture(["A1", "B2"]));
+// console.log(canCapture(["H4", "H3"]));
+// console.log(canCapture(["F5", "C8"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - October - 2020
 // Source: https://edabit.com/challenge/Aofd78q72sAtgCyEY
 // Title: War of Numbers
 
