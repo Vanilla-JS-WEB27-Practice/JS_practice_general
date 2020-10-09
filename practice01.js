@@ -19,6 +19,50 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 08 - October - 2020
+// Source: https://edabit.com/challenge/Aofd78q72sAtgCyEY
+// Title: War of Numbers
+
+// Instructions:
+// There's a great war between the even and odd numbers. Many numbers already lost their life in this war and it's your task to end this.
+// You have to determine which group is larger: the even, or the odd. The larger group wins.
+// Create a function that takes an array of integers, sums the even and odd numbers separately, then returns the larger of the sums minus the smaller.
+
+// Examples:
+// warOfNumbers([2, 8, 7, 5]) ➞ 2
+// 2 + 8 = 10
+// 7 + 5 = 12
+// 12 is larger than 10
+// So we return 12 - 10 = 2
+// warOfNumbers([12, 90, 75]) ➞ 27
+// warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
+
+// Sudo code:
+// 1 - loop through
+// 2 - remainder to determine odds vs evens
+// 3 - push into corresponding arrays
+// 4 - .reduce to all them all up
+// 5 - subtract smaller value from the larger value
+
+// Work:
+// function warOfNumbers(arr) {
+//   const evens = [];
+//   const odds = [];
+
+//   arr.map((x) => (x % 2 === 0 ? evens.push(x) : odds.push(x)));
+
+//   const evensSum = evens.reduce((a, b) => a + b, 0);
+//   const oddsSum = odds.reduce((a, b) => a + b, 0);
+
+//   return evensSum > oddsSum ? evensSum - oddsSum : oddsSum - evensSum;
+// }
+
+// console.log(warOfNumbers([2, 8, 7, 5]));
+// console.log(warOfNumbers([12, 90, 75]));
+// console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 07 - October - 2020
 // Source: https://edabit.com/challenge/BEHiM4RTmhcLX7Cq6
 // Title: Repeat the Same Item Multiple Times
