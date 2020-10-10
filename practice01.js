@@ -20,6 +20,42 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 09 - October - 2020
+// Source: https://edabit.com/challenge/noqGmqk6StwApSGwa
+// Title: Flip the Boolean
+
+// Instructions:
+// Create a function that reverses a boolean value and returns the string "boolean expected" if another variable type is given.
+
+// Examples:
+// reverse(true) ➞ false
+// reverse(false) ➞ true
+// reverse(0) ➞ "boolean expected"
+// reverse(null) ➞ "boolean expected"
+
+// Notes:
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+// Work:
+// function reverse(bool) {
+//   if (bool === true) {
+//     return false;
+//   } else if (bool === false) {
+//     return true;
+//   } else {
+//     return "boolean expected";
+//   }
+// }
+
+// console.log(reverse(true));
+// console.log(reverse(false));
+// console.log(reverse(0));
+// console.log(reverse(null));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 09 - October - 2020
 // Source: https://edabit.com/challenge/P6XbTvWyHkrpPfhvu
 // Title: Volume of a Cone
 
