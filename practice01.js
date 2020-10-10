@@ -19,6 +19,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 09 - October - 2020
+// Source: https://edabit.com/challenge/P6XbTvWyHkrpPfhvu
+// Title: Volume of a Cone
+
+// Instructions:
+// Create a function that takes the height and radius of a cone as arguments and returns the volume of the cone rounded to the nearest hundredth.
+
+// Examples:
+// coneVolume(3, 2) ➞ 12.57
+// coneVolume(15, 6) ➞ 565.49
+// coneVolume(18, 0) ➞ 0
+
+// Notes:
+// See the resources tab for the formula.
+// Return approximate answer by rounding the answer to the nearest hundredth.
+// Use JavaScript's PI property, don't fall for 3.14 ;-)
+// If the cone has no volume, return 0.
+
+// Work:
+function coneVolume(h, r) {
+  const value = ((Math.PI * Math.pow(r, 2) * h) / 3).toFixed(2);
+  return value < 1 ? 0 : Number(value);
+}
+
+console.log(coneVolume(3, 2));
+console.log(coneVolume(15, 6));
+console.log(coneVolume(18, 0));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 08 - October - 2020
 // Source: https://edabit.com/challenge/H7cs3TS87sFX72mjF
 // Title: Capture the Rook
