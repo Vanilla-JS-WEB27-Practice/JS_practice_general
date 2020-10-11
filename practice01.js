@@ -20,6 +20,35 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 10 - October - 2020
+// Source: https://edabit.com/challenge/cWHToCQaAbnzNJzQw
+// Title: The Full Length of a Google
+
+// Instructions:
+// Let's say we wanted to change the number of pages that Google could skip to.
+// Create a function where given a number of pages n, return the word "Google" but with the correct number of "o"s.
+
+// Examples:
+// googlify(10) ➞ "Goooooooooogle"
+// googlify(23) ➞ "Gooooooooooooooooooooooooogle"
+// googlify(2) ➞ "Google"
+// googlify(-2) ➞ "invalid"
+
+// Notes:
+// If n is equal to or less than 1, return invalid.
+
+// Work:
+// function googlify(n) {
+//   return n >= 2 ? `G${"o".repeat(n)}gle` : "invalid";
+// }
+
+// console.log(googlify(10));
+// console.log(googlify(23));
+// console.log(googlify(2));
+// console.log(googlify(-1));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 10 - October - 2020
 // Source: https://edabit.com/challenge/qrDWy9xS8BrfhLS6o
 // Title: Reverse the Number
 
