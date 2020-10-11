@@ -20,6 +20,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 10 - October - 2020
+// Source: https://edabit.com/challenge/qrDWy9xS8BrfhLS6o
+// Title: Reverse the Number
+
+// Instructions:
+// Create a function that takes an integer n and reverses it.
+
+// Examples:
+// rev(5121) ➞ "1215"
+// rev(69) ➞ "96"
+// rev(-122157) ➞ "751221"
+
+// Notes:
+// This challenge is about using two operators that are related to division.
+// If the number is negative, treat it like it's positive.
+
+// Work:
+// function rev(n) {
+//   return JSON.stringify(Math.abs(n)).split("").reverse().join("");
+// }
+
+// console.log(rev(5121));
+// console.log(rev(69));
+// console.log(rev(-122157));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 10 - October - 2020
 // Source: https://edabit.com/challenge/DvwY43tNMdEpW4kKu
 // Title: 25-Mile Marathon
 // Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce,
