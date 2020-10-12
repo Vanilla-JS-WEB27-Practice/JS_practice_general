@@ -19,6 +19,46 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 11 - October - 2020
+// Source: https://edabit.com/challenge/3hdXjfJozQySRC3gE
+// Title: ow Many Days Between Two Dates
+
+// Instructions:
+// Create a function that takes two dates and returns the number of days between the first and second date.
+
+// Examples:
+// getDays(
+//   new Date("June 14, 2019"),
+//   new Date("June 20, 2019")
+// ) ➞ 6
+// getDays(
+//   new Date("December 29, 2018"),
+//   new Date("January 1, 2019")
+// ) ➞ 3
+// Dates may not all be in the same month/year.
+// getDays(
+//   new Date("July 20, 2019"),
+//   new Date("July 30, 2019")
+// ) ➞ 10
+
+// Work:
+function getDays(date1, date2) {
+  const date1_unixtime = parseInt(date1.getTime() / 1000);
+  const date2_unixtime = parseInt(date2.getTime() / 1000);
+  const timeDifference = date2_unixtime - date1_unixtime;
+  const timeDifferenceInHours = timeDifference / 60 / 60;
+  const timeDifferenceInDays = timeDifferenceInHours / 24;
+  return timeDifferenceInDays;
+}
+
+console.log(getDays(new Date("June 14, 2019"), new Date("June 20, 2019")));
+console.log(
+  getDays(new Date("December 29, 2018"), new Date("January 1, 2019"))
+);
+console.log(getDays(new Date("July 20, 2019"), new Date("July 30, 2019")));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 10 - October - 2020
 // Source: https://edabit.com/challenge/cWHToCQaAbnzNJzQw
 // Title: The Full Length of a Google
