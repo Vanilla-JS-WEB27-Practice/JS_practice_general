@@ -20,8 +20,48 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 11 - October - 2020
+// Source: https://edabit.com/challenge/447bDYjW8ZBTtFG5M
+// Title: Both Zero, Negative or Positive
+
+// Instructions:
+// Write a function that returns true if both numbers are:
+// Smaller than 0, OR ...
+// Greater than 0, OR ...
+// Exactly 0
+// Otherwise, return false.
+
+// Examples:
+// both(6, 2) ➞ true
+// both(0, 0) ➞ true
+// both(-1, 2) ➞ false
+// both(0, 2) ➞ false
+
+// Notes:
+// Inputs will always be two numbers.
+
+// Work:
+// function both(n1, n2) {
+//   if (n1 < 0 && n2 < 0) {
+//     return true;
+//   } else if (n1 > 0 && n2 > 0) {
+//     return true;
+//   } else if (n1 === 0 && n2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(both(6, 2));
+// console.log(both(0, 0));
+// console.log(both(-1, 2));
+// console.log(both(0, 2));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 11 - October - 2020
 // Source: https://edabit.com/challenge/3hdXjfJozQySRC3gE
-// Title: ow Many Days Between Two Dates
+// Title: How Many Days Between Two Dates
 
 // Instructions:
 // Create a function that takes two dates and returns the number of days between the first and second date.
@@ -42,20 +82,20 @@
 // ) ➞ 10
 
 // Work:
-function getDays(date1, date2) {
-  const date1_unixtime = parseInt(date1.getTime() / 1000);
-  const date2_unixtime = parseInt(date2.getTime() / 1000);
-  const timeDifference = date2_unixtime - date1_unixtime;
-  const timeDifferenceInHours = timeDifference / 60 / 60;
-  const timeDifferenceInDays = timeDifferenceInHours / 24;
-  return timeDifferenceInDays;
-}
+// function getDays(date1, date2) {
+//   const date1_unixtime = parseInt(date1.getTime() / 1000);
+//   const date2_unixtime = parseInt(date2.getTime() / 1000);
+//   const timeDifference = date2_unixtime - date1_unixtime;
+//   const timeDifferenceInHours = timeDifference / 60 / 60;
+//   const timeDifferenceInDays = timeDifferenceInHours / 24;
+//   return timeDifferenceInDays;
+// }
 
-console.log(getDays(new Date("June 14, 2019"), new Date("June 20, 2019")));
-console.log(
-  getDays(new Date("December 29, 2018"), new Date("January 1, 2019"))
-);
-console.log(getDays(new Date("July 20, 2019"), new Date("July 30, 2019")));
+// console.log(getDays(new Date("June 14, 2019"), new Date("June 20, 2019")));
+// console.log(
+//   getDays(new Date("December 29, 2018"), new Date("January 1, 2019"))
+// );
+// console.log(getDays(new Date("July 20, 2019"), new Date("July 30, 2019")));
 
 // ------------------------------------------------------------------------------------------------------------------
 
