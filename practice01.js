@@ -20,6 +20,36 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 13 - October - 2020
+// Source: https://edabit.com/challenge/j63YSGGK9xoLiXCKF
+// Title: Between Words
+// Resource: https://javascript.info/comparison
+
+// Instructions:
+// Write a function that takes three string arguments
+// (first, last, and word) and returns true if word is found between first and last in the dictionary, otherwise false.
+
+// Examples:
+// isBetween("apple", "banana", "azure") ➞ true
+// isBetween("monk", "monument", "monkey") ➞ true
+// isBetween("bookend", "boolean", "boost") ➞ false
+
+// Notes:
+// All letters will be in lowercase.
+// All three words will be different.
+// Remember that the string word is in the middle.
+
+// Work:
+// function isBetween(first, last, word) {
+//   return first < word && word < last ? true : false;
+// }
+
+// console.log(isBetween("apple", "banana", "azure"));
+// console.log(isBetween("monk", "monument", "monkey"));
+// console.log(isBetween("bookend", "boolean", "boost"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 13 - October - 2020
 // Source: https://edabit.com/challenge/8n9RyHThC3dNEPCng
 // Title: Move Capital Letters to the Front
 
