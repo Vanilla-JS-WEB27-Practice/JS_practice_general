@@ -20,6 +20,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 13 - October - 2020
+// Source: https://edabit.com/challenge/dWNPtNeQgyn6mS8FA
+// Title: Odd Up, Even Down
+
+// Instructions:
+// Create a function that goes through the array, incrementing (+1) for each odd-valued number and decrementing (-1) for each even-valued number.
+
+// Examples:
+// transform([1, 2, 3, 4, 5]) ➞ [2, 1, 4, 3, 6]
+// transform([3, 3, 4, 3]) ➞ [4, 4, 3, 4]
+// transform([2, 2, 0, 8, 10]) ➞ [1, 1, -1, 7, 9]
+
+// Work:
+function transform(arr) {
+  const result = [];
+  arr.map((x) => {
+    x % 2 === 0 ? result.push(x - 1) : result.push(x + 1);
+  });
+  return result;
+}
+
+console.log(transform([1, 2, 3, 4, 5]));
+console.log(transform([3, 3, 4, 3]));
+console.log(transform([2, 2, 0, 8, 10]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 13 - October - 2020
 // Source: https://edabit.com/challenge/j63YSGGK9xoLiXCKF
 // Title: Between Words
 // Resource: https://javascript.info/comparison
