@@ -19,6 +19,47 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 13 - October - 2020
+// Source: https://edabit.com/challenge/8n9RyHThC3dNEPCng
+// Title: Move Capital Letters to the Front
+
+// Instructions:
+// Create a function that moves all capital letters to the front of a word.
+
+// Examples:
+// capToFront("hApPy") ➞ "APhpy"
+// capToFront("moveMENT") ➞ "MENTmove"
+// capToFront("shOrtCAKE") ➞ "OCAKEshrt"
+
+// Notes:
+// Keep the original relative order of the upper and lower case letters the same.
+
+// Work:
+// function capToFront(s) {
+// my solution
+// const str = s.split("");
+// let strCapResult = "";
+// let strSmallResult = "";
+// const regex = /[A-Z]/g;
+// str.map((x) => {
+//   if (x.match(regex)) {
+//     strCapResult += x;
+//   } else {
+//     strSmallResult += x;
+//   }
+// });
+// return strCapResult.concat(strSmallResult);
+
+// shorter solution
+// return s.match(/[A-Z]/g).join("") + s.match(/[a-z]/g).join("");
+// }
+
+// console.log(capToFront("hApPy"));
+// console.log(capToFront("moveMENT"));
+// console.log(capToFront("shOrtCAKE"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 11 - October - 2020
 // Source: https://edabit.com/challenge/ERmrS3QrK7sEt4PAt
 // Title: LCM of Two Numbers
