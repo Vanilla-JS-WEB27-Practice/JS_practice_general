@@ -19,6 +19,35 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - October - 2020
+// Source: https://edabit.com/challenge/L4Hevck84exPwe4wo
+// Title: Find the Discount
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+
+// Instructions:
+// Create a function that takes two arguments: the final price and the discount percentage as integers and returns the final price after the discount.
+
+// Examples:
+// dis(1500, 50) ➞ 750
+// dis(89, 20) ➞ 71.2
+// dis(100, 75) ➞ 25
+
+// Notes:
+// Your answer should be rounded to two decimal places.
+
+// Work:
+// function dis(price, discount) {
+//   const percent = discount / 100;
+//   const discountTotal = price * percent;
+//   return Number((price - discountTotal).toFixed(2));
+// }
+
+// console.log(dis(1500, 50));
+// console.log(dis(89, 20));
+// console.log(dis(100, 75));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 13 - October - 2020
 // Source: https://edabit.com/challenge/dWNPtNeQgyn6mS8FA
 // Title: Odd Up, Even Down
@@ -32,17 +61,17 @@
 // transform([2, 2, 0, 8, 10]) ➞ [1, 1, -1, 7, 9]
 
 // Work:
-function transform(arr) {
-  const result = [];
-  arr.map((x) => {
-    x % 2 === 0 ? result.push(x - 1) : result.push(x + 1);
-  });
-  return result;
-}
+// function transform(arr) {
+//   const result = [];
+//   arr.map((x) => {
+//     x % 2 === 0 ? result.push(x - 1) : result.push(x + 1);
+//   });
+//   return result;
+// }
 
-console.log(transform([1, 2, 3, 4, 5]));
-console.log(transform([3, 3, 4, 3]));
-console.log(transform([2, 2, 0, 8, 10]));
+// console.log(transform([1, 2, 3, 4, 5]));
+// console.log(transform([3, 3, 4, 3]));
+// console.log(transform([2, 2, 0, 8, 10]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
