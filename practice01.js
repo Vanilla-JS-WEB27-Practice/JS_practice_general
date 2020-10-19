@@ -20,6 +20,47 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 18 - October - 2020
+// Source: https://edabit.com/challenge/ypgJXTXaaSwrFyoTk
+// Title: Return First and Last Parameter
+// Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
+
+// Instructions:
+// Write two functions:
+// firstArg() should return the first parameter passed in.
+// lastArg() should return the last parameter passed in.
+
+// Examples:
+// firstArg(1, 2, 3) ➞ 1
+// lastArg(1, 2, 3) ➞ 3
+// firstArg(8) ➞ 8
+// lastArg(8) ➞ 8
+
+// Notes:
+// Return undefined if the function takes no parameters.
+// If the function only takes in one parameter, the firstArg and lastArg functions should return the same value.
+// JavaScript has an arguments object which keeps track of the parameters being passed in. Check the Resources tab to learn more.
+
+// Work:
+// firstArg = (...args) =>
+//   args.length > 1 ? args[0] : args.length === 1 ? args[0] : undefined;
+
+// lastArg = (...args) =>
+//   args.length > 1
+//     ? args[args.length - 1]
+//     : args.length === 1
+//     ? args[0]
+//     : undefined;
+
+// console.log(firstArg(1, 2));
+// console.log(firstArg(3, 4, 5, 10));
+// console.log(lastArg());
+// console.log(lastArg());
+// console.log(lastArg(4, 5));
+// console.log(lastArg(10, 4, 6, 4, 5, 15));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 18 - October - 2020
 // Source: https://edabit.com/challenge/4vvFr9ZTK2AdyswXH
 // Title: Maximum Difference
 // Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max (spread the nums in)
