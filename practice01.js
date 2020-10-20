@@ -19,6 +19,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 19 - October - 2020
+// Source: https://edabit.com/challenge/moK78CirzYbqk6g3z
+// Title: ReverseAndNot
+
+// Instructions:
+// Write a function that takes an integer i and returns an integer with the integer backwards followed by the original integer.
+// To illustrate:
+// 123
+// We reverse 123 to get 321 and then add 123 to the end, resulting in 321123.
+
+// Examples:
+// reverseAndNot(123) ➞ 321123
+// reverseAndNot(152) ➞ 251152
+// reverseAndNot(123456789) ➞ 987654321123456789
+
+// Notes:
+// i is a non-negative integer.
+
+// Work:
+// function reverseAndNot(i) {
+//   const reversedStr = `${i}`;
+//   return Number(reversedStr.split("").reverse().join("") + i);
+// }
+
+// console.log(reverseAndNot(123));
+// console.log(reverseAndNot(152));
+// console.log(reverseAndNot(123456789));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 18 - October - 2020
 // Source: https://edabit.com/challenge/ypgJXTXaaSwrFyoTk
 // Title: Return First and Last Parameter
@@ -471,14 +501,14 @@
 // If the cone has no volume, return 0.
 
 // Work:
-function coneVolume(h, r) {
-  const value = ((Math.PI * Math.pow(r, 2) * h) / 3).toFixed(2);
-  return value < 1 ? 0 : Number(value);
-}
+// function coneVolume(h, r) {
+//   const value = ((Math.PI * Math.pow(r, 2) * h) / 3).toFixed(2);
+//   return value < 1 ? 0 : Number(value);
+// }
 
-console.log(coneVolume(3, 2));
-console.log(coneVolume(15, 6));
-console.log(coneVolume(18, 0));
+// console.log(coneVolume(3, 2));
+// console.log(coneVolume(15, 6));
+// console.log(coneVolume(18, 0));
 
 // ------------------------------------------------------------------------------------------------------------------
 
