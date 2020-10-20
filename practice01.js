@@ -20,6 +20,32 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 19 - October - 2020
+// Source: https://edabit.com/challenge/5232asan2yFuMGnHq
+// Title: Unlucky 13
+
+// Instructions:
+// Given a sorted array of numbers, remove any numbers that are divisible by 13. Return the amended array.
+
+// Examples:
+// unlucky13([53, 182, 435, 591, 637]) ➞ [53, 435, 591]
+// 182 and 637 are divisible by 13.
+// unlucky13([24, 316, 393, 458, 1279]) ➞ [24, 316, 393, 458, 1279]
+// No numbers in the array are divisible by 13.
+// unlucky13([104, 351, 455, 806, 871]) ➞ []
+// All numbers in the array are divisible by 13.
+
+// Work:
+// function unlucky13(arr) {
+//   const result = [];
+//   arr.map((x) => (x % 13 !== 0 ? result.push(x) : undefined));
+//   return result;
+// }
+
+// console.log(unlucky13([53, 182, 435, 591, 637]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 19 - October - 2020
 // Source: https://edabit.com/challenge/SrCTGbhwPRyHZSAGu
 // Title: Video Streaming Plans
 
