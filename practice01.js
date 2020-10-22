@@ -19,6 +19,38 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 22 - October - 2020
+// Source: https://edabit.com/challenge/fbaLZPNjTvYtY444B
+// Title: Find the Characters Counterpart Char Code
+
+// Instructions:
+// Create a function that takes a single character as an argument and returns the char code of its lowercased / uppercased counterpart.
+
+// Examples:
+// Given that:
+//   - "A" char code is: 65
+//   - "a" char code is: 97
+// counterpartCharCode("A") ➞ 97
+// counterpartCharCode("a") ➞ 65
+
+// Notes:
+// The argument will always be a single character.
+// Not all inputs will have a counterpart (e.g. numbers), in which case return the inputs char code.
+
+// Work:
+// function counterpartCharCode(char) {
+//   if (char === char.toUpperCase()) {
+//     return char.toLowerCase().charCodeAt(0);
+//   } else {
+//     return char.toUpperCase().charCodeAt(0);
+//   }
+// }
+
+// console.log(counterpartCharCode("A"));
+// console.log(counterpartCharCode("a"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 19 - October - 2020
 // Source: https://edabit.com/challenge/5232asan2yFuMGnHq
 // Title: Unlucky 13
