@@ -20,6 +20,29 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 22 - October - 2020
+// Source: https://edabit.com/challenge/AS2NGeGLnwWbMr5SP
+// Title: RegEx: Character Classes IX ⁠- \w
+// Resource: REGEX character classes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes
+
+// Instructions:
+// You can think of character classes as characters with special meaning. They are recognized as special when you place the \ before the character.
+// Here is a list of the character classes in JavaScript:
+// ., \cX, \d, \D, \f, \n, \r, \s, \S, \t, \v, \w, \W, \0, \xhh, \uhhhh, \uhhhhh, [\b]
+
+// Examples:
+// There is a hidden word in this string:
+// const str = "**^&$Regular#$%Expressions$%$$%^**"
+// Write the regular expression that reveals the hidden word. You have to remove all of the special characters to reveal the word.
+// Use the character class \w in your expression.
+
+// Work:
+// const str = "**^&$Regular#$%Expressions$%$$%^**";
+// const REGEXP = /\w/g;
+// console.log(str.match(REGEXP).join(""));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 22 - October - 2020
 // Source: https://edabit.com/challenge/fbaLZPNjTvYtY444B
 // Title: Find the Characters Counterpart Char Code
 
