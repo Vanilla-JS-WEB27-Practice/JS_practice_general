@@ -20,6 +20,74 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 22 - October - 2020
+// Source: https://edabit.com/challenge/t6HFLEYD2e7ePxAu5
+// Title: What's the Missing Letter?
+
+// Instructions:
+// Given a string of letters in the English alphabet, return the letter that's missing from the string.
+// The missing letter will make the string be in alphabetical order (from A to Z).
+// If there are no missing letters in the string, return "No Missing Letter".
+
+// Examples:
+// missingLetter("abdefg") ➞ "c"
+// missingLetter("mnopqs") ➞ "r"
+// missingLetter("tuvxyz") ➞ "w"
+// missingLetter("ghijklmno") ➞ "No Missing Letter"
+
+// Notes:
+// The given string will never have more than one missing letter.
+
+// Work:
+function missingLetter(str) {
+  const alpha = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
+  const strArr = str.split("");
+  const start = strArr[0];
+  const end = strArr[strArr.length - 1];
+  const range = alpha.slice(alpha.indexOf(start), alpha.indexOf(end) + 1);
+  for (let i = 0; i < strArr.length; i++) {
+    if (strArr.length === range.length) {
+      return `No Missing Letter`;
+    } else if (strArr[i] !== range[i]) {
+      return range[i];
+    }
+  }
+}
+
+console.log(missingLetter("abdefg"));
+console.log(missingLetter("mnopqs"));
+console.log(missingLetter("tuvxyz"));
+console.log(missingLetter("ghijklmno"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 22 - October - 2020
 // Source: https://edabit.com/challenge/AS2NGeGLnwWbMr5SP
 // Title: RegEx: Character Classes IX ⁠- \w
 // Resource: REGEX character classes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes
