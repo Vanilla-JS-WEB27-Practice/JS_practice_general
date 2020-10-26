@@ -20,6 +20,42 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 25 - October - 2020
+// Source: https://edabit.com/challenge/xr4Xf28xeSrc7XmCF
+// Title: Generate a Countdown of Numbers in an Array
+
+// Instructions:
+// Create a function that takes a number as an argument and returns an array of numbers counting down from this number to zero.
+
+// Examples:
+// countdown(5) ➞ [5, 4, 3, 2, 1, 0]
+// countdown(1) ➞ [1, 0]
+// countdown(0) ➞ [0]
+
+// Notes:
+// The argument will always be greater than or equal to zero.
+
+// Work:
+// function countdown(start) {
+//   const result = [];
+//   if (start === 1) {
+//     return [0, 1];
+//   } else if (start === 0) {
+//     return [0];
+//   } else {
+//     for (let i = 0; i < start+1; i++) {
+//       result.push(i);
+//     }
+//   }
+//   return result.reverse();
+// }
+
+// console.log(countdown(5));
+// console.log(countdown(1));
+// console.log(countdown(0));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 25 - October - 2020
 // Source: https://edabit.com/challenge/bADsAhtb5g6pu5WYM
 // Title: Reverse Coding Challenge #3
 
