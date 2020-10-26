@@ -20,6 +20,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 25 - October - 2020
+// Source: https://edabit.com/challenge/TDpT9tvwJK5uLn98h
+// Title: Check if the Same Case
+
+// Instructions:
+// Create a function that returns true if an input string contains only uppercase or only lowercase letters.
+
+// Examples:
+// sameCase("hello") ➞ true
+// sameCase("HELLO") ➞ true
+// sameCase("Hello") ➞ false
+// sameCase("ketcHUp") ➞ false
+
+// Work:
+// function sameCase(str) {
+//   return str === str.toLowerCase() || str === str.toUpperCase() ? true : false;
+// }
+
+const sameCase = (str) =>
+  str === str.toLowerCase() || str === str.toUpperCase() ? true : false;
+console.log(sameCase("hello"));
+console.log(sameCase("HELLO"));
+console.log(sameCase("Hello"));
+console.log(sameCase("ketcHUp"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 25 - October - 2020
 // Source: https://edabit.com/challenge/WBdjg7zgiqi6L5zsL
 // Title: Strange Pair
 
