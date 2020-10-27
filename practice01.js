@@ -20,6 +20,91 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 26 - October - 2020
+// Source: https://edabit.com/challenge/wBAuop24JYt9MZhXF
+// Title: Regex Series: String Contains at Least One Digit
+
+// Instructions:
+// Regex Series: String Contains at Least One Digit
+
+// Examples:
+// "c8" ➞ true
+// "23cc4" ➞ true
+// "abwekz" ➞ false
+// "sdfkxi" ➞ false
+
+// Notes:
+// This challenge is designed to use RegEx only.
+
+// Work:
+// let x = /\d/
+// describe("Deterministic Tests", function() {
+// 	Test.expect(validate("c8"));
+// 	Test.expect(validate("23cc4"));
+// 	Test.expect(!validate("abwekz"));
+// 	Test.expect(!validate("sdfkxi"));
+// })
+
+// function validate(str) {
+// 	return x.test(str);
+// }
+
+// const letters = "abcdefghijklmnopqrstuvwxyz"
+// const digits = "0123456789"
+
+// String.prototype.shuffle = function () {
+// 	let a = this.split("");
+// 	let n = a.length;
+
+// 	for (let i = n-1; i > 0; i--) {
+// 		let j = Math.floor(Math.random()*(i+1));
+// 		let tmp = a[i];
+// 		a[i] = a[j];
+// 		a[j] = tmp;
+// 	}
+// 	return a.join("");
+// }
+
+// function getValidString() {
+// 	let s = ""
+// 	let n_letters = Math.floor(Math.random()*5);
+// 	let n_digits = Math.ceil(Math.random()*5);
+// 	for (let i = 0; i < n_letters; i++) {
+// 		s += letters[Math.floor(Math.random()*26)];
+// 	}
+// 	for (let i = 0; i < n_digits; i++) {
+// 		s += digits[Math.floor(Math.random()*10)];
+// 	}
+// 	return s.shuffle();
+// }
+
+// function getInvalidString() {
+// 	let s = ""
+// 	let n_letters = Math.floor(Math.random()*8);
+// 	for (let i = 0; i < n_letters; i++) {
+// 		s += letters[Math.floor(Math.random()*26)];
+// 	}
+// 	return s.shuffle();
+// }
+
+// describe("Randomized Tests: Passing", function() {
+// 	for (let i = 0; i < 5; i++) {
+// 		let x = getValidString();
+// 		console.log(`${x} has at least one digit.`)
+// 		Test.expect(validate(x));
+// 	}
+// })
+
+// describe("Randomized Tests: Failing", function() {
+// 	for (let i = 0; i < 5; i++) {
+// 		let x = getInvalidString();
+// 		console.log(`${x} has no digits.`)
+// 		Test.expect(!validate(x));
+// 	}
+// })
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 26 - October - 2020
 // Source: https://edabit.com/challenge/dzdoYrTL5vws4dFud
 // Title: Next Element in Arithmetic Sequence
 
@@ -41,11 +126,11 @@
 //   return arr[arr.length-1]+arr[1]-arr[0]
 // }
 
-const nextElement = (arr) => arr[arr.length - 1] + arr[1] - arr[0];
+// const nextElement = (arr) => arr[arr.length - 1] + arr[1] - arr[0];
 
-console.log(nextElement([3, 5, 7, 9]));
-console.log(nextElement([-5, -6, -7]));
-console.log(nextElement([2, 2, 2, 2, 2]));
+// console.log(nextElement([3, 5, 7, 9]));
+// console.log(nextElement([-5, -6, -7]));
+// console.log(nextElement([2, 2, 2, 2, 2]));
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 26 - October - 2020
