@@ -19,6 +19,82 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 26 - October - 2020
+// Source: https://edabit.com/challenge/JnbkJAxA3woPFHYMm
+// Title: Unlucky Years
+
+// Instructions:
+// Create a function which returns how many Friday 13ths there are in a given year.
+
+// Examples:
+// howUnlucky(2020) ➞ 2
+// howUnlucky(2026) ➞ 3
+// howUnlucky(2016) ➞ 1
+
+// Work:
+// function howUnlucky(y) {
+//   const months = [
+//     "January",
+//     "February",
+//     "March",
+//     "April",
+//     "May",
+//     "June",
+//     "July",
+//     "August",
+//     "September",
+//     "October",
+//     "November",
+//     "December",
+//   ];
+
+//   let counter = 0;
+//   for (let i = 0; i < months.length; i++) {
+//     const d = new Date(`${months[i]} 13, ${y}`);
+//     if (d.getDay() === 5) {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
+// console.log(howUnlucky(2020));
+// console.log(howUnlucky(2016));
+// console.log(howUnlucky(2026));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 25 - October - 2020
+// Source: https://edabit.com/challenge/bHDbMWpdeNaw23jqT
+// Title: Alphabet Soup
+
+// Instructions:
+// Create a function that takes a string and returns a string with its letters in alphabetical order.
+
+// Examples:
+// AlphabetSoup("hello") ➞ "ehllo"
+// AlphabetSoup("edabit") ➞ "abdeit"
+// AlphabetSoup("hacker") ➞ "acehkr"
+// AlphabetSoup("geek") ➞ "eegk"
+// AlphabetSoup("javascript") ➞ "aacijprstv"
+
+// Notes:
+// You can assume numbers and punctuation symbols won't be included in test cases. You'll only have to deal with single word, alphabetic characters.
+
+// Work:
+// function AlphabetSoup(str) {
+//   return str.split("").sort().join("");
+// }
+
+// const AlphabetSoup = str => str.split("").sort().join("");
+
+// console.log(AlphabetSoup("hello"));
+// console.log(AlphabetSoup("edabit"));
+// console.log(AlphabetSoup("hacker"));
+// console.log(AlphabetSoup("geek"));
+// console.log(AlphabetSoup("javascript"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 25 - October - 2020
 // Source: https://edabit.com/challenge/xr4Xf28xeSrc7XmCF
 // Title: Generate a Countdown of Numbers in an Array
