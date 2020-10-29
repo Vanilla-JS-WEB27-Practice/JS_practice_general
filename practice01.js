@@ -19,6 +19,31 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 29 - October - 2020
+// Source: https://edabit.com/challenge/NfBqxaDu4KoxAysWF
+// Title: Word Endings
+
+// Instructions:
+// Create a function that adds a string ending to each member in an array.
+
+// Examples:
+// addEnding(["clever", "meek", "hurried", "nice"], "ly")
+// ➞ ["cleverly", "meekly", "hurriedly", "nicely"]
+// addEnding(["new", "pander", "scoop"], "er")
+// ➞ ["newer", "panderer", "scooper"]
+// addEnding(["bend", "sharpen", "mean"], "ing")
+// ➞ ["bending", "sharpening", "meaning"]
+
+// Work:
+// function addEnding(arr, ending){
+
+// }
+
+// const addEnding = (arr, ending) => [...arr].map((x) => x.concat(ending));
+// console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 28 - October - 2020
 // Source: https://edabit.com/challenge/NfBqxaDu4KoxAysWF
 // Title: Double Character Swap
