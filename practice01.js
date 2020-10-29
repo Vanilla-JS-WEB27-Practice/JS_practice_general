@@ -19,6 +19,43 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 28 - October - 2020
+// Source: https://edabit.com/challenge/NfBqxaDu4KoxAysWF
+// Title: Double Character Swap
+
+// Instructions:
+// Write a function to replace all instances of character c1 with character c2 and vice versa.
+
+// Examples:
+// doubleSwap( "aabbccc", "a", "b") ➞ "bbaaccc"
+// doubleSwap("random w#rds writt&n h&r&", "#", "&")
+// ➞ "random w&rds writt#n h#r#"
+// doubleSwap("128 895 556 788 999", "8", "9")
+// ➞ "129 985 556 799 888"
+
+// Notes:
+// Both characters will show up at least once in the string.
+
+// Work:
+// function doubleSwap(str, c1, c2) {
+//   const splitStr = str.split("");
+//   const result = [];
+//   splitStr.map((x, i) => {
+//     if (x === c1) {
+//       result.push(c2);
+//     } else if (x === c2) {
+//       result.push(c1);
+//     } else {
+//       result.push(x);
+//     }
+//   });
+//   return result.join("");
+// }
+
+// console.log(doubleSwap("aabbccc", "a", "b"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 26 - October - 2020
 // Source: https://edabit.com/challenge/Hp9FitGXpKqdCW6Fd
 // Title: Hurdle Jump
