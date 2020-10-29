@@ -20,6 +20,30 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 29 - October - 2020
+// Source: https://edabit.com/challenge/tHZBvD3w69hpDCtMg
+// Title: Edaaaaabit
+
+// Instructions:
+// Write a function that takes an integer and returns a string with the given number of "a"s in Edabit.
+
+// Examples:
+// howManyTimes(5) ➞ "Edaaaaabit"
+// howManyTimes(0) ➞ "Edbit"
+// howManyTimes(12) ➞ "Edaaaaaaaaaaaabit"
+
+// Notes:
+// The string must start with "Ed" and end with "bit".
+// You'll only be given integers as test input.
+
+// Work:
+// const howManyTimes = (num) => `Ed${"a".repeat(num)}bit`;
+// console.log(howManyTimes(5));
+// console.log(howManyTimes(0));
+// console.log(howManyTimes(12));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 29 - October - 2020
 // Source: https://edabit.com/challenge/GJn7xcBiCLdCNXFgy
 // Title: Calculate the Profit
 
