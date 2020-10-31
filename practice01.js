@@ -19,6 +19,54 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 30 - October - 2020
+// Source: https://edabit.com/challenge/7pkKPYtTJzpxRMckZ
+// Title: Positive Dominant
+
+// Instructions:
+// An array is positive dominant if it contains strictly more unique positive values than unique negative values.
+// Write a function that returns true if an array is positive dominant.
+
+// Examples:
+// isPositiveDominant([1, 1, 1, 1, -3, -4]) ➞ false
+// there is only 1 unique positive value (1)
+// there are 2 unique negative values (-3, -4)
+// isPositiveDominant([5, 99, 832, -3, -4]) ➞ true
+// isPositiveDominant([5, 0]) ➞ true
+// isPositiveDominant([0, -4, -1]) ➞ false
+
+// Notes:
+// 0 counts as neither a positive nor a negative value.
+
+// Work:
+// function isPositiveDominant(a) {
+//   const newArr = [];
+//   a.map((x) => {
+//     if (newArr.indexOf(x) === -1) {
+//       newArr.push(x);
+//     }
+//   });
+//   let pos = 0;
+//   let neg = 0;
+//   const filteredArr = newArr.filter((x) => x != 0);
+//   filteredArr.map((x) => {
+//     if (Math.sign(x) === 1) {
+//       pos++;
+//     } else if (Math.sign(x) === -1) {
+//       neg++;
+//     }
+//   });
+//   return pos === neg ? false : pos > neg ? true : false;
+// }
+// console.log(isPositiveDominant([1, 1, 1, -3, -4]));
+// console.log(isPositiveDominant([5, 99, 832, -3, -4]));
+// console.log(isPositiveDominant([5, 0]));
+// console.log(isPositiveDominant([0, -4, -1]));
+// console.log(isPositiveDominant([3, 3, 3, 3, -1, -1, -1]));
+// console.log(isPositiveDominant([1, 0, 0, -1]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 29 - October - 2020
 // Source: https://edabit.com/challenge/tHZBvD3w69hpDCtMg
 // Title: Edaaaaabit
