@@ -19,6 +19,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 31 - October - 2020
+// Source: https://edabit.com/challenge/9CNJtMXaw2K5NwMLJ
+// Title: Temperature Converter
+
+// Instructions:
+// Create a function that converts Celcius to Fahrenheit and vice versa.
+
+// Examples:
+// convert("35°C") ➞ "95°F"
+// convert("19°F") ➞ "-7°C"
+// convert("33") ➞ "Error"
+
+// Notes:
+// Round to the nearest integer.
+// If the input is incorrect, return "Error".
+// For the formulae to convert back and forth, check the Resources tab.
+
+// Work:
+// function convert(deg) {
+//   const split = deg.split("°");
+//   if (split[split.length - 1] === "F") {
+//     return Math.round((split[0] - 32) / 1.8) + "°C";
+//   } else if (split[split.length - 1] === "C") {
+//     return Math.round(split[0] * 1.8 + 32) + "°F";
+//   } else {
+//     return "Error";
+//   }
+// }
+
+// console.log(convert("35°C"));
+// console.log(convert("19°F"));
+// console.log(convert("33"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 30 - October - 2020
 // Source: https://edabit.com/challenge/ypgJXTXaaSwrFyoTk
 // Title: Return First and Last Parameter
@@ -40,11 +75,11 @@
 // JavaScript has an arguments object which keeps track of the parameters being passed in. Check the Resources tab to learn more.
 
 // Work:
-const firstArg = (...args) => args[0];
-const lastArg = (...args) => args[args.length - 1];
+// const firstArg = (...args) => args[0];
+// const lastArg = (...args) => args[args.length - 1];
 
-console.log(firstArg(1, 2, 3));
-console.log(lastArg(1, 2, 3));
+// console.log(firstArg(1, 2, 3));
+// console.log(lastArg(1, 2, 3));
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 30 - October - 2020
