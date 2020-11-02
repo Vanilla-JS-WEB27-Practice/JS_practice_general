@@ -19,6 +19,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 1 - November - 2020
+// Source: https://edabit.com/challenge/jtAvQyyDpFA2EaCcj
+// Title: Finding Common Elements
+
+// Instructions:
+// Create a function that takes two "sorted" arrays of numbers and returns an array of numbers which are common to both the input arrays.
+
+// Examples:
+// commonElements([-1, 3, 4, 6, 7, 9], [1, 3]) ➞ [3]
+// commonElements([1, 3, 4, 6, 7, 9], [1, 2, 3, 4, 7, 10]) ➞ [1, 3, 4, 7]
+// commonElements([1, 2, 2, 2, 3, 4, 5], [1, 2, 4, 5]) ➞ [1, 2, 4, 5]
+// commonElements([1, 2, 3, 4, 5], [10, 12, 13, 15]) ➞ []
+
+// Notes:
+// Arrays are sorted.
+// Try doing this problem with O(n + m) time complexity.
+
+// Work:
+// function commonElements(arr1, arr2) {
+//   const result = [];
+//   arr1.map((x) => {
+//     if (arr2.indexOf(x) != -1 && result.indexOf(x) === -1) {
+//       result.push(x);
+//     }
+//   });
+//   return result;
+// }
+
+// console.log(commonElements([-1, 3, 4, 6, 7, 9], [1, 3]));
+// console.log(commonElements([1, 3, 4, 6, 7, 9], [1, 2, 3, 4, 7, 10]));
+// console.log(commonElements([1, 2, 2, 2, 3, 4, 5], [1, 2, 4, 5]));
+// console.log(commonElements([1, 2, 3, 4, 5], [10, 12, 13, 15]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 31 - October - 2020
 // Source: https://edabit.com/challenge/9CNJtMXaw2K5NwMLJ
 // Title: Temperature Converter
