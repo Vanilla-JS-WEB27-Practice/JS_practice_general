@@ -20,6 +20,37 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 05 - November - 2020
+// Source: https://edabit.com/challenge/9GcCezhbB3DxoJ6fL
+// Title: Is the String in Order?
+
+// Instructions:
+// Create a function that takes a string and returns true or false, depending on whether the characters are in order or not.
+
+// Examples:
+// isInOrder("abc") ➞ true
+// isInOrder("edabit") ➞ false
+// isInOrder("123") ➞ true
+// isInOrder("xyzz") ➞ true
+
+// Notes:
+// You don't have to handle empty strings.
+
+// Work:
+// function isInOrder(str) {
+//   const splitStr = str.split("");
+//   return splitStr.sort().join("") === str ? true : false
+// }
+
+// const isInOrder = (str) => str.split("").sort().join("") === str;
+
+// console.log(isInOrder("abc"));
+// console.log(isInOrder("edabit"));
+// console.log(isInOrder("123"));
+// console.log(isInOrder("xyzz"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 05 - November - 2020
 // Source: https://edabit.com/challenge/yYfQoo6rkMezauG77
 // Title: Reverse the Odd Length Words
 
