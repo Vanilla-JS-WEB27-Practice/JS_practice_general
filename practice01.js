@@ -20,6 +20,31 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 05 - November - 2020
+// Source: https://edabit.com/challenge/YjkNx49pk7Eois9pi
+// Title: Broken Bridge
+
+// Instructions:
+// Create a function which validates whether a bridge is safe to walk on (i.e. has no gaps in it to fall through).
+
+// Examples:
+// isSafeBridge("####") ➞ true
+// isSafeBridge("## ####") ➞ false
+// isSafeBridge("#") ➞ true
+
+// Notes:
+// You can expect the bridge's ends connecting it to its surrounding.
+
+// Work:
+// const isSafeBridge = (str) => str.split(" ").length === 1 ? true : false
+
+// console.log(isSafeBridge("####"));
+// console.log(isSafeBridge("## ####"));
+// console.log(isSafeBridge("#"));
+// console.log(isSafeBridge("# #"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 05 - November - 2020
 // Source: https://edabit.com/challenge/Tbvjwh5GKRbxd3vyD
 // Title: Are the Numbers Equal?
 
