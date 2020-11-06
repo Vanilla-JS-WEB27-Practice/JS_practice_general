@@ -20,6 +20,38 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 05 - November - 2020
+// Source: https://edabit.com/challenge/Tbvjwh5GKRbxd3vyD
+// Title: Are the Numbers Equal?
+
+// Instructions:
+// Create a function that takes two integers and checks if they are equal.
+
+// Examples:
+// isEqual(5, 6) ➞ false
+// isEqual(1, 1) ➞ true
+// isEqual("1", 1) ➞ false
+
+// Notes:
+// If there is a string then it should return false.
+
+// Work:
+// const isEqual = (num1, num2) =>
+//   typeof num1 === typeof num2 && Number.isInteger(num1) && num1 === num2
+//     ? true
+//     : false;
+
+// console.log(isEqual(5, 6));
+// console.log(isEqual(1, 1));
+// console.log(isEqual("1", 1));
+// console.log(isEqual("1", "1"));
+// console.log(isEqual(36, 35));
+// console.log(isEqual(88, 88));
+// console.log(isEqual("1", 5));
+// console.log(isEqual(2, 2));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 05 - November - 2020
 // Source: https://edabit.com/challenge/9GcCezhbB3DxoJ6fL
 // Title: Is the String in Order?
 
