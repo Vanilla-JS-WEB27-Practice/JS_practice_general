@@ -1,5 +1,5 @@
 // Template
-// Date: - October - 2020
+// Date: - November - 2020
 // Source:
 // Title:
 
@@ -19,7 +19,71 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: 1 - November - 2020
+// Date: 05 - November - 2020
+// Source: https://edabit.com/challenge/yYfQoo6rkMezauG77
+// Title: Reverse the Odd Length Words
+
+// Instructions:
+// Given a string, reverse all the words which have odd length. The even length words are not changed.
+
+// Examples:
+// reverseOdd("Bananas") ➞ "sananaB"
+// reverseOdd("One two three four") ➞ "enO owt eerht four"
+// reverseOdd("Make sure uoy only esrever sdrow of ddo length")
+// ➞ "Make sure you only reverse words of odd length"
+
+// Notes:
+// There is exactly one space between each word and no punctuation is used.
+
+// Work:
+// const reverseOdd = (str) =>
+//   str
+//     .split(" ")
+//     .map((x) => (x.length % 2 === 0 ? x : x.split("").reverse().join("")))
+//     .join(" ");
+
+// console.log(reverseOdd("Bananas"));
+// console.log(reverseOdd("One two three four"));
+// console.log(reverseOdd("Make sure you only reverse words of odd length"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 02 - November - 2020
+// Source: https://edabit.com/challenge/byCrFXYokKujSebsD
+// Title: Vowel to Vowel Links
+
+// Instructions:
+// Given a sentence as str, return true if any two adjacent words have this property:
+// One word ends with a vowel, while the word immediately after begins with a vowel (a e i o u).
+
+// Examples:
+// vowelLinks("a very large appliance") ➞ true
+// vowelLinks("go to edabit") ➞ true
+// vowelLinks("an open fire") ➞ false
+// vowelLinks("a sudden applause") ➞ false
+
+// Notes:
+// You can expect sentences in lowercase/uppercase.
+
+// Work:
+// function vowelLinks(str) {
+//   const splitStr = str.split(" ");
+//   const vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+//   splitStr.map((x, i) => {
+//     // console.log(x.split("")[0])
+//     console.log(splitStr[i + 1].split("")[0]);
+//   });
+//   return splitStr;
+// }
+
+// console.log(vowelLinks("a very large appliance"));
+// console.log(vowelLinks("go to edabit"));
+// console.log(vowelLinks("an open fire"));
+// console.log(vowelLinks("a sudden applause"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 01 - November - 2020
 // Source: https://edabit.com/challenge/jtAvQyyDpFA2EaCcj
 // Title: Finding Common Elements
 
