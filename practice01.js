@@ -20,6 +20,27 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 06 - November - 2020
+// Source: https://edabit.com/challenge/nBW6ubsQCurPvhpWc
+// Title: Reverse and Capitalize
+
+// Instructions:
+// Create a function that takes a string of lowercase characters and returns that string reversed and in upper case.
+
+// Examples:
+// reverseCapitalize("abc") ➞ "CBA"
+// reverseCapitalize("hellothere") ➞ "EREHTOLLEH"
+// reverseCapitalize("input") ➞ "TUPNI"
+
+// Work:
+// const reverseCapitalize = (str) => str.split("").map((x) => x.toUpperCase()).reverse().join("");
+
+// console.log(reverseCapitalize("abc"));
+// console.log(reverseCapitalize("hellothere"));
+// console.log(reverseCapitalize("input"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 06 - November - 2020
 // Source: https://edabit.com/challenge/f3Lc7Z5dK3p8dahoz
 // Title: Concatenate to Form Target Array
 // Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
