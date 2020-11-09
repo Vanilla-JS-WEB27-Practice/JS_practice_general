@@ -20,6 +20,36 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 08 - November - 2020
+// Source: https://edabit.com/challenge/LHTF9ij2FtvwhnzQF
+// Title: Array from Comma-Delimited String
+
+// Instructions:
+// Write a function that turns a comma-delimited list into an array of strings.
+
+// Examples:
+// toArray("watermelon, raspberry, orange")
+// ➞ ["watermelon", "raspberry", "orange"]
+// toArray("x1, x2, x3, x4, x5")
+// ➞ ["x1", "x2", "x3", "x4", "x5"]
+// toArray("a, b, c, d")
+// ➞ ["a", "b", "c", "d"]
+// toArray("")
+// ➞ []
+
+// Notes:
+// Return an empty array for an empty string.
+
+// Work:
+// const toArray = (str) => str.split(",")
+// const toArray = (str) => (str.length === 0 ? [] : str.split(", "));
+
+// console.log(toArray("x1, x2, x3, x4, x5"));
+// console.log(toArray("a, b, c, d"));
+// console.log(toArray(""));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - November - 2020
 // Source: https://edabit.com/challenge/NEPFa3NZSd8iiF3ps
 // Title: Date Format
 
