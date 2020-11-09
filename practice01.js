@@ -20,6 +20,30 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 08 - November - 2020
+// Source: https://edabit.com/challenge/NEPFa3NZSd8iiF3ps
+// Title: Date Format
+
+// Instructions:
+// Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+
+// Examples:
+// formatDate("11/12/2019") ➞ "20191211"
+// formatDate("12/31/2019") ➞ "20193112"
+// formatDate("01/15/2019") ➞ "20191501"
+
+// Notes:
+// Return value should be a string.
+
+// Work:
+// const formatDate = (date) => date.split("/").reverse().join("");
+
+// console.log(formatDate("11/12/2019"))
+// console.log(formatDate("12/31/2019"))
+// console.log(formatDate("01/15/2019"))
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - November - 2020
 // Source: https://edabit.com/challenge/2SJX9ha6W2bYkzSNX
 // Title: Remove Null from an Array
 
