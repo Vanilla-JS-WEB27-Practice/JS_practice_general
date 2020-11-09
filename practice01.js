@@ -20,6 +20,33 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 08 - November - 2020
+// Source: https://edabit.com/challenge/77zq4RhMgWup22H6d
+// Title: Exists a Number Higher?
+
+// Instructions:
+// Write a function that returns true if there exists at least one number that is larger than or equal to n.
+
+// Examples:
+// existsHigher([5, 3, 15, 22, 4], 10) ➞ true
+// existsHigher([1, 2, 3, 4, 5], 8) ➞ false
+// existsHigher([4, 3, 3, 3, 2, 2, 2], 4) ➞ true
+// existsHigher([], 5) ➞ false
+
+// Notes:
+// Return false for an empty array [].
+
+// Work:
+// const existsHigher = (arr, n) =>
+//   arr === [] ? true : Math.max(...arr) >= n ? true : false;
+
+// console.log(existsHigher([5, 3, 15, 22, 4], 10));
+// console.log(existsHigher([1, 2, 3, 4, 5], 8));
+// console.log(existsHigher([4, 3, 3, 3, 2, 2, 2], 4));
+// console.log(existsHigher([], 5));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - November - 2020
 // Source: https://edabit.com/challenge/aMyRSjKakeDauFfkX
 // Title: Find First Character That Repeats
 
@@ -37,25 +64,25 @@
 // Tests are case sensitive.
 
 // Work:
-function firstRepeat(chars) {
-  const result = [];
-  const splitStr = chars.split("");
-  for (let i = 0; i < splitStr.length; i++) {
-    if (result.indexOf(splitStr[i]) === -1) {
-      result.push(splitStr[i]);
-    } else {
-      return splitStr[i];
-    }
-    if (result.join("") === chars) {
-      return "-1";
-    }
-  }
-}
+// function firstRepeat(chars) {
+//   const result = [];
+//   const splitStr = chars.split("");
+//   for (let i = 0; i < splitStr.length; i++) {
+//     if (result.indexOf(splitStr[i]) === -1) {
+//       result.push(splitStr[i]);
+//     } else {
+//       return splitStr[i];
+//     }
+//     if (result.join("") === chars) {
+//       return "-1";
+//     }
+//   }
+// }
 
-console.log(firstRepeat("legolas"));
-console.log(firstRepeat("Gandalf"));
-console.log(firstRepeat("Balrog"));
-console.log(firstRepeat("Isildur"));
+// console.log(firstRepeat("legolas"));
+// console.log(firstRepeat("Gandalf"));
+// console.log(firstRepeat("Balrog"));
+// console.log(firstRepeat("Isildur"));
 
 // ------------------------------------------------------------------------------------------------------------------
 
