@@ -20,6 +20,27 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 08 - November - 2020
+// Source: https://edabit.com/challenge/2SJX9ha6W2bYkzSNX
+// Title: Remove Null from an Array
+
+// Instructions:
+// Create a function to remove all null values from an array.
+
+// Examples:
+// removeNull(["a", null, "b", null]) ➞ ["a", "b"]
+// removeNull([null, null, null, null, null]) ➞ []
+// removeNull([7, 8, null, 9]) ➞ [7, 8, 9]
+
+// Work:
+// const removeNull = (arr) => arr.filter((x) => x !== null);
+
+// console.log(removeNull(["a", null, "b", null]));
+// console.log(removeNull([null, null, null, null, null]));
+// console.log(removeNull([7, 8, null, 9]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - November - 2020
 // Source: https://edabit.com/challenge/77zq4RhMgWup22H6d
 // Title: Exists a Number Higher?
 
