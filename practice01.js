@@ -19,6 +19,46 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 08 - November - 2020
+// Source: https://edabit.com/challenge/aMyRSjKakeDauFfkX
+// Title: Find First Character That Repeats
+
+// Instructions:
+// Create a function that takes a string and returns the first character that repeats. If there is no repeat of a character, return "-1".
+
+// Examples:
+// firstRepeat("legolas") ➞ "l"
+// firstRepeat("Gandalf") ➞ "a"
+// firstRepeat("Balrog") ➞ "-1"
+// firstRepeat("Isildur") ➞ "-1"
+// Case sensitive "I" not equal to "i"
+
+// Notes:
+// Tests are case sensitive.
+
+// Work:
+function firstRepeat(chars) {
+  const result = [];
+  const splitStr = chars.split("");
+  for (let i = 0; i < splitStr.length; i++) {
+    if (result.indexOf(splitStr[i]) === -1) {
+      result.push(splitStr[i]);
+    } else {
+      return splitStr[i];
+    }
+    if (result.join("") === chars) {
+      return "-1";
+    }
+  }
+}
+
+console.log(firstRepeat("legolas"));
+console.log(firstRepeat("Gandalf"));
+console.log(firstRepeat("Balrog"));
+console.log(firstRepeat("Isildur"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 06 - November - 2020
 // Source: https://edabit.com/challenge/nBW6ubsQCurPvhpWc
 // Title: Reverse and Capitalize
