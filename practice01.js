@@ -19,6 +19,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 14 - November - 2020
+// Source: https://edabit.com/challenge/4dKfy68gbxjms7fXA
+// Title: Let's Meet!
+
+// Instructions:
+// From point A, an object is moving towards point B at constant velocity va (in km/hr).
+// From point B, another object is moving towards point A at constant velocity vb (in km/hr).
+// Knowing this and the distance between point A and B (in km), write a function that returns how much time passes until both objects meet.
+// Format the output like this:
+// "2h 23min 34s"
+
+// Examples:
+// letsMeet(100, 10, 30) ➞ "2h 30min 0s"
+// letsMeet(280, 70, 80) ➞ "1h 52min 0s"
+// letsMeet(90, 75, 65) ➞ "0h 38min 34s"
+
+// Notes:
+// Seconds should be rounded down to the nearest whole number.
+
+// Work:
+// function letsMeet(distance, va, vb) {
+//   const time = distance / (va + vb);
+//   const splitTime = JSON.stringify(time).split(".");
+//   const mins = 60 * (time - splitTime[0]);
+//   const splitMins = JSON.stringify(mins).split(".");
+//   const secs = 60 * (mins - splitMins[0]);
+//   const splitSecs = JSON.stringify(secs).split(".");
+//   return `${Math.round(splitTime[0])}h ${splitMins[0]}min ${splitSecs[0]}s`;
+// }
+
+// console.log(letsMeet(100, 10, 30));
+// console.log(letsMeet(280, 70, 80));
+// console.log(letsMeet(90, 75, 65));
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 13 - November - 2020
 // Source: https://edabit.com/challenge/ALmkPHd7eoe5btx9y
 // Title: Leap Years
