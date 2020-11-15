@@ -19,6 +19,30 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - November - 2020
+// Source: https://edabit.com/challenge/W8z2EghwmjQYhwM2D
+// Title: Sandwich Fillings
+
+// Instructions:
+// Given a sandwich (as an array), return an array of fillings inside the sandwich. This involves ignoring the first and last elements.
+
+// Examples:
+// getFillings(["bread", "ham", "cheese", "ham", "bread"]) ➞ ["ham", "cheese", "ham"]
+// getFillings(["bread", "sausage", "tomato", "bread"]) ➞ ["sausage", "tomato"]
+// getFillings(["bread", "lettuce", "bacon", "tomato", "bread"]) ➞ ["lettuce", "bacon", "tomato"]
+
+// Notes:
+// The first and last elements will always be "bread".
+
+// Work:
+// const getFillings = (sandwich) => sandwich.filter((x) => x !== "bread");
+
+// console.log(getFillings(["bread", "ham", "cheese", "ham", "bread"]));
+// console.log(getFillings(["bread", "sausage", "tomato", "bread"]));
+// console.log(getFillings(["bread", "lettuce", "bacon", "tomato", "bread"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 14 - November - 2020
 // Source: https://edabit.com/challenge/4dKfy68gbxjms7fXA
 // Title: Let's Meet!
