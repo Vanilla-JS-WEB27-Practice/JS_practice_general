@@ -20,6 +20,29 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 15 - November - 2020
+// Source: https://edabit.com/challenge/KQQ7RMXjSK257GQgy
+// Title: Re-Form the Word
+// Resource: https://paulund.co.uk/how-to-capitalize-the-first-letter-of-a-string-in-javascript
+
+// Instructions:
+// A word has been split into a left part and a right part.
+// Re-form the word by adding both halves together, changing the first character to an uppercase letter.
+
+// Examples:
+// getWord("seas", "onal") ➞ "Seasonal"
+// getWord("comp", "lete") ➞ "Complete"
+// getWord("lang", "uage") ➞ "Language"
+
+// Work:
+// const getWord = (left, right) => left.charAt(0).toUpperCase().concat(left.slice(1)).concat(right);
+
+// console.log(getWord("seas", "onal"));
+// console.log(getWord("comp", "lete"));
+// console.log(getWord("lang", "uage"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 15 - November - 2020
 // Source: https://edabit.com/challenge/hwWLHcDoPZmXcGHyd
 // Title: Word Endings
 
@@ -40,12 +63,11 @@
 // If you're really stuck, unlock solutions in the Solutions tab.
 
 // Work:
+// const addEnding = (arr, ending) => arr.map((x) => x.concat(ending));
 
-const addEnding = (arr, ending) => arr.map((x) => x.concat(ending));
-
-console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly"));
-console.log(addEnding(["new", "pander", "scoop"], "er"));
-console.log(addEnding(["bend", "sharpen", "mean"], "ing"));
+// console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly"));
+// console.log(addEnding(["new", "pander", "scoop"], "er"));
+// console.log(addEnding(["bend", "sharpen", "mean"], "ing"));
 
 // ------------------------------------------------------------------------------------------------------------------
 
