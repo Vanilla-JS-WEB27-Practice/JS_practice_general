@@ -19,6 +19,64 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 15 - November - 2020
+// Source: https://edabit.com/challenge/uQAYSdC3HFtGp3NY8
+// Title: You Sunk My Battleship!
+
+// Instructions:
+// Remember the game Battleship? Ships are floating in a matrix.
+// You have to fire torpedos at their suspected coordinates, to try and hit them.
+// Create a function that takes an array of arrays (matrix) and a coordinate as a string.
+// If the coordinate contains only water " . ", return "splash" and if the coordinate contains a ship " * ", return "BOOM".
+
+// Examples:
+// [
+//   [".", ".", ".", "*", "*"],
+//   [".", "*", ".", ".", "."],
+//   [".", "*", ".", ".", "."],
+//   [".", "*", ".", ".", "."],
+//   [".", ".", "*", "*", "."],
+// ]
+// fire(matrix, "A1") ➞ "splash"
+// fire(matrix, "A4") ➞ "BOOM"
+// fire(matrix, "D2") ➞ "BOOM"
+
+// Notes:
+// The provided matrix is always a square.
+// The provided matrix will not be larger than 5 * 5 ( A1 * E5).
+
+// Work:
+// const fire = (matrix, coordinates) => {
+//   const coordSplit = coordinates.split("");
+//   switch (coordSplit[0]) {
+//     case "A":
+//       return matrix[0][coordSplit[1] - 1] === "*" ? "BOOM" : "splash";
+//     case "B":
+//       return matrix[1][coordSplit[1] - 1] === "*" ? "BOOM" : "splash";
+//     case "C":
+//       return matrix[2][coordSplit[1] - 1] === "*" ? "BOOM" : "splash";
+//     case "D":
+//       return matrix[3][coordSplit[1] - 1] === "*" ? "BOOM" : "splash";
+//     case "E":
+//       return matrix[4][coordSplit[1] - 1] === "*" ? "BOOM" : "splash";
+//   }
+// };
+
+// console.log(
+//   fire(
+//     [
+//       [".", ".", ".", "*", "*"],
+//       [".", "*", ".", ".", "."],
+//       [".", "*", ".", ".", "."],
+//       [".", "*", ".", ".", "."],
+//       [".", ".", "*", "*", "."],
+//     ],
+//     "D2"
+//   )
+// );
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: - November - 2020
 // Source: https://edabit.com/challenge/W8z2EghwmjQYhwM2D
 // Title: Sandwich Fillings
