@@ -20,6 +20,30 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 15 - November - 2020
+// Source: https://edabit.com/challenge/YjkNx49pk7Eois9pi
+// Title: Broken Bridge
+
+// Instructions:
+// Create a function which validates whether a bridge is safe to walk on (i.e. has no gaps in it to fall through).
+
+// Examples:
+// isSafeBridge("####") ➞ true
+// isSafeBridge("## ####") ➞ false
+// isSafeBridge("#") ➞ true
+
+// Notes:
+// You can expect the bridge's ends connecting it to its surrounding.
+
+// Work:
+// const isSafeBridge = (str) => str.split(" ").length === 1;
+
+// console.log(isSafeBridge("####"));
+// console.log(isSafeBridge("## ####"));
+// console.log(isSafeBridge("#"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 15 - November - 2020
 // Source: https://edabit.com/challenge/uQAYSdC3HFtGp3NY8
 // Title: You Sunk My Battleship!
 
