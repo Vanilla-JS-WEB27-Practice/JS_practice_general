@@ -19,6 +19,27 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 17 - November - 2020
+// Source: https://edabit.com/challenge/zRCyxKBBmr4F2x4Bv
+// Title: Find the nth Tetrahedral Number
+// Resource: https://www.geeksforgeeks.org/tetrahedral-numbers/#:~:text=A%20number%20is%20termed%20as,120%2C%20165%2C%20220%2C%20%E2%80%A6
+
+// Instructions:
+// Create a function that takes an integer n and returns the nth tetrahedral number.
+
+// Examples:
+// tetra(2) ➞ 4
+// tetra(5) ➞ 35
+// tetra(6) ➞ 56
+
+// Notes:
+// There is a formula for the nth tetrahedral number.
+
+// Work:
+// const tetra = (n) =>  (n * (n + 1) * (n + 2)) / 6
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 16 - November - 2020
 // Source: https://edabit.com/challenge/fuvMP8KMtiQY3QXrJ
 // Title: Number Length Sort
