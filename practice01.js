@@ -20,6 +20,37 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 19 - November - 2020
+// Source: https://edabit.com/challenge/uRtubbXsDHLwAz5RS
+// Title: Smaller String Number
+
+// Instructions:
+// Create a function that returns the smaller number.
+
+// Examples:
+// smallerNum("21", "44") ➞ "21"
+// smallerNum("1500", "1") ➞ "1"
+// smallerNum("5", "5") ➞ "5"
+
+// Notes:
+// Numbers will be represented as strings, and your output should also be a string.
+// If both numbers tie, return either number.
+// Numbers will be positive.
+// Bonus: See if you can do this without converting to integers.
+
+// Work:
+// const smallerNum = (n1, n2) => (n1.length > n2.length ? n2 : n1);
+
+// console.log(smallerNum("21", "44"));
+// console.log(smallerNum("1500", "1"));
+// console.log(smallerNum("5", "5"));
+// console.log(smallerNum("153", "367"));
+// console.log(smallerNum("1500", "16"));
+// console.log(smallerNum("100", "23"));
+// console.log(smallerNum("1500", "1"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 19 - November - 2020
 // Source: https://edabit.com/challenge/saKcrsreCGXD28hgE
 // Title: Bundle Up!
 
