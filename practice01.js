@@ -20,6 +20,32 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 21 - November - 2020
+// Source: https://edabit.com/challenge/Wq3Q5ewau9Fu2GN9i
+// Title: Remove the First and Last Characters
+
+// Instructions:
+// Create a function that removes the first and last characters from a string.
+
+// Examples:
+// removeFirstLast("hello") ➞ "ell"
+// removeFirstLast("maybe") ➞ "ayb"
+// removeFirstLast("benefit") ➞ "enefi"
+// removeFirstLast("a") ➞ "a"
+
+// Notes:
+// If the string is 2 or fewer characters long, return the string itself (See Example #4).
+
+// Work:
+// const removeFirstLast = (str) => (str.length <= 2 ? str : str.slice(1, -1));
+
+// console.log(removeFirstLast("hello"));
+// console.log(removeFirstLast("maybe"));
+// console.log(removeFirstLast("benefit"));
+// console.log(removeFirstLast("a"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 21 - November - 2020
 // Source: https://edabit.com/challenge/QW5CApff3WAGszrWY
 // Title: Temperature Conversion
 
