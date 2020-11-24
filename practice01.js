@@ -19,6 +19,44 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 24 - November - 2020
+// Source: https://edabit.com/challenge/wv6p5WR648oG6mTZx
+// Title: Integer Digits Count
+
+// Instructions:
+// Create a function that counts the integer's number of digits.
+
+// Examples:
+// count(318) ➞ 3
+// count(-92563) ➞ 5
+// count(4666) ➞ 4
+// count(-314890) ➞ 6
+// count(654321) ➞ 6
+// count(638476) ➞ 6
+
+// Notes:
+// For an added challenge, try to solve this without using strings.
+// Optionally, you can solve this via a recursive approach.
+// A recursive version of this challenge can be found here.
+
+// Work:
+// function count(n) {
+//   if (JSON.stringify(n).includes("-")) {
+//     const splitNum = JSON.stringify(n).split("");
+//     splitNum.shift();
+//     return splitNum.join("").length;
+//   } else {
+//     return JSON.stringify(n).length;
+//   }
+// }
+
+// console.log(count(318));
+// console.log(count(-92563));
+// console.log(count(4666));
+// console.log(count(-314890));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 21 - November - 2020
 // Source: https://edabit.com/challenge/Wq3Q5ewau9Fu2GN9i
 // Title: Remove the First and Last Characters
