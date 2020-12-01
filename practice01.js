@@ -20,6 +20,49 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 30 - November - 2020
+// Source: https://edabit.com/challenge/eGr8qEJjKwedk9SqY
+// Title: Error Messages
+
+// Instructions:
+// Create a function that takes a number as an argument and returns the appropriate error message. You should do this without using the switch or if statements.
+// The input error will be 1 to 5:
+// 1 >> "Check the fan"
+// 2 >> "Emergency stop"
+// 3 >> "Pump Error"
+// 4 >> "c"
+// 5 >> "Temperature Sensor Error"
+// For any other value, return 101 (you can use an if statement here).
+
+// Examples:
+// error(1) ➞ "Check the fan: e1"
+// error(2) ➞ "Emergency stop: e2"
+// error(3) ➞ "Pump Error: e3"
+
+// Notes:
+// Do this without using the switch or if statements.
+
+// Work:
+// const code = {
+//   1: "Check the fan",
+//   2: "Emergency stop",
+//   3: "Pump Error",
+//   4: "c",
+//   5: "Temperature Sensor Error",
+// };
+
+// const error = (n) => n > Object.keys(code).length || n < 0 ? 101 : `${code[n]}: e${n}`;
+
+// console.log(error(1));
+// console.log(error(2));
+// console.log(error(3));
+// console.log(error(4));
+// console.log(error(5));
+// console.log(error(7));
+// console.log(error(-1000));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 30 - November - 2020
 // Source: https://edabit.com/challenge/4QZqtGxiqJbzkNesj
 // Title: Zip It, If You Can?
 
