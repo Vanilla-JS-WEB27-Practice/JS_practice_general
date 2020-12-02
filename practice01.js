@@ -1,5 +1,5 @@
 // Template
-// Date: - November - 2020
+// Date: - December - 2020
 // Source:
 // Title:
 
@@ -16,6 +16,43 @@
 // 1 -
 
 // Work:
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 01 - December - 2020
+// Source: https://edabit.com/challenge/wikfKaQm3zP7buRA4
+// Title: Special Arrays
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+
+// Instructions:
+// An array is special if every even index contains an even number and every odd index contains an odd number.
+// Create a function that returns true if an array is special, and false otherwise.
+
+// Examples:
+// isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]) ➞ true
+// Even indices: [2, 4, 6, 6]; Odd indices: [7, 9, 1, 3]
+// isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3]) ➞ false
+// Index 2 has an odd number 9.
+// isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]) ➞ false
+// Index 3 has an even number 8.
+
+// Work:
+// option 3 --> from edabit, another user's solution
+// const isSpecialArray = (arr) => arr.every((x, i) => i % 2 === x % 2);
+
+// option 2
+// const isSpecialArray = (arr) => arr.every((x, i) => (i % 2 === 0 && x % 2 === 0) || (i % 2 !== 0 && x % 2 !== 0));
+
+// option 1
+// function isSpecialArray(arr) {
+//   return arr.every(
+//     (x, i) => (i % 2 === 0 && x % 2 === 0) || (i % 2 !== 0 && x % 2 !== 0)
+//   );
+// }
+
+// console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
+// console.log(isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3]));
+// console.log(isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
