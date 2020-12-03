@@ -20,6 +20,35 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 02 - December - 2020
+// Source: https://edabit.com/challenge/7ysTEDruHz2prcJQ9
+// Title: Tuck in Array
+
+// Instructions:
+// Create a function that takes two arrays and insert the second array in the middle of the first array.
+
+// Examples:
+// tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]) ➞ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// tuckIn([15,150], [45, 75, 35]) ➞ [15, 45, 75, 35, 150]
+// tuckIn([[1, 2], [5, 6]], [[3, 4]]) ➞ [[1, 2], [3, 4], [5, 6]]
+
+// Notes:
+// The first array always has two elements.
+// Use the spread syntax to solve this challenge.
+
+// Work:
+// another coder's solution from edabit, simple and precise
+// const tuckIn = ([a, c], b) => [a, ...b, c];
+
+// my solution
+// const tuckIn = (arr1, arr2) => [arr1[0], ...arr2, arr1[1]];
+
+// console.log(tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]));
+// console.log(tuckIn([15,150], [45, 75, 35]));
+// console.log(tuckIn([[1, 2], [5, 6]], [[3, 4]]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 02 - December - 2020
 // Source: https://edabit.com/challenge/wmdanmJkaT9waTg3y
 // Title: Pentagonal Number
 // Resource: https://www.numbersaplenty.com/set/centered_pentagonal_number/
