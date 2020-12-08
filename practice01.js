@@ -20,6 +20,46 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 07 - December - 2020
+// Source: https://edabit.com/challenge/rvsvGvqZ3BzNieKqA
+// Title: What's Hiding Amongst the Crowd?
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+
+// Instructions:
+// A word is on the loose and now has tried to hide amongst a crowd of tall letters!
+// Help write a function to detect what the word is, knowing the following rules:
+// The wanted word is in lowercase.
+// The crowd of letters is all in uppercase.
+// Note that the word will be spread out amongst the random letters, but their letters remain in the same order.
+
+// Examples:
+// detectWord("UcUNFYGaFYFYGtNUH") ➞ "cat"
+// detectWord("bEEFGBuFBRrHgUHlNFYaYr") ➞ "burglar"
+// detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment") ➞ "embezzlement"
+
+// Work:
+// edabit user's solution - short and concise and uses regex correctly
+// const detectWord = (str) => str.replace(/[A-Z]/g, "");
+
+// my solution
+// function detectWord(str) {
+//   const splitStr = str.split("");
+//   const result = [];
+//   const regex = /[A-Z]/g;
+//   const mapStr = splitStr.map((x) => {
+//     if (!x.match(regex)) {
+//       result.push(x);
+//     }
+//   });
+//   return result.join("");
+// }
+
+// console.log(detectWord("UcUNFYGaFYFYGtNUH"));
+// console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
+// console.log(detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 07 - December - 2020
 // Source: https://edabit.com/challenge/ujzhzyvGoASKxSAib
 // Title: The Frugal Gentleman
 
