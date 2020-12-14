@@ -19,6 +19,97 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - December - 2020
+// Source: https://edabit.com/challenge/5S5HBQW6zZp8eH3eL
+// Title: C*ns*r*d Str*ngs
+
+// Instructions:
+// Someone has attempted to censor my strings by replacing every vowel with a *, l*k* th*s.
+// Luckily, I've been able to find the vowels that were removed.
+// Given a censored string and a string of the censored vowels, return the original uncensored string.
+
+// Examples:
+// uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo") ➞ "Where did my vowels go?"
+// uncensor("abcd", "") ➞ "abcd"
+// uncensor("*PP*RC*S*", "UEAE") ➞ "UPPERCASE"
+
+// Notes:
+// The vowels are given in the correct order.
+// The number of vowels will match the number of * characters in the censored string.
+
+// Work:
+const uncensor = (str, vowels) => {
+  if (vowels.length === 0) {
+    return str;
+  } else {
+    const spltStr = str.split("");
+    const vwlStr = vowels.split("");
+    const result = [];
+    const newStr = spltStr.map((x, i) => {
+      if (x === "*") {
+        result.push(vwlStr[i]);
+      } else {
+        result.push(x);
+      }
+    });
+    // return newStr;
+    return newStr;
+  }
+};
+
+console.log(uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo"));
+console.log(uncensor("abcd", ""));
+console.log(uncensor("*PP*RC*S*", "UEAE"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - December - 2020
+// Source: https://edabit.com/challenge/HFBYPP8gSRn2n9qrQ
+// Title: Buggy Uppercase Counting
+
+// Instructions:
+// In the Code tab is a function which is meant to return how many uppercase letters there are in a list of various words.
+// Fix the list comprehension so that the code functions normally!
+
+// Examples:
+// countUppercase(["SOLO", "hello", "Tea", "wHat"]) ➞ 6
+// countUppercase(["little", "lower", "down"]) ➞ 0
+// counUppercase(["EDAbit", "Educate", "Coding"]) ➞ 5
+
+// Notes:
+// Check the Resources for some array methods that might be helpful.
+// This is originally a loose translation of a Python problem.
+// However, the Pythonic List Comprehension syntax was never really adopted in JavaScript,
+// so I elected to make a our Uppercase counter broken in a few other ways.
+
+// Work:
+// version two - mine
+// function countUppercase(str) {
+//   let sum = 0;
+//   const newArr = str.flat().join("");
+//   const countResult = newArr.map((x) => x.match(/[A-Z]/g));
+
+//   return countResult;
+// }
+
+// version 1
+// function countUppercase(str) {
+//   let sum = 0;
+//   const newArr = str.map((x) => x.split("")).flat();
+//   const countResult = newArr.map((x) => {
+//     if (x.match(/[A-Z]/g)) {
+//       sum++;
+//     }
+//   });
+//   return sum;
+// }
+
+// console.log(countUppercase(["SOLO", "hello", "Tea", "wHat"]));
+// console.log(countUppercase(["little", "lower", "down"]));
+// console.log(countUppercase(["EDAbit", "Educate", "Coding"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 08 - December - 2020
 // Source: https://edabit.com/challenge/ixdXLyopP7c4aPXqx
 // Title: Check If the Brick Fits through the Hole
