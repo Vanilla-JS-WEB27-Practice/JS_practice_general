@@ -19,6 +19,31 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 15 - December - 2020
+// Source: https://edabit.com/challenge/ew9dry9RzoaeiTzwX
+// Title: White Spaces Between Lower and Uppercase Letters
+// Resource: https://stackoverflow.com/questions/5582228/insert-space-before-capital-letters
+
+// Instructions:
+// Write a function that inserts a white space between every instance of a lower character followed immediately by an upper character.
+
+// Examples:
+// insertWhitespace("SheWalksToTheBeach") ➞ "She Walks To The Beach"
+// insertWhitespace("MarvinTalksTooMuch") ➞ "Marvin Talks Too Much"
+// insertWhitespace("TheGreatestUpsetInHistory") ➞ "The Greatest Upset In History"
+
+// Notes:
+// Each word in the phrase will be at least two characters long.
+
+// Work:
+// const insertWhitespace = (s) => s.replace(/([A-Z])/g, " $1").trim();
+
+// console.log(insertWhitespace("SheWalksToTheBeach"));
+// console.log(insertWhitespace("MarvinTalksTooMuch"));
+// console.log(insertWhitespace("TheGreatestUpsetInHistory"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: - December - 2020
 // Source: https://edabit.com/challenge/5S5HBQW6zZp8eH3eL
 // Title: C*ns*r*d Str*ngs
@@ -45,15 +70,17 @@ const uncensor = (str, vowels) => {
     const spltStr = str.split("");
     const vwlStr = vowels.split("");
     const result = [];
-    const newStr = spltStr.map((x, i) => {
+    let count = 0;
+    const newStr = spltStr.map((x) => {
       if (x === "*") {
-        result.push(vwlStr[i]);
+        result.push(vwlStr[count]);
+        count++;
       } else {
         result.push(x);
       }
     });
     // return newStr;
-    return newStr;
+    return result.join("");
   }
 };
 
