@@ -19,6 +19,42 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 16 - December - 2020
+// Source: https://edabit.com/challenge/wvPTPAqARjE9fswCE
+// Title: Number of Apples Left
+
+// Instructions:
+// A man has n number of apples. If he eats a percentage p of the apples (if apples are available), his children will share the remainder of the apples.
+// Create a function to determine the number of whole apples his children got.
+// If his children did not get any apples, return "The children didn't get any apples".
+
+// Examples:
+// getNumberOfApples(10, "90%") ➞ 1
+// getNumberOfApples(25, "10%") ➞ 22
+// getNumberOfApples(0, "10%") ➞ "The children didn't get any apples"
+
+// Notes:
+// p will always be given.
+
+// Work:
+const getNumberOfApples = (n, p) => {
+  const splitP = p.split("%");
+  const minusPercent = (Number(splitP[0]) / 100) * n;
+  const result = Math.floor(n - minusPercent);
+
+  if (n <= 0 || result < 1) {
+    return "The children didn't get any apples";
+  } else {
+    return Math.floor(n - minusPercent);
+  }
+};
+
+console.log(getNumberOfApples(10, "90%"));
+console.log(getNumberOfApples(25, "10%"));
+console.log(getNumberOfApples(0, "10%"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 15 - December - 2020
 // Source: https://edabit.com/challenge/ew9dry9RzoaeiTzwX
 // Title: White Spaces Between Lower and Uppercase Letters
