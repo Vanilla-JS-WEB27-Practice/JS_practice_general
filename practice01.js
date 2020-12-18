@@ -19,6 +19,34 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 18 - December - 2020
+// Source: https://edabit.com/challenge/3zAT89ZAxg4CAQqsZ
+// Title: Find the Second Largest Number
+
+// Instructions:
+// Create a function that takes an array of numbers and returns the second largest number.
+
+// Examples:
+// secondLargest([10, 40, 30, 20, 50]) ➞ 40
+// secondLargest([25, 143, 89, 13, 105]) ➞ 105
+// secondLargest([54, 23, 11, 17, 10]) ➞ 23
+
+// Work:
+// worked, but ordered [89, 25, 143, 13, 105] and gave 25s;
+// const secondLargest = (arr) => arr.sort().reverse()[1];
+
+// handles sorting better
+// const secondLargest = (arr) => arr.sort((a,b) => a-b).reverse()[1];
+
+// option from another edabit user, simple, easy
+const secondLargest = (a) => a.sort((a, b) => b - a)[1];
+
+console.log(secondLargest([10, 40, 30, 20, 50]));
+console.log(secondLargest([25, 143, 89, 13, 105]));
+console.log(secondLargest([54, 23, 11, 17, 10]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 16 - December - 2020
 // Source: https://edabit.com/challenge/wvPTPAqARjE9fswCE
 // Title: Number of Apples Left
@@ -37,21 +65,21 @@
 // p will always be given.
 
 // Work:
-const getNumberOfApples = (n, p) => {
-  const splitP = p.split("%");
-  const minusPercent = (Number(splitP[0]) / 100) * n;
-  const result = Math.floor(n - minusPercent);
+// const getNumberOfApples = (n, p) => {
+//   const splitP = p.split("%");
+//   const minusPercent = (Number(splitP[0]) / 100) * n;
+//   const result = Math.floor(n - minusPercent);
 
-  if (n <= 0 || result < 1) {
-    return "The children didn't get any apples";
-  } else {
-    return Math.floor(n - minusPercent);
-  }
-};
+//   if (n <= 0 || result < 1) {
+//     return "The children didn't get any apples";
+//   } else {
+//     return Math.floor(n - minusPercent);
+//   }
+// };
 
-console.log(getNumberOfApples(10, "90%"));
-console.log(getNumberOfApples(25, "10%"));
-console.log(getNumberOfApples(0, "10%"));
+// console.log(getNumberOfApples(10, "90%"));
+// console.log(getNumberOfApples(25, "10%"));
+// console.log(getNumberOfApples(0, "10%"));
 
 // ------------------------------------------------------------------------------------------------------------------
 
