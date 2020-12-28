@@ -20,6 +20,32 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 28 - December - 2020
+// Source: https://edabit.com/challenge/ejfdLAp673DwxSg5R
+// Title: Get the Area of a Country
+
+// Instructions:
+// Create a function that takes a country's name and its area as arguments and returns the area of the country's proportion of the total world's landmass.
+
+// Examples:
+// areaOfCountry("Russia", 17098242) ➞ "Russia is 11.48% of the total world's landmass"
+// areaOfCountry("USA", 9372610), "USA is 6.29% of the total world's landmass"
+// areaOfCountry("Iran", 1648195) ➞ "Iran is 1.11% of the total world's landmass"
+
+// Notes:
+// The total world's landmass is 148,940,000 [Km^2]
+// Round the result to two decimal places.
+
+// Work:
+// const worldTotal = 148940000;
+const areaOfCountry = (name, area) => `${name} is ${area/148940000}% of the total world's landmass`
+
+console.log(areaOfCountry("Russia", 17098242));
+console.log(areaOfCountry("USA", 9372610));
+console.log(areaOfCountry("Iran", 1648195));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 28 - December - 2020
 // Source: https://edabit.com/challenge/pkJWJAvpnqp6rCY9y
 // Title: Find Unique Number in Array
 
@@ -43,6 +69,13 @@
 // If you're stuck or your solution is over complicated check the Resources tab.
 
 // Work:
+
+// Arthur Idrisov's solution: 
+// let findSingleNumber = n => {
+// 	return n.find(x => n.indexOf(x) === n.lastIndexOf(x)) || null;
+// }
+
+// my solution 
 // function findSingleNumber(numbers){
 //   if (numbers.length === 1) {
 //     return numbers[0];
