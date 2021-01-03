@@ -19,6 +19,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 02 - January - 2021
+// Source: https://edabit.com/challenge/zptHytXMgKcAjr4TH
+// Title: East or West
+// Resource: https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call/16577007
+// example help code:
+    // var chars = {'a':'x','b':'y','c':'z'};
+    // var s = '234abc567bbbbac';
+    // s = s.replace(/[abc]/g, m => chars[m]);
+    // console.log(s);
+
+// Instructions:
+// You will be given an array of string "east" formatted differently every time. 
+// Create a function that returns "west" wherever there is "east". 
+// Format the string according to the input. Check the examples below to better understand the question.
+
+// Examples:
+// direction(["east", "EAST", "eastEAST"]) ➞ ["west", "WEST", "westWEST"]
+// direction(["eAsT EaSt", "EaSt eAsT"]) ➞ ["wEsT WeSt", "WeSt wEsT"]
+// direction(["east EAST", "e a s t", "E A S T"]) ➞ ["west WEST", "w e s t", "W E S T"]
+
+// Notes:
+// The input will only be "east" in different formats.
+
+// Work:
+// const direction = (arr) => {
+//     const chars = {'e': 'w', 'a': 'e', 'E': 'W', 'A': 'E'}
+//     return arr.map(word => word.replace(/[eaEA]/g, m => chars[m]));
+// }
+
+// console.log(direction(["east", "EAST", "eastEAST"]));
+// console.log(direction(["eAsT EaSt", "EaSt eAsT"]));
+// console.log(direction(["east EAST", "e a s t", "E A S T"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 01 - January - 2021
 // Source: https://edabit.com/challenge/fi5kQFrS2v758x3kJ
 // Title: Temperature Converter
@@ -53,22 +88,22 @@
 // }
 
 // my solution 
-const converter = (a, b) => {
-    if (a[0] === "fahrenheit" && b === "kelvin"){
-        return Number(((a[1] + 459.67) * (5/9)).toFixed(1))
-    } else if (a[0] === "fahrenheit" && b === "celsius"){
-        return Number(((a[1] - 32) / 1.8).toFixed(1))
-    } else if (a[0] === "celsius" && b === "kelvin"){
-        return  Number((a[1] + 273.15).toFixed(1))
-    } else if (a[0] === "celsius" && b === "fahrenheit"){
-        return Number(((a[1] * 1.8) + 32).toFixed(1))
-    } else if (a[0] === "kelvin" && b === "fahrenheit"){
-        return Number(((a[1] * 1.8) - 459.67).toFixed(1))
-    } else if (a[0] === "kelvin" && b === "celsius"){
-        return Number((a[1] - 273.15).toFixed(1))
-    }
-}
+// const converter = (a, b) => {
+//     if (a[0] === "fahrenheit" && b === "kelvin"){
+//         return Number(((a[1] + 459.67) * (5/9)).toFixed(1))
+//     } else if (a[0] === "fahrenheit" && b === "celsius"){
+//         return Number(((a[1] - 32) / 1.8).toFixed(1))
+//     } else if (a[0] === "celsius" && b === "kelvin"){
+//         return  Number((a[1] + 273.15).toFixed(1))
+//     } else if (a[0] === "celsius" && b === "fahrenheit"){
+//         return Number(((a[1] * 1.8) + 32).toFixed(1))
+//     } else if (a[0] === "kelvin" && b === "fahrenheit"){
+//         return Number(((a[1] * 1.8) - 459.67).toFixed(1))
+//     } else if (a[0] === "kelvin" && b === "celsius"){
+//         return Number((a[1] - 273.15).toFixed(1))
+//     }
+// }
 
-console.log(converter(["fahrenheit", 3] , "kelvin"));
-console.log(converter(["celsius", 10] , "fahrenheit"));
-console.log(converter(["celsius", 20] , "kelvin"));
+// console.log(converter(["fahrenheit", 3] , "kelvin"));
+// console.log(converter(["celsius", 10] , "fahrenheit"));
+// console.log(converter(["celsius", 20] , "kelvin"));
