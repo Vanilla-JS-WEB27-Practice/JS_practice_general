@@ -19,7 +19,7 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
-// Date: 6 - January - 2021
+// Date: 06 - January - 2021
 // Source: https://edabit.com/challenge/ttiutYw6NyphfxuCG
 // Title: Check if All Values Are True
 
@@ -44,19 +44,89 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 03 - January - 2021
+// Source: https://edabit.com/challenge/8khL2WEhZ6M9onHL4
+// Title: Layers in a Rug
+
+// Instructions:
+// Write a function that counts how many concentric layers a rug.
+
+// Examples:
+// countLayers([
+//   "AAAA",
+//   "ABBA",
+//   "AAAA"
+// ]) ➞ 2
+
+// countLayers([
+//   "AAAAAAAAA",
+//   "ABBBBBBBA",
+//   "ABBAAABBA",
+//   "ABBBBBBBA",
+//   "AAAAAAAAA"
+// ]) ➞ 3
+
+// countLayers([
+//   "AAAAAAAAAAA",
+//   "AABBBBBBBAA",
+//   "AABCCCCCBAA",
+//   "AABCAAACBAA",
+//   "AABCADACBAA",
+//   "AABCAAACBAA",
+//   "AABCCCCCBAA",
+//   "AABBBBBBBAA",
+//   "AAAAAAAAAAA"
+// ]) ➞ 5
+
+// Notes:
+// Multiple layers can share the same component so count them separately (example #2).
+// Layers will be horizontally and vertically symmetric.
+// There will be at least one layer for each rug.
+
+// Work:
+// a shorter solution from Pavel Srom
+// const countLayers = rug => new Set(rug).size;
+
+// my solution
+// const countLayers = (rug) => {
+//   let mySet = new Set();
+//   rug.map((x) => mySet.add(x));
+//   return mySet.size;
+// };
+
+// console.log(countLayers(["AAAA", "ABBA", "AAAA"]));
+// console.log(
+//   countLayers(["AAAAAAAAA", "ABBBBBBBA", "ABBAAABBA", "ABBBBBBBA", "AAAAAAAAA"])
+// );
+// console.log(
+//   countLayers([
+//     "AAAAAAAAAAA",
+//     "AABBBBBBBAA",
+//     "AABCCCCCBAA",
+//     "AABCAAACBAA",
+//     "AABCADACBAA",
+//     "AABCAAACBAA",
+//     "AABCCCCCBAA",
+//     "AABBBBBBBAA",
+//     "AAAAAAAAAAA",
+//   ])
+// );
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 02 - January - 2021
 // Source: https://edabit.com/challenge/zptHytXMgKcAjr4TH
 // Title: East or West
 // Resource: https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call/16577007
 // example help code:
-    // var chars = {'a':'x','b':'y','c':'z'};
-    // var s = '234abc567bbbbac';
-    // s = s.replace(/[abc]/g, m => chars[m]);
-    // console.log(s);
+// var chars = {'a':'x','b':'y','c':'z'};
+// var s = '234abc567bbbbac';
+// s = s.replace(/[abc]/g, m => chars[m]);
+// console.log(s);
 
 // Instructions:
-// You will be given an array of string "east" formatted differently every time. 
-// Create a function that returns "west" wherever there is "east". 
+// You will be given an array of string "east" formatted differently every time.
+// Create a function that returns "west" wherever there is "east".
 // Format the string according to the input. Check the examples below to better understand the question.
 
 // Examples:
@@ -84,8 +154,8 @@
 // Title: Temperature Converter
 
 // Instructions:
-// Create a function that takes an array with temperature type, temperature, and a second temperature type. 
-// The temperature types can be Celsius, Fahrenheit, or Kelvin. 
+// Create a function that takes an array with temperature type, temperature, and a second temperature type.
+// The temperature types can be Celsius, Fahrenheit, or Kelvin.
 // Return the temperature type (in the array) converted into the second temperature type.
 
 // Examples:
@@ -112,7 +182,7 @@
 // 	})().toFixed(1);
 // }
 
-// my solution 
+// my solution
 // const converter = (a, b) => {
 //     if (a[0] === "fahrenheit" && b === "kelvin"){
 //         return Number(((a[1] + 459.67) * (5/9)).toFixed(1))
