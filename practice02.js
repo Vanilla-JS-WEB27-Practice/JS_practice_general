@@ -19,6 +19,42 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 07 - January - 2021
+// Source: https://edabit.com/challenge/jbR9NupEL8zAZkbKx
+// Title: Match the Last Item
+
+// Instructions:
+// Create a function that takes an array of items and checks if the last item matches the rest of the array concatenated together.
+
+// Examples:
+// matchLastItem(["rsq", "6hi", "g", "rsq6hig"]) ➞ true
+// The last item is the rest joined.
+// matchLastItem([1, 1, 1, "11"]) ➞ false
+// The last item should be "111".
+// matchLastItem([8, "thunder", true, "8thundertrue"]) ➞ true
+
+// Notes:
+// The array is always filled with items.
+
+// Work:
+// shorter version 
+// const matchLastItem = (arr) => arr.pop() === arr.map(x => String(x)).join("");
+
+// first attempt
+// function matchLastItem(arr){
+//     let result = ''
+//     for (let i = 0; i < arr.length-1; i++){
+//         result = result+arr[i]
+//     }
+//     return result === arr[arr.length-1]
+// }
+
+// console.log(matchLastItem(["rsq", "6hi", "g", "rsq6hig"]));
+// console.log(matchLastItem([1, 1, 1, "11"]));
+// console.log(matchLastItem([8, "thunder", true, "8thundertrue"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 06 - January - 2021
 // Source: https://edabit.com/challenge/ttiutYw6NyphfxuCG
 // Title: Check if All Values Are True
