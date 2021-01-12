@@ -19,6 +19,102 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 11 - January - 2021
+// Source: https://edabit.com/challenge/gdtY2MiMS5Syb7Wqw
+// Title: A Simple Dance
+
+// Instructions:
+// You will be given an array of dancing couples, with the woman first and man second, as well as a parameter "men" or "women".
+// If the parameter is "men", the men reverse their positions (first moves to last, last moves to first, etc), while women keep their positions.
+// If the parameter is "women", the women reverse their positions, while men keep their positions.
+
+// Examples:
+// dance([
+//   [Ana, Bob],
+//   [Amy, Josh],
+//   [Lisa, Tim]
+// ], men) ➞ [
+//   [Ana, Tim],
+//   [Amy, Josh],
+//   [Lisa, Bob]
+// ]
+
+// dance([
+//   [Ana, Bob],
+//   [Amy, Josh],
+//   [Lisa, Tim]
+// ], women) ➞ [
+//   [Lisa, Bob],
+//   [Amy, Josh],
+//   [Ana, Tim]
+// ]
+
+// Notes:
+// Input arrays will always be the same length.
+
+// Work:
+// function dance(arr, parameter) {
+  // solution for arr.length > 3
+  // const women = [];
+  // const men = [];
+  // const newArr = [];
+  // if(parameter === "women"){
+  //   arr.map(x => women.push(x[0]) && men.push(x[1])) && women.reverse();
+  //   women.map((x,i) => newArr.push([x,men[i]]));
+  //   return newArr
+  // } 
+  // else {
+  //   arr.map(x => women.push(x[0]) && men.push(x[1])) && men.reverse();
+  //   men.map((x,i) => newArr.push([women[i],x]));
+  //   return newArr
+  // }
+  
+  // works well for arr.length === 3, but not greater
+  // if(parameter === "women"){
+  //   const first = arr[0][0];
+  //   const last = arr[arr.length-1][0]
+  //   arr[0].shift() && arr[arr.length-1].shift() && arr[0].push(last) && arr[arr.length-1].push(first);
+  //   arr[0].reverse() && arr[arr.length-1].reverse();
+  //   return arr
+  // } else {
+  //   const first = arr[0][1];
+  //   const last = arr[arr.length-1][1]
+  //   arr[0].pop() && arr[arr.length-1].pop() && arr[0].push(last) && arr[arr.length-1].push(first);
+  //   return arr
+  // }
+// }
+
+// console.log(dance([
+//     ["Ana", "Bob"],
+//     ["Amy", "Josh"],
+//     ["Lisa", "Tim"]
+//   ], "women"));
+  
+// console.log(dance([
+//   ["w1", "m1"], 
+//   ["w2", "m2"], 
+//   ["w3", "m3"], 
+//   ["w4", "m4"], 
+//   ["w5", "m5"], 
+//   ["w6", "m6"]], "women"));
+
+// console.log(dance([
+//   ["Ana", "Bob"],
+//   ["Amy", "Josh"],
+//   ["Lisa", "Tim"]
+// ], "men"));
+
+// console.log(dance([
+//   ["w1", "m1"], 
+//   ["w2", "m2"], 
+//   ["w3", "m3"], 
+//   ["w4", "m4"], 
+//   ["w5", "m5"], 
+//   ["w6", "m6"]], "men"));  
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 10 - January - 2021
 // Source: https://edabit.com/challenge/QtcPzxgcZJQdsfdMS
 // Title: Is Johnny Making Progress?
