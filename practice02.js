@@ -19,6 +19,37 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 14 - January - 2021
+// Source: https://edabit.com/challenge/rgdT9sZ4QhsKhaSw9
+// Title: Find the Missing Number
+// Resources: https://www.codegrepper.com/code-examples/javascript/javascript+fill+array+with+range, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
+
+// Instructions:
+// Create a function that takes an array of numbers between 1 and 10 (excluding one number) and returns the missing number.
+
+// Examples:
+// missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]) ➞ 5
+// missingNum([7, 2, 3, 6, 5, 9, 1, 4, 8]) ➞ 10
+// missingNum([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7
+
+// Notes:
+// The array of numbers will be unsorted (not in order).
+// Only one number will be missing.
+
+// Work:
+// function missingNum(arr){
+//   const range = (start, end) => Array(end-start+1).fill().map((_, i) => start + i)
+//   const full = range(1,10)
+//   return full.filter(x => arr.indexOf(x) === -1)[0]
+  
+// }
+
+// console.log(missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]));
+// console.log(missingNum([7, 2, 3, 6, 5, 9, 1, 4, 8]));
+// console.log(missingNum([10, 5, 1, 2, 4, 6, 8, 3, 9]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 12 - January - 2021
 // Source: https://edabit.com/challenge/uScx6aGXmNu27NYWz
 // Title: Frequency Distribution
