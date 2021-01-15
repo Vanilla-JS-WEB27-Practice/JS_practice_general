@@ -19,6 +19,36 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 15 - January - 2021
+// Source: https://edabit.com/challenge/8NDcdD8QZiMKJJaYL
+// Title: True Alphabetical Order
+
+// Instructions:
+// Create a function which takes every letter in every word, and puts it in alphabetical order. 
+// Note how the original word lengths must stay the same.
+
+// Examples:
+// trueAlphabetic("hello world") ➞ "dehll loorw"
+// trueAlphabetic("edabit is awesome") ➞ "aabdee ei imosstw"
+// trueAlphabetic("have a nice day") ➞ "aaac d eehi nvy"
+
+// Notes:
+// All sentences will be in lowercase.
+// No punctuation or numbers will be included in the Tests.
+
+// Work:
+// function trueAlphabetic(str){
+//   const wordLength = str.split(" ").map(x => x.length)
+//   const sortedStr = Array.from(str.split(" ").map(x => Array.from(x)).flat()).sort()
+//   return wordLength.map(x => sortedStr.splice(0,x).join("")).join(" ")
+// }
+
+// console.log(trueAlphabetic("hello world"));
+// console.log(trueAlphabetic("edabit is awesome"));
+// console.log(trueAlphabetic("have a nice day"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 14 - January - 2021
 // Source: https://edabit.com/challenge/rgdT9sZ4QhsKhaSw9
 // Title: Find the Missing Number
@@ -37,6 +67,13 @@
 // Only one number will be missing.
 
 // Work:
+// solution from adam.bg on edabit 
+// function missingNum(arr) {
+//   var sum = arr.reduce((a, b) => a + b, 0);
+//   return 55 - sum;
+// }
+
+// my solution 
 // function missingNum(arr){
 //   const range = (start, end) => Array(end-start+1).fill().map((_, i) => start + i)
 //   const full = range(1,10)
