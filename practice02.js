@@ -20,8 +20,38 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 18 - January - 2021
+// Source: https://edabit.com/challenge/9fpBX9AFizhDeFk8R
+// Title: A Long Long Time
+
+// Instructions:
+// Create a function that takes three values:
+// h hours
+// m minutes
+// s seconds
+// Return the value that's the longest duration.
+
+// Examples: 
+// longestTime(1, 59, 3598) ➞ 1
+// longestTime(2, 300, 15000) ➞ 300
+// longestTime(15, 955, 59400) ➞ 59400
+
+// Notes:
+// No two durations will be the same.
+
+// Work:
+// const longestTime = (h,m,s) => Math.max(...[h*60*60, m*60, s])
+// const longestTime = (h,m,s) => [h,m,s][[h*60*60, m*60, s].indexOf(Math.max(...[h*60*60, m*60, s]))]
+
+// console.log(longestTime(1, 59, 3598));
+// console.log(longestTime(1, 300, 15000));
+// console.log(longestTime(15, 955, 59400));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 18 - January - 2021
 // Source: https://edabit.com/challenge/ZN5cpGPNRS3nrjMo5
 // Title: Capitalize the Names
+// Resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
 
 // Instructions:
 // Create a function that takes an array of names and returns an array where only the first letter of each name is capitalized.
