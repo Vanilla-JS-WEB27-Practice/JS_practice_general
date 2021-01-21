@@ -20,6 +20,37 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 20 - January - 2021
+// Source: https://edabit.com/challenge/RiyXDZNZAD4fj9xfJ
+// Title: Clone an Array
+
+// Instructions:
+// The Code tab has a code which attempts to add a clone of an array to itself. 
+// There is no error message, but the results are not as expected. Can you fix the code?
+
+// Examples:
+// clone([1, 1]) ➞ [1, 1, [1, 1]]
+// clone([1, 2, 3]) ➞ [1, 2, 3, [1, 2, 3]]
+// clone(["x", "y"]) ➞ ["x", "y", ["x", "y"]]
+
+// Work:
+// edabit solution from another user
+// const clone = (a) => [...a, a]
+
+// submitted solution
+// const clone = (a) => [...a,[...a]]
+
+// first pass
+// function clone(arr) {
+// 	return [...arr,[...arr]]
+// }
+
+// console.log(clone([1,1]));
+// console.log(clone([1,2,3]));
+// console.log(clone(["x","y"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 20 - January - 2021
 // Source: https://edabit.com/challenge/CFswwYtpKgSvMuYcS
 // Title: String Slice-athon
 
