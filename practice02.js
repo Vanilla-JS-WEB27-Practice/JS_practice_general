@@ -19,6 +19,56 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 20 - January - 2021
+// Source: https://edabit.com/challenge/CFswwYtpKgSvMuYcS
+// Title: String Slice-athon
+
+// Instructions:
+// This challenge has five miniature exercises to help practice proficiency in string slicing. 
+// Check the examples below for a visual indicator of how to slice the strings. Good luck!
+
+// Examples:
+// const s = "abcdefghijklmnopqrstuvwxyz"
+// challenge1(s) ➞ "abcde"
+// First 5 characters of the string.
+
+// challenge2(s) ➞ "vwxyz"
+// Last 5 characters of the string.
+
+// challenge3(s) ➞ "zyxwvutsrqponmlkjihgfedcba"
+// All characters in the string from back.
+
+// challenge4(s) ➞ "fedcba"
+// First 6 characters in the string (start with 6th character).
+
+// challenge5(s) ➞ "tvxz"
+// Take last 7 characters and only return odd positioned ones.
+
+// Notes:
+// Check the Tests tab for more examples.
+// See the Resources tab for further information on learning string slicing.
+// slice() is not the only method you will need to complete some of the challenges.
+// All test cases follow the same slicing pattern as the above example.
+
+// Work:
+// const s = "abcdefghijklmnopqrstuvwxyz"
+// const challenge1 = (s) => s.slice(0,5)
+// console.log(challenge1(s));
+
+// const challenge2 = (s) => s.slice(-5)
+// console.log(challenge2(s));
+
+// const challenge3 = (s) => Array.from(s).reverse().join("")
+// console.log(challenge3(s));
+
+// const challenge4 = (s) => Array.from(s).reverse().join("").slice(-6)
+// console.log(challenge4(s));
+
+// const challenge5 = (s) => Array.from(s.slice(-8)).map((x,i) => i%2 === 1 ? x : "").join("")
+// console.log(challenge5(s));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 18 - January - 2021
 // Source: https://edabit.com/challenge/9fpBX9AFizhDeFk8R
 // Title: A Long Long Time
