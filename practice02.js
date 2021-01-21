@@ -20,6 +20,27 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 20 - January - 2021
+// Source: https://edabit.com/challenge/u6iaymtE4eYXQ2ZWR
+// Title: Find the Amount of Potatoes
+
+// Instructions:
+// Create a function to return the amount of potatoes there are in a string.
+
+// Examples:
+// potatoes("potato") ➞ 1
+// potatoes("potatopotato") ➞ 2
+// potatoes("potatoapple") ➞ 1
+
+// Work:
+// const potatoes = (str) => str.match(/potato/g).length
+
+// console.log(potatoes("potato"));
+// console.log(potatoes("potatopotato"));
+// console.log(potatoes("potatoapple"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 20 - January - 2021
 // Source: https://edabit.com/challenge/RiyXDZNZAD4fj9xfJ
 // Title: Clone an Array
 
