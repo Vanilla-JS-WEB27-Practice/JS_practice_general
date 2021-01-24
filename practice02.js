@@ -19,6 +19,45 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 23 - January - 2021
+// Source: https://edabit.com/challenge/Ff2iFMu3exGJ4StTc
+// Title: Three Arrays!
+
+// Instructions:
+// Given three arrays of integers: arr1, arr2, arr3, return the sum of integers which are common in all three arrays.
+
+// Examples:
+// sumCommon([1, 2, 3], [5, 3, 2], [7, 3, 2]) ➞ 5
+// 2 & 3 are common in all 3 arrays.
+// sumCommon([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]) ➞ 7
+// 2, 2 & 3 are common in all 3 arrays.
+// sumCommon([1], [1], [2]) ➞ 0
+
+// Work:
+
+// const sumCommon = (arr1, arr2, arr3) => {
+//   let result = 0;
+//   arr1.map(x => arr2.includes(x) && arr3.includes(x) ? result = result+x : null)
+//   return result
+// }
+
+// first pass
+// const sumCommon = (arr1, arr2, arr3) => {
+//   let result = 0;
+//   for(let i = 0; i < arr1.length; i++){
+//     if(arr2.includes(arr1[i]) && arr3.includes(arr1[i])){
+//       result = result+arr1[i]
+//     }
+//   }
+//   return result
+// }
+
+// console.log(sumCommon([1, 2, 3], [5, 3, 2], [7, 3, 2]));
+// console.log(sumCommon([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]));
+// console.log(sumCommon([1], [1], [2]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 20 - January - 2021
 // Source: https://edabit.com/challenge/u6iaymtE4eYXQ2ZWR
 // Title: Find the Amount of Potatoes
