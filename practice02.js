@@ -20,6 +20,42 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 23 - January - 2021
+// Source: https://edabit.com/challenge/257hD8dzvsyR4G839
+// Title: Sum of Missing Numbers
+// resources: https://stackoverflow.com/questions/7317993/arrays-find-missing-numbers-in-a-sequence, https://stackoverflow.com/questions/8069315/create-array-of-all-integers-between-two-numbers-inclusive-in-javascript-jquer/8069367
+
+// Instructions:
+// Create a function that returns the sum of missing numbers from the given array.
+
+// Examples:
+// sumMissingNumbers([4, 3, 8, 1, 2]) ➞ 18
+// 5 + 6 + 7 = 18
+// sumMissingNumbers([17, 16, 15, 10, 11, 12]) ➞ 27
+// 13 + 14 = 27
+// sumMissingNumbers([1, 2, 3, 4, 5]) ➞ 0
+// No Missing Numbers (i.e. all numbers in [1, 5] are present in the list)
+
+// Notes:
+// The numerical range to consider when searching for the missing numbers in the array is the sequence of consecutive numbers between the minimum and maximum of the numbers (inclusive).
+
+// Work:
+
+// condensed into one line
+// const sumMissingNumbers = (arr) => Array(Math.max(...arr) - Math.min(...arr) + 1).fill().map((_, idx) => Math.min(...arr) + idx).filter(i => !arr.includes(i)).reduce((a,b) => a+b, 0)
+
+// first pass
+// const sumMissingNumbers = (arr) => {
+//   const range = Array(Math.max(...arr) - Math.min(...arr) + 1).fill().map((_, idx) => Math.min(...arr) + idx);
+//   return  range.filter(i => !arr.includes(i)).reduce((a,b) => a+b, 0)
+// }
+
+// console.log(sumMissingNumbers([4, 3, 8, 1, 2]));
+// console.log(sumMissingNumbers([17, 16, 15, 10, 11, 12]));
+// console.log(sumMissingNumbers([1, 2, 3, 4, 5]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 23 - January - 2021
 // Source: https://edabit.com/challenge/Ff2iFMu3exGJ4StTc
 // Title: Three Arrays!
 
