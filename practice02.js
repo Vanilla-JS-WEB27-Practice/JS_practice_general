@@ -19,6 +19,55 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 03 - February - 2021
+// Source: https://edabit.com/challenge/tWEsR6BY3qRFP3L8r
+// Title: String Match by Two Letters
+
+// Instructions:
+// Create a function that takes two strings, a and b. Return the number of matching positions where they both contain the same exact two letters one after the other.
+// For example, if a = "bboiizz" and b = "bbuiiz", your function should return 3, since the "bb", "ii", and "iz" appear at the same place in both strings.
+
+// Examples:
+// strMatchBy2char("yytaazz", "yyjaaz") ➞ 3
+// strMatchBy2char("edabit", "ed") 1 ➞ 1
+// strMatchBy2char("", "") ➞ 0
+
+// Notes:
+// Don't forget to return the result.
+
+// Work:
+const strMatchBy2char = (a,b) => {
+  const aResult = [];
+  const bResult = [];
+  const a2 = a.split("");
+  const b2 = b.split("");
+  for(let i = 0; i < a2.length; i++){
+    if(i < a2.length-1){
+      aResult.push(a2[i]+a2[i+1])
+    }
+  }
+  for(let i = 0; i < b2.length; i++){
+    if(i < b2.length-1){
+      bResult.push(b2[i]+b2[i+1])
+    }
+  }
+  let count = 0;
+  aResult.map((x,i) => {
+    if(bResult.indexOf(x) > -1){
+      i === bResult.indexOf(x) ? count++ : null
+    } 
+  });
+  return count;
+}
+
+console.log(strMatchBy2char("yytaazz", "yyjaaz"));
+console.log(strMatchBy2char("edabit", "ed"));
+console.log(strMatchBy2char("", ""));
+console.log(strMatchBy2char("AABBccDD", "ABBBjjD"));
+console.log(strMatchBy2char("AAjjAAjj", "iAjjAi"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 25 - January - 2021
 // Source: https://edabit.com/challenge/yXSTvCNen2DQHyrh6
 // Title: Length of a Nested Array
