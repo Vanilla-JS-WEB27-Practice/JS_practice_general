@@ -1,5 +1,5 @@
 // Template
-// Date: - January - 2021
+// Date: - February - 2021
 // Source:
 // Title:
 
@@ -16,6 +16,68 @@
 // 1 -
 
 // Work:
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 04 - February - 2021
+// Source: https://edabit.com/challenge/JxdXoCGeWpk4ktevH
+// Title: Matrix Padder
+
+// Instructions:
+// Create a function that takes a matrix of size (m, n) and returns a matrix of size (m+2, n+2) with a pad of 0s around the perimeter.
+
+// Examples:
+// padMatrix([[]]) ➞ [[0, 0], [0, 0], [0, 0]]
+// padMatrix([[9]]) ➞ [
+//   [0, 0, 0],
+//   [0, 9, 0],
+//   [0, 0, 0]
+// ]
+// padMatrix([["hi", True]]) ➞ [
+//   [0, 0, 0, 0],
+//   [0, "hi", True, 0],
+//   [0, 0, 0, 0]
+// ]
+// padMatrix([
+//   [1, 2, 5],
+//   [8, 6, 7],
+//   [3, 4, 9]
+// ]) ➞ [
+//   [0, 0, 0, 0, 0],
+//   [0, 1, 2, 5, 0],
+//   [0, 8, 6, 7, 0],
+//   [0, 3, 4, 9, 0],
+//   [0, 0, 0, 0, 0]
+// ]
+
+// Notes:
+// All inputs will be arrays of arrays.
+// Refer to the first example to handle an empty input.
+
+// Work:
+
+// second pass
+// const padMatrix = (arr) => {
+//   arr.map((x,i) => arr[i].unshift(0) && arr[i].push(0));
+//   arr.unshift(new Array(arr[0].length).fill(0)) && arr.push(new Array(arr[0].length).fill(0))
+//   return arr
+// }
+
+// first pass
+// const padMatrix = (arr) => {
+//   arr.map((x,i) => {
+//     arr[i].unshift(0);
+//     arr[i].push(0);
+//   })
+//   arr.unshift(new Array(arr[0].length).fill(0))
+//   arr.push(new Array(arr[0].length).fill(0))
+//   return arr
+// }
+
+// console.log(padMatrix([[]]));
+// console.log(padMatrix([["hi", true]]));
+// console.log(padMatrix([["hi"], ["downstairs"]]));
+// console.log(padMatrix([[1,"beep",true], ["oink",99,1.1], [[1,1],'e',99]]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -36,35 +98,47 @@
 // Don't forget to return the result.
 
 // Work:
-const strMatchBy2char = (a,b) => {
-  const aResult = [];
-  const bResult = [];
-  const a2 = a.split("");
-  const b2 = b.split("");
-  for(let i = 0; i < a2.length; i++){
-    if(i < a2.length-1){
-      aResult.push(a2[i]+a2[i+1])
-    }
-  }
-  for(let i = 0; i < b2.length; i++){
-    if(i < b2.length-1){
-      bResult.push(b2[i]+b2[i+1])
-    }
-  }
-  let count = 0;
-  aResult.map((x,i) => {
-    if(bResult.indexOf(x) > -1){
-      i === bResult.indexOf(x) ? count++ : null
-    } 
-  });
-  return count;
-}
+// solution by Werdna
+// function strMatchBy2char(a, b) {
+//   let res = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (a.slice(i, i + 2) === b.slice(i, i + 2) && a.slice(i, i + 2).length === 2)
+//     res += 1;
+//   }
+//   return res;
+// }
 
-console.log(strMatchBy2char("yytaazz", "yyjaaz"));
-console.log(strMatchBy2char("edabit", "ed"));
-console.log(strMatchBy2char("", ""));
-console.log(strMatchBy2char("AABBccDD", "ABBBjjD"));
-console.log(strMatchBy2char("AAjjAAjj", "iAjjAi"));
+
+// my first pass
+// const strMatchBy2char = (a,b) => {
+//   const aResult = [];
+//   const bResult = [];
+//   const a2 = a.split("");
+//   const b2 = b.split("");
+//   for(let i = 0; i < a2.length; i++){
+//     if(i < a2.length-1){
+//       aResult.push(a2[i]+a2[i+1])
+//     }
+//   }
+//   for(let i = 0; i < b2.length; i++){
+//     if(i < b2.length-1){
+//       bResult.push(b2[i]+b2[i+1])
+//     }
+//   }
+//   let count = 0;
+//   aResult.map((x,i) => {
+//     if(bResult.indexOf(x) > -1){
+//       aResult[i] === bResult[i] ? count++ : null
+//     } 
+//   });
+//   return count;
+// }
+
+// console.log(strMatchBy2char("yytaazz", "yyjaaz"));
+// console.log(strMatchBy2char("edabit", "ed"));
+// console.log(strMatchBy2char("", ""));
+// console.log(strMatchBy2char("AABBccDD", "ABBBjjD"));
+// console.log(strMatchBy2char("AAjjAAjj", "iAjjAi"));
 
 // ------------------------------------------------------------------------------------------------------------------
 
