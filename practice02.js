@@ -19,6 +19,43 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 08 - February - 2021
+// Source: https://edabit.com/challenge/meoZZBsxboQojBzWC
+// Title: Diagonal of a Cube
+// Resources: https://byjus.com/diagonal-of-a-cube-formula/#:~:text=The%20main%20diagonal%20of%20a,the%20square%20root%20of%203.
+
+// Instructions:
+// Create a function that takes the volume of a cube and returns the length of the cube's main diagonal, rounded to two decimal places.
+
+// Examples:
+// cubeDiagonal(8) ➞ 3.46
+// cubeDiagonal(343) ➞ 12.12
+// cubeDiagonal(1157.625) ➞ 18.19
+
+// Sudo code:
+// 1 - find the side using the volume
+// 2 - square root 3 and multiply by cube side
+// 3 - round to two decimal places
+// 4 - return result 
+
+// Work:
+// simplified solution from Aman Khan on edabit
+// const cubeDiagonal = (v) => parseFloat(((3**(1/2))*(v**(1/3))).toFixed(2))
+
+// solution from Aman Khan on edabit
+// function cubeDiagonal(volume){
+//   return parseFloat(((3**(1/2))*(volume**(1/3))).toFixed(2))
+// }
+
+// first pass --> my code
+// const cubeDiagonal = (v) => typeof Number((Math.sqrt(3)*Math.cbrt(v)).toFixed(2))
+
+// console.log(cubeDiagonal(8));
+// console.log(cubeDiagonal(343));
+// console.log(cubeDiagonal(1157.625));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 04 - February - 2021
 // Source: https://edabit.com/challenge/JxdXoCGeWpk4ktevH
 // Title: Matrix Padder
