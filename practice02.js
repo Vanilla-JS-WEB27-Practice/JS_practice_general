@@ -20,6 +20,45 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 08 - February - 2021
+// Source: https://edabit.com/challenge/wQGGp6Qce6phDCvW9
+// Title: Do All Bigrams Exist?
+
+// Instructions:
+// You are given an input array of bigrams, and an array of words.
+// Write a function that returns true if every single bigram from this array can be found at least once in an array of words.
+
+// Examples:
+// canFind(["at", "be", "th", "au"], ["beautiful", "the", "hat"]) ➞ true
+// canFind(["ay", "be", "ta", "cu"], ["maybe", "beta", "abet", "course"]) ➞ false
+// # "cu" does not exist in any of the words.
+// canFind(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]) ➞ true
+// canFind(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks"]) ➞ false
+
+// Notes:
+// A bigram is string of two consecutive characters in the same word.
+// If the array of words is empty, return false.
+
+// Work:
+// condensed version of Olmo Leonardo's solution
+// const canFind = (b, w) => b.every(x=> w.some(y=> y.includes(x)))
+
+
+// solution from Edabit user Olmo Leonardo
+// function canFind(bigrams, words) {
+// 	return bigrams.every(x=> words.some(y=> y.includes(x)))
+// }
+
+// my first pass solution 
+// const canFind = (b, w) => b.map(x => w.join("").indexOf(x) > -1).every(x => x === true)
+
+// console.log(canFind(["at", "be", "th", "au"], ["beautiful", "the", "hat"]));
+// console.log(canFind(["ay", "be", "ta", "cu"], ["maybe", "beta", "abet", "course"]));
+// console.log(canFind(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"]));
+// console.log(canFind(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - February - 2021
 // Source: https://edabit.com/challenge/94RHwrv6PfaqEGYtr
 // Title: Calculate an Earned Run Average
 
