@@ -19,9 +19,51 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 10 - February - 2021
+// Source: https://edabit.com/challenge/5sdtyMNdLw2FK4fHp
+// Title: Inclusive Array Ranges
+
+// Instructions:
+// Write a function that, given the start startNum and end endNum values, return an array containing all the numbers inclusive to that range. See examples below.
+
+// Examples:
+// inclusiveArray(1, 5) ➞ [1, 2, 3, 4, 5]
+// inclusiveArray(2, 8) ➞ [2, 3, 4, 5, 6, 7, 8]
+// inclusiveArray(10, 20) ➞ [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+// inclusiveArray(17, 5) ➞ [17]
+
+// Notes:
+// The numbers in the array are sorted in ascending order.
+// If startNum is greater than endNum, return an array with the higher value. See example #4.
+// A recursive version of this of challenge can be found via this link (https://edabit.com/challenge/v46dEzuJvHKawduxb).
+
+// Work:
+
+// s = startNumber
+// e = endNumber
+// const inclusiveArray = (s, e) => s > e ? [s] : Array(Math.ceil((e+1)-s)).fill(s).map((x,y) => x+y)
+
+// other options to create an array in JS:
+// from a static amount, but uses only the indexes.
+// const inclusiveArray = (s, e) => Array.from({length:e}, (x,i) => i)
+// const inclusiveArray = (s, e) => Array.from(new Array(e), (x,i) => i)
+
+// again just pulling the index --> these examples need to add up
+// const inclusiveArray = (s, e) => [...Array(e).keys()]
+
+// console.log(inclusiveArray(1,5));
+// console.log(inclusiveArray(2,8));
+// console.log(inclusiveArray(10,20));
+// console.log(inclusiveArray(17,5));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 09 - February - 2021
 // Source: https://edabit.com/challenge/7pAcMPNur4JcXreHS
 // Title: How Heavy Is It?
+// Resource: https://www.conversionunites.com/converter-cubic-centimetre-to-cubic-decimetre, 
+// https://www.varsitytutors.com/hotmath/hotmath_help/topics/volume-of-a-cylinder#:~:text=The%20formula%20for%20the%20volume,V%3D%CF%80r2h%20.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI 
 
 // Instructions:
 // Given radius r and height h (in cm), calculate the mass of a cylinder when it's filled with water and the cylinder itself doesn't weigh anything. 
