@@ -19,6 +19,39 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: - February - 2021
+// Source: https://edabit.com/challenge/CvPCBc9FtTLix9zov
+// Title: Purge and Organize
+
+// Instructions:
+// Given an array of numbers, write a function that returns an array that...
+// Has all duplicate elements removed.
+// Is sorted from least to greatest value.
+
+// Examples:
+// uniqueSort([1, 2, 4, 3]) ➞ [1, 2, 3, 4]
+// uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]) ➞ [1, 2, 3, 4]
+// uniqueSort([6, 7, 3, 2, 1]) ➞ [1, 2, 3, 6, 7]
+
+// Work:
+
+// first pass
+// const uniqueSort = (arr) => {
+//   const result = [];
+//   arr.sort((a,b) => a-b).map(x => {
+//     if (result.indexOf(x) < 0){
+//       result.push(x);
+//     }
+//   })
+//   return result
+// }
+
+// console.log(uniqueSort([1,2,4,3]));
+// console.log(uniqueSort([1,4,4,4,4,4,3,2,1,2]));
+// console.log(uniqueSort([6,7,3,2,1]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 10 - February - 2021
 // Source: https://edabit.com/challenge/5sdtyMNdLw2FK4fHp
 // Title: Inclusive Array Ranges
