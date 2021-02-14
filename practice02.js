@@ -19,6 +19,50 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 13 - February - 2021
+// Source: https://edabit.com/challenge/pbK3wzLDvdwfEKgMt
+// Title: Broken Keyboard
+
+// Instructions:
+// Given what is supposed to be typed and what is actually typed, write a function that returns the broken key(s). 
+// The function looks like:
+// findBrokenKeys(correct phrase, what you actually typed)
+
+// Examples:
+// findBrokenKeys("happy birthday", "hawwy birthday") ➞ ["p"]
+// findBrokenKeys("starry night", "starrq light") ➞ ["y", "n"]
+// findBrokenKeys("beethoven", "affthoif5") ➞ ["b", "e", "v", "n"]
+
+// Notes:
+// Broken keys should be ordered by when they first appear in the sentence.
+// Only one broken key per letter should be listed.
+// Letters will all be in lower case.
+
+// Work:
+// modified solution from ripster on edabit
+// const findBrokenKeys = (str1, str2) => [...new Set(str1.split("").filter((a,i) => a !== str2[i]))];
+
+// my solution 
+// const findBrokenKeys = (str1, str2) => {
+//   const result = [];
+//   const num1 = str1.split("");
+//   const num2 = str2.split("");
+//   num1.map((x,i) => {
+//     if(num2[i] !== num1[i] && result.indexOf(x) < 0){
+//       result.push(x)
+//     }
+//   })
+//   return result
+// }
+
+// console.log(findBrokenKeys("happy birthday", "hawwy birthday"));
+// console.log(findBrokenKeys("starry night", "starrq light"));
+// console.log(findBrokenKeys("beethoven", "affthoif5"));
+// console.log(findBrokenKeys("mozart", "aiwgvx"));
+// console.log(findBrokenKeys("!!??$$", "$$!!??"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: - February - 2021
 // Source: https://edabit.com/challenge/CvPCBc9FtTLix9zov
 // Title: Purge and Organize
@@ -34,6 +78,9 @@
 // uniqueSort([6, 7, 3, 2, 1]) ➞ [1, 2, 3, 6, 7]
 
 // Work:
+
+// solution from guilherme on edabit
+// const uniqueSort = arr => [...new Set(arr)].sort((a, b) => a - b)
 
 // first pass
 // const uniqueSort = (arr) => {
