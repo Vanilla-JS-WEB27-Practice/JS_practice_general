@@ -20,6 +20,52 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 14 - February - 2021
+// Source: https://edabit.com/challenge/xRcgQHtfLbxomYb33
+// Title: Burglary Series (20): Sign Your Name
+// Resource: https://medium.com/@nlfernando11/object-freeze-vs-object-seal-vs-object-preventextensions-251ee99d0c47
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal
+
+// Instructions:
+// The police send you the electronic statement again for you to sign. 
+// This time you are able to sign it and, to speed up bureaucracy, you try to sign for your spouse as well. 
+// Unfortunately, the document is still protected against new entries...
+// This challenge is a bit different as the function you are given already contains some code that you should not change or remove. 
+// Also, don't use a return statement, it is already included. Your task is, given an object, 
+// prevent new properties from being added to that object, but you should still be able to change the value of the existing properties.
+
+// Examples:
+// const obj = { yourSignature: "" }
+// signYourName( obj ) {
+  // write your code here
+//   obj.yourSignature = "Whatever";
+//   obj.spouseSignature = "Nice Try"
+//   return obj;
+// } ➞ { yourSignature: "Whatever" }
+
+// Notes:
+// If you have suggestions on how to present or further test this challenge please leave a comment.
+// This series is part of a collection (https://edabit.com/collection/6NzWEMSwrSw4fnKkL) that focuses on objects. 
+// If you are interested in following the breath-taking narrative skills of yours truly or just do some object focused challenges 
+// (the challenges are ordered in ascending difficulty order), you can more easily do that here.
+
+// Work:
+// const obj = { yourSignature: ""}
+// function signYourName(obj){
+  // write your code here
+  // don't use a return statement
+  // Object.seal(obj);
+
+  // DON"T CHANGE OR REMOVE THE LINES BELOW
+//   obj.yourSignature = 'Whatever';
+//   obj.spouseSignature = "Nice Try";
+//   return obj;
+// }
+
+// console.log(signYourName({ yourSignature: ""}))
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 14 - February - 2021
 // Source: https://edabit.com/challenge/eaf8EaFRPwKNGqwZF
 // Title: No Good Numbers
 
