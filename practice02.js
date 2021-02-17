@@ -19,6 +19,59 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 16 - February - 2021
+// Source: https://edabit.com/challenge/mgCKn998CNowjAZBF
+// Title: Basic Arithmetic Operations
+
+// Instructions:
+// Write a function that does the following for the given values: add, subtract, divide and multiply. 
+// This is simply referred to as the basic arithmetic operations. 
+// The variables have to be defined, but in this challenge, it will be defined for you. 
+// All you have to do, is to check the variables, do some string to integer conversion, use some if conditions, and apply the arithmetic operation.
+// The numbers and operation are given as a string and should result to an integer value.
+
+// Examples:
+// operation("1",  "2",  "add" ) ➞ 3
+// operation("4",  "5",  "subtract") ➞ -1
+// operation("6",  "3",  "divide") ➞ 2
+
+// Notes:
+// The numbers and operation are given as a string and should result to an integer value.
+// If the operation results to Infinity, then return "undefined" (e.g. division by zero).
+// Division results will be rounded down to its integral part.
+
+// Work:
+// const operation = (a,b,op) => {
+//   if(b === "0" && op === "divide"){
+//     return 'undefined'
+//   } else {
+//     switch(op){
+//       case "add":
+//         return Number(a)+Number(b);
+//       case "subtract":
+//         return Number(a)-Number(b);
+//       case "divide":
+//         return Number(a)/Number(b);
+//       case "multiply":
+//         return Number(a)*Number(b);
+//     }
+//   }
+// }
+
+// console.log(operation("1","2","add"));
+// console.log(operation("1","-20","add"));
+// console.log(operation("9","0","divide"));
+// console.log(operation("10","10","multiply"));
+// console.log(operation("-10","-10","multiply"));
+// console.log(operation("10","10","subtract"));
+// console.log(operation("0","0","subtract"));
+// console.log(operation("0","1","divide"));
+// console.log(operation("0","25415","divide"));
+// console.log(operation("4","5","subtract"));
+// console.log(operation("6","3","divide"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 14 - February - 2021
 // Source: https://edabit.com/challenge/xRcgQHtfLbxomYb33
 // Title: Burglary Series (20): Sign Your Name
