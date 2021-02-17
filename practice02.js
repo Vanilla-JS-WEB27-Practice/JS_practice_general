@@ -20,6 +20,34 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 16 - February - 2021
+// Source: https://edabit.com/challenge/mHrFjP4K5BfAKEugN
+// Title: Hex to Binary
+
+// Instructions:
+// Create a function that will take a HEX number and returns the binary equivalent (as a string).
+
+// Examples:
+// toBinary(0xFF) ➞ "11111111"
+// toBinary(0xAA) ➞ "10101010"
+// toBinary(0xFA) ➞ "11111010"
+
+// Notes:
+// The number will be always an 8-bit number.
+// First I needed to turn the param into a string with String(), which gave me the decimal value, but as a string.
+// Then, I needed to take that value and convert it into a number with Number()
+// Finally take that decimal and turn it into binary using the .toString(2) method
+
+// Work:
+// const toBinary = (h) => Number(String(h)).toString(2)
+
+// console.log(toBinary(0xFF));
+// console.log(toBinary(0xAA));
+// console.log(toBinary(0xFA));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 16 - February - 2021
 // Source: https://edabit.com/challenge/mgCKn998CNowjAZBF
 // Title: Basic Arithmetic Operations
 
@@ -41,6 +69,14 @@
 // Division results will be rounded down to its integral part.
 
 // Work:
+
+// shorter solution by Deep Xavier
+// const operation = (...e) => {
+//   let ops = {add: '+', subtract: '-', multiply: '*', divide: '/'}
+//   return (x = eval(e[0]+ops[e[2]]+e[1])) == Infinity ? "undefined" : x
+// }
+
+// My solution 
 // const operation = (a,b,op) => {
 //   if(b === "0" && op === "divide"){
 //     return 'undefined'
