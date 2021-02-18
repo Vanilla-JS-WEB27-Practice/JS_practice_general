@@ -19,9 +19,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 17 - February - 2021
+// Source: https://edabit.com/challenge/Dq8kbbsLYyG9are5Z
+// Title: Total Volume of All Boxes
+
+// Instructions:
+// Given an array of boxes, create a function that returns the total volume of all those boxes combined together. 
+// A box is represented by an array with three elements: length, width and height.
+// For instance, totalVolume([2, 3, 2], [6, 6, 7], [1, 2, 1]) should return 266 since (2 x 3 x 2) + (6 x 6 x 7) + (1 x 2 x 1) = 12 + 252 + 2 = 266.
+
+// Examples:
+// totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]) ➞ 63
+// totalVolume([2, 2, 2], [2, 1, 1]) ➞ 10
+// totalVolume([1, 1, 1]) ➞ 1
+
+// Notes:
+// You will be given at least one box.
+// Each box will always have three dimensions included.
+
+// Work:
+// const totalVolume = (...boxes) => {
+//   let result = 0;
+//   boxes.map(x => result = result + (x[0]*x[1]*x[2]));
+//   return result
+// }
+
+// console.log(totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]));
+// console.log(totalVolume([2, 2, 2], [2, 1, 1]));
+// console.log(totalVolume([1, 1, 1]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 16 - February - 2021
 // Source: https://edabit.com/challenge/mHrFjP4K5BfAKEugN
 // Title: Hex to Binary
+// Resource: https://medium.com/javascript-in-plain-english/javascript-algorithm-hex-to-decimal-3400f3742d1e
 
 // Instructions:
 // Create a function that will take a HEX number and returns the binary equivalent (as a string).
