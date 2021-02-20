@@ -20,6 +20,41 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 19 - February - 2021
+// Source: https://edabit.com/challenge/pB6CF3rFBi8ykJ3Br
+// Title: Left Shift by Powers of Two
+
+// Instructions:
+// The left shift operation is similar to multiplication by powers of two.
+// Sample calculation using the left shift operator (<<):
+// 10 << 3 = 10 * 2^3 = 10 * 8 = 80
+// -32 << 2 = -32 * 2^2 = -32 * 4 = -128
+// 5 << 2 = 5 * 2^2 = 5 * 4 = 20
+// Write a function that mimics (without the use of <<) the left shift operator and returns the result from the two given integers.
+
+// Examples:
+// shiftToLeft(5, 2) ➞ 20
+// shiftToLeft(10, 3) ➞ 80
+// shiftToLeft(-32, 2) ➞ -128
+// shiftToLeft(-6, 5) ➞ -192
+// shiftToLeft(12, 4) ➞ 192
+// shiftToLeft(46, 6) ➞ 2944
+
+// Notes:
+// There will be no negative values for the second parameter y.
+// This challenge is more like recreating of the left shift operation, thus, the use of the operator directly is prohibited.
+// Alternatively, you can solve this challenge via recursion.
+// A recursive version of this challenge can be found via this link.
+
+// Work:
+// const shiftToLeft = (x,y) => x*2**y
+
+// console.log(shiftToLeft(5,2));
+// console.log(shiftToLeft(10,3));
+// console.log(shiftToLeft(5,2));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 19 - February - 2021
 // Source: https://edabit.com/challenge/WCMC8X9z7758hq4gP
 // Title: Folding a Piece of Paper
 // Resources: https://math.stackexchange.com/questions/280023/how-to-calculate-the-thickness-of-a-paper-by-exponential-calculation
@@ -41,6 +76,9 @@
 
 // Work:
 // const numLayers = (n) => `${(0.5*(2**n))*.001}m`;
+
+// another option
+// const numLayers = (n) => `${(0.5*(2^n))*.001}m`;
 
 // console.log(numLayers(1));
 // console.log(numLayers(4));
