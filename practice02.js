@@ -19,6 +19,32 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 19 - February - 2021
+// Source: https://edabit.com/challenge/qJGDCEZRoGRPt3viu
+// Title: Orthogonal Vector
+// Resources: https://onlinemschool.com/math/library/vector/orthogonality/, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
+// Instructions:
+// Create a function that takes two vectors as arrays and checks if the two vectors are orthogonal or not. 
+// The return value is boolean. Two vectors a and b are orthogonal if their dot product is equal to zero.
+
+// Examples:
+// isOrthogonal([1, 2], [2, -1]) ➞ true
+// isOrthogonal([3, -1], [7, 5]) ➞ false
+// isOrthogonal([1, 2, 0], [2, -1, 10]) ➞ true
+
+// Notes:
+// The two arrays will be of same length.
+
+// Work:
+// const isOrthogonal = (a1, a2) => a1.reduce((a,b,i) => (b*a2[i])+a,0) === 0;
+
+// console.log(isOrthogonal([1,2],[2,-1]));
+// console.log(isOrthogonal([3,-1],[7,5]));
+// console.log(isOrthogonal([1,2,0],[2,-1,10]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 18 - February - 2021
 // Source: https://edabit.com/challenge/cXgmHb6aXESZBvW4b
 // Title: Formating BigInts
@@ -36,6 +62,15 @@
 // formatBigInt(13902183984901849081284n, 12) ➞ "13902183984.901849081284"
 
 // Work:
+// regex solution from Undefined9999 edabit user
+// function formatBigInt(a, b) {
+// 	return (a+'').replace(RegExp('.{'+b+'}$'),'.$&')
+// }
+
+// solution by zimmahTV edabit user
+// let formatBigInt = (b, d, s = ''+b) => s.slice(0, -d)+'.'+s.slice(-d)
+
+// my solution:
 // const formatBigInt = (bn, d) => {
 //   const p2 = String(bn).slice(String(bn).length - d)
 //   const p1 = String(bn).slice(0,String(bn).length - d)
@@ -45,7 +80,6 @@
 // console.log(formatBigInt(1938908490185852058934n, 18));
 // console.log(formatBigInt(987654321987654321n, 6));
 // console.log(formatBigInt(13902183984901849081284n, 12));
-
 
 // ------------------------------------------------------------------------------------------------------------------
 
