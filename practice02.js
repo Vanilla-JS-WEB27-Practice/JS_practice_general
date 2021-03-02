@@ -19,6 +19,99 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 01 - March - 2021
+// Source: https://edabit.com/challenge/CKEAH6cs5Tt7aKXKv
+// Title: Something in the Box?
+
+// Instructions:
+// Create a function that returns true if an asterisk * is inside a box.
+
+// Examples:
+// inBox([
+//   "###",
+//   "#*#",
+//   "###"
+// ]) ➞ true
+
+// inBox([
+//   "####",
+//   "#* #",
+//   "#  #",
+//   "####"
+// ]) ➞ true
+
+// inBox([
+//   "*####",
+//   "# #",
+//   "#  #*",
+//   "####"
+// ]) ➞ false
+
+// inBox([
+//   "#####",
+//   "#   #",
+//   "#   #",
+//   "#   #",
+//   "#####"
+// ]) ➞ false
+
+// Notes:
+// The asterisk may be in the array, however, it must be inside the box, if it exists.
+
+// Work:
+// const inBox = (arr) => {
+//   const result = [];
+//   arr.map(x => {
+//     if(x.includes("*")) {
+//       if(x[0] === "*" || x[x.length-1] === "*"){
+//         result.push(false);
+//       } else {
+//         result.push(true);
+//       }
+//     } else {
+//       result.push(false)
+//     }})
+//   return result.some(x => x === true)
+// };
+
+// console.log(inBox(
+//   [
+//     "###",
+//     "#*#",
+//     "###"
+//     ]
+// ));
+
+// console.log(inBox(
+//   [
+//     "####",
+//     "#* #",
+//     "#  #",
+//     "####"
+//     ]
+// ));
+
+// console.log(inBox(
+//   [
+//     "*####",
+//     "# #",
+//     "#  #*",
+//     "####"
+//     ]
+// ));
+
+// console.log(inBox(
+//   [
+//     "#####",
+//     "#   #",
+//     "#   #",
+//     "#   #",
+//     "#####"
+//     ]
+// ));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 22 - February - 2021
 // Source: https://edabit.com/challenge/T9vEX6ftTgCabfnCv
 // Title: Energy Bill Calculator
