@@ -1,5 +1,5 @@
 // Template
-// Date: - February - 2021
+// Date: - March - 2021
 // Source:
 // Title:
 
@@ -16,6 +16,63 @@
 // 1 -
 
 // Work:
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 04 - March - 2021
+// Source: https://edabit.com/challenge/M6hcm6ezCoRBbANQr
+// Title: The Missing Link of an Arithmetic Progression
+// Resources: https://www.joshwcomeau.com/snippets/javascript/range/ 
+
+// Instructions:
+// Your function will get an array with a number sequence. However, one item will be missing. 
+// It's your job to find out which one is not in the array.
+// To illustrate, given the array [1, 3, 4, 5], 2 is missing so the output must be 2.
+
+// Examples:
+// missing([1, 3, 4, 5]) ➞ 2
+// missing([2, 4, 6, 8, 10, 14, 16]) ➞ 12
+// missing([1.5, 2, 3]) ➞ 2.5
+
+// Notes:
+// The missing item will never be the smallest or largest number in the array.
+// In every array, exactly one item is missing.
+
+// Work:
+
+// first pass 
+const missing = (arr) => {
+  // find the diff
+  const diff = (arr[arr.length-1]-arr[0])/arr.length;
+  // create the function to create a range and step through because we know the missing number will be between arr[0] (start/s) and ar[arr.length-1] (end/e)
+  const range = (s,e,step=1) => {
+    // return all numbers between s and e 
+    const output = [];
+
+    // This is here incase we only need to call 1 number. The end becomes the param and then s is set to 0 to return an array starting with 0 - end. 
+    if(typeof e === 'undefined'){
+      e = s;
+      s = 0;
+    }
+
+    // for loop over the range to produce a sequence of numbers that are pushed into the output array
+    for (let i = s; i < e+diff; i+=step){
+      output.push(i);
+    }
+
+    return output
+  }
+
+  // return the range s - e, increasing by the diff
+  // filter through and find the one number that doesn't exist in arr
+  // return as a number use bracket notation 
+  return range(arr[0],arr[arr.length-1],diff).filter(x => arr.indexOf(x) === -1)[0];
+};
+
+console.log(missing([1,3,4,5]));
+console.log(missing([2,4,6,8,10,14,16]));
+console.log(missing([1.5,2,3]));
+
 
 // ------------------------------------------------------------------------------------------------------------------
 
