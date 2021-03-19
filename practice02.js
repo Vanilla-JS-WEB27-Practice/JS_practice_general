@@ -19,6 +19,43 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 18 - March - 2021
+// Source: https://edabit.com/challenge/ii4ANncEGP4xjmQ5Y
+// Title: Calculate the Volume of a Pyramid
+
+// Instructions:
+// Create a function that takes the length, width, height (in meters) and output unit and returns the volume of a pyramid to three decimal places in the correct unit.
+
+// Examples:
+// pyramidVolume(4, 6, 20, "centimeters") ➞ "160000000.000 cubic centimeters"
+// pyramidVolume(1843, 1823, 923, "kilometers") ➞ "1.034 cubic kilometers"
+// pyramidVolume(18, 412, 93, "millimeters") ➞ "229896000000000.000 cubic millimeters"
+
+// Notes:
+// The units used are limited to: millimeters, centimeters, meters and kilometers.
+// Ensure you return the answer and add the correct unit in the format cubic <unit>.
+
+// Work:
+// const pyramidVolume = (l,w,h,u) => {
+//   const cubicVol = (l*w*h)*(1/3);
+//   switch(u){
+//     case "millimeters":
+//       return `${(cubicVol*1000000000).toFixed(3)} cubic millimeters`;
+//     case "centimeters":
+//       return `${(cubicVol*1000000).toFixed(3)} cubic centimeters`;
+//     case "meters":
+//       return `${(cubicVol).toFixed(3)} cubic meters`;
+//     case "kilometers":
+//       return `${(cubicVol*0.000000001).toFixed(3)} cubic kilometers`;
+//   }
+// };
+
+// console.log(pyramidVolume(4,6,20,"centimeters"));
+// console.log(pyramidVolume(1843,1823,923,"kilometers"));
+// console.log(pyramidVolume(18,412,93,"millimeters"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 04 - March - 2021
 // Source: https://edabit.com/challenge/M6hcm6ezCoRBbANQr
 // Title: The Missing Link of an Arithmetic Progression
@@ -39,39 +76,38 @@
 // In every array, exactly one item is missing.
 
 // Work:
-
 // first pass 
-const missing = (arr) => {
+// const missing = (arr) => {
   // find the diff
-  const diff = (arr[arr.length-1]-arr[0])/arr.length;
+  // const diff = (arr[arr.length-1]-arr[0])/arr.length;
   // create the function to create a range and step through because we know the missing number will be between arr[0] (start/s) and ar[arr.length-1] (end/e)
-  const range = (s,e,step=1) => {
+  // const range = (s,e,step=1) => {
     // return all numbers between s and e 
-    const output = [];
+    // const output = [];
 
     // This is here incase we only need to call 1 number. The end becomes the param and then s is set to 0 to return an array starting with 0 - end. 
-    if(typeof e === 'undefined'){
-      e = s;
-      s = 0;
-    }
+    // if(typeof e === 'undefined'){
+    //   e = s;
+    //   s = 0;
+    // }
 
     // for loop over the range to produce a sequence of numbers that are pushed into the output array
-    for (let i = s; i < e+diff; i+=step){
-      output.push(i);
-    }
+  //   for (let i = s; i < e+diff; i+=step){
+  //     output.push(i);
+  //   }
 
-    return output
-  }
+  //   return output
+  // }
 
   // return the range s - e, increasing by the diff
   // filter through and find the one number that doesn't exist in arr
   // return as a number use bracket notation 
-  return range(arr[0],arr[arr.length-1],diff).filter(x => arr.indexOf(x) === -1)[0];
-};
+//   return range(arr[0],arr[arr.length-1],diff).filter(x => arr.indexOf(x) === -1)[0];
+// };
 
-console.log(missing([1,3,4,5]));
-console.log(missing([2,4,6,8,10,14,16]));
-console.log(missing([1.5,2,3]));
+// console.log(missing([1,3,4,5]));
+// console.log(missing([2,4,6,8,10,14,16]));
+// console.log(missing([1.5,2,3]));
 
 
 // ------------------------------------------------------------------------------------------------------------------
