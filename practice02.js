@@ -19,6 +19,58 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 19 - March - 2021
+// Source: https://edabit.com/challenge/ayQR9ZBbR8LdXuwXq
+// Title: Where Are My Glasses?
+
+// Instructions:
+// Oh no! I've lost my glasses, but paradoxically, I need glasses to find my glasses!
+// Please help me out by showing me the index in the list which contains my glasses. They look like two capital Os, with any number of dashes in between!
+// This means that both O--O and O------------O are valid glasses, but not O----#--O for example!
+// Search thoroughly, maybe you'll find my glasses in places such as 'dustO-Odust'
+
+// Examples:
+// findGlasses(["phone", "O-O", "coins", "keys"]) ➞ 1
+// findGlasses(["OO", "wallet", "O##O", "O----O"]) ➞ 3
+// findGlasses(["O--#--O", "dustO---Odust", "more dust"]) ➞ 1
+
+// Notes:
+// All lists will include one valid pair of glasses because I swear I dropped them around here somewhere ...
+// All elements in the list are strings.
+
+// Work:
+
+// regex solution from edabit user BijogFc24
+// const findGlasses = glasses => glasses.findIndex(glass => /O-+O/.test(glass));
+
+// second pass --> can remove result object and can make result the index. Also reduce the logic into ternaries. Long and convoluted, but works. Not eh easiest to read. 
+// const findGlasses = (arr) => {
+//   arr.map((x,i) => x.includes("O") && x.length > 2 ? x.slice(x.indexOf("O")+1, x.lastIndexOf("O")).split("").some(x => x === '-') === true ? result = i : undefined : undefined);
+//   return result
+// }
+
+// my first pass
+// const findGlasses = (arr) => {
+//   const result = {};
+//   let index = 0
+//   arr.map((x,i) => {
+//     if(x.includes("O") && x.length > 2){
+//       result[i] = x
+//       const remove = x.slice(x.indexOf("O")+1, x.lastIndexOf("O"));
+//       if(remove.split("").some(x => x === '-') === true){
+//         index = i
+//       }
+//     } 
+//   });
+//   return index
+// }
+
+// console.log(findGlasses(["phone", "O-O", "coins", "keys"]));
+// console.log(findGlasses(["OO", "wallet", "O##O", "O----O"]));
+// console.log(findGlasses(["O--#--O", "dustO---Odust", "more dust"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 18 - March - 2021
 // Source: https://edabit.com/challenge/ii4ANncEGP4xjmQ5Y
 // Title: Calculate the Volume of a Pyramid
