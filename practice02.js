@@ -19,6 +19,65 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 30 - March - 2021
+// Source: https://edabit.com/challenge/ujzhzyvGoASKxSAib
+// Title: The Frugal Gentleman
+
+// Instructions:
+// Atticus has been invited to a dinner party, and he decides to purchase a bottle of wine. However, he has little knowledge of how to choose a good bottle. 
+// Being a very frugal gentleman (yet disliking looking like a cheapskate), he decides to use a very simple rule. 
+// In any selection of two or more wines, he will always buy the second-cheapest.
+// Given an array of wine objects, write a function that returns the name of the wine he will buy for the party. 
+// If given an empty array, return null. If given an array of only one, Atticus will buy that wine.
+
+// Examples:
+// chosenWine([
+//   { name: "Wine A", price: 8.99 },
+//   { name: "Wine 32", price: 13.99 },
+//   { name: "Wine 9", price: 10.99 }
+// ]) ➞ "Wine 9"
+
+// chosenWine([{ name: "Wine A", price: 8.99 }]) ➞ "Wine A"
+
+// chosenWine([]) ➞ null
+
+// Notes:
+// All wines will be different prices, so there is no confusion in the ordering.
+
+// Work:
+// third pass
+const chosenWine = (wines) => wines.length === 0 ? null : wines.length === 1 ? wines[0].name : wines.sort((a,b) => a.price - b.price)[1].name;
+
+// second pass
+// const chosenWine = (wines) => {
+//   const sorted = wines.sort((a,b) => a.price - b.price);
+//   return wines.length === 0 ? null : wines.length === 1 ? wines[0].name : sorted[1].name;
+// }
+
+// first pass
+// const chosenWine = (wines) => {
+//   const sorted = wines.sort((a,b) => {
+//     return a.price - b.price
+//   });
+//   if(wines.length === 0){
+//     return null;
+//   } else if(wines.length === 1){
+//     return wines[0].name;
+//   } else {
+//     return sorted[1].name
+//   }
+// }
+
+console.log(chosenWine([]));
+console.log(chosenWine([{ name: "Wine A", price: 8.99 }]));
+console.log(chosenWine([
+  { name: "Wine A", price: 8.99 },
+  { name: "Wine 32", price: 13.99 },
+  { name: "Wine 9", price: 10.99 }
+]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 25 - March - 2021
 // Source: https://edabit.com/challenge/jRSST87NjECBzbwzL
 // Title: Calculate the Total Price of Groceries
