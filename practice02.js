@@ -20,6 +20,47 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 30 - March - 2021
+// Source: https://edabit.com/challenge/xsi99TwpGyFC8KS6d
+// Title: Number Split
+
+// Instructions:
+// Given a number, return an array containing the two halves of the number. If the number is odd, make the rightmost number higher.
+
+// Examples:
+// numberSplit(4) ➞ [2, 2]
+// numberSplit(10) ➞ [5, 5]
+// numberSplit(11) ➞ [5, 6]
+// numberSplit(-9) ➞ [-5, -4]
+
+// Notes:
+// All numbers will be integers.
+// You can expect negative numbers too.
+
+// Work:
+// solution from edabit user czaplitto
+// const numberSplit = (n) => [Math.floor(n/2), Math.ceil(n/2)];
+
+// second pass
+// const numberSplit = (n) => n % 2 === 0 ? [n/2, n/2] : [n/2-0.5, n/2+0.5];
+
+// first pass
+// const numberSplit = (n) => {
+//   const num = n/2;
+//   if(n % 2 === 0){
+//     return [num, num]
+//   } else {
+//     return [num-0.5, num+0.5]
+//   }
+// }
+
+// console.log(numberSplit(4));
+// console.log(numberSplit(10));
+// console.log(numberSplit(11));
+// console.log(numberSplit(-9));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 30 - March - 2021
 // Source: https://edabit.com/challenge/ujzhzyvGoASKxSAib
 // Title: The Frugal Gentleman
 
