@@ -19,6 +19,33 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 03 - April - 2021
+// Source: https://edabit.com/challenge/aeHGWC6M44KhLCRBt
+// Title: Recursion: Palindrome Word
+
+// Instructions:
+// Create a recursive function that determines whether a word is a palindrome or not.
+
+// Examples:
+// isPalindrome("madam") ➞ true
+// isPalindrome("adieu") ➞ false
+// isPalindrome("rotor") ➞ true
+
+// Notes:
+// All inputs are in lowercase.
+// You are expected to solve this challenge via recursion.
+// You can check on the Resources tab for more details about recursion.
+// If you think recursion is fun, a collection of those challenges can be found in here.
+
+// Work:
+const isPalindrome = (wrd) => wrd.split('').reverse().join("") === wrd ? true : false;
+
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("adieu"));
+console.log(isPalindrome("rotor"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 30 - March - 2021
 // Source: https://edabit.com/challenge/xsi99TwpGyFC8KS6d
 // Title: Number Split
