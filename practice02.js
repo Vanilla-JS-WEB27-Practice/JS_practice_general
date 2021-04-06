@@ -1,5 +1,5 @@
 // Template
-// Date: - March - 2021
+// Date: - April - 2021
 // Source:
 // Title:
 
@@ -19,9 +19,52 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 05 - April - 2021
+// Source: https://edabit.com/challenge/e7zybZvYMof9YhDat
+// Title: Spaces Apart
+
+// Instructions:
+// Create a function that takes an arr and returns the total amount of space between the two "1"s.
+
+// Examples:
+// spaceApart([1, 0, 1, "1", 4, 3, 2, 3, 2, "1"]) ➞ 14
+// spaceApart(["1", 9, 20, 38, "1"]) ➞ 67
+// spaceApart([3, 2, 9, "1", 0, 0, -1, "1"]) ➞ "invalid"
+
+// Notes:
+// Return "invalid" if a negative number exists inside arr or if there is more/less than two "1"s. Ignore any other string inside arr.
+
+// Work:
+// const spaceApart = (arr) => {
+//   const slice = arr.slice(arr.indexOf("1")+1, arr.lastIndexOf("1"));
+//   const min = Math.min(...slice);
+//   const multi = [];
+//   const newStr = [];
+//   arr.map(x => x === "1" ? multi.push(x) : null);
+  
+//   if(min < 0){
+//     return "invalid"
+//   } else if (multi.length !== 2){
+//     return "invalid"
+//   } else {
+//     slice.map((x, i) => typeof x === "number" ? newStr.push(x) : null);
+//     return newStr.reduce((a,b) => typeof b === 'number' ? a+b : null)
+//   } 
+// }
+
+// console.log(spaceApart([1, 0, 1, "1", 4, 3, 2, 3, 2, "1"]));
+// console.log(spaceApart(["1", 9, 20, 38, "1"]));
+// console.log(spaceApart([3, 2, 9, "1", 0, 0, -1, "1"]));
+// console.log(spaceApart(["1"]));
+// console.log(spaceApart([3, 2, 9, "1", 0, 0, -1, "1"]));
+// console.log(spaceApart([4, 3, "1", "2", 4, "1", "2", "9"]));
+// console.log(spaceApart([4, 3, "1", "2", 4, "1", "1", "9"]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 03 - April - 2021
 // Source: https://edabit.com/challenge/aeHGWC6M44KhLCRBt
-// Title: Recursion: Palindrome Word
+// Title: Palindrome Word
 
 // Instructions:
 // Create a recursive function that determines whether a word is a palindrome or not.
@@ -38,11 +81,11 @@
 // If you think recursion is fun, a collection of those challenges can be found in here.
 
 // Work:
-const isPalindrome = (wrd) => wrd.split('').reverse().join("") === wrd ? true : false;
+// const isPalindrome = (wrd) => wrd.split('').reverse().join("") === wrd ? true : false;
 
-console.log(isPalindrome("madam"));
-console.log(isPalindrome("adieu"));
-console.log(isPalindrome("rotor"));
+// console.log(isPalindrome("madam"));
+// console.log(isPalindrome("adieu"));
+// console.log(isPalindrome("rotor"));
 
 // ------------------------------------------------------------------------------------------------------------------
 
