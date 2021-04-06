@@ -20,6 +20,44 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 05 - April - 2021
+// Source: https://edabit.com/challenge/b8XYLrNhqryNjkDPd
+// Title: Is it True?
+
+// Instructions:
+// In this challenge you will be given a relation between two numbers, written as a string. Write a function that determines if the relation is true or false.
+
+// Examples:
+// isTrue("2=2") ➞ true
+// isTrue("8<7") ➞ false
+// isTrue("5=13") ➞ false
+// isTrue("15>4") ➞ true
+
+// Notes:
+// Tests will only have three types of relations: =, >, and <
+// Many approaches work here, but the eval() function is particularly useful!
+
+// Work:
+// const isTrue = (str) => {
+//   if(str.includes("=")){
+//     const eq = str.split('=')
+//     return Number(eq[0]) === Number(eq[eq.length-1])
+//   } else if (str.includes(">")){
+//     const eq = str.split('>')
+//     return Number(eq[0]) > Number(eq[eq.length-1])
+//   } else if (str.includes("<")){
+//     const eq = str.split('<')
+//     return Number(eq[0]) < Number(eq[eq.length-1])
+//   }
+// }
+
+// console.log(isTrue("2=2"));
+// console.log(isTrue("8<7"));
+// console.log(isTrue("5=13"));
+// console.log(isTrue("15>4"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 05 - April - 2021
 // Source: https://edabit.com/challenge/e7zybZvYMof9YhDat
 // Title: Spaces Apart
 
