@@ -19,6 +19,153 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 12 - April - 2021
+// Source: https://edabit.com/challenge/95YiRnBSnfzSQWAuu
+// Title: Do You Like Chicken Curry?
+
+// Instructions:
+// Create a function that takes three collections of arguments and returns the sum of the product of numbers.
+
+// Examples:
+// product(1,2)(1,1)(2,3) ➞ 8
+// 1 * 1 * 2 + 2 * 1 * 3
+//         2 + 6
+
+// product(10,2)(5,0)(2,3) ➞ 100
+// 10 * 5 * 2 + 2 * 0 * 3
+//        100 + 0
+
+// product(1,2)(2,3)(3,4) ➞ 30
+// 1 * 2 * 3 + 2 * 3 * 4
+//         6 + 24
+
+// product(1,2)(0,3)(3,0) ➞ 0
+// 1 * 0 * 3 + 2 * 3 * 0
+//         0 + 0
+
+// Notes:
+// All test input is valid.
+
+// Work:
+// solution from cvf edabit user
+// const product = (a,b) => (x,y) => (v,z) => a*x*v+b*y*z;
+
+// second pass 
+// function product() {
+//   return two = (x,y) => three = (v,z) => (arguments[0]*x*v)+(arguments[1]*y*z)
+// }
+
+// first pass
+// function product() {
+//   let left = arguments[0];
+//   let right = arguments[1];
+//   return function two(x,y){
+//     return function three(v,z){
+//       return (left*x*v)+(right*y*z)
+//     }
+//   }
+// }
+
+// console.log(product(1,2)(1,1)(2,3));
+// console.log(product(10,2)(5,0)(2,3));
+// console.log(product(1,2)(2,3)(3,4));
+// console.log(product(1,2)(0,3)(3,0));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 08 - April - 2021
+// Source: https://edabit.com/challenge/GJD5x54NaFZwbtxQW
+// Title: Get Students with Names and Top Notes
+
+// Instructions:
+// Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4] } and returns an array of objects like { name: "John", topNote: 5 }.
+// If student has no notes (an empty array) then let's assume topNote: 0.
+
+// Examples:
+// getStudentsWithNamesAndTopNotes({ "name": "John", "notes": [3, 5, 4] })
+// ➞ { "name": "John", "topNote": 5 }
+
+// getStudentsWithNamesAndTopNotes({ "name": "Max", "notes": [1, 4, 6] })
+// ➞ { "name": "Max", "topNote": 6 }
+
+// getStudentsWithNamesAndTopNotes({ "name": "Zygmund", "notes": [1, 2, 3] })
+// ➞ { "name": "Zygmund", "topNote": 3 }
+
+// Notes:
+// Try solving this challenge with an arrow function.
+
+// Work:
+// const getStudentsWithNamesAndTopNotes = (students) => {
+//   const result = {};
+//   result[Object.keys(students)[0]] = students.name;
+//   result["topNote"] = Math.max(...students["notes"]);
+//   return  result
+// }
+
+// console.log(getStudentsWithNamesAndTopNotes({ "name": "John", "notes": [3, 5, 4] }));
+// console.log(getStudentsWithNamesAndTopNotes({ "name": "Max", "notes": [1, 4, 6] }));
+// console.log(getStudentsWithNamesAndTopNotes({ "name": "Zygmund", "notes": [1, 2, 3] }));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 06 - April - 2021
+// Source: https://edabit.com/challenge/bZJLPjJL4BuyeeB6j
+// Title: Changing a String into camelCase
+
+// Instructions:
+// GUsing Camel Case (or camelCase) is where the first word is in lower case, and all words after it have their first letter capitalised. 
+// Note that there are no spaces in between words!
+// Create a function that takes a string and returns it back in camelCase.
+
+// Examples:
+// camelCasing("Hello World") ➞ "helloWorld"
+// camelCasing("snake_case") ➞ "snakeCase"
+// camelCasing("low high_HIGH") ➞ "lowHighHigh"
+
+// Notes:
+// You need to remove all spaces and underscores.
+// There will be no numbers in inputs.
+
+// Work:
+// second pass
+// const camelCasing = (str) => {
+//   const reg = /_/;
+//   const test = str.replace(reg, " ").split(" ");
+//   const result = []
+//   test.map((x,i) => {
+//     const exam = x.toLowerCase();
+//     if(i === 0){
+//       result.push(exam);
+//     } else {
+//       result.push(exam[0].toUpperCase()+exam.slice(1));
+//     }
+//   })
+//   return result.join("")
+// }
+
+// const camelCasing = (str) => {
+//   const reg = /_{1,}/;
+//   const test = str.replace(reg, " ").split(" ");
+//   const result = []
+//   test.map((x,i) => {
+//     const exam = x.toLowerCase();
+//     if(i === 0){
+//       result.push(exam);
+//     } else {
+//       const quiz = exam[0].toUpperCase()
+//       result.push(quiz+exam.slice(1));
+//     }
+//   })
+//   return result.join("")
+// }
+
+// console.log(camelCasing("Hello World"));
+// console.log(camelCasing("snake_case"));
+// console.log(camelCasing("low high_HIGH"));
+// console.log(camelCasing("unEcEsSARilY_loNG_vArIablE_NaME"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 05 - April - 2021
 // Source: https://edabit.com/challenge/b8XYLrNhqryNjkDPd
 // Title: Is it True?
@@ -37,6 +184,11 @@
 // Many approaches work here, but the eval() function is particularly useful!
 
 // Work:
+
+// solution from zatoichi49
+// const isTrue = relation => eval(relation.replace('=', '==='));
+
+// My solution 
 // const isTrue = (str) => {
 //   if(str.includes("=")){
 //     const eq = str.split('=')
