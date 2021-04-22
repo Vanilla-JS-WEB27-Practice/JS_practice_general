@@ -19,9 +19,55 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 21 - April - 2021
+// Source: https://edabit.com/challenge/M9KuMowrYvH24Jwio
+// Title: How Good is Your Name?
+
+// Instructions:
+// Create a function that takes a string of name and checks how much good is the given name. 
+// A preloaded dictionary of alphabet scores is available in the Code tab. Add up the letters of your name to get the total score.
+
+// const scores = {"A": 100, "B": 14, "C": 9, "D": 28, "E": 145, "F": 12, "G": 3,
+// "H": 10, "I": 200, "J": 100, "K": 114, "L": 100, "M": 25,
+// "N": 450, "O": 80, "P": 2, "Q": 12, "R": 400, "S": 113,
+// "T": 405, "U": 11, "V": 10, "W": 10, "X": 3, "Y": 210, "Z": 23}
+
+
+// Return your result as per the following rules:
+// score <= 60:   "NOT TOO GOOD"
+// 61 <= score <= 300:  "PRETTY GOOD"
+// 301 <= score <= 599:  "VERY GOOD"
+// score >= 600:  "THE BEST"
+
+// Examples:
+// nameScore("MUBASHIR") ➞ "THE BEST"
+// nameScore("YOU") ➞ "VERY GOOD"
+// nameScore("MATT") ➞ "THE BEST"
+// nameScore("PUBG") ➞ "NOT TOO GOOD"
+
+// Work:
+// const scores = {"A": 100, "B": 14, "C": 9, "D": 28, "E": 145, "F": 12, "G": 3, "H": 10, "I": 200, "J": 100, "K": 114, "L": 100, "M": 25, "N": 450, "O": 80, "P": 2, "Q": 12, "R": 400, "S": 113, "T": 405, "U": 11, "V": 10, "W": 10, "X": 3, "Y": 210, "Z": 23}
+
+// const nameScore = (name) => {
+//   let score = 0;
+//   name.split("").map(x => score = score + scores[x])
+//   return score <= 60 ? "NOT TOO GOOD" 
+//         : 61 <= score && score <= 300 ? "PRETTY GOOD" 
+//         : 301 <= score && score <= 599 ? "VERY GOOD" 
+//         : "THE BEST";
+// }
+
+// console.log(nameScore("MUBASHIR"));
+// console.log(nameScore("YOU"));
+// console.log(nameScore("MATT"));
+// console.log(nameScore("PUBG"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 12 - April - 2021
 // Source: https://edabit.com/challenge/95YiRnBSnfzSQWAuu
 // Title: Do You Like Chicken Curry?
+// Resources: https://javascript.info/closure#nested-functions, https://www.youtube.com/watch?v=F_N97iovVbQ 
 
 // Instructions:
 // Create a function that takes three collections of arguments and returns the sum of the product of numbers.
