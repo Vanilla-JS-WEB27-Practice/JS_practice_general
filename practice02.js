@@ -19,6 +19,37 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 27 - April - 2021
+// Source: https://edabit.com/challenge/BpLG59eieSYarDfZj
+// Title: Star Ratings
+
+// Instructions:
+// Given an array of five values, calculate the average star rating, rounded to two decimal places. 
+// The array contains user votes per star, so the first element [0] contains the number of 1-star ratings and the last element [4], the number of 5-star ratings.
+// Return the average score in [brackets], followed by a space and asterisks' * to represent the star rating, rounded to the nearest whole star.
+
+// Examples:
+// starRating([55, 67, 98, 115, 61]) ➞ "[3.15] ***"
+// starRating([0, 2, 0, 1, 23]) ➞ "[4.73] *****"
+// starRating([16, 17, 23, 40, 45]) ➞ "[3.57] ****"
+
+// Notes:
+// Round stars to whole stars.
+
+// Work:
+const starRating = (arr) => {
+  const total = arr.reduce((a,c) => a+c,0);
+  const newArr = arr.map((x,i) => x*(i+1)/total)
+  const avgStars = newArr.reduce((a,c) => a+c,0).toFixed(2)
+  return `[${avgStars}] ${"*".repeat(Math.round(avgStars))}`;
+}
+
+console.log(starRating([55, 67, 98, 115, 61]));
+console.log(starRating([0, 2, 0, 1, 23]));
+console.log(starRating([16, 17, 23, 40, 45]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 21 - April - 2021
 // Source: https://edabit.com/challenge/M9KuMowrYvH24Jwio
 // Title: How Good is Your Name?
@@ -61,6 +92,7 @@
 // console.log(nameScore("YOU"));
 // console.log(nameScore("MATT"));
 // console.log(nameScore("PUBG"));
+// console.log(nameScore("SEAN"));
 
 // ------------------------------------------------------------------------------------------------------------------
 
