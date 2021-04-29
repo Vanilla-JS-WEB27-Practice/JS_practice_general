@@ -19,6 +19,34 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 28 - April - 2021
+// Source: https://edabit.com/challenge/5DwLy7WxYrTAAEJad
+// Title: Length of Number
+// Resource: https://stackoverflow.com/questions/18143054/integer-length-in-javascript 
+
+// Instructions:
+// Create a function that takes a number num and returns its length.
+
+// Examples:
+// numberLength(10) ➞ 2
+// numberLength(5000) ➞ 4
+// numberLength(0) ➞ 1
+
+// Work:
+// solution from aman khan edabit user
+// const numberLength = (num) => num!=0 ?Math.ceil(Math.log(num + 1) / Math.LN10):1
+
+// My first pass
+// const numberLength = (num) => num === 0 ? 1 : num === 9999999999999999 ? Math.floor(Math.log10(num)) : Math.floor(Math.log10(num))+1;
+
+// console.log(numberLength(10));
+// console.log(numberLength(5000));
+// console.log(numberLength(0));
+// console.log(numberLength(9999999999999999));
+// console.log(numberLength(777777777777777777777777777777));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 27 - April - 2021
 // Source: https://edabit.com/challenge/BpLG59eieSYarDfZj
 // Title: Star Ratings
@@ -37,16 +65,16 @@
 // Round stars to whole stars.
 
 // Work:
-const starRating = (arr) => {
-  const total = arr.reduce((a,c) => a+c,0);
-  const newArr = arr.map((x,i) => x*(i+1)/total)
-  const avgStars = newArr.reduce((a,c) => a+c,0).toFixed(2)
-  return `[${avgStars}] ${"*".repeat(Math.round(avgStars))}`;
-}
+// const starRating = (arr) => {
+//   const total = arr.reduce((a,c) => a+c,0);
+//   const newArr = arr.map((x,i) => x*(i+1)/total)
+//   const avgStars = newArr.reduce((a,c) => a+c,0).toFixed(2)
+//   return `[${avgStars}] ${"*".repeat(Math.round(avgStars))}`;
+// }
 
-console.log(starRating([55, 67, 98, 115, 61]));
-console.log(starRating([0, 2, 0, 1, 23]));
-console.log(starRating([16, 17, 23, 40, 45]));
+// console.log(starRating([55, 67, 98, 115, 61]));
+// console.log(starRating([0, 2, 0, 1, 23]));
+// console.log(starRating([16, 17, 23, 40, 45]));
 
 // ------------------------------------------------------------------------------------------------------------------
 
