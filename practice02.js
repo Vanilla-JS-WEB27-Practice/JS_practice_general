@@ -20,6 +20,47 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 11 - May - 2021
+// Source: https://edabit.com/challenge/nuXdWHAoHv9y38sn7
+// Title: Drink Sorting
+// Resource: https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
+
+// Instructions:
+// You will be given an array of drinks, with each drink being an object with two properties: name and price. Create a function that has the drinks array as an argument and return the drinks objects sorted by price in ascending order.
+
+// Assume that the following array of drink objects needs to be sorted:
+
+// drinks = [
+//   {name: "lemonade", price: 50},
+//   {name: "lime", price: 10}
+// ]
+// The output of the sorted drinks object will be:
+
+// Examples:
+// sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", price: 50}]
+
+// Work:
+// const sortDrinkByPrice = (drinks) => drinks.sort((a,b) => (a.price > b.price)?1:-1);
+
+// console.log(sortDrinkByPrice([
+//   {name: "lemonade", price: 50},
+//   {name: "lime", price: 10}
+// ]));
+
+// console.log(sortDrinkByPrice([
+// 	{name: 'peach', price: 23},
+// 	{name: 'lemonade', price: 90}, 
+// 	{name: 'lime', price: 432}
+// ]));
+
+// console.log(sortDrinkByPrice([
+// 	{name: 'water', price: 120}, 
+// 	{name: 'lime', price: 80}, 
+// 	{name: 'peach', price: 90}
+// ]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 11 - May - 2021
 // Source: https://edabit.com/challenge/Fp7p3BoHkF5Dub8pq
 // Title: Come Check Out This Crazy Function
 
