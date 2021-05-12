@@ -19,6 +19,61 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 11 - May - 2021
+// Source: https://edabit.com/challenge/4NKNkPZtN39cqCQMk
+// Title: String Expansion
+
+// Instructions + Examples:
+// Create a function which takes a string txt and expands it as per following rules:
+
+// The numeric values represent the occurrence of each letter preceding that numeric value.
+// stringExpansion("3M2u5b2a1s1h2i1r") ➞ "MMMuubbbbbaashiir"
+
+// The first occurrence of a numeric value should be the number of times each character behind it is repeated, until the next numeric value appears.
+// stringExpansion("3Mat")➞ "MMMaaattt"      // correct
+// stringExpansion("3Mat") ➞ "MMMat"          // wrong
+// stringExpansion("3Mat") ➞ "MatMatMat"      // wrong
+
+// If there are consecutive numeric characters, ignore them all except last one.
+// stringExpansion("3M123u42b12a") ➞ "MMMuuubbaa"
+
+// If there are two consecutive alphabetic characters then the string will remain unchanged.
+// stringExpansion("airforce") ➞ "airforce"
+
+// Empty strings should return an empty string.
+// stringExpansion("") ➞ ""
+
+// Work:
+// second pass
+// const getDet = (a) => a.length === 2 ? a[0][0]*a[1][1]-a[0][1]*a[1][0] : a[0][0]*a[1][1]*a[2][2] + a[0][1]*a[1][2]*a[2][0] + a[0][2]*a[1][0]*a[2][1] - a[0][2]*a[1][1]*a[2][0] - a[0][1]*a[1][0]*a[2][2] - a[0][0]*a[1][2]*a[2][1]
+
+// first pass
+// const getDet = (a) => {
+//   if(a.length === 2){
+//     return a[0][0]*a[1][1]-a[0][1]*a[1][0]
+//   } else {
+//     return a[0][0]*a[1][1]*a[2][2] + a[0][1]*a[1][2]*a[2][0] + a[0][2]*a[1][0]*a[2][1] - a[0][2]*a[1][1]*a[2][0] - a[0][1]*a[1][0]*a[2][2] - a[0][0]*a[1][2]*a[2][1]
+//   }
+// }
+
+// console.log(getDet([
+//   [ 0, 1],
+//   [ 1, 1]
+// ])) 
+
+// console.log(getDet([
+//   [69, 0],
+//   [1, 1]
+// ])) 
+
+// console.log(getDet([
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ])) 
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Template
 // Date: 10 - May - 2021
 // Source: https://edabit.com/challenge/diTZjq3pdnwMt6BNN
