@@ -19,6 +19,51 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 12 - May - 2021
+// Source: https://edabit.com/challenge/t5w3KeLXzs5ChWDMo
+// Title: Sharing is Caring
+
+// Instructions:
+// Given an array of numbers, create a function that removes 25% from every number in the array except the smallest number, and adds the total amount removed to the smallest number.
+
+// Examples:
+// showTheLove([4, 1, 4]) ➞ [3, 3, 3]
+// showTheLove([16, 10, 8]) ➞ [12, 7.5, 14.5]
+// showTheLove([2, 100]) ➞ [27, 75]
+
+// Notes:
+// There will only be one smallest number in a given array.
+
+// Work:
+// solution from cvf edabit user
+// function showTheLove(arr) {
+//   const smallest = Math.min(...arr);
+//   const total = arr.reduce((a, c) => a + c);
+//   return arr.map(x => x * 0.75 + (x === smallest ? total * 0.25 : 0));
+// }
+
+// first solution
+// const showTheLove = (arr) => {
+//   const result = [];
+//   const min = Math.min(...arr);
+//   let total = 0
+//   arr.map(x => {
+//     if(x === min){
+//       result.push(x)
+//     } else {
+//       total = total + x*0.25 
+//       result.push(x*0.75)
+//     }}) 
+//   result[result.indexOf(min)] = result[result.indexOf(min)] + total
+//   return result
+// }
+
+// console.log(showTheLove([4,1,4]));
+// console.log(showTheLove([16,10,8]));
+// console.log(showTheLove([2,100]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 11 - May - 2021
 // Source: https://edabit.com/challenge/nuXdWHAoHv9y38sn7
 // Title: Drink Sorting
