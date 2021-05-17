@@ -1,7 +1,7 @@
 // Template
 // Date: - May - 2021
-// Source:
-// Title:
+// Source: 
+// Title: 
 
 // Instructions:
 //
@@ -20,8 +20,42 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 17 - May - 2021
+// Source: https://edabit.com/challenge/7KbZc8QvzqrJPaE6Q
+// Title: RegEx XIV: Group Ranges x|y
+
+// Instructions:
+// Groups and ranges indicate groups and ranges of expression characters. The regular expression x|y matches either "x" or "y".
+
+// const REGEXP = /blue|red/
+
+// "red flag".match(REGEXP)  // red
+// "blue flag".match(REGEXP)  // blue
+
+// Matches "blue" in "blue flag" and "red" in "red flag".
+// Create a regular expression to match all red flag and blue flag in a string. You must use | in your expression. Flags can come in any order.
+
+// Examples:
+// "red flag blue flag".match(REGEXP) ➞ ["red flag", "blue flag"]
+// "yellow flag red flag blue flag green flag".match(REGEXP) ➞ ["red flag", "blue flag"]
+// "pink flag red flag black flag blue flag green flag red flag ".match(REGEXP) ➞ ["red flag", "blue flag", "red flag"]
+
+// Work:
+// solution from cvf edabit user
+// const REGEXP = /(blue|red) flag/g
+
+// my first pass 
+// const REGEXP = /\b(blue flag|red flag)/g
+
+// console.log("red flag blue flag".match(REGEXP));
+// console.log("yellow flag red flag blue flag green flag".match(REGEXP));
+// console.log("pink flag red flag black flag blue flag green flag red flag ".match(REGEXP));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 17 - May - 2021
 // Source: https://edabit.com/challenge/2eiEBoMFJZhE2SjHz
 // Title: Proper Modulo Operator
+// Resources: https://web.archive.org/web/20090717035140if_/javascript.about.com/od/problemsolving/a/modulobug.htm 
 
 // Instructions:
 // While useful, the modulo operator in JavaScript is not infallible when negative numbers are thrown into the mix. 
@@ -36,11 +70,11 @@
 // All test cases contain valid numbers.
 
 // Work:
-const mod(m,n) => ((m%n)+n)%n
+// const mod = (m,n) => ((m%n)+n)%n
 
-console.log(mod(-13, 63));
-console.log(mod(50, 25));
-console.log(mod(-6, 3));
+// console.log(mod(-13, 64));
+// console.log(mod(50, 25));
+// console.log(mod(-6, 3));
 
 // ------------------------------------------------------------------------------------------------------------------
 
