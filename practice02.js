@@ -19,6 +19,57 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 14 - May - 2021
+// Source: https://edabit.com/challenge/r4ZHGRs8uoK2HpEFo
+// Title: Sieve of Eratosthenes
+
+// Instructions:
+// Given num as input, return an array with all primes up to num included.
+
+// Examples:
+// eratosthenes(1) ➞ []
+// eratosthenes(10) ➞ [2, 3, 5, 7]
+// eratosthenes(20) ➞ [2, 3, 5, 7, 11, 13, 17, 19]
+// eratosthenes(0) ➞ []
+
+// Notes:
+// Check the Resources tab for info on the meaning of "Eratosthenes".
+// Try solving this challenge using Eratosthenes sieve.
+
+// Work:
+// const eratosthenes = (value) => {
+//   var primes = [];
+//   const result = [];
+//   for(var i = 2; i < value; i++) {
+//       primes[i] = true;
+//   }
+//   var limit = Math.sqrt(value);
+//   for(var i = 2; i < limit; i++) {
+//       if(primes[i] === true) {
+//           for(var j = i * i; j < value; j += i) {
+//               primes[j] = false;
+//           }
+//       }
+//   }
+//   for(var i = 2; i < value; i++) {
+//       if(primes[i] === true) {
+//           result.push(i)
+//       } 
+//   }
+//     return result
+// }
+
+// const inclusiveArray = (s, e) => s > e ? [s] : Array(Math.ceil((e+1)-s)).fill(s).map((x,y) => x+y)
+
+// console.log(inclusiveArray(2,10))
+
+// console.log(eratosthenes(1));
+// console.log(eratosthenes(10));
+// console.log(eratosthenes(20));
+// console.log(eratosthenes(0));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 12 - May - 2021
 // Source: https://edabit.com/challenge/JDkyQJqNfJNhvjmRW
 // Title: Sum of Resistance in Series Circuits
