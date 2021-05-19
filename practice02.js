@@ -19,6 +19,85 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// NOT FINISHED
+
+// Template
+// Date: 17 - May - 2021
+// Source: https://edabit.com/challenge/bCif823bBvNFfLK7G
+// Title: Even or Odd: Which is Greater?
+
+// Instructions:
+// Create a function to determine if the sum of all the individual even digits are greater than the sum of all the indiviudal odd digits in a string of numbers.
+// If the sum of odd numbers is greater than the sum of even numbers, return "Odd is greater than Even".
+// If the sum of even numbers is greater than the odd numbers, return "Even is greater than Odd".
+// If the sum of both even and odd numbers are equal, return "Even and Odd are the same".
+
+// Examples:
+// evenOrOdd("22471") ➞ "Even and Odd are the same"
+// evenOrOdd("213613") ➞ "Even and Odd are the same"
+// evenOrOdd("23456") ➞ "Even is greater than Odd"
+
+// Notes:
+// The input will be a string of numbers.
+
+// Work:
+
+// solution from Werdna edabit user
+// const evenOrOdd = str => (
+// 	diff = [...str].reduce((a, c) => c % 2 ? a - +c : a + +c, 0),
+// 	diff < 0 ? 'Odd is greater than Even' : diff > 0 ? 'Even is greater than Odd' : 'Even and Odd are the same'
+// );
+
+// second pass, reducing lines of code
+// const evenOrOdd = (str) => {
+//   let even = 0, odd = 0;
+//   str.split("").map(x => +x % 2 === 0 ? even = even+Number(x) : odd = odd+Number(x));
+//   return even > odd ? "Even is greater than Odd" : odd > even ? "Odd is greater than Even" : "Even and Odd are the same"
+// }
+
+// first pass solution
+// const evenOrOdd = (str) => {
+//   let even = 0, odd = 0;
+//   str.split("").map(x => +x % 2 === 0 ? even = even+Number(x) : odd = odd+Number(x));
+//   if (even > odd){
+//     return "Even is greater than Odd"
+//   } else if (odd > even){
+//     return "Odd is greater than Even"
+//   } else if (odd === even){
+//     return "Even and Odd are the same"
+//   }
+// }
+
+// console.log(evenOrOdd('22471'));
+// console.log(evenOrOdd('213613'));
+// console.log(evenOrOdd('23456'));
+
+// console.log(evenOrOdd('143')) 
+// console.log(evenOrOdd('2221'))
+// console.log(evenOrOdd('23456'))
+// console.log(evenOrOdd('4321'))
+// console.log(evenOrOdd('3245'))
+// console.log(evenOrOdd('14256'))
+// console.log(evenOrOdd('11234'))
+// console.log(evenOrOdd('1734'))
+// console.log(evenOrOdd('145')) 
+// console.log(evenOrOdd('22471'))
+// console.log(evenOrOdd('213613'))
+// console.log(evenOrOdd('23456'))
+// console.log(evenOrOdd('9738'))
+// console.log(evenOrOdd('34522'))
+// console.log(evenOrOdd('12378'))
+// console.log(evenOrOdd('45228'))
+// console.log(evenOrOdd('4455'))
+// console.log(evenOrOdd('6721'))
+// console.log(evenOrOdd('92184'))
+// console.log(evenOrOdd('12')) 
+// console.log(evenOrOdd('123')) 
+// console.log(evenOrOdd('112')) 
+// console.log(evenOrOdd('124'))
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 17 - May - 2021
 // Source: https://edabit.com/challenge/bQPSi3s2zp6sjrYJL
 // Title: Radioactive Decay
