@@ -19,6 +19,74 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 26 - May - 2021
+// Source: https://edabit.com/challenge/CNimjGSPT7xmPJuvY
+// Title: Recursion: Left Shift by Powers of Two
+// Resource: https://www.javascripttutorial.net/javascript-recursive-function/
+// https://javascript.info/recursion
+// 
+
+// Instructions:
+// The left shift operation is similar to multiplication by powers of two, thus, the process is repetitive and can be done recursively.
+
+// Sample calculation using the left shift operator (<<):
+
+// 10 << 3 = 10 * 2^3 = 10 * 8 = 80
+// -32 << 2 = -32 * 2^2 = -32 * 4 = -128
+// 5 << 2 = 5 * 2^2 = 5 * 4 = 20
+// Write a recursive function that mimics (without the use of <<) the left shift operator and returns the result from the two given integers.
+
+// Examples:
+// shiftToLeft(5, 2) ➞ 20
+// shiftToLeft(10, 3) ➞ 80
+// shiftToLeft(-32, 2) ➞ -128
+// shiftToLeft(-6, 5) ➞ -192
+// shiftToLeft(12, 4) ➞ 192
+// shiftToLeft(46, 6) ➞ 2944
+
+// Notes:
+// There will be no negative values for the second parameter y.
+// This challenge is more like recreating of the left shift operation, thus, the use of the operator directly is prohibited.
+// You are expected to solve this challenge via recursion.
+// An iterative version of this challenge can be found via this link.
+// A collection of challenges in recursion can be found via this link.
+
+// Work:
+
+// second pass
+const shiftToLeft = (x,y) => y <= 0 ? x : shiftToLeft(x *= 2,y-1)
+
+// first pass
+// const shiftToLeft = (x,y) => {
+//   if(y <= 0){
+//     return x
+//   } else {
+//     x *= 2
+//     return shiftToLeft(x,y-1)
+//   }
+// }
+
+// one solution by Ketan Ramteke, NOT recursive, resource: https://iamketan.wordpress.com/2020/10/29/left-shift-by-powers-of-twoedabit/ 
+// const shiftToLeft = (x,y) => {
+//   let zero = "";
+//   while (y--){
+//     zero+="0";
+//   }
+//   zero = x.toString(2)+zero;
+//   console.log(zero);
+//   return parseInt(zero, 2);
+// }
+
+console.log(shiftToLeft(5,1));
+console.log(shiftToLeft(5,2));
+console.log(shiftToLeft(10,3));
+console.log(shiftToLeft(-32,2));
+console.log(shiftToLeft(-6,5));
+console.log(shiftToLeft(12,4));
+console.log(shiftToLeft(46,6));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 19 - May - 2021
 // Source: https://edabit.com/challenge/MarKs2qWR3cMHZjxy
 // Title: Finish the Sentence You're On!
@@ -61,6 +129,11 @@
 // The unfinished sentence is always found at the start of a complete sentence.
 
 // Work:
+
+// modified solution from ohoboho edabit user
+// const timeToFinish = (s1, s2) => s1.replace(s2, '').replace(/\s/g, '').length * .5;
+
+// my first pass
 // const timeToFinish = (s1, s2) => (s1.replace(/\s/g,"").length - s2.replace(/\s/g,"").length)*0.5;
 
 // console.log(timeToFinish("And so brings my conclusion to its conclusion.","And so brings my conclusion to its conclus"));
