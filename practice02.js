@@ -19,6 +19,46 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 31 - May - 2021
+// Source: https://edabit.com/challenge/ccZBsRp6pX869gyqx
+// Title: The Karaca's Encryption Algorithm
+
+// Instructions:
+// Make a function that encrypts a given input with these steps:
+// Input: "apple"
+// Step 1: Reverse the input: "elppa"
+// Step 2: Replace all vowels using the following chart:
+// a => 0
+// e => 1
+// i => 2
+// o => 2
+// u => 3
+// "1lpp0"
+// Step 3: Add "aca" to the end of the word: "1lpp0aca"
+// Output: "1lpp0aca"
+
+// Examples:
+// encrypt("banana") ➞ "0n0n0baca"
+// encrypt("karaca") ➞ "0c0r0kaca"
+// encrypt("burak") ➞ "k0r3baca"
+// encrypt("alpaca") ➞ "0c0pl0aca"
+
+// Notes:
+// All inputs are strings, no uppercases and all output must be strings.
+
+// Work:
+// const encrypt = (w) => {
+//   const letters = {'a':'0','e':'1','i':'2','o':'2','u':'3',};
+//   return w.split("").map(x => x.replace(x, letters[x] ? letters[x] : x)).reverse().join("")+"aca";
+// }
+
+// console.log(encrypt("banana"));
+// console.log(encrypt("karaca"));
+// console.log(encrypt("burak"));
+// console.log(encrypt("alpaca"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 26 - May - 2021
 // Source: https://edabit.com/challenge/CNimjGSPT7xmPJuvY
 // Title: Recursion: Left Shift by Powers of Two
