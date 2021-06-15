@@ -1,5 +1,5 @@
 // Template
-// Date: - May - 2021
+// Date: - June - 2021
 // Source: 
 // Title: 
 
@@ -16,6 +16,43 @@
 // 1 -
 
 // Work:
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 14 - June - 2021
+// Source: https://edabit.com/challenge/BwyAr7S6y89prkrMo
+// Title: Let's Talk Like a Monkey 🐵
+
+// Instructions:
+// Mubashir can talk with monkeys. You can also learn their simple language.
+// Create a function that takes a string txt and returns the string in monkeys language. You have to figure out their language from test cases.
+
+// Examples:
+// monkeyTalk("Mubashir Hassan") ➞ "Ook ook."
+// monkeyTalk("Hello") ➞ "Ook."
+// monkeyTalk("Matt") ➞ "Ook."
+// monkeyTalk("Everyone") ➞ "Eek."
+// monkeyTalk("Edabit is Amazing") ➞ "Eek eek eek."
+
+// Work:
+// solution from Mubashir Hassan Edabit user
+// const monkeyTalk = (txt) =>    txt.toLowerCase().replace(/\w+/g, m => 'aeiou'.includes(m[0]) ? 'eek' : 'ook').replace(/^./, m => m.toUpperCase()) + '.';
+
+
+// my first pass
+// const monkeyTalk = (txt) => {
+//   const result = [];
+//   const splt = txt.split(" ");
+//   splt.map( x => x[0].match(/[a|e|i|o|o]/gi)  ? result.push('eek') : result.push('ook'))
+//   const resultJoin = result.join(" ")
+//   return `${resultJoin[0].toUpperCase()}${resultJoin.slice(1)}.`
+// }
+
+// console.log(monkeyTalk("Mubashir Hassan"));
+// console.log(monkeyTalk("Hello"));
+// console.log(monkeyTalk("Matt"));
+// console.log(monkeyTalk("Everyone"));
+// console.log(monkeyTalk("Edabit is Amazing"));
 
 // ------------------------------------------------------------------------------------------------------------------
 
