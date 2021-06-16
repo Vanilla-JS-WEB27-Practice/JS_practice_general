@@ -19,6 +19,51 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 15 - June - 2021
+// Source: https://edabit.com/challenge/ahAX627M3Y26tij9y
+// Title: Pluralize!
+
+// Instructions:
+// Given a list of words in the singular form, return a set of those words in the plural form if they appear more than once in the list.
+
+// Examples:
+// pluralize(["cow", "pig", "cow", "cow"]) ➞ ["cows", "pig"]
+// pluralize(["table", "table", "table"]) ➞ ["tables"]
+// pluralize(["chair", "pencil", "arm"]) ➞ ["chair", "pencil", "arm"]
+
+// Notes:
+// This is an oversimplification of the English language so no edge cases will appear.
+// Only focus on whether or not to add an s to the ends of words.
+// All tests will be valid.
+
+// Work:
+// second pass
+// const pluralize = (arr) => {
+//   const test = [];
+//   arr.map(x => {test.indexOf(x) === -1 && test.indexOf(x+'s') === -1 ? test.push(x) : test.indexOf(x) > -1 ? test[test.indexOf(x)] = `${x}s` : null})
+//   return  test
+// }
+
+// first pass 
+// const pluralize = (arr) => {
+//   const test = [];
+//   arr.map(x => {
+//     if (test.indexOf(x) === -1 && test.indexOf(x+'s') === -1){
+//       test.push(x) 
+//     } else if (test.indexOf(x) > -1){
+//       test[test.indexOf(x)] = `${x}s`
+//     }
+//   })
+//   return  test
+// }
+
+console.log(pluralize(["cow", "pig", "cow", "cow"]));
+console.log(pluralize(["table", "table", "table"]));
+console.log(pluralize(["chair", "pencil", "arm"]));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 14 - June - 2021
 // Source: https://edabit.com/challenge/aNZzLBxQpidWBF26X
 // Title: Sort by String Length
