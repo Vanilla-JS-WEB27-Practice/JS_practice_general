@@ -19,6 +19,65 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 19 - June - 2021
+// Source: https://edabit.com/challenge/ion4uWdfdZ5SZNWXJ
+// Title: Check If an Array Is Sorted and Rotated
+
+// Instructions:
+// Given an array of distinct integers, create a function that checks if the array is sorted and rotated clockwise. If so, return "YES"; otherwise return "NO".
+
+// Examples:
+// check([3, 4, 5, 1, 2]) ➞ "YES"
+// The above array is sorted and rotated.
+// Sorted array: [1, 2, 3, 4, 5].
+// Rotating this sorted array clockwise
+// by 3 positions, we get: [3, 4, 5, 1, 2].
+
+// check([1, 2, 3]) ➞ "NO"
+// The above array is sorted but not rotated.
+
+// check([7, 9, 11, 12, 5]) ➞ "YES"
+// The above array is sorted and rotated.
+// Sorted array: [5, 7, 9, 11, 12].
+// Rotating this sorted array clockwise
+// by 4 positions, we get: [7, 9, 11, 12, 5].
+
+// Work:
+
+// second pass --> needs more work 
+// const check = (a) =>  {
+  // copy a values and order into another array
+//   const b = [...a];
+//   return  JSON.stringify(a.sort((a,b) => a-b)) !== JSON.stringify([...a.slice(a.indexOf(Math.min(...a))), ...a.slice(0, a.indexOf(Math.min(...a)))]) ? "NO" : [...a.slice(a.indexOf(Math.min(...a))), ...a.slice(0, a.indexOf(Math.min(...a))) ][0] === b[0] ? "NO" : "YES"
+// }
+
+// first pass
+// const check = (a) =>  {
+//   // store the first index of a before making any changes --> use later to compare values at positions 0 
+//   const firstIndex = a[0]
+//   // grab the index of the min num in a --> to slice from the index of min num 
+//   const min = a.indexOf(Math.min(...a))
+//   // copy a values and order into another array
+//   const b = [...a];
+//   // slice form the min num to the end of the array 
+//   const sliced = a.slice(min)
+//   // grab the other half of a
+//   const pre = a.slice(0, min)
+//   // use to verify if a was rotated after being sorted
+//   const rotated = [...sliced, ...pre];
+//   // sorts a
+//   const sorted = a.sort((a,b) => a-b)
+//   return  JSON.stringify(sorted) !== JSON.stringify(rotated) ? "NO" : rotated[0] === firstIndex ? "NO" : "YES"
+// }
+
+// console.log(check([3,4,5,1,2]));
+// console.log(check([3,5,4,1,2]));
+// console.log(check([1,2,3]));
+// console.log(check([7,8,9,11,12,5,6]));
+// console.log(check([1,10,2,5,8]))
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 16 - June - 2021
 // Source: https://edabit.com/challenge/paMpZoEJ6gr4feMS3
 // Title: Burglary Series (12): Get Vodka Bottle
