@@ -19,6 +19,44 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 23 - June - 2021
+// Source: https://edabit.com/challenge/JDDeK9jSFKJbfzhMt
+// Title: Same on Both Ends
+
+// Instructions:
+// Given a sentence, return the number of words which have the same first and last letter.
+
+// Examples:
+// countSameEnds("Pop! goes the balloon") ➞ 1
+// countSameEnds("And the crowd goes wild!") ➞ 0
+// countSameEnds("No I am not in a gang.") ➞ 1
+
+// Notes:
+// Don't count single character words (such as "I" and "A" in example #3).
+// The function should not be case sensitive, meaning a capital "P" should match with a lowercase one.
+// Mind the punctuation!
+// Bonus points indeed for using regex!
+
+// Work:
+// const countSameEnds = (s) => {
+//   let count = 0;
+  
+//   return s.split(" ").map(x => x.match(/[^\s\d]$/i));
+// }
+
+const countSameEnds = (s) => {
+  let count = 0;
+  // replace all punctuation characters with a space
+  const newStr = s.replace(/[!.]/, " ").split(" ").map(x => x.length > 1 && x.charAt().toLowerCase() === x.charAt(x.length-1) ? count++ : null)
+  return count
+}
+
+console.log(countSameEnds("Pop! goes the balloon") )
+console.log(countSameEnds("And the crowd goes wild!"))
+console.log(countSameEnds("No I am not in a gang."))
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 22 - June - 2021
 // Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 // Title: Check If It's a Title String
@@ -274,7 +312,7 @@
 // const monkeyTalk = (txt) => {
 //   const result = [];
 //   const splt = txt.split(" ");
-//   splt.map( x => x[0].match(/[a|e|i|o|o]/gi)  ? result.push('eek') : result.push('ook'))
+//   splt.map( x => x[0].match(/[a|e|i|o|u]/gi)  ? result.push('eek') : result.push('ook'))
 //   const resultJoin = result.join(" ")
 //   return `${resultJoin[0].toUpperCase()}${resultJoin.slice(1)}.`
 // }
