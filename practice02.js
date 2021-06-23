@@ -20,6 +20,31 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 22 - June - 2021
+// Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+// Title: Check If It's a Title String
+
+// Instructions:
+// Check if a string title is a title string or not. A title string is one which has all the words in the string start with a upper case letter.
+
+// Examples:
+// checkTitle("A Mind Boggling Achievement") ➞ true
+// checkTitle("A Simple Java Script Program!") ➞ true
+// checkTitle("Water is transparent") ➞ false
+
+// Work:
+// solution from Euphonic Sounds Edabit user
+// const checkTitle = title => !/\b[a-z]/.test(title);
+
+// first pass
+// const checkTitle = (title) => title.split(" ").every(x => /[A-Z]/.test(x.charAt()));
+
+// console.log(checkTitle("A Mind Boggling Achievement"));
+// console.log(checkTitle("A Simple Java Script Program!"));
+// console.log(checkTitle("Water is transparent"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 22 - June - 2021
 // Source: https://edabit.com/challenge/vqud59XWHn5BRA7P7
 // Title: Expand a Number I
 
