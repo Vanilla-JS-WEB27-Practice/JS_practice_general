@@ -38,22 +38,19 @@
 // Bonus points indeed for using regex!
 
 // Work:
+// solution from Undefined9999 Edabit user 
+// const countSameEnds = (s) => (s.match(/\b([a-z])\w*\1\b/ig)||[]).length
+
+// first pass
 // const countSameEnds = (s) => {
 //   let count = 0;
-  
-//   return s.split(" ").map(x => x.match(/[^\s\d]$/i));
+//   s.replace(/[!.]/, " ").split(" ").map(x => x.length > 1 && x.charAt().toLowerCase() === x.charAt(x.length-1) ? count++ : null)
+//   return count
 // }
 
-const countSameEnds = (s) => {
-  let count = 0;
-  // replace all punctuation characters with a space
-  const newStr = s.replace(/[!.]/, " ").split(" ").map(x => x.length > 1 && x.charAt().toLowerCase() === x.charAt(x.length-1) ? count++ : null)
-  return count
-}
-
-console.log(countSameEnds("Pop! goes the balloon") )
-console.log(countSameEnds("And the crowd goes wild!"))
-console.log(countSameEnds("No I am not in a gang."))
+// console.log(countSameEnds("Pop! goes the balloon") )
+// console.log(countSameEnds("And the crowd goes wild!"))
+// console.log(countSameEnds("No I am not in a gang."))
 
 // ------------------------------------------------------------------------------------------------------------------
 
