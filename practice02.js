@@ -19,6 +19,41 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 22 - June - 2021
+// Source: https://edabit.com/challenge/vqud59XWHn5BRA7P7
+// Title: Expand a Number I
+
+// Instructions:
+// Create a function that expands a number into a string as shown below:
+// 25 ➞ "20 + 5"
+// 70701 ➞ "70000 + 700 + 1"
+// 685 ➞ "600 + 80 + 5"
+
+// Examples:
+// expandedForm(70304) ➞ "70000 + 300 + 4"
+// expandedForm(1037903) ➞ "1000000 + 30000 + 7000 + 900 + 3"
+// expandedForm(802539) ➞ "800000 + 2000 + 500 + 30 + 9"
+
+// Work:
+// const expandedForm = (n) => {
+//   const split = JSON.stringify(n).split("");
+//   let result = '';
+//   split.map((x,i) => {
+//     if (i === split.length-1){
+//       result = result + `${x}`
+//     }else if(x !== '0'){
+//       result = result + `${x}${"0".repeat(split.length - (i+1))} + `
+//     }
+//   })
+//   return result
+// }
+
+// console.log(expandedForm(70304));
+// console.log(expandedForm(1037903));
+// console.log(expandedForm(802539));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 19 - June - 2021
 // Source: https://edabit.com/challenge/ion4uWdfdZ5SZNWXJ
 // Title: Check If an Array Is Sorted and Rotated
