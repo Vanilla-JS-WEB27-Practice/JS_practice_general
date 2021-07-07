@@ -1,5 +1,5 @@
 // Template
-// Date: - June - 2021
+// Date: - July - 2021
 // Source: 
 // Title: 
 
@@ -16,6 +16,40 @@
 // 1 -
 
 // Work:
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: - July - 2021
+// Source: https://edabit.com/challenge/BFJbFNJv2E8icogRk
+// Title: Secret Function
+
+// Instructions:
+// Create a function based on the input and output. Look at the examples, there is a pattern.
+
+// Examples:
+// secret(24) ➞ 8
+// secret(42) ➞ 8
+// secret(15) ➞ -4
+// secret(52) ➞ 15
+
+// Notes:
+// num >= 10 and num <= 52
+// Math.pow, * and - can be helpful.
+
+// Work:
+// solution from cvf edabit user
+// const secret = (n) => {
+//   const [a,b] = [n/10 | 0, n%10];
+//   return a ** b - a * b;
+// };
+
+// my first pass
+// const secret = (n) => Math.pow(JSON.stringify(n).split('')[0],JSON.stringify(n).split('')[1]) - (JSON.stringify(n).split('')[0]*JSON.stringify(n).split('')[1]);
+
+// console.log(secret(24));
+// console.log(secret(42));
+// console.log(secret(15));
+// console.log(secret(52));
 
 // ------------------------------------------------------------------------------------------------------------------
 
