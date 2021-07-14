@@ -19,6 +19,40 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 14 - July - 2021
+// Source: https://edabit.com/challenge/8a2J9T4FM5fgSwn4w
+// Title: Sum of Missing Numbers
+
+// Instructions:
+// Create a function that returns the sum of missing numbers.
+
+// Examples:
+// sumMissingNumbers([1, 3, 5, 7, 10]) ➞ 29
+// 2 + 4 + 6 + 8 + 9
+// sumMissingNumbers([10, 7, 5, 3, 1]) ➞ 29
+// sumMissingNumbers([10, 20, 30, 40, 50, 60]) ➞ 1575
+
+// Notes:
+// The minimum and maximum value of the given array are the inclusive bounds of the numeric range to consider when searching for missing numbers.
+
+// Work:
+// second pass
+// const sumMissingNumbers = (a) => Array.from({length: Math.max(...a)-Math.min(...a)+1}, (_, i) => i + Math.min(...a)).reduce((a,b) => a+b) - a.reduce((a,b) => a+b);
+
+// first pass
+// const sumMissingNumbers = (a) => {
+//   const full = Array.from({length: Math.max(...a)-Math.min(...a)+1}, (_, i) => i + Math.min(...a));
+//   const aTotal = a.reduce((a,b) => a+b);
+//   const fullTotal = full.reduce((a,b) => a+b)
+//   return fullTotal - aTotal;
+// }
+
+// console.log(sumMissingNumbers([1,3,5,7,10]));
+// console.log(sumMissingNumbers([10,7,5,3,1]));
+// console.log(sumMissingNumbers([10,20,30,40,50,60]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 10 - July - 2021
 // Source: https://edabit.com/challenge/TyX7xfsAPfJZxfaZq
 // Title: Two Distinct Elements
