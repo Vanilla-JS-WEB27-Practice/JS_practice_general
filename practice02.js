@@ -20,6 +20,51 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 15 - July - 2021
+// Source: https://edabit.com/challenge/GJD5x54NaFZwbtxQW
+// Title: Get Students with Names and Top Notes
+
+// Instructions:
+// Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4] } and returns an array of objects like { name: "John", topNote: 5 }.
+// If student has no notes (an empty array) then let's assume topNote: 0.
+
+// Examples:
+// getStudentsWithNamesAndTopNotes([
+//   { "name": "John", "notes": [3, 5, 4] },
+//   { "name": "Max", "notes": [1, 4, 6] },
+//   { "name": "Zygmund", "notes": [1, 2, 3] }
+// ])
+// ➞ [
+//   { "name": "John", "topNote": 5 },
+//   { "name": "Max", "topNote": 6 },
+//   { "name": "Zygmund", "topNote": 3 }
+// ]
+
+// Notes:
+// Try solving this challenge with an arrow function.
+
+// Work:
+// solution from Pustur Edabit user
+// const getStudentsWithNamesAndTopNotes = students =>
+//   students.map(student => ({
+//     name: student.name,
+//     topNote: Math.max(...student.notes, 0),
+//   }));
+
+// first pass
+// const getStudentsWithNamesAndTopNotes = (students) => {
+//   students.map(x => delete Object.assign(x, {['topNote']: x['notes'].length === 0 ? 0 : Math.max(...x['notes']) })['notes'])
+//   return students
+// }
+
+// console.log(getStudentsWithNamesAndTopNotes([
+//   { "name": "John", "notes": [3, 5, 4] },
+//   { "name": "Max", "notes": [1, 4, 6] },
+//   { "name": "Zygmund", "notes": [1, 2, 3] }
+// ]))
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 15 - July - 2021
 // Source: https://edabit.com/challenge/tRx22rECqK4dTJTg8
 // Title: Combinations
 
@@ -37,6 +82,10 @@
 // Input may include the number zero.
 
 // Work:
+// second pass --> a doesn't need to be checked for being 0 because it's the accumulator, b is the one that needs a 0 check because it's the current value 
+// const combinations = (...args) => args.reduce((a,b) => b > 0 ? a*b : a+b);
+
+// first pass 
 // const combinations = (...args) => args.reduce((a,b) => a === 0 || b === 0? a+b: a*b);
 
 // console.log(combinations(2,3));
