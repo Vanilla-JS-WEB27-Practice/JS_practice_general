@@ -20,6 +20,32 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 15 - July - 2021
+// Source: https://edabit.com/challenge/XdAR3KohR5w7rjrFg
+// Title: Sum of Cubes
+
+// Instructions:
+// Create a function that takes in an array of numbers and returns the sum of its cubes.
+
+// Examples:
+// sumOfCubes([1, 5, 9]) ➞ 855
+// Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
+// sumOfCubes([3, 4, 5]) ➞ 216
+// sumOfCubes([2]) ➞ 8
+// sumOfCubes([]) ➞ 0
+
+// Notes:
+// If given an empty array, return 0.
+
+// Work:
+// const sumOfCubes = (n) => n.reduce((a,b) => (b**3)+a,0);
+
+// console.log(sumOfCubes([3,4,5]));
+// console.log(sumOfCubes([2]));
+// console.log(sumOfCubes([]));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 15 - July - 2021
 // Source: https://edabit.com/challenge/GJD5x54NaFZwbtxQW
 // Title: Get Students with Names and Top Notes
 
