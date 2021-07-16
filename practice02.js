@@ -19,6 +19,32 @@
 
 // ------------------------------------------------------------------------------------------------------------------
 
+// Date: 15 - July - 2021
+// Source: https://edabit.com/challenge/tRx22rECqK4dTJTg8
+// Title: Combinations
+
+// Instructions:
+// Create a function that takes a variable number of arguments, each argument representing the number of items in a group, 
+// and returns the number of permutations (combinations) of items that you could get by taking one item from each group.
+
+// Examples:
+// combinations(2, 3) ➞ 6
+// combinations(3, 7, 4) ➞ 84
+// combinations(2, 3, 4, 5) ➞ 120
+
+// Notes:
+// Don't overthink this one.
+// Input may include the number zero.
+
+// Work:
+// const combinations = (...args) => args.reduce((a,b) => a === 0 || b === 0? a+b: a*b);
+
+// console.log(combinations(2,3));
+// console.log(combinations(3,7,4));
+// console.log(combinations(2,3,4,5));
+
+// ------------------------------------------------------------------------------------------------------------------
+
 // Date: 14 - July - 2021
 // Source: https://edabit.com/challenge/8a2J9T4FM5fgSwn4w
 // Title: Sum of Missing Numbers
