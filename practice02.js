@@ -20,6 +20,57 @@
 // ------------------------------------------------------------------------------------------------------------------
 
 // Date: 19 - July - 2021
+// Source: https://edabit.com/challenge/XoBFQ9CJDBFEKEAj9
+// Title: All Rotations of a String
+
+// Instructions:
+// Create a left rotation and a right rotation function that returns all the left rotations and right rotations of a string.
+
+// Examples:
+// leftRotations("abc") ➞ ["abc", "bca", "cab"]
+
+// rightRotations("abc") ➞ ["abc", "cab", "bca"]
+
+// leftRotations("abcdef") 
+// ➞ ["abcdef", "bcdefa", "cdefab", "defabc", "efabcd", "fabcde"]
+
+// rightRotations("abcdef") 
+// ➞ ["abcdef", "fabcde", "efabcd", "defabc", "cdefab", "bcdefa"]
+
+// Work:
+// solution from edabit user Adamqwerty....duh, just make it negative
+// function leftRotations(str) {
+// 	return str.split("").map((a,i)=>str.slice(i)+str.slice(0,i))
+// }
+
+// function rightRotations(str) {
+// 	return str.split("").map((a,i)=>str.slice(-i)+str.slice(0,-i))
+// }
+
+
+// first pass 
+// const leftRotations = (s) => {
+//   const result = [];
+//   for(let i = 0; i < s.length; i++){
+//     result.push(`${s.substring(i,s.length)}${s.slice(0,i)}`)
+//   }
+//   return result;
+// }
+
+// const rightRotations = (s) => {
+//   const result = [];
+//   for(let i = 0; i < s.length; i++){
+//     result.push(`${s.slice(s.length-i)}${s.slice(0,s.length-i)}`)
+//   }
+//   return result;
+// }
+
+// console.log(leftRotations("abc"));
+// console.log(rightRotations("abc"));
+
+// ------------------------------------------------------------------------------------------------------------------
+
+// Date: 19 - July - 2021
 // Source: https://edabit.com/challenge/WEvqZTFcHeYzFn74c
 // Title: Perimeters with a Catch
 
